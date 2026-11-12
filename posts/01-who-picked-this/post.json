@@ -1,0 +1,29 @@
+{
+  "id": "weekly-01-who-picked-this",
+  "title": "Who picked this for you?",
+  "format": "Three-slide Instagram carousel",
+  "status": "Prepared draft",
+  "week": 1,
+  "scheduledAt": null,
+  "publishedAt": null,
+  "audience": "Peter's high-school community",
+  "caption": "Outlets choose what to cover. Apps recommend what to show. We choose what to follow.\n\nOur first report follows those choices—and the evidence about their influence.\n\nFull report + sources:",
+  "reportUrl": "https://peternunley08-ops.github.io/the-daily-nun/research/media-democracy/output/pdf/who-shapes-what-america-knows.pdf",
+  "media": [
+    "instagram-launch/carousels/01-who-picked-this/slide-01.png",
+    "instagram-launch/carousels/01-who-picked-this/slide-02.png",
+    "instagram-launch/carousels/01-who-picked-this/slide-03.png"
+  ],
+  "altTextFile": "instagram-launch/carousels/01-who-picked-this/alt-text.txt",
+  "sources": [
+    {
+      "title": "On YouTube's recommendation system",
+      "author": "Cristos Goodrow",
+      "publisher": "YouTube Official Blog",
+      "date": "September 15, 2021",
+      "url": "https://blog.youtube/inside-youtube/on-youtubes-recommendation-system/",
+      "type": "Dated company explanation",
+      "limits": "Explains the company's described recommendation signals in 2021. It is not an independent audit of every app or a claim that a feed determines a person's beliefs. The report contains the wider research and its limitations."
+    }
+  ]
+}

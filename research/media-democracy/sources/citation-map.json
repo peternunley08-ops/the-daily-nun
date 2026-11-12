@@ -1,0 +1,1227 @@
+[
+  {
+    "id": "H01",
+    "title": "Warm Relations With Trump Appear To Benefit Sinclair Broadcasting",
+    "authors": [
+      "David Folkenflik"
+    ],
+    "publisher": "NPR, Morning Edition",
+    "date": "2018-04-03",
+    "url": "https://www.npr.org/2018/04/03/599077733/warm-relations-with-trump-appears-to-benefit-sinclair-broadcasting",
+    "type": "Contemporaneous journalism: interview transcript",
+    "verified": true,
+    "findings": "Read the NPR transcript through gstack /browse. NPR reported that Sinclair instructed local anchors to deliver common media-bias promotions, that a compilation made their repeated wording visible, and that Sinclair denied a political agenda and defended the promotions as support for fair and objective reporting. The chapter uses the case to establish organizational direction rather than audience persuasion.",
+    "limitations": "Reporting and analysis, not an experiment measuring audience effects. Corporate explanations are attributed statements. No station-count statistic or present-day ownership claim is derived from this 2018 report.",
+    "stats": [],
+    "aliases": [
+      "H01"
+    ],
+    "number": 1
+  },
+  {
+    "id": "H02",
+    "title": "Local News and National Politics",
+    "authors": [
+      "Gregory J. Martin",
+      "Joshua McCrain"
+    ],
+    "publisher": "American Political Science Review, Cambridge University Press",
+    "date": "2019-02-19",
+    "url": "https://doi.org/10.1017/S0003055418000965",
+    "type": "Original research: observational acquisition study",
+    "verified": true,
+    "findings": "Read publisher-deposited abstract and bibliographic metadata through the Crossref API using gstack /browse. The abstract reports that acquired stations increased national political coverage at the expense of local politics, shifted coverage rightward, and had a small decline in viewership relative to other programs in the same markets. These findings support a supply-side role in programming changes.",
+    "limitations": "Accessed the publisher-deposited abstract and metadata, not the full paper or replication materials. Findings concern the acquisitions and period examined; they do not establish a universal merger effect or directly measure every consequence for voters. No numerical treatment effect is used.",
+    "stats": [],
+    "aliases": [
+      "H02"
+    ],
+    "number": 2
+  },
+  {
+    "id": "H03",
+    "title": "The Constitution of the United States: A Transcription",
+    "authors": [
+      "United States Constitutional Convention"
+    ],
+    "publisher": "National Archives and Records Administration",
+    "date": "1787-09-17",
+    "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+    "type": "Primary constitutional text",
+    "verified": true,
+    "findings": "Read the National Archives transcription through gstack /browse. Articles I, II, and III establish the federal legislative, executive, and judicial institutions; the text supplies mechanisms involving legislation, appropriations, appointments, and impeachment. The report identifies the dependence of oversight on information as analysis, rather than a quoted constitutional command.",
+    "limitations": "The original text must be read alongside subsequent amendments. The report does not present the original provisions for Senate selection or presidential election as current rules. Constitutional text establishes legal structures, not causal evidence about journalism.",
+    "stats": [],
+    "aliases": [
+      "H03"
+    ],
+    "number": 3
+  },
+  {
+    "id": "H04",
+    "title": "The Bill of Rights: A Transcription",
+    "authors": [
+      "United States Congress"
+    ],
+    "publisher": "National Archives and Records Administration",
+    "date": "1791-12-15",
+    "url": "https://www.archives.gov/founding-docs/bill-of-rights-transcript",
+    "type": "Primary constitutional text",
+    "verified": true,
+    "findings": "Read the transcription of the first ten amendments through gstack /browse. The First Amendment protects religion, speech, the press, assembly, and petition. The Tenth Amendment reserves powers not delegated to the United States, or prohibited to the states, to the states or the people.",
+    "limitations": "Ratification date supplied as the document date. The constitutional wording does not by itself resolve the application of every modern platform rule or allocate a specific contemporary policy decision; those questions require relevant cases and laws.",
+    "stats": [],
+    "aliases": [
+      "H04"
+    ],
+    "number": 4
+  },
+  {
+    "id": "H05",
+    "title": "Miami Herald Publishing Co. v. Tornillo, 418 U.S. 241",
+    "authors": [
+      "Supreme Court of the United States"
+    ],
+    "publisher": "Cornell Legal Information Institute, reproduction of Supreme Court opinion",
+    "date": "1974-06-25",
+    "url": "https://www.law.cornell.edu/supremecourt/text/418/241",
+    "type": "Primary judicial opinion",
+    "verified": true,
+    "findings": "Read the syllabus and opinion through gstack /browse. The Court held that Florida's newspaper right-of-reply statute violated the First Amendment. Its reasoning protected editorial judgment and considered both resource burdens and government intrusion into editorial decisions. The underlying dispute concerned Pat Tornillo's effort to answer critical editorials during his 1972 candidacy.",
+    "limitations": "A case about compelled reply in a newspaper, not a blanket exemption of every media business practice from regulation. Arguments about newspaper concentration recited in the opinion are not treated as independently verified industry measurements.",
+    "stats": [],
+    "aliases": [
+      "H05"
+    ],
+    "number": 5
+  },
+  {
+    "id": "H06",
+    "title": "Red Lion Broadcasting Co. v. FCC, 395 U.S. 367",
+    "authors": [
+      "Supreme Court of the United States"
+    ],
+    "publisher": "Cornell Legal Information Institute, reproduction of Supreme Court opinion",
+    "date": "1969-06-09",
+    "url": "https://www.law.cornell.edu/supremecourt/text/395/367",
+    "type": "Primary judicial opinion",
+    "verified": true,
+    "findings": "Read the syllabus and relevant opinion passages through gstack /browse. The Court upheld the challenged fairness-doctrine applications and associated rules in the broadcast regime before it, explaining the frequency-scarcity and licensing rationale. The opinion distinguishes the fairness doctrine from candidate provisions and describes disorder in frequency allocation before the 1927 licensing framework.",
+    "limitations": "The historical broadcasting rationale does not establish an identical legal rule for newspapers or every internet service. The decision is not presented as requiring retention of the fairness doctrine forever. Later FCC constitutional reasoning is not recast as a subsequent Supreme Court holding.",
+    "stats": [],
+    "aliases": [
+      "H06"
+    ],
+    "number": 6
+  },
+  {
+    "id": "H07",
+    "title": "Moody v. NetChoice, LLC, No. 22-277",
+    "authors": [
+      "Supreme Court of the United States"
+    ],
+    "publisher": "Cornell Legal Information Institute, reproduction of Supreme Court opinion",
+    "date": "2024-07-01",
+    "url": "https://www.law.cornell.edu/supremecourt/text/22-277",
+    "type": "Primary judicial opinion",
+    "verified": true,
+    "findings": "Read the extended syllabus and discussion through gstack /browse. The Court vacated the lower-court judgments and remanded because the facial challenges required a more complete analysis of covered services and functions. The opinion explains that selecting and presenting third-party speech can involve protected editorial discretion.",
+    "limitations": "The report describes the dated 2024 decision. It does not claim to verify every subsequent proceeding, settle every application of the Florida and Texas laws, or exempt all platform functions from regulation.",
+    "stats": [],
+    "aliases": [
+      "H07",
+      "E12"
+    ],
+    "number": 7
+  },
+  {
+    "id": "H08",
+    "title": "Telecommunications Act of 1996, Public Law 104-104, section 202",
+    "authors": [
+      "United States Congress"
+    ],
+    "publisher": "U.S. Government Publishing Office, GovInfo",
+    "date": "1996-02-08",
+    "url": "https://www.govinfo.gov/content/pkg/PLAW-104publ104/html/PLAW-104publ104.htm",
+    "type": "Primary statute: original enactment",
+    "verified": true,
+    "findings": "Read section 202 of the official enactment through gstack /browse. It directed removal of the national AM/FM station-number cap, retained local radio limits by market size, eliminated the national television station-number restriction, and raised the then national television audience-reach limit to 35 percent. The law also directed consideration of local television restrictions.",
+    "limitations": "These are the original 1996 provisions, not a claim about the applicable national television reach cap in 2026. Legal permission to acquire stations is distinct from evidence of a particular acquisition's content or democratic effects.",
+    "stats": [
+      {
+        "value": "Up to 8 commercial stations, with no more than 5 in the same service",
+        "period": "1996 enactment",
+        "population": "Single owners in local radio markets containing at least 45 commercial radio stations",
+        "denominator": "Commercial radio stations in the relevant local market; the same-service sublimit distinguishes AM and FM"
+      },
+      {
+        "value": "35 percent national audience reach",
+        "period": "1996 enactment",
+        "population": "National television-station ownership portfolios covered by the statute",
+        "denominator": "National television audience reach under the then applicable FCC ownership framework"
+      }
+    ],
+    "aliases": [
+      "H08"
+    ],
+    "number": 8
+  },
+  {
+    "id": "H09",
+    "title": "47 U.S.C. § 230: Protection for private blocking and screening of offensive material",
+    "authors": [
+      "United States Congress"
+    ],
+    "publisher": "Cornell Legal Information Institute, U.S. Code reproduction",
+    "date": "1996-02-08 (enacted; accessed codification includes subsequent amendments)",
+    "url": "https://www.law.cornell.edu/uscode/text/47/230",
+    "type": "Primary statute: codified text",
+    "verified": true,
+    "findings": "Read the codified statute through gstack /browse. Section 230(c)(1) addresses treating an interactive computer service provider or user as publisher or speaker of information supplied by another information content provider. The text also provides certain moderation protections and exceptions involving criminal law, intellectual property, privacy, and sex-trafficking matters. The central protection is not expressed as a general political-neutrality condition.",
+    "limitations": "The accessed codification contains amendments after original enactment. The provision is not blanket immunity from every law; application to particular conduct requires relevant facts and judicial interpretation. The chapter uses only the core statutory distinction.",
+    "stats": [],
+    "aliases": [
+      "H09"
+    ],
+    "number": 9
+  },
+  {
+    "id": "H10",
+    "title": "47 CFR § 73.1941: Equal opportunities",
+    "authors": [
+      "Federal Communications Commission"
+    ],
+    "publisher": "Cornell Legal Information Institute, e-CFR reproduction",
+    "date": "1992-01-03; amended 1994-03-29 (rule history)",
+    "url": "https://www.law.cornell.edu/cfr/text/47/73.1941",
+    "type": "Primary regulation",
+    "verified": true,
+    "findings": "Read the full rule through gstack /browse. Equal-opportunity requirements address qualifying candidate uses of a station; listed exemptions cover bona fide newscasts, news interviews, specified documentary appearances, and on-the-spot news events. This is distinct from a general rule requiring equal time for all political opinions in ordinary news.",
+    "limitations": "The supplied date describes rule history rather than the publication date of the web reproduction. Candidate qualification, uses, access, and statutory cross-references can require additional legal analysis. The chapter does not provide advice about an individual election broadcast.",
+    "stats": [],
+    "aliases": [
+      "H10"
+    ],
+    "number": 10
+  },
+  {
+    "id": "H11",
+    "title": "In re Complaint of Syracuse Peace Council against Television Station WTVH, Syracuse, New York: Memorandum Opinion and Order, FCC 87-266",
+    "authors": [
+      "Federal Communications Commission"
+    ],
+    "publisher": "Federal Communications Commission, 2 FCC Rcd 5043",
+    "date": "1987-08-06 (released; adopted 1987-08-04)",
+    "url": "https://docs.fcc.gov/public/attachments/FCC-87-266A1.pdf",
+    "type": "Primary regulatory decision",
+    "verified": true,
+    "findings": "Downloaded the official FCC scan using gstack /browse, then rendered and visually inspected selected pages, including the opening order at 2 FCC Rcd 5043. Paragraph 2 states the Commission's conclusion that the fairness doctrine violated the First Amendment and contravened the public interest; the order vacates its earlier WTVH orders. The first page records adoption on August 4 and release on August 6, 1987.",
+    "limitations": "The 29-page source is a scan; selected relevant pages were visually checked rather than all pages fully transcribed. The constitutional conclusions are the FCC's reasoning, not a new Supreme Court holding. The report does not infer a numerical polarization effect or claim to document the later removal of residual rule text.",
+    "stats": [],
+    "aliases": [
+      "H11"
+    ],
+    "number": 11
+  },
+  {
+    "id": "H12",
+    "title": "Formation of Political Parties",
+    "authors": [
+      "Library of Congress"
+    ],
+    "publisher": "Library of Congress, Creating the United States exhibition",
+    "date": "n.d. (archival items discussed include 1792–1800)",
+    "url": "https://www.loc.gov/exhibits/creating-the-united-states/formation-of-political-parties.html",
+    "type": "Archival exhibition with primary documents and curatorial interpretation",
+    "verified": true,
+    "findings": "Read relevant exhibition passages and item captions through gstack /browse. The exhibition identifies James Madison's September 22, 1792 National Gazette essay concerning parties and presents materials on the Alien and Sedition Acts, criticism of government, and imprisoned newspaper publishers and writers.",
+    "limitations": "An archival exhibition selects and interprets historical items; it is not a representative quantitative history of all early newspapers. Historical party names are not equated with present-day parties. The exact item title is omitted because the exhibition's caption and explanatory wording differ.",
+    "stats": [],
+    "aliases": [
+      "H12"
+    ],
+    "number": 12
+  },
+  {
+    "id": "H13",
+    "title": "News vs. Entertainment: How Increasing Media Choice Widens Gaps in Political Knowledge and Turnout",
+    "authors": [
+      "Markus Prior"
+    ],
+    "publisher": "American Journal of Political Science",
+    "date": "2005-05-18 (online publication metadata)",
+    "url": "https://doi.org/10.1111/j.1540-5907.2005.00143.x",
+    "type": "Original research: survey-based study",
+    "verified": true,
+    "findings": "Read publisher-deposited abstract and bibliographic metadata through Crossref using gstack /browse. The abstract describes a representative survey of 2,358 U.S. residents and reports that increasing choice widens differences in political knowledge and turnout associated with preferences for news versus entertainment.",
+    "limitations": "Read the publisher-deposited abstract and metadata, not the full methods or replication materials. Fieldwork dates were not established from the accessed abstract. The report dates the study and does not portray it as a contemporary platform experiment or assert that every user has the same response.",
+    "stats": [
+      {
+        "value": "2,358 survey respondents",
+        "period": "Study published in 2005; fieldwork dates not established in the accessed abstract",
+        "population": "U.S. residents in the representative survey described by the author",
+        "denominator": "The survey sample, not the entire U.S. population"
+      }
+    ],
+    "aliases": [
+      "H13",
+      "M01"
+    ],
+    "number": 13
+  },
+  {
+    "id": "H14",
+    "title": "Press Coverage and Political Accountability",
+    "authors": [
+      "James M. Snyder Jr.",
+      "David Strömberg"
+    ],
+    "publisher": "National Bureau of Economic Research; published version in Journal of Political Economy",
+    "date": "2008-03 (working paper); 2010 (published version)",
+    "url": "https://www.nber.org/papers/w13878",
+    "type": "Original research: observational study using newspaper-market and district variation",
+    "verified": true,
+    "findings": "Read the NBER abstract and published-version citation through gstack /browse. The study uses variation in the fit between newspaper markets and congressional districts, including redistricting-related variation, to examine coverage, voter knowledge, representative behavior, and federal spending. The abstract reports less knowledge and differences in political behavior and spending where coverage is reduced.",
+    "limitations": "Read the working-paper abstract and bibliographic information rather than the full published methods and replication materials. The design's identifying assumptions and historical setting limit generalization; the chapter does not assert a universal effect for every type of local journalism. No numerical effect estimate is used.",
+    "stats": [],
+    "aliases": [
+      "H14",
+      "E07"
+    ],
+    "number": 14
+  },
+  {
+    "id": "O01",
+    "title": "These 6 Corporations Control 90% Of The Media In America",
+    "authors": "Ashley Lutz",
+    "publisher": "Business Insider",
+    "date": "2012",
+    "url": "https://www.businessinsider.com/these-6-corporations-control-90-of-the-media-in-america-2012-6",
+    "type": "Journalism; reproduces an infographic, not a market-concentration study",
+    "verified": true,
+    "findings": "Attributes graphic to Jason at Frugal Dad; says graphic was from previous year; includes warning about outdated corporate affiliations. Does not provide a reproducible denominator for all media.",
+    "limitations": "The article's own ownership correction is not used as a precise account of the Comcast/GE transaction. This source establishes circulation of the six/90 claim, not its validity or earliest origin.",
+    "stats": [],
+    "aliases": [
+      "O01"
+    ],
+    "number": 15
+  },
+  {
+    "id": "O02",
+    "title": "Paramount Completes Acquisition of Warner Bros. Discovery, Creating a New Global Entertainment Leader, Skydance",
+    "authors": "Skydance Corporation",
+    "publisher": "Skydance corporate newsroom",
+    "date": "October 6, 2026",
+    "url": "https://www.skydance.com/news/press/paramount-completes-acquisition-of-warner-bros-discovery-creating-a-new-global-entertainment-leader-skydance",
+    "type": "Corporate closing announcement",
+    "verified": true,
+    "findings": "States acquisition completed October 6; combined company named Skydance; portfolio includes CBS News, CNN, Paramount, Warner Bros., HBO and streaming brands. Describes Ellison Family/RedBird voting control.",
+    "limitations": "Company claims about competition, future savings and consumer benefits are advocacy and forward-looking statements, not independent findings.",
+    "stats": [],
+    "aliases": [
+      "O02"
+    ],
+    "number": 16
+  },
+  {
+    "id": "O03",
+    "title": "Versant Media Reports Third Quarter 2026 Operating and Financial Results",
+    "authors": "Versant Media Group",
+    "publisher": "Versant corporate newsroom",
+    "date": "November 3, 2026",
+    "url": "https://www.versantmedia.com/versant-media/press-releases/versant-media-reports-third-quarter-2026-operating-and-financial",
+    "type": "Corporate earnings release",
+    "verified": true,
+    "findings": "Dates separation from Comcast January 2, 2026; describes CNBC, MS NOW, USA Network and related portfolio. Current portfolio cross-checked at https://www.versantmedia.com/about.",
+    "limitations": "Earnings figures and ratings claims are company statements; report uses this for separation and asset identity, not independent performance comparisons.",
+    "stats": [],
+    "aliases": [
+      "O03"
+    ],
+    "number": 17
+  },
+  {
+    "id": "O04",
+    "title": "Fox Corporation Completes Acquisition of Roku",
+    "authors": "Fox Corporation",
+    "publisher": "Fox corporate newsroom",
+    "date": "November 6, 2026",
+    "url": "https://www.foxcorporation.com/news/business/2026/fox-corporation-completes-acquisition-of-roku/",
+    "type": "Corporate closing announcement",
+    "verified": true,
+    "findings": "States Roku acquisition completed November 6; identifies Fox News Media, Fox Sports, Fox Entertainment, Fox Television Stations, Roku and Tubi in corporate portfolio.",
+    "limitations": "Promises about an open ecosystem and future benefits are corporate commitments, not independent proof of future conduct.",
+    "stats": [],
+    "aliases": [
+      "O04"
+    ],
+    "number": 18
+  },
+  {
+    "id": "O05",
+    "title": "Our Businesses and Brands",
+    "authors": "News Corp",
+    "publisher": "News Corp",
+    "date": "Undated; accessed November 12, 2026",
+    "url": "https://newscorp.com/news-corp-businesses-and-brands/",
+    "type": "Corporate portfolio page",
+    "verified": true,
+    "findings": "Lists Dow Jones, HarperCollins, News UK, News Corp Australia and New York Post, among other businesses.",
+    "limitations": "Illustrative corporate portfolio, not market-share or complete beneficial-ownership evidence. Undated current page is not an archived November 11 snapshot.",
+    "stats": [],
+    "aliases": [
+      "O05"
+    ],
+    "number": 19
+  },
+  {
+    "id": "O06",
+    "title": "About NBCUniversal",
+    "authors": "NBCUniversal",
+    "publisher": "NBCUniversal",
+    "date": "Undated; accessed November 12, 2026",
+    "url": "https://www.nbcuniversal.com/about",
+    "type": "Corporate portfolio page",
+    "verified": true,
+    "findings": "Identifies NBC, NBC News, Telemundo, NBC local stations, Bravo, Peacock and film studios; states NBCUniversal is a Comcast subsidiary.",
+    "limitations": "Undated page is current-access corroboration, not an archived cutoff-date snapshot. No company audience or leadership marketing claims adopted.",
+    "stats": [],
+    "aliases": [
+      "O06"
+    ],
+    "number": 20
+  },
+  {
+    "id": "O07",
+    "title": "iHeartMedia corporate overview and radio-station directory",
+    "authors": "iHeartMedia",
+    "publisher": "iHeartMedia",
+    "date": "Undated; accessed November 12, 2026",
+    "url": "https://www.iheartmedia.com/",
+    "type": "Corporate portfolio and advertising page",
+    "verified": true,
+    "findings": "Describes broadcast radio, networks, podcasts, digital audio and a large owned-station network.",
+    "limitations": "Company reach and ranking claims are promotional and are not treated as shares of all media. Current page includes October/November 2026 material; not a complete ownership registry.",
+    "stats": [],
+    "aliases": [
+      "O07"
+    ],
+    "number": 21
+  },
+  {
+    "id": "O08",
+    "title": "About Us",
+    "authors": "The New York Times Company",
+    "publisher": "The New York Times Company",
+    "date": "Undated; accessed November 12, 2026",
+    "url": "https://www.nytco.com/about-us/",
+    "type": "Corporate publisher description",
+    "verified": true,
+    "findings": "Describes the Times Company's journalism and publishing operation, separate from the entertainment conglomerates in the old six-company graphic.",
+    "limitations": "Company statements about journalism quality are not adopted as independent evaluations; this page does not establish a complete shareholder-control map.",
+    "stats": [],
+    "aliases": [
+      "O08"
+    ],
+    "number": 22
+  },
+  {
+    "id": "O09",
+    "title": "TikTok USDS Joint Venture LLC Established in Compliance with U.S. Regulatory Requirements",
+    "authors": "TikTok USDS Joint Venture",
+    "publisher": "TikTok USDS Joint Venture newsroom",
+    "date": "January 22, 2026",
+    "url": "https://usdsjv.tiktok.com/TikTok-USDS-Joint-Venture-LLC-Established",
+    "type": "Corporate formation announcement",
+    "verified": true,
+    "findings": "Describes independent U.S. joint venture, U.S. moderation/algorithm/data authority, continued global interoperability/commercial functions; managing investors Silver Lake, Oracle and MGX each15%; ByteDance retains19.9%.",
+    "limitations": "Statement of corporate structure and allocated authority, not independent proof of security effectiveness or political neutrality. Newsroom index saysJanuary23 but article itselfJanuary22; report uses article date.",
+    "stats": [
+      {
+        "value": "19.9%",
+        "period": "Joint-venture formation announced January22,2026",
+        "population": "TikTok USDS Joint Venture LLC equity",
+        "denominator": "100% of joint-venture equity; not all global TikTok assets or all media"
+      }
+    ],
+    "aliases": [
+      "O09"
+    ],
+    "number": 23
+  },
+  {
+    "id": "O10",
+    "title": "xAI Joins SpaceX to Accelerate Humanity's Future",
+    "authors": "Elon Musk / SpaceX",
+    "publisher": "SpaceX updates",
+    "date": "February 2, 2026",
+    "url": "https://www.spacex.com/updates#xai-joins-spacex",
+    "type": "Corporate acquisition statement",
+    "verified": true,
+    "findings": "Says SpaceX acquired xAI and describes integration with its real-time information platform; SpaceX site lists X among its businesses/services.",
+    "limitations": "This live updates page also contains later material; only dated February2 section and relevant corporate navigation used. Technical forecasts and promotional claims not adopted.",
+    "stats": [],
+    "aliases": [
+      "O10"
+    ],
+    "number": 24
+  },
+  {
+    "id": "O11",
+    "title": "Fiscal Year 2025 Annual Financial Report / Form 10-K",
+    "authors": "The Walt Disney Company",
+    "publisher": "The Walt Disney Company; copy hosted by AnnualReports.com",
+    "date": "Fiscal year ended September 27, 2025",
+    "url": "https://www.annualreports.com/HostedData/AnnualReports/PDF/NYSE_DIS_2025.pdf",
+    "type": "Corporate annual report / SEC filing, mirrored copy",
+    "verified": true,
+    "findings": "128-page PDF read locally with pypdf; business section describes ABC Network, Disney+, Hulu, studios and ESPN sports operations. Distinguishes owned ABC stations from affiliates.",
+    "limitations": "This is an explicitly dated fiscal2025 record, not proof that every asset or minority share remained unchanged throughout2026. Report avoids exact ESPN equity shares or complete current asset inventory.",
+    "stats": [],
+    "aliases": [
+      "O11"
+    ],
+    "number": 25
+  },
+  {
+    "id": "O12",
+    "title": "G is for Google",
+    "authors": "Larry Page",
+    "publisher": "Google official blog",
+    "date": "August 10, 2015",
+    "url": "https://googleblog.blogspot.com/2015/08/google-alphabet.html",
+    "type": "Corporate restructuring announcement",
+    "verified": true,
+    "findings": "Announces Alphabet holding company, Google as wholly owned subsidiary, and YouTube within Google. Current basic parent relationship cross-checked against O13.",
+    "limitations": "Historical announcement; not itself a current financial or shareholder-control audit.",
+    "stats": [],
+    "aliases": [
+      "O12"
+    ],
+    "number": 26
+  },
+  {
+    "id": "O13",
+    "title": "Alphabet Inc.",
+    "authors": "Wikipedia contributors",
+    "publisher": "Wikipedia",
+    "date": "Current-access reference; accessed November 12, 2026",
+    "url": "https://en.wikipedia.org/wiki/Alphabet_Inc.",
+    "type": "Secondary reference used for basic current corporate cross-check",
+    "verified": true,
+    "findings": "Identifies Alphabet as Google's parent and links its2025Form10-K. OriginalSECfiling was inaccessible to browser; report does not claim to have read that filing.",
+    "limitations": "Editable secondary source. Financial figures, shareholder stakes and other statistics are not used from it. Google2015primaryannouncementandYouTubecorporatedocumentationprovideadditionalcontext.",
+    "stats": [],
+    "aliases": [
+      "O13"
+    ],
+    "number": 27
+  },
+  {
+    "id": "M02",
+    "title": "What Drives Media Slant? Evidence from U.S. Daily Newspapers",
+    "authors": [
+      "Matthew Gentzkow",
+      "Jesse M. Shapiro"
+    ],
+    "publisher": "Econometrica 78(1), 35–71 (2010); NBER Working Paper 12707",
+    "date": "2010; working paper issued November 2006, revised August 2007",
+    "url": "https://www.nber.org/papers/w12707",
+    "type": "Original economic research; NBER working-paper record and abstract verified",
+    "verified": true,
+    "findings": "A language-based measure of newspaper slant reveals economically significant consumer demand for congenial news. Consumer preferences help explain slant in the studied U.S. newspaper market; owner identity explains less of the measured variation.",
+    "limitations": "The findings concern a historical newspaper market, a linguistic measure, and a particular empirical model. They do not measure all omissions or establish that owners lack influence in other media or periods. The working-paper abstract was checked rather than every method in the published version. Verified through November 11, 2026.",
+    "stats": [],
+    "aliases": [
+      "M02"
+    ],
+    "number": 28
+  },
+  {
+    "id": "M03",
+    "title": "Out-group animosity drives engagement on social media",
+    "authors": [
+      "Steve Rathje",
+      "Jay J. Van Bavel",
+      "Sander van der Linden"
+    ],
+    "publisher": "Proceedings of the National Academy of Sciences",
+    "date": "2021",
+    "url": "https://doi.org/10.1073/pnas.2024292118",
+    "type": "Original peer-reviewed observational research; original abstract verified through Europe PMC",
+    "verified": true,
+    "findings": "References to political out-groups strongly predicted sharing and related engagement in the analyzed Facebook and Twitter posts from congressional accounts and news-media organizations. The pattern is consistent with incentives for out-group hostility.",
+    "limitations": "Associations between post language and engagement do not establish that the posts caused hostility in readers, nor that all audiences or platforms respond identically. Original abstract verified in the Europe PMC indexed record; full published analysis not independently reproduced. Verified through November 11, 2026.",
+    "stats": [],
+    "aliases": [
+      "M03"
+    ],
+    "number": 29
+  },
+  {
+    "id": "M04",
+    "title": "Social Media and News Fact Sheet",
+    "authors": [
+      "Christopher St. Aubin",
+      "Joanne Haner"
+    ],
+    "publisher": "Pew Research Center",
+    "date": "2026-10-19",
+    "url": "https://www.pewresearch.org/journalism/fact-sheet/social-media-and-news-fact-sheet/",
+    "type": "Transparent survey research and fact sheet",
+    "verified": true,
+    "findings": "The August 2026 survey documents overlapping social-media news use among U.S. adults. The fact sheet explicitly identifies Facebook and Instagram as both owned by Meta.",
+    "limitations": "Self-reported news use is not measured attention, content accuracy, political persuasion, or an exclusive market share. Individuals can use several platforms, so platform percentages cannot be added to obtain a total audience. Current page read through gstack browse before the November 11, 2026 cutoff.",
+    "stats": [
+      {
+        "value": "59% get news from social media at least sometimes",
+        "period": "Survey August 24–30, 2026",
+        "population": "U.S. adults",
+        "denominator": "All U.S. adults; not only social-media users"
+      },
+      {
+        "value": "40% regularly get news on Facebook",
+        "period": "Survey August 24–30, 2026",
+        "population": "U.S. adults",
+        "denominator": "All U.S. adults; overlapping with other platforms"
+      },
+      {
+        "value": "34% regularly get news on YouTube",
+        "period": "Survey August 24–30, 2026",
+        "population": "U.S. adults",
+        "denominator": "All U.S. adults; overlapping with other platforms"
+      },
+      {
+        "value": "23% regularly get news on Instagram",
+        "period": "Survey August 24–30, 2026",
+        "population": "U.S. adults",
+        "denominator": "All U.S. adults; overlapping with other platforms"
+      },
+      {
+        "value": "20% regularly get news on TikTok",
+        "period": "Survey August 24–30, 2026",
+        "population": "U.S. adults",
+        "denominator": "All U.S. adults; overlapping with other platforms"
+      },
+      {
+        "value": "10% regularly get news on X",
+        "period": "Survey August 24–30, 2026",
+        "population": "U.S. adults",
+        "denominator": "All U.S. adults; overlapping with other platforms"
+      }
+    ],
+    "aliases": [
+      "M04"
+    ],
+    "number": 30
+  },
+  {
+    "id": "M05",
+    "title": "News Influencers Fact Sheet",
+    "authors": [
+      "Luxuan Wang",
+      "Naomi Forman-Katz"
+    ],
+    "publisher": "Pew Research Center",
+    "date": "2025-11-04",
+    "url": "https://www.pewresearch.org/journalism/fact-sheet/news-influencers-fact-sheet/",
+    "type": "Transparent survey research and fact sheet",
+    "verified": true,
+    "findings": "News influencers constitute a meaningful self-reported news route, especially among young adults. Pew defines the category through sizable social followings and regular discussion of news, politics, and social issues rather than professional accreditation.",
+    "limitations": "Self-reported use does not establish accuracy, persuasion, or homogeneous standards among creators. Figures describe the August 2025 survey, not a new 2026 estimate. Page read through gstack browse; verified through November 11, 2026.",
+    "stats": [
+      {
+        "value": "21% regularly get news from news influencers",
+        "period": "Survey August 18–24, 2025",
+        "population": "U.S. adults",
+        "denominator": "All U.S. adults; population estimate, not only those asked the conditional social-news question"
+      },
+      {
+        "value": "38% regularly get news from news influencers",
+        "period": "Survey August 18–24, 2025",
+        "population": "U.S. adults ages 18–29",
+        "denominator": "All U.S. adults ages 18–29; not all influencer users"
+      }
+    ],
+    "aliases": [
+      "M05"
+    ],
+    "number": 31
+  },
+  {
+    "id": "M06",
+    "title": "On YouTube’s recommendation system",
+    "authors": [
+      "Cristos Goodrow"
+    ],
+    "publisher": "YouTube Official Blog",
+    "date": "2021-09-15",
+    "url": "https://blog.youtube/inside-youtube/on-youtubes-recommendation-system/",
+    "type": "Corporate statement; official explanation",
+    "verified": true,
+    "findings": "YouTube describes recommendations informed by multiple signals, including viewing, surveys, likes, sharing, and satisfaction, together with assessments intended to reduce problematic material. This is evidence of stated design objectives rather than a single universal click-maximization rule.",
+    "limitations": "Interested company account, not an independent audit. Dated September 2021; the report explicitly does not treat it as a verified description of the exact 2026 system or of effectiveness. Body read through gstack browse; verified through November 11, 2026.",
+    "stats": [],
+    "aliases": [
+      "M06"
+    ],
+    "number": 32
+  },
+  {
+    "id": "M07",
+    "title": "More Speech and Fewer Mistakes",
+    "authors": [
+      "Joel Kaplan"
+    ],
+    "publisher": "Meta",
+    "date": "2025-01-07; updated 2025-05-29",
+    "url": "https://about.fb.com/news/2025/01/meta-more-speech-fewer-mistakes/",
+    "type": "Corporate statement; policy announcement",
+    "verified": true,
+    "findings": "Meta announced a U.S. move from third-party fact-checking toward Community Notes, enforcement changes, and a more personalized approach to political content on its services. It presented these as improvements to expression and accuracy.",
+    "limitations": "The company's rationale and anticipated benefits are attributed claims, not independently established effects. An announcement is not by itself proof of complete implementation; M10 supplies later 2026 policy context. Full body read through gstack browse; verified through November 11, 2026.",
+    "stats": [],
+    "aliases": [
+      "M07"
+    ],
+    "number": 33
+  },
+  {
+    "id": "M08",
+    "title": "How TikTok recommends videos #ForYou",
+    "authors": [
+      "TikTok"
+    ],
+    "publisher": "TikTok Newsroom",
+    "date": "2020-06-18",
+    "url": "https://newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you",
+    "type": "Corporate statement; official explanation",
+    "verified": true,
+    "findings": "TikTok described a recommendation system informed by user interactions, video information, and device or account settings. It acknowledged the risk of narrowing recommendations and described attempts to introduce variety.",
+    "limitations": "Dated June 2020 corporate explanation, not an independent audit or a verified description of the exact 2026 system. Describing a safeguard does not demonstrate effectiveness. Full body read through gstack browse; verified through November 11, 2026.",
+    "stats": [],
+    "aliases": [
+      "M08"
+    ],
+    "number": 34
+  },
+  {
+    "id": "M09",
+    "title": "The political effects of X’s feed algorithm",
+    "authors": [
+      "Germain Gauthier",
+      "Roland Hodler",
+      "Philine Widmer",
+      "Ekaterina Zhuravskaya"
+    ],
+    "publisher": "Nature 652, 416–423",
+    "date": "2026-02-18",
+    "url": "https://www.nature.com/articles/s41586-026-10098-2",
+    "type": "Original peer-reviewed randomized field experiment",
+    "verified": true,
+    "findings": "Among participating active U.S. users in 2023, moving from chronological to algorithmic feeds shifted several opinions in a conservative direction. The reverse switch did not produce comparable changes. Neither switch significantly changed measured affective polarization or party identification.",
+    "limitations": "Voluntary, compensated active-user sample and a limited intervention period. Exposure was studied in 2023, despite 2026 publication; findings do not describe every user, later ownership or algorithms, long-term effects, or votes. Turning an algorithm off need not undo prior exposure. Original abstract, introduction, and design sections read through gstack browse; verified through November 11, 2026.",
+    "stats": [
+      {
+        "value": "Seven-week feed experiment",
+        "period": "July–September 2023",
+        "population": "Participating active U.S. X users",
+        "denominator": "Intervention duration, not an audience percentage or effect size"
+      }
+    ],
+    "aliases": [
+      "M09"
+    ],
+    "number": 35
+  },
+  {
+    "id": "M10",
+    "title": "How Meta Is Preparing for the 2026 US Midterm Elections",
+    "authors": [
+      "Meta"
+    ],
+    "publisher": "Meta",
+    "date": "2026-02-19; updates 2026-06-01 and 2026-10-27",
+    "url": "https://about.fb.com/news/2026/02/meta-prepares-for-2026-us-midterms/",
+    "type": "Corporate statement; dated election-policy announcement and updates",
+    "verified": true,
+    "findings": "Describes political and social-issue ad authorization, payer disclaimers, an Ad Library, and restrictions on new ads during the final campaign week. Qualifying previously delivered ads could continue. The October 27 update describes activation of the restriction; the page also confirms Community Notes in the U.S. approach.",
+    "limitations": "Stated policy and company reports of operation do not independently establish enforcement consistency, neutrality, or political effects. The restriction concerns new ads, not a complete political-ad ban. Full body and dated updates read through gstack browse; no updates after November 11, 2026 used.",
+    "stats": [
+      {
+        "value": "Seven-year Ad Library retention",
+        "period": "Policy described in February 19, 2026 announcement with pre-cutoff updates",
+        "population": "Political and social-issue ads covered by Meta's described policy",
+        "denominator": "Policy retention duration, not an audience share or a measure of accurate ads"
+      }
+    ],
+    "aliases": [
+      "M10"
+    ],
+    "number": 36
+  },
+  {
+    "id": "M11",
+    "title": "Systematic partisan content skews in TikTok during the 2024 US elections",
+    "authors": [
+      "Hazem Ibrahim",
+      "HyunSeok Daniel Jang",
+      "Nouar Aldahoul",
+      "Aaron R. Kaufman",
+      "Talal Rahwan",
+      "Yasir Zaki"
+    ],
+    "publisher": "Nature 654, 1004–1011",
+    "date": "2026-05-06",
+    "url": "https://www.nature.com/articles/s41586-026-10447-1",
+    "type": "Original peer-reviewed controlled-account platform audit",
+    "verified": true,
+    "findings": "Controlled-account audits during the 2024 U.S. election found asymmetric partisan recommendations favoring Republican-aligned material under the tested conditions. The authors do not conclusively isolate an internal platform mechanism.",
+    "limitations": "Audit accounts are not human voters; observed recommendation patterns do not establish effects on attitudes or votes. Internal rules, available content, and other mechanisms cannot be conclusively separated. Study period April 30–November 11, 2024, despite publication in 2026. Original abstract, introduction, and initial methods sections read through gstack browse; verified through November 11, 2026.",
+    "stats": [],
+    "aliases": [
+      "M11"
+    ],
+    "number": 37
+  },
+  {
+    "id": "M12",
+    "title": "The Origins and Consequences of Affective Polarization in the United States",
+    "authors": [
+      "Shanto Iyengar",
+      "Yphtach Lelkes",
+      "Matthew Levendusky",
+      "Neil Malhotra",
+      "Sean J. Westwood"
+    ],
+    "publisher": "Annual Review of Political Science 22, 129–146",
+    "date": "2019",
+    "url": "https://doi.org/10.1146/annurev-polisci-051117-073034",
+    "type": "Peer-reviewed research review; original abstract verified through Crossref",
+    "verified": true,
+    "findings": "Reviews affective polarization as partisan dislike and distrust rooted partly in social identity, with effects extending beyond disagreements over policy. Supplies the conceptual distinction between ideological disagreement and hostility toward political groups.",
+    "limitations": "A synthesis of research, not a single causal experiment identifying the entire source of polarization. The original abstract was checked through Crossref; complete review text and all underlying studies were not independently reanalyzed. Verified through November 11, 2026.",
+    "stats": [],
+    "aliases": [
+      "M12"
+    ],
+    "number": 38
+  },
+  {
+    "id": "M13",
+    "title": "Greater Internet use is not associated with faster growth in political polarization among US demographic groups",
+    "authors": [
+      "Levi Boxell",
+      "Matthew Gentzkow",
+      "Jesse M. Shapiro"
+    ],
+    "publisher": "Proceedings of the National Academy of Sciences",
+    "date": "2017",
+    "url": "https://doi.org/10.1073/pnas.1706588114",
+    "type": "Original peer-reviewed observational demographic analysis; original abstract verified through Europe PMC",
+    "verified": true,
+    "findings": "Across the analyzed polarization measures, older demographic groups less likely to use the internet or social media experienced larger increases than younger groups. This challenges a simple explanation centered entirely on greater direct digital use.",
+    "limitations": "Group-level comparisons are not randomized individual exposure effects. They do not exclude indirect influence through television, politicians, or other institutions. The chapter states the comparative result and publication year without supplying an unverified exact field period. Original abstract checked in the Europe PMC indexed record; complete methods not reanalyzed. Verified through November 11, 2026.",
+    "stats": [],
+    "aliases": [
+      "M13"
+    ],
+    "number": 39
+  },
+  {
+    "id": "M14",
+    "title": "Exposure to opposing views on social media can increase political polarization",
+    "authors": [
+      "Christopher A. Bail",
+      "Lisa P. Argyle",
+      "Taylor W. Brown",
+      "John P. Bumpus",
+      "Haohan Chen",
+      "M. B. Fallin Hunzaker",
+      "Jaemin Lee",
+      "Marcus Mann",
+      "Friedolin Merhout",
+      "Alexander Volfovsky"
+    ],
+    "publisher": "Proceedings of the National Academy of Sciences",
+    "date": "2018",
+    "url": "https://doi.org/10.1073/pnas.1804840115",
+    "type": "Original peer-reviewed randomized field experiment; original abstract verified through Europe PMC",
+    "verified": true,
+    "findings": "Frequent Twitter users were offered incentives to follow a bot presenting opposing political messages. Republican participants became more conservative on the policy measures; Democratic participants' smaller movement in a liberal direction was not statistically significant.",
+    "limitations": "A specific sample, exposure arrangement, message stream, and short-term outcome; it does not show that all cross-party contact is harmful. Publication year is distinguished from an exact field date not verified in the accessed abstract. Original abstract checked in the Europe PMC indexed record; full text could not be reliably retrieved. Verified through November 11, 2026.",
+    "stats": [
+      {
+        "value": "One-month exposure intervention",
+        "period": "Study reported in 2018 article; exact field dates not verified from accessed original abstract",
+        "population": "Participating frequent Democratic and Republican Twitter users",
+        "denominator": "Intervention duration, not a population percentage or effect magnitude"
+      }
+    ],
+    "aliases": [
+      "M14"
+    ],
+    "number": 40
+  },
+  {
+    "id": "M15",
+    "title": "As Partisan Hostility Grows, Signs of Frustration With the Two-Party System",
+    "authors": [
+      "Pew Research Center"
+    ],
+    "publisher": "Pew Research Center",
+    "date": "2022-08-09",
+    "url": "https://www.pewresearch.org/politics/2022/08/09/as-partisan-hostility-grows-signs-of-frustration-with-the-two-party-system/",
+    "type": "Transparent public-opinion survey research",
+    "verified": true,
+    "findings": "Documents increasingly negative partisan judgments as well as a growing group holding unfavorable views of both major parties. Negative trait judgments vary by trait and party rather than forming an identical pattern.",
+    "limitations": "Reported perceptions are not measurements of opponents' actual morality or proof of media causation. This is a 2022 survey, not a current 2026 hostility estimate. Full page read through gstack browse; verified through November 11, 2026.",
+    "stats": [
+      {
+        "value": "27% held unfavorable views of both major parties",
+        "period": "Survey June 27–July 4, 2022",
+        "population": "U.S. adults",
+        "denominator": "All U.S. adults represented by the American Trends Panel survey"
+      }
+    ],
+    "aliases": [
+      "M15"
+    ],
+    "number": 41
+  },
+  {
+    "id": "E01",
+    "title": "How do social media feed algorithms affect attitudes and behavior in an election campaign?",
+    "authors": [
+      "Andrew M. Guess",
+      "et al."
+    ],
+    "publisher": "Science",
+    "date": "2023-07-27",
+    "url": "https://doi.org/10.1126/science.abp9364",
+    "verification_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1126/science.abp9364&format=json&resultType=core",
+    "type": "Peer-reviewed randomized field experiment; original abstract verified through Europe PMC",
+    "verified": true,
+    "findings": "Assigning consenting Facebook and Instagram users to reverse-chronological feeds during the 2020 election reduced platform time and activity and altered exposure. Political and untrustworthy content increased on both platforms; other exposure measures changed in different directions. No significant effects on issue polarization, affective polarization, political knowledge, or other key attitudes were found over the study period.",
+    "limitations": "An intervention on consenting users over three months, not an estimate of all accumulated platform effects. Chronological ordering retains user-selected sources. Original abstract was read; no reanalysis of underlying data was conducted.",
+    "stats": [
+      {
+        "value": "3 months",
+        "period": "2020 U.S. election study",
+        "population": "Consenting Facebook and Instagram participants",
+        "denominator": "Duration of the experimental feed intervention; not a population share"
+      }
+    ],
+    "aliases": [
+      "E01"
+    ],
+    "number": 42
+  },
+  {
+    "id": "E02",
+    "title": "Like-minded sources on Facebook are prevalent but not polarizing",
+    "authors": [
+      "Brendan Nyhan",
+      "et al."
+    ],
+    "publisher": "Nature",
+    "date": "2023-07-27",
+    "url": "https://www.nature.com/articles/s41586-023-06297-w",
+    "type": "Peer-reviewed randomized field experiment and exposure analysis; abstract and main-text methods/findings read",
+    "verified": true,
+    "findings": "Reducing exposure to like-minded sources by approximately one-third among 23,377 participants altered exposure and reduced uncivil content, but produced no measurable effects on eight preregistered attitude outcomes. Replacements were not exclusively cross-cutting sources. The paper discloses its Meta collaboration and academic publication-control arrangements.",
+    "limitations": "The tested demotion did not remove the entire like-minded information diet. Participants could receive information elsewhere. Results concern the 2020 Facebook environment and specified measures; paper includes a later author correction.",
+    "stats": [
+      {
+        "value": "23,377",
+        "period": "September 24–December 23, 2020",
+        "population": "Consenting U.S. adult Facebook participants with qualifying post-election survey responses",
+        "denominator": "Study participant sample, not all Facebook users"
+      },
+      {
+        "value": "Approximately one-third reduction",
+        "period": "September 24–December 23, 2020",
+        "population": "Participants assigned to the intervention",
+        "denominator": "Exposure to content from sources classified as like-minded relative to the comparison feed"
+      },
+      {
+        "value": "8",
+        "period": "2020 experiment",
+        "population": "Experimental participants",
+        "denominator": "Number of preregistered attitudinal outcomes assessed"
+      }
+    ],
+    "aliases": [
+      "E02"
+    ],
+    "number": 43
+  },
+  {
+    "id": "E03",
+    "title": "The Welfare Effects of Social Media",
+    "authors": [
+      "Hunt Allcott",
+      "Luca Braghieri",
+      "Sarah Eichmeyer",
+      "Matthew Gentzkow"
+    ],
+    "publisher": "American Economic Review 110(3), 629–676",
+    "date": "2020-03",
+    "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20190658",
+    "type": "Peer-reviewed randomized field experiment; publisher abstract read",
+    "verified": true,
+    "findings": "Deactivating Facebook for four weeks before the 2018 midterm election reduced factual news knowledge and political polarization, changed time allocation, increased subjective well-being, and reduced subsequent platform use.",
+    "limitations": "Deactivation removes a broad bundle of social, entertainment, and informational experiences. It does not separately identify the algorithm's political effect. No claim of universal or permanent effects is made in the chapter.",
+    "stats": [
+      {
+        "value": "4 weeks",
+        "period": "Before the 2018 U.S. midterm election",
+        "population": "Facebook users in the randomized deactivation experiment",
+        "denominator": "Treatment duration, not a percentage of the electorate"
+      }
+    ],
+    "aliases": [
+      "E03"
+    ],
+    "number": 44
+  },
+  {
+    "id": "E04",
+    "title": "Social Media, News Consumption, and Polarization: Evidence from a Field Experiment",
+    "authors": [
+      "Ro'ee Levy"
+    ],
+    "publisher": "American Economic Review 111(3), 831–870",
+    "date": "2021-03",
+    "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20191777",
+    "type": "Peer-reviewed randomized field experiment; publisher abstract read",
+    "verified": true,
+    "findings": "Random offers of subscriptions to conservative or liberal outlets affected the slant of sites visited. Counter-attitudinal exposure reduced negative attitudes toward the opposing party, while the author found no evidence that outlet leanings changed political opinions. The paper also analyzed the relation between subscriptions and algorithmic delivery.",
+    "limitations": "The subscription offer and tested outlet choices are specific interventions. Improved attitudes toward an opposing party should not be described as demonstrated changes in policy opinions. Study data-period detail was not extracted from the accessible abstract, so no such date is asserted in the chapter.",
+    "stats": [],
+    "aliases": [
+      "E04"
+    ],
+    "number": 45
+  },
+  {
+    "id": "E05",
+    "title": "Bias in Cable News: Persuasion and Polarization",
+    "authors": [
+      "Gregory J. Martin",
+      "Ali Yurukoglu"
+    ],
+    "publisher": "American Economic Review 107(9), 2565–2599",
+    "date": "2017-09",
+    "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20160812",
+    "type": "Peer-reviewed quasi-experimental and structural-model research; publisher abstract read",
+    "verified": true,
+    "findings": "The paper exploits cable-channel position as an outside shifter of viewing and estimates a persuasive effect of additional Fox News exposure among affected viewers. A separate model addresses selection, evolving ideology, aggregate influence, and counterfactual slant.",
+    "limitations": "Channel-placement identification assumptions and the scope of affected viewers matter. Model-based aggregate simulations should not be presented as directly observed national outcomes. The numerical effect is omitted in this chapter to avoid compressing a local estimate into a general claim.",
+    "stats": [],
+    "aliases": [
+      "E05"
+    ],
+    "number": 46
+  },
+  {
+    "id": "E06",
+    "title": "Financing dies in darkness? The impact of newspaper closures on public finance",
+    "authors": [
+      "Pengjie Gao",
+      "Chang Lee",
+      "Dermot Murphy"
+    ],
+    "publisher": "Journal of Financial Economics 135(2), 445–467; publisher-supplied abstract in RePEc",
+    "date": "2020",
+    "url": "https://ideas.repec.org/a/eee/jfinec/v135y2020i2p445-467.html",
+    "doi": "10.1016/j.jfineco.2019.06.003",
+    "type": "Peer-reviewed quasi-experimental research; original publisher-supplied abstract read in RePEc",
+    "verified": true,
+    "findings": "The authors report increased municipal borrowing costs after newspaper closures and associate lost monitoring with higher government wages and deficits and more costly financing practices. They argue the identified effect is causal and not explained by underlying economic conditions.",
+    "limitations": "Publisher page and SSRN blocked browser access; RePEc explicitly identifies publisher-supplied bibliographic content and reproduced the original abstract. Full identification and robustness sections were not inspected. The abstract's 5–11-basis-point and per-issue dollar estimates are deliberately omitted from the chapter because sample-period and financing details were not verified.",
+    "stats": [],
+    "aliases": [
+      "E06"
+    ],
+    "number": 47
+  },
+  {
+    "id": "E08",
+    "title": "The State of Local News 2026",
+    "authors": [
+      "Zach Metzger",
+      "John Volk"
+    ],
+    "publisher": "Medill Local News Initiative, Northwestern University",
+    "date": "2026-10-13",
+    "url": "https://localnewsinitiative.northwestern.edu/projects/state-of-local-news/2026/report/",
+    "type": "Original research inventory; executive summary and landscape/methodological discussion read",
+    "verified": true,
+    "findings": "Reports 238 news-desert counties, over 1,400 additional counties with one remaining local source, and 170 newspapers closed or merged over the preceding year. Discusses startups, philanthropic support, local television newsrooms, and a change incorporating ethnic/foreign-language outlets into their respective categories.",
+    "limitations": "Counts concern locally based professional sources, not absence of every information source or external broadcast signal. Closures and mergers are combined in the 170 figure. Methodology changed, so simple year-to-year comparisons require attention to classification. Inventory is not itself a causal study of attitudes or governance quality.",
+    "stats": [
+      {
+        "value": "238",
+        "period": "2026 report, published October 13, 2026",
+        "population": "U.S. counties in Medill's local-news inventory",
+        "denominator": "Counties without a locally based professional local-news source under the report's definition"
+      },
+      {
+        "value": "More than 1,400",
+        "period": "2026 inventory",
+        "population": "U.S. counties with local-news sources",
+        "denominator": "Additional counties with only one remaining source; not included among the 238 zero-source counties"
+      },
+      {
+        "value": "170",
+        "period": "Year preceding the October 2026 report",
+        "population": "Newspapers tracked in the local-news inventory",
+        "denominator": "Count of newspapers closed or merged, not 170 independently verified newsroom closures"
+      }
+    ],
+    "aliases": [
+      "E08"
+    ],
+    "number": 48
+  },
+  {
+    "id": "E09",
+    "title": "Trust in Media at New Low of 28% in U.S.",
+    "authors": [
+      "Megan Brenan"
+    ],
+    "publisher": "Gallup",
+    "date": "2025-10-02",
+    "url": "https://news.gallup.com/poll/695762/trust-media-new-low.aspx",
+    "type": "Original survey analysis; article and question description read",
+    "verified": true,
+    "findings": "Reports 28% of U.S. adults expressed a great deal or fair amount of confidence in newspapers, television, and radio to report news fully, accurately, and fairly in its September 2025 survey.",
+    "limitations": "Measures reported confidence with specific wording, not the measured accuracy of publications. It is a 2025 reading and is labeled as such, not presented as a verified 2026 estimate or as evidence identifying the causes of distrust.",
+    "stats": [
+      {
+        "value": "28%",
+        "period": "Survey conducted September 2–16, 2025",
+        "population": "U.S. adults surveyed by Gallup",
+        "denominator": "Respondents expressing a great deal or fair amount of trust/confidence in the specified mass-media reporting question"
+      }
+    ],
+    "aliases": [
+      "E09"
+    ],
+    "number": 49
+  },
+  {
+    "id": "E10",
+    "title": "Rescissions Act of 2025, Public Law 119-28, section 2(b)(20)",
+    "authors": [
+      "United States Congress"
+    ],
+    "publisher": "U.S. Government Publishing Office",
+    "date": "2025-07-24",
+    "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ28/html/PLAW-119publ28.htm",
+    "type": "Enacted federal statute; operative provision read",
+    "verified": true,
+    "findings": "Section 2(b)(20)(A) rescinds amounts made available for CPB for fiscal year 2026 by Public Law 118-47; subparagraph (B) rescinds amounts made available for fiscal year 2027 by Public Law 119-4. The Act was approved July 24, 2025.",
+    "limitations": "This provision rescinds specified appropriations. It should not be described as prohibiting public-media operations, directly dissolving every local station, or itself proving every subsequent legal winding-up step. No unverified total-dollar figure is asserted.",
+    "stats": [],
+    "aliases": [
+      "E10"
+    ],
+    "number": 50
+  },
+  {
+    "id": "E11",
+    "title": "Corporation for Public Broadcasting Board Votes to Dissolve Organization in Act of Responsible Stewardship to Protect the Future of Public Media",
+    "authors": [
+      "Corporation for Public Broadcasting"
+    ],
+    "publisher": "Corporation for Public Broadcasting; original release preserved by Internet Archive",
+    "date": "2026-01-05",
+    "url": "https://web.archive.org/web/20260105235905/https://cpb.org/pressroom/corporation-public-broadcasting-board-votes-dissolve-organization-act-responsible",
+    "original_url": "https://cpb.org/pressroom/corporation-public-broadcasting-board-votes-dissolve-organization-act-responsible",
+    "type": "Primary institutional announcement; complete release read in a January 5, 2026 archival capture",
+    "verified": true,
+    "findings": "CPB announced its board had voted to dissolve the corporation following federal defunding. It described an orderly closure, remaining-funds distribution, and archive preservation. The release explicitly distinguishes CPB's ending from continuing local stations, producers, journalists, and educators.",
+    "limitations": "A board announcement establishes the decision and stated process, not independent proof of when all legal dissolution formalities finished. Statements about motives, political attacks, and institutional benefits are CPB's characterizations and are not adopted as independent causal findings. CPB must be distinguished from NPR, PBS, and local stations.",
+    "stats": [],
+    "aliases": [
+      "E11"
+    ],
+    "number": 51
+  },
+  {
+    "id": "E13",
+    "title": "Murthy v. Missouri, No. 23-411",
+    "authors": [
+      "Supreme Court of the United States"
+    ],
+    "publisher": "U.S. Supreme Court; opinion reproduced by Cornell Legal Information Institute",
+    "date": "2024-06-26",
+    "url": "https://www.law.cornell.edu/supremecourt/text/23-411",
+    "type": "Primary judicial opinion; syllabus and majority standing analysis read",
+    "verified": true,
+    "findings": "Held the plaintiffs had not established Article III standing for the prospective injunction sought against government defendants. The majority addressed traceability, likely future injury, and redressability given platforms' independent choices.",
+    "limitations": "A standing decision, not a general merits holding that all government contacts or pressure are constitutional, or that unlawful coercion never occurs. The chapter does not turn the procedural holding into a conclusion about every alleged instance of moderation pressure.",
+    "stats": [],
+    "aliases": [
+      "E13"
+    ],
+    "number": 52
+  },
+  {
+    "id": "E14",
+    "title": "A digital media literacy intervention increases discernment between mainstream and false news in the United States and India",
+    "authors": [
+      "Andrew M. Guess",
+      "Michael Lerner",
+      "Benjamin Lyons",
+      "Jacob M. Montgomery",
+      "Brendan Nyhan",
+      "Jason Reifler",
+      "Neelanjan Sircar"
+    ],
+    "publisher": "Proceedings of the National Academy of Sciences",
+    "date": "2020",
+    "url": "https://doi.org/10.1073/pnas.1920498117",
+    "verification_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1073/pnas.1920498117&format=json&resultType=core",
+    "type": "Peer-reviewed preregistered survey experiments; original abstract read through Europe PMC",
+    "verified": true,
+    "findings": "A digital-literacy tips intervention improved discrimination between mainstream and false headlines in a U.S. sample and a highly educated Indian online sample, with different durability and no effect in a largely rural northern Indian sample. Perceived accuracy fell for mainstream headlines as well, but less than for false headlines.",
+    "limitations": "Headline discernment is not the same as durable civic behavior. Effects differed by population and persistence. The chapter omits percentage improvements to avoid implying identical baselines or universal effects.",
+    "stats": [],
+    "aliases": [
+      "E14"
+    ],
+    "number": 53
+  },
+  {
+    "id": "E15",
+    "title": "The effects of Facebook and Instagram on the 2020 election: A deactivation experiment",
+    "authors": [
+      "Hunt Allcott",
+      "et al."
+    ],
+    "publisher": "Proceedings of the National Academy of Sciences",
+    "date": "2024",
+    "url": "https://doi.org/10.1073/pnas.2321584121",
+    "verification_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1073/pnas.2321584121&format=json&resultType=core",
+    "type": "Peer-reviewed randomized deactivation experiments; original abstract read through Europe PMC",
+    "verified": true,
+    "findings": "Randomized subsets of Facebook and Instagram participants to deactivate for six weeks before the 2020 U.S. election. Effects on issue and affective polarization, perceived election legitimacy, candidate favorability, and turnout were precisely estimated and close to zero. Some other participation and information outcomes changed; the abstract separates secondary analyses and findings not meeting preregistered thresholds.",
+    "limitations": "Not a test of every historical or long-term platform effect. Volunteer samples, a six-week intervention, and replacement activities limit extrapolation. Findings differ from the 2018-election deactivation study; the chapter does not claim the reasons for that difference are conclusively known.",
+    "stats": [
+      {
+        "value": "6 weeks",
+        "period": "Before the 2020 U.S. presidential election",
+        "population": "Facebook and Instagram study participants assigned to deactivation",
+        "denominator": "Experimental treatment duration"
+      }
+    ],
+    "aliases": [
+      "E15"
+    ],
+    "number": 54
+  }
+]

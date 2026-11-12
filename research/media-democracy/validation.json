@@ -1,0 +1,21 @@
+{
+  "pages": 40,
+  "chapter_words": 16361,
+  "distinct_sources": 54,
+  "stable_source_ids": 57,
+  "pdf_link_annotations": 185,
+  "pdf_bytes": 340983,
+  "title": "Who Shapes What America Knows? Media, Polarization, and U.S. Democracy",
+  "output": "output\\pdf\\who-shapes-what-america-knows.pdf",
+  "source_cutoff": "2026-11-11",
+  "compiled": "2026-11-12",
+  "external_agent_review": "Not yet performed",
+  "visual_review": "Passed: all pages rendered; contact sheets and larger cover, contents, ownership table, glossary, and bibliography samples inspected",
+  "chapter_pages": 30,
+  "chapter_first_page": 4,
+  "chapter_last_page": 33,
+  "external_source_links": 159,
+  "out_of_page_characters": 0,
+  "blank_pages": 0,
+  "pdf_sha256": "533171d9f55f8a0e3d38d78e905207c0682d562c859c40c2f42060b46f01d8b4"
+}

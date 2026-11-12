@@ -14,7 +14,7 @@ Use `codex/`, `claude/`, or `antigravity/` branch prefixes and focused pull requ
 
 ## Current phase and working style
 
-The user has requested discovery and a conversation before further product building. Inventory existing work, suggest concrete options, ask focused questions, and wait for alignment before executing a new product plan. Creating the coordination files and task claims is part of this setup.
+The user confirmed on November 12, 2026 that the existing research report PDF should be finished and added to GitHub as the first substantial report. Codex owns Issue #1. Other new product work remains in discovery: suggest concrete options and ask focused questions before substantial execution.
 
 Be economical: avoid rereading large files, repeated research, unnecessary delegation, broad rewrites, and long status reports. Before starting a new token-expensive task, describe its approximate steps and wait for confirmation. Record handoff points when context or tooling limits prevent progress.
 
@@ -26,11 +26,18 @@ Claude Code can review long-form writing and strategy; Codex can handle structur
 - No nickname branding, name-origin story, or decorative personal signature.
 - Broad curiosity: government, media, culture, and other subjects.
 - Newspaper identity; social content uses minimal words, strong headlines, and one useful idea per post.
-- Gen Z relevance is a stated social-content aim. Do not assume every young reader has the same interests or political views.
+- Audience: primarily Peter's high-school community, including students who recognize headlines but want more context. Political polarization is a concern to investigate, not a diagnosis of every classmate. Explain without talking down to readers or telling them what political position to hold.
+- Cadence: one post per week. The posting day and the cadence for full reports are not yet agreed. Do not silently turn this into daily output or a new long report every week.
 - Do not invent reporting, quotations, audience metrics, research findings, or platform capabilities. Date statistics, identify denominators, and link sources near significant claims.
 - Separate reporting, interpretation, opinion, and corporate or advocacy statements.
 - Use gstack `/browse` for all web browsing. Never use `mcp__claude-in-chrome__*`. If browsing is unavailable, record the blocker rather than claiming verification.
 - Review dated transactions carefully: an announced deal is not a completed deal.
+
+## Questions, topic pitches, and private context
+
+Peter explicitly wants agents to ask him questions and propose topics that fit his interests. Read the known preferences first; ask about what remains unknown rather than repeating settled questions. Coordinate through Issue #2. Bring specific story questions and explain why they might fit, then let him choose before substantial drafting.
+
+He suggested college applications as possible background. Consult only material he has shared or authorized; ask which file if access or identity is unclear. Application material is private research context, not public content. Do not commit essays, private document URLs, named classmates' experiences, or sensitive biographical details to this public repository. Ask before quoting or publishing personal material. Record only approved editorial preferences in `DISCOVERIES.md`.
 
 ## Repository and publishing
 

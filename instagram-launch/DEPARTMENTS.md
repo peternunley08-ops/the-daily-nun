@@ -1,5 +1,7 @@
 # The Daily Nun: working newsroom
 
+Current decision, November 12, 2026: one post weekly for Peter's high-school audience. The relative-day sequence below is an earlier planning example, not the active cadence. Read `../AGENTS.md`, `../DISCOVERIES.md`, and open Issues before new work.
+
 **Publisher and owner:** Peter Nunley.  
 **Chief Editorial and Publishing Officer:** the assistant, coordinating the work in this chat.
 

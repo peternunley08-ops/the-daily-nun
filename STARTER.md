@@ -2,6 +2,8 @@
 
 Latest addition, November 12, 2026: [six current-media Stories](stories-current-media/index.html), with 1080 × 1920 PNGs, copy, sources, and accessibility descriptions. Download [the Story pack](daily-nun-current-media-stories.zip). These supplement the earlier launch pack.
 
+First substantial report: [Who Shapes What America Knows?](research/media-democracy/README.md), including the PDF, editable text, and source ledgers. The current preference is **one post weekly**, primarily for Peter's high-school community. This supersedes earlier sample launch schedules; future full-report frequency is not yet agreed.
+
 Working identity for The Daily Nun, by Peter Nunley. This is an unpublished concept and draft editorial package.
 
 ## The idea
@@ -13,7 +15,7 @@ A personal, independent publication about the things Peter wants to understand: 
 **Tagline:** A closer look at the world.  
 **Suggested Instagram bio:** A closer look at government, media, culture & whatever has me curious. Written by Peter Nunley.
 
-Keep the name broad. Let curiosity connect the subjects. Begin with one substantial piece each week, accompanied by one explanatory Instagram carousel and one shorter notebook post. “Daily” is the publication's name; the schedule can grow with Peter's interests and available time.
+Keep the name broad. Let curiosity connect the subjects. Begin with one social post each week, drawing on existing research where useful. “Daily” is the publication's name; a new full report every week is not an agreed commitment.
 
 ## Recommended format
 

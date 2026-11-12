@@ -1,0 +1,43 @@
+name: Content & Editorial Standards Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Build & Integrity Scripts
+        run: |
+          node stories-current-media/build.mjs
+          node instagram-launch/build-launch.mjs
+          node posts/01-who-picked-this/build.mjs
+          node posts/02-who-is-responsible/build.mjs
+
+      - name: Verify Strict Brand & Tone Rules
+        run: |
+          node -e '
+            const fs = require("fs");
+            const glob = ["posts/01-who-picked-this/post.json", "posts/02-who-is-responsible/post.json", "instagram-launch/content.json"];
+            const bannedNicknames = /p[-\s._\u2010-\u2015]*nun\b/i;
+            for (const file of glob) {
+              if (fs.existsSync(file)) {
+                const data = fs.readFileSync(file, "utf8");
+                if (bannedNicknames.test(data)) {
+                  console.error("FAILED: Banned nickname branding found in " + file);
+                  process.exit(1);
+                }
+              }
+            }
+            console.log("Brand integrity checks passed.");
+          '

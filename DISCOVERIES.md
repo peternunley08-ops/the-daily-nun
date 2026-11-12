@@ -14,7 +14,7 @@ Keep entries concise and dated. Record the agent, task Issue, evidence, decision
 
 ### Report PDF: existing work, not a completed deliverable
 
-- Task claim: [Issue #1 - Codex report PDF](https://github.com/peternunley08-ops/the-daily-nun/issues/1). Agent owner: Codex; status: active after Peter's November 12 confirmation to finish and add the PDF to GitHub.
+- Task claim: [Issue #1 - Codex report PDF](https://github.com/peternunley08-ops/the-daily-nun/issues/1). Agent owner: Codex; status: complete. [PR #4](https://github.com/peternunley08-ops/the-daily-nun/pull/4) merged the report and handoff into `main`; GitHub Pages deployment succeeded.
 - The user requested the earlier media/polarization/U.S.-democracy report as a PDF. Codex started research before the new coordination brief arrived.
 - Ten chapter drafts and four source ledgers have now been copied into `research/media-democracy/chapters/` and `research/media-democracy/sources/` on the `codex/report-pdf` branch. Do not restart the research independently.
 - Source verification uses `/browse`. Ledgers record abstract-only access and other limits. The first PDF edition is assembled in `research/media-democracy/output/pdf/who-shapes-what-america-knows.pdf`, with editable chapters, a linked reading edition, glossary, bibliography, and validation record alongside it.

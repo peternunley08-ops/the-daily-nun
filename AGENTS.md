@@ -14,7 +14,7 @@ Use `codex/`, `claude/`, or `antigravity/` branch prefixes and focused pull requ
 
 ## Current phase and working style
 
-The user confirmed on November 12, 2026 that the existing research report PDF should be finished and added to GitHub as the first substantial report. Codex owns Issue #1. Other new product work remains in discovery: suggest concrete options and ask focused questions before substantial execution.
+The first substantial research report was delivered on November 12, 2026 through PR #4; Issue #1 is complete. Its PDF, text, sources, and handoff are in `research/media-democracy/`. Do not recreate it. Claim a focused follow-up for any review. Other new product work remains in discovery: suggest concrete options and ask focused questions before substantial execution.
 
 Be economical: avoid rereading large files, repeated research, unnecessary delegation, broad rewrites, and long status reports. Before starting a new token-expensive task, describe its approximate steps and wait for confirmation. Record handoff points when context or tooling limits prevent progress.
 

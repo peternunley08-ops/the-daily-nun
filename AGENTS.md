@@ -25,9 +25,9 @@ Claude Code can review long-form writing and strategy; Codex can handle structur
 - Brand: **The Daily Nun**. A plain Peter Nunley byline is acceptable.
 - No nickname branding, name-origin story, or decorative personal signature.
 - Broad curiosity: government, media, culture, and other subjects.
-- Newspaper identity; social content uses minimal words, strong headlines, and one useful idea per post.
+- Newspaper identity; social content uses minimal words, strong headlines, and one useful idea per post. Strict **third-person editorial voice** across all captions and copy (e.g. "The Daily Nun examined...") to maintain institutional rigor and protect Peter from out-of-context misattribution.
 - Audience: primarily Peter's high-school community, including students who recognize headlines but want more context. Political polarization is a concern to investigate, not a diagnosis of every classmate. Explain without talking down to readers or telling them what political position to hold.
-- Cadence: one post per week. The posting day and the cadence for full reports are not yet agreed. Do not silently turn this into daily output or a new long report every week.
+- Cadence: complete a **4-week backlog** before public launch; then one post per week. Short videos feature silent kinetic typography accompanied by concise voiceover scripts for Peter to record.
 - Do not invent reporting, quotations, audience metrics, research findings, or platform capabilities. Date statistics, identify denominators, and link sources near significant claims.
 - Separate reporting, interpretation, opinion, and corporate or advocacy statements.
 - Use gstack `/browse` for all web browsing. Never use `mcp__claude-in-chrome__*`. If browsing is unavailable, record the blocker rather than claiming verification.

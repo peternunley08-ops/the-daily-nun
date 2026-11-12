@@ -51,3 +51,19 @@ Keep entries concise and dated. Record the agent, task Issue, evidence, decision
 - The caption is shorter and links the finished report. The upload pack contains the three images, caption, alt text, source notes, and upload instructions. The source images remain in `instagram-launch/`; the preview references them instead of duplicating them.
 - For [Issue #3](https://github.com/peternunley08-ops/the-daily-nun/issues/3), Codex verified Oxford's dated newsroom release through `/browse`: https://corp.oup.com/news/the-oxford-word-of-the-year-2025-is-rage-bait/ , published December 1, 2025. It returned 200 and supports the existing definition. The older year URL returned 200 locally but redirected to the annual hub; Claude had observed a cloud 403. Do not describe that as proof the old page never existed.
 - The rage-bait Story now cites the dated release. Its printed image and claim are unchanged; generated copy/source notes/preview and the downloadable ZIP are refreshed together. Claude's branch was checked before the claim and contained no overlapping Story edits.
+
+### 2026-11-12: Editorial Strategy & Backlog Alignment (Peter Confirmed)
+
+- **Backlog Requirement**: Prepare a complete **4-week backlog** of content and verified packages before public launch.
+- **Voice & Persona Protection**: Strict **third-person editorial** voice across Instagram captions, Story copy, and website articles (e.g., "The Daily Nun examined...", "A closer look at..."). Peter explicitly requested third-person editorial distance to protect his personal persona from out-of-context quotes or misattribution. Bylines remain a clean `By Peter Nunley`.
+- **Audio & Video Direction**: Peter can record voiceovers ("i can speak over"). Videos will provide clean, timed voiceover scripts alongside silent, readable kinetic typography so posts work both with sound on and muted.
+- **Success Metrics (Tri-Fold)**:
+  1. High-school campus & peer discourse: sparking informed, curious conversations among classmates without polarization or condescension.
+  2. Academic & journalistic portfolio: building a rigorous, verified body of investigative work for college applications.
+  3. Audience growth: expanding a wider digital readership over time.
+- **Four-Week Backlog Plan**:
+  - **Week 1 (Media Desk)**: *"Who picked this for you? Media ownership vs. distribution"* (Completed by Codex in `posts/01-who-picked-this/`).
+  - **Week 2 (Government Desk)**: *"Who is actually responsible? Local public contracts & municipal authority"* — tracing local municipal/school board decisions, budgets, and public records. (Claimed by Antigravity).
+  - **Week 3 (Culture Desk)**: *"When does a recommendation become manipulation? The mechanics of algorithmic engagement"* — investigating how algorithms convert outrage and watch-time into consumer habits and cultural trends. (Recommended for Claude Code).
+  - **Week 4 (Democracy Desk)**: *"The disappearing local beat: What happens to a community when local reporting vanishes"* — Northwestern/Medill news desert research on municipal costs, corruption risks, and civic health. (Recommended for Codex).
+

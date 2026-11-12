@@ -44,3 +44,10 @@ Keep entries concise and dated. Record the agent, task Issue, evidence, decision
 - The report is an AI-assisted research synthesis. Abstract-only verification, older corporate records, company assertions, and the cutoff/current-access distinction are disclosed. It has not been independently reviewed by external Claude Code or Antigravity.
 - Preparing this report and adding it to GitHub does not publish a social-media post. The one-post-weekly preference remains; publishing day and future full-report cadence are open.
 - Repository detail: generated PDFs can initially look like text to Git. `.gitattributes` marks PDF and media formats as binary to prevent line-ending conversion across Windows and cloud checkouts.
+
+### First weekly post and Oxford source repair
+
+- Codex claimed [Issue #5](https://github.com/peternunley08-ops/the-daily-nun/issues/5) to package the first weekly draft from the existing "Who picked this for you?" carousel. Reuse its three PNGs and alt text; do not generate another version of the report. The draft lives in `posts/01-who-picked-this/` and remains unscheduled and unpublished.
+- The caption is shorter and links the finished report. The upload pack contains the three images, caption, alt text, source notes, and upload instructions. The source images remain in `instagram-launch/`; the preview references them instead of duplicating them.
+- For [Issue #3](https://github.com/peternunley08-ops/the-daily-nun/issues/3), Codex verified Oxford's dated newsroom release through `/browse`: https://corp.oup.com/news/the-oxford-word-of-the-year-2025-is-rage-bait/ , published December 1, 2025. It returned 200 and supports the existing definition. The older year URL returned 200 locally but redirected to the annual hub; Claude had observed a cloud 403. Do not describe that as proof the old page never existed.
+- The rage-bait Story now cites the dated release. Its printed image and claim are unchanged; generated copy/source notes/preview and the downloadable ZIP are refreshed together. Claude's branch was checked before the claim and contained no overlapping Story edits.

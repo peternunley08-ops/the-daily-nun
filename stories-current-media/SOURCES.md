@@ -14,9 +14,9 @@ Limits: The card describes a capability and disclosure policy. It does not claim
 
 ## Mad? That's the hook.
 
-[Oxford Word of the Year 2025: rage bait](https://corp.oup.com/word-of-the-year/2025/)
+[The Oxford Word of the Year 2025 is rage bait](https://corp.oup.com/news/the-oxford-word-of-the-year-2025-is-rage-bait/)
 
-Publisher: Oxford University Press / Oxford Languages. Source type: Lexicographic definition and editorial selection.
+Publisher: Oxford University Press / Oxford Languages. Published: December 1, 2025. Source type: Lexicographic definition and editorial selection.
 
 Oxford defines rage bait as online content deliberately designed to provoke anger or outrage, typically to increase traffic or engagement.
 

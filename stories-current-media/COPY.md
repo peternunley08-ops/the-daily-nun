@@ -24,7 +24,7 @@ Word of the Year 2025
 
 Image: png/02-rage-bait.png
 
-Link sticker: Read the source — https://corp.oup.com/word-of-the-year/2025/
+Link sticker: Read the source — https://corp.oup.com/news/the-oxford-word-of-the-year-2025-is-rage-bait/
 
 Accessibility description: Off-white Story with large dark headline: Mad? That's the hook. Supporting text: Rage bait is designed to turn anger into clicks and engagement. Source: Oxford Languages, Word of the Year 2025. The Daily Nun masthead.
 

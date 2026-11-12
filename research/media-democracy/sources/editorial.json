@@ -1,0 +1,204 @@
+[
+  {
+    "id": "H01",
+    "title": "Warm Relations With Trump Appear To Benefit Sinclair Broadcasting",
+    "authors": ["David Folkenflik"],
+    "publisher": "NPR, Morning Edition",
+    "date": "2018-04-03",
+    "url": "https://www.npr.org/2018/04/03/599077733/warm-relations-with-trump-appears-to-benefit-sinclair-broadcasting",
+    "type": "Contemporaneous journalism: interview transcript",
+    "verified": true,
+    "findings": "Read the NPR transcript through gstack /browse. NPR reported that Sinclair instructed local anchors to deliver common media-bias promotions, that a compilation made their repeated wording visible, and that Sinclair denied a political agenda and defended the promotions as support for fair and objective reporting. The chapter uses the case to establish organizational direction rather than audience persuasion.",
+    "limitations": "Reporting and analysis, not an experiment measuring audience effects. Corporate explanations are attributed statements. No station-count statistic or present-day ownership claim is derived from this 2018 report.",
+    "stats": []
+  },
+  {
+    "id": "H02",
+    "title": "Local News and National Politics",
+    "authors": ["Gregory J. Martin", "Joshua McCrain"],
+    "publisher": "American Political Science Review, Cambridge University Press",
+    "date": "2019-02-19",
+    "url": "https://doi.org/10.1017/S0003055418000965",
+    "type": "Original research: observational acquisition study",
+    "verified": true,
+    "findings": "Read publisher-deposited abstract and bibliographic metadata through the Crossref API using gstack /browse. The abstract reports that acquired stations increased national political coverage at the expense of local politics, shifted coverage rightward, and had a small decline in viewership relative to other programs in the same markets. These findings support a supply-side role in programming changes.",
+    "limitations": "Accessed the publisher-deposited abstract and metadata, not the full paper or replication materials. Findings concern the acquisitions and period examined; they do not establish a universal merger effect or directly measure every consequence for voters. No numerical treatment effect is used.",
+    "stats": []
+  },
+  {
+    "id": "H03",
+    "title": "The Constitution of the United States: A Transcription",
+    "authors": ["United States Constitutional Convention"],
+    "publisher": "National Archives and Records Administration",
+    "date": "1787-09-17",
+    "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+    "type": "Primary constitutional text",
+    "verified": true,
+    "findings": "Read the National Archives transcription through gstack /browse. Articles I, II, and III establish the federal legislative, executive, and judicial institutions; the text supplies mechanisms involving legislation, appropriations, appointments, and impeachment. The report identifies the dependence of oversight on information as analysis, rather than a quoted constitutional command.",
+    "limitations": "The original text must be read alongside subsequent amendments. The report does not present the original provisions for Senate selection or presidential election as current rules. Constitutional text establishes legal structures, not causal evidence about journalism.",
+    "stats": []
+  },
+  {
+    "id": "H04",
+    "title": "The Bill of Rights: A Transcription",
+    "authors": ["United States Congress"],
+    "publisher": "National Archives and Records Administration",
+    "date": "1791-12-15",
+    "url": "https://www.archives.gov/founding-docs/bill-of-rights-transcript",
+    "type": "Primary constitutional text",
+    "verified": true,
+    "findings": "Read the transcription of the first ten amendments through gstack /browse. The First Amendment protects religion, speech, the press, assembly, and petition. The Tenth Amendment reserves powers not delegated to the United States, or prohibited to the states, to the states or the people.",
+    "limitations": "Ratification date supplied as the document date. The constitutional wording does not by itself resolve the application of every modern platform rule or allocate a specific contemporary policy decision; those questions require relevant cases and laws.",
+    "stats": []
+  },
+  {
+    "id": "H05",
+    "title": "Miami Herald Publishing Co. v. Tornillo, 418 U.S. 241",
+    "authors": ["Supreme Court of the United States"],
+    "publisher": "Cornell Legal Information Institute, reproduction of Supreme Court opinion",
+    "date": "1974-06-25",
+    "url": "https://www.law.cornell.edu/supremecourt/text/418/241",
+    "type": "Primary judicial opinion",
+    "verified": true,
+    "findings": "Read the syllabus and opinion through gstack /browse. The Court held that Florida's newspaper right-of-reply statute violated the First Amendment. Its reasoning protected editorial judgment and considered both resource burdens and government intrusion into editorial decisions. The underlying dispute concerned Pat Tornillo's effort to answer critical editorials during his 1972 candidacy.",
+    "limitations": "A case about compelled reply in a newspaper, not a blanket exemption of every media business practice from regulation. Arguments about newspaper concentration recited in the opinion are not treated as independently verified industry measurements.",
+    "stats": []
+  },
+  {
+    "id": "H06",
+    "title": "Red Lion Broadcasting Co. v. FCC, 395 U.S. 367",
+    "authors": ["Supreme Court of the United States"],
+    "publisher": "Cornell Legal Information Institute, reproduction of Supreme Court opinion",
+    "date": "1969-06-09",
+    "url": "https://www.law.cornell.edu/supremecourt/text/395/367",
+    "type": "Primary judicial opinion",
+    "verified": true,
+    "findings": "Read the syllabus and relevant opinion passages through gstack /browse. The Court upheld the challenged fairness-doctrine applications and associated rules in the broadcast regime before it, explaining the frequency-scarcity and licensing rationale. The opinion distinguishes the fairness doctrine from candidate provisions and describes disorder in frequency allocation before the 1927 licensing framework.",
+    "limitations": "The historical broadcasting rationale does not establish an identical legal rule for newspapers or every internet service. The decision is not presented as requiring retention of the fairness doctrine forever. Later FCC constitutional reasoning is not recast as a subsequent Supreme Court holding.",
+    "stats": []
+  },
+  {
+    "id": "H07",
+    "title": "Moody v. NetChoice, LLC, No. 22-277",
+    "authors": ["Supreme Court of the United States"],
+    "publisher": "Cornell Legal Information Institute, reproduction of Supreme Court opinion",
+    "date": "2024-07-01",
+    "url": "https://www.law.cornell.edu/supremecourt/text/22-277",
+    "type": "Primary judicial opinion",
+    "verified": true,
+    "findings": "Read the extended syllabus and discussion through gstack /browse. The Court vacated the lower-court judgments and remanded because the facial challenges required a more complete analysis of covered services and functions. The opinion explains that selecting and presenting third-party speech can involve protected editorial discretion.",
+    "limitations": "The report describes the dated 2024 decision. It does not claim to verify every subsequent proceeding, settle every application of the Florida and Texas laws, or exempt all platform functions from regulation.",
+    "stats": []
+  },
+  {
+    "id": "H08",
+    "title": "Telecommunications Act of 1996, Public Law 104-104, section 202",
+    "authors": ["United States Congress"],
+    "publisher": "U.S. Government Publishing Office, GovInfo",
+    "date": "1996-02-08",
+    "url": "https://www.govinfo.gov/content/pkg/PLAW-104publ104/html/PLAW-104publ104.htm",
+    "type": "Primary statute: original enactment",
+    "verified": true,
+    "findings": "Read section 202 of the official enactment through gstack /browse. It directed removal of the national AM/FM station-number cap, retained local radio limits by market size, eliminated the national television station-number restriction, and raised the then national television audience-reach limit to 35 percent. The law also directed consideration of local television restrictions.",
+    "limitations": "These are the original 1996 provisions, not a claim about the applicable national television reach cap in 2026. Legal permission to acquire stations is distinct from evidence of a particular acquisition's content or democratic effects.",
+    "stats": [
+      {
+        "value": "Up to 8 commercial stations, with no more than 5 in the same service",
+        "period": "1996 enactment",
+        "population": "Single owners in local radio markets containing at least 45 commercial radio stations",
+        "denominator": "Commercial radio stations in the relevant local market; the same-service sublimit distinguishes AM and FM"
+      },
+      {
+        "value": "35 percent national audience reach",
+        "period": "1996 enactment",
+        "population": "National television-station ownership portfolios covered by the statute",
+        "denominator": "National television audience reach under the then applicable FCC ownership framework"
+      }
+    ]
+  },
+  {
+    "id": "H09",
+    "title": "47 U.S.C. § 230: Protection for private blocking and screening of offensive material",
+    "authors": ["United States Congress"],
+    "publisher": "Cornell Legal Information Institute, U.S. Code reproduction",
+    "date": "1996-02-08 (enacted; accessed codification includes subsequent amendments)",
+    "url": "https://www.law.cornell.edu/uscode/text/47/230",
+    "type": "Primary statute: codified text",
+    "verified": true,
+    "findings": "Read the codified statute through gstack /browse. Section 230(c)(1) addresses treating an interactive computer service provider or user as publisher or speaker of information supplied by another information content provider. The text also provides certain moderation protections and exceptions involving criminal law, intellectual property, privacy, and sex-trafficking matters. The central protection is not expressed as a general political-neutrality condition.",
+    "limitations": "The accessed codification contains amendments after original enactment. The provision is not blanket immunity from every law; application to particular conduct requires relevant facts and judicial interpretation. The chapter uses only the core statutory distinction.",
+    "stats": []
+  },
+  {
+    "id": "H10",
+    "title": "47 CFR § 73.1941: Equal opportunities",
+    "authors": ["Federal Communications Commission"],
+    "publisher": "Cornell Legal Information Institute, e-CFR reproduction",
+    "date": "1992-01-03; amended 1994-03-29 (rule history)",
+    "url": "https://www.law.cornell.edu/cfr/text/47/73.1941",
+    "type": "Primary regulation",
+    "verified": true,
+    "findings": "Read the full rule through gstack /browse. Equal-opportunity requirements address qualifying candidate uses of a station; listed exemptions cover bona fide newscasts, news interviews, specified documentary appearances, and on-the-spot news events. This is distinct from a general rule requiring equal time for all political opinions in ordinary news.",
+    "limitations": "The supplied date describes rule history rather than the publication date of the web reproduction. Candidate qualification, uses, access, and statutory cross-references can require additional legal analysis. The chapter does not provide advice about an individual election broadcast.",
+    "stats": []
+  },
+  {
+    "id": "H11",
+    "title": "In re Complaint of Syracuse Peace Council against Television Station WTVH, Syracuse, New York: Memorandum Opinion and Order, FCC 87-266",
+    "authors": ["Federal Communications Commission"],
+    "publisher": "Federal Communications Commission, 2 FCC Rcd 5043",
+    "date": "1987-08-06 (released; adopted 1987-08-04)",
+    "url": "https://docs.fcc.gov/public/attachments/FCC-87-266A1.pdf",
+    "type": "Primary regulatory decision",
+    "verified": true,
+    "findings": "Downloaded the official FCC scan using gstack /browse, then rendered and visually inspected selected pages, including the opening order at 2 FCC Rcd 5043. Paragraph 2 states the Commission's conclusion that the fairness doctrine violated the First Amendment and contravened the public interest; the order vacates its earlier WTVH orders. The first page records adoption on August 4 and release on August 6, 1987.",
+    "limitations": "The 29-page source is a scan; selected relevant pages were visually checked rather than all pages fully transcribed. The constitutional conclusions are the FCC's reasoning, not a new Supreme Court holding. The report does not infer a numerical polarization effect or claim to document the later removal of residual rule text.",
+    "stats": []
+  },
+  {
+    "id": "H12",
+    "title": "Formation of Political Parties",
+    "authors": ["Library of Congress"],
+    "publisher": "Library of Congress, Creating the United States exhibition",
+    "date": "n.d. (archival items discussed include 1792–1800)",
+    "url": "https://www.loc.gov/exhibits/creating-the-united-states/formation-of-political-parties.html",
+    "type": "Archival exhibition with primary documents and curatorial interpretation",
+    "verified": true,
+    "findings": "Read relevant exhibition passages and item captions through gstack /browse. The exhibition identifies James Madison's September 22, 1792 National Gazette essay concerning parties and presents materials on the Alien and Sedition Acts, criticism of government, and imprisoned newspaper publishers and writers.",
+    "limitations": "An archival exhibition selects and interprets historical items; it is not a representative quantitative history of all early newspapers. Historical party names are not equated with present-day parties. The exact item title is omitted because the exhibition's caption and explanatory wording differ.",
+    "stats": []
+  },
+  {
+    "id": "H13",
+    "title": "News vs. Entertainment: How Increasing Media Choice Widens Gaps in Political Knowledge and Turnout",
+    "authors": ["Markus Prior"],
+    "publisher": "American Journal of Political Science",
+    "date": "2005-05-18 (online publication metadata)",
+    "url": "https://doi.org/10.1111/j.1540-5907.2005.00143.x",
+    "type": "Original research: survey-based study",
+    "verified": true,
+    "findings": "Read publisher-deposited abstract and bibliographic metadata through Crossref using gstack /browse. The abstract describes a representative survey of 2,358 U.S. residents and reports that increasing choice widens differences in political knowledge and turnout associated with preferences for news versus entertainment.",
+    "limitations": "Read the publisher-deposited abstract and metadata, not the full methods or replication materials. Fieldwork dates were not established from the accessed abstract. The report dates the study and does not portray it as a contemporary platform experiment or assert that every user has the same response.",
+    "stats": [
+      {
+        "value": "2,358 survey respondents",
+        "period": "Study published in 2005; fieldwork dates not established in the accessed abstract",
+        "population": "U.S. residents in the representative survey described by the author",
+        "denominator": "The survey sample, not the entire U.S. population"
+      }
+    ]
+  },
+  {
+    "id": "H14",
+    "title": "Press Coverage and Political Accountability",
+    "authors": ["James M. Snyder Jr.", "David Strömberg"],
+    "publisher": "National Bureau of Economic Research; published version in Journal of Political Economy",
+    "date": "2008-03 (working paper); 2010 (published version)",
+    "url": "https://www.nber.org/papers/w13878",
+    "type": "Original research: observational study using newspaper-market and district variation",
+    "verified": true,
+    "findings": "Read the NBER abstract and published-version citation through gstack /browse. The study uses variation in the fit between newspaper markets and congressional districts, including redistricting-related variation, to examine coverage, voter knowledge, representative behavior, and federal spending. The abstract reports less knowledge and differences in political behavior and spending where coverage is reduced.",
+    "limitations": "Read the working-paper abstract and bibliographic information rather than the full published methods and replication materials. The design's identifying assumptions and historical setting limit generalization; the chapter does not assert a universal effect for every type of local journalism. No numerical effect estimate is used.",
+    "stats": []
+  }
+]

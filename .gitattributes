@@ -1,0 +1,5 @@
+# Preserve generated media bytes across Windows and cloud checkouts.
+*.pdf binary
+*.png binary
+*.mp4 binary
+*.zip binary

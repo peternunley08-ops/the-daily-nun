@@ -1,0 +1,218 @@
+[
+  {
+    "id": "E01",
+    "title": "How do social media feed algorithms affect attitudes and behavior in an election campaign?",
+    "authors": ["Andrew M. Guess", "et al."],
+    "publisher": "Science",
+    "date": "2023-07-27",
+    "url": "https://doi.org/10.1126/science.abp9364",
+    "verification_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1126/science.abp9364&format=json&resultType=core",
+    "type": "Peer-reviewed randomized field experiment; original abstract verified through Europe PMC",
+    "verified": true,
+    "findings": "Assigning consenting Facebook and Instagram users to reverse-chronological feeds during the 2020 election reduced platform time and activity and altered exposure. Political and untrustworthy content increased on both platforms; other exposure measures changed in different directions. No significant effects on issue polarization, affective polarization, political knowledge, or other key attitudes were found over the study period.",
+    "limitations": "An intervention on consenting users over three months, not an estimate of all accumulated platform effects. Chronological ordering retains user-selected sources. Original abstract was read; no reanalysis of underlying data was conducted.",
+    "stats": [
+      {"value": "3 months", "period": "2020 U.S. election study", "population": "Consenting Facebook and Instagram participants", "denominator": "Duration of the experimental feed intervention; not a population share"}
+    ]
+  },
+  {
+    "id": "E02",
+    "title": "Like-minded sources on Facebook are prevalent but not polarizing",
+    "authors": ["Brendan Nyhan", "et al."],
+    "publisher": "Nature",
+    "date": "2023-07-27",
+    "url": "https://www.nature.com/articles/s41586-023-06297-w",
+    "type": "Peer-reviewed randomized field experiment and exposure analysis; abstract and main-text methods/findings read",
+    "verified": true,
+    "findings": "Reducing exposure to like-minded sources by approximately one-third among 23,377 participants altered exposure and reduced uncivil content, but produced no measurable effects on eight preregistered attitude outcomes. Replacements were not exclusively cross-cutting sources. The paper discloses its Meta collaboration and academic publication-control arrangements.",
+    "limitations": "The tested demotion did not remove the entire like-minded information diet. Participants could receive information elsewhere. Results concern the 2020 Facebook environment and specified measures; paper includes a later author correction.",
+    "stats": [
+      {"value": "23,377", "period": "September 24–December 23, 2020", "population": "Consenting U.S. adult Facebook participants with qualifying post-election survey responses", "denominator": "Study participant sample, not all Facebook users"},
+      {"value": "Approximately one-third reduction", "period": "September 24–December 23, 2020", "population": "Participants assigned to the intervention", "denominator": "Exposure to content from sources classified as like-minded relative to the comparison feed"},
+      {"value": "8", "period": "2020 experiment", "population": "Experimental participants", "denominator": "Number of preregistered attitudinal outcomes assessed"}
+    ]
+  },
+  {
+    "id": "E03",
+    "title": "The Welfare Effects of Social Media",
+    "authors": ["Hunt Allcott", "Luca Braghieri", "Sarah Eichmeyer", "Matthew Gentzkow"],
+    "publisher": "American Economic Review 110(3), 629–676",
+    "date": "2020-03",
+    "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20190658",
+    "type": "Peer-reviewed randomized field experiment; publisher abstract read",
+    "verified": true,
+    "findings": "Deactivating Facebook for four weeks before the 2018 midterm election reduced factual news knowledge and political polarization, changed time allocation, increased subjective well-being, and reduced subsequent platform use.",
+    "limitations": "Deactivation removes a broad bundle of social, entertainment, and informational experiences. It does not separately identify the algorithm's political effect. No claim of universal or permanent effects is made in the chapter.",
+    "stats": [
+      {"value": "4 weeks", "period": "Before the 2018 U.S. midterm election", "population": "Facebook users in the randomized deactivation experiment", "denominator": "Treatment duration, not a percentage of the electorate"}
+    ]
+  },
+  {
+    "id": "E04",
+    "title": "Social Media, News Consumption, and Polarization: Evidence from a Field Experiment",
+    "authors": ["Ro'ee Levy"],
+    "publisher": "American Economic Review 111(3), 831–870",
+    "date": "2021-03",
+    "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20191777",
+    "type": "Peer-reviewed randomized field experiment; publisher abstract read",
+    "verified": true,
+    "findings": "Random offers of subscriptions to conservative or liberal outlets affected the slant of sites visited. Counter-attitudinal exposure reduced negative attitudes toward the opposing party, while the author found no evidence that outlet leanings changed political opinions. The paper also analyzed the relation between subscriptions and algorithmic delivery.",
+    "limitations": "The subscription offer and tested outlet choices are specific interventions. Improved attitudes toward an opposing party should not be described as demonstrated changes in policy opinions. Study data-period detail was not extracted from the accessible abstract, so no such date is asserted in the chapter.",
+    "stats": []
+  },
+  {
+    "id": "E05",
+    "title": "Bias in Cable News: Persuasion and Polarization",
+    "authors": ["Gregory J. Martin", "Ali Yurukoglu"],
+    "publisher": "American Economic Review 107(9), 2565–2599",
+    "date": "2017-09",
+    "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20160812",
+    "type": "Peer-reviewed quasi-experimental and structural-model research; publisher abstract read",
+    "verified": true,
+    "findings": "The paper exploits cable-channel position as an outside shifter of viewing and estimates a persuasive effect of additional Fox News exposure among affected viewers. A separate model addresses selection, evolving ideology, aggregate influence, and counterfactual slant.",
+    "limitations": "Channel-placement identification assumptions and the scope of affected viewers matter. Model-based aggregate simulations should not be presented as directly observed national outcomes. The numerical effect is omitted in this chapter to avoid compressing a local estimate into a general claim.",
+    "stats": []
+  },
+  {
+    "id": "E06",
+    "title": "Financing dies in darkness? The impact of newspaper closures on public finance",
+    "authors": ["Pengjie Gao", "Chang Lee", "Dermot Murphy"],
+    "publisher": "Journal of Financial Economics 135(2), 445–467; publisher-supplied abstract in RePEc",
+    "date": "2020",
+    "url": "https://ideas.repec.org/a/eee/jfinec/v135y2020i2p445-467.html",
+    "doi": "10.1016/j.jfineco.2019.06.003",
+    "type": "Peer-reviewed quasi-experimental research; original publisher-supplied abstract read in RePEc",
+    "verified": true,
+    "findings": "The authors report increased municipal borrowing costs after newspaper closures and associate lost monitoring with higher government wages and deficits and more costly financing practices. They argue the identified effect is causal and not explained by underlying economic conditions.",
+    "limitations": "Publisher page and SSRN blocked browser access; RePEc explicitly identifies publisher-supplied bibliographic content and reproduced the original abstract. Full identification and robustness sections were not inspected. The abstract's 5–11-basis-point and per-issue dollar estimates are deliberately omitted from the chapter because sample-period and financing details were not verified.",
+    "stats": []
+  },
+  {
+    "id": "E07",
+    "title": "Press Coverage and Political Accountability",
+    "authors": ["James M. Snyder, Jr.", "David Strömberg"],
+    "publisher": "Journal of Political Economy 118(2), 355–408; accessible NBER Working Paper 13878",
+    "date": "2010; working paper issued March 2008",
+    "url": "https://www.nber.org/papers/w13878",
+    "type": "Original research working-paper abstract with published-version metadata",
+    "verified": true,
+    "findings": "Uses newspaper-market/congressional-district fit and redistricting variation to study coverage, voter knowledge, representatives' behavior, and policy. Lower coverage is linked to weaker knowledge and differences in congressional activity and federal spending.",
+    "limitations": "Working-paper abstract and published-version identification were read, not the complete published methods. The chapter describes the causal strategy and its reported results without claiming the design applies to every modern closure or publication.",
+    "stats": []
+  },
+  {
+    "id": "E08",
+    "title": "The State of Local News 2026",
+    "authors": ["Zach Metzger", "John Volk"],
+    "publisher": "Medill Local News Initiative, Northwestern University",
+    "date": "2026-10-13",
+    "url": "https://localnewsinitiative.northwestern.edu/projects/state-of-local-news/2026/report/",
+    "type": "Original research inventory; executive summary and landscape/methodological discussion read",
+    "verified": true,
+    "findings": "Reports 238 news-desert counties, over 1,400 additional counties with one remaining local source, and 170 newspapers closed or merged over the preceding year. Discusses startups, philanthropic support, local television newsrooms, and a change incorporating ethnic/foreign-language outlets into their respective categories.",
+    "limitations": "Counts concern locally based professional sources, not absence of every information source or external broadcast signal. Closures and mergers are combined in the 170 figure. Methodology changed, so simple year-to-year comparisons require attention to classification. Inventory is not itself a causal study of attitudes or governance quality.",
+    "stats": [
+      {"value": "238", "period": "2026 report, published October 13, 2026", "population": "U.S. counties in Medill's local-news inventory", "denominator": "Counties without a locally based professional local-news source under the report's definition"},
+      {"value": "More than 1,400", "period": "2026 inventory", "population": "U.S. counties with local-news sources", "denominator": "Additional counties with only one remaining source; not included among the 238 zero-source counties"},
+      {"value": "170", "period": "Year preceding the October 2026 report", "population": "Newspapers tracked in the local-news inventory", "denominator": "Count of newspapers closed or merged, not 170 independently verified newsroom closures"}
+    ]
+  },
+  {
+    "id": "E09",
+    "title": "Trust in Media at New Low of 28% in U.S.",
+    "authors": ["Megan Brenan"],
+    "publisher": "Gallup",
+    "date": "2025-10-02",
+    "url": "https://news.gallup.com/poll/695762/trust-media-new-low.aspx",
+    "type": "Original survey analysis; article and question description read",
+    "verified": true,
+    "findings": "Reports 28% of U.S. adults expressed a great deal or fair amount of confidence in newspapers, television, and radio to report news fully, accurately, and fairly in its September 2025 survey.",
+    "limitations": "Measures reported confidence with specific wording, not the measured accuracy of publications. It is a 2025 reading and is labeled as such, not presented as a verified 2026 estimate or as evidence identifying the causes of distrust.",
+    "stats": [
+      {"value": "28%", "period": "Survey conducted September 2–16, 2025", "population": "U.S. adults surveyed by Gallup", "denominator": "Respondents expressing a great deal or fair amount of trust/confidence in the specified mass-media reporting question"}
+    ]
+  },
+  {
+    "id": "E10",
+    "title": "Rescissions Act of 2025, Public Law 119-28, section 2(b)(20)",
+    "authors": ["United States Congress"],
+    "publisher": "U.S. Government Publishing Office",
+    "date": "2025-07-24",
+    "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ28/html/PLAW-119publ28.htm",
+    "type": "Enacted federal statute; operative provision read",
+    "verified": true,
+    "findings": "Section 2(b)(20)(A) rescinds amounts made available for CPB for fiscal year 2026 by Public Law 118-47; subparagraph (B) rescinds amounts made available for fiscal year 2027 by Public Law 119-4. The Act was approved July 24, 2025.",
+    "limitations": "This provision rescinds specified appropriations. It should not be described as prohibiting public-media operations, directly dissolving every local station, or itself proving every subsequent legal winding-up step. No unverified total-dollar figure is asserted.",
+    "stats": []
+  },
+  {
+    "id": "E11",
+    "title": "Corporation for Public Broadcasting Board Votes to Dissolve Organization in Act of Responsible Stewardship to Protect the Future of Public Media",
+    "authors": ["Corporation for Public Broadcasting"],
+    "publisher": "Corporation for Public Broadcasting; original release preserved by Internet Archive",
+    "date": "2026-01-05",
+    "url": "https://web.archive.org/web/20260105235905/https://cpb.org/pressroom/corporation-public-broadcasting-board-votes-dissolve-organization-act-responsible",
+    "original_url": "https://cpb.org/pressroom/corporation-public-broadcasting-board-votes-dissolve-organization-act-responsible",
+    "type": "Primary institutional announcement; complete release read in a January 5, 2026 archival capture",
+    "verified": true,
+    "findings": "CPB announced its board had voted to dissolve the corporation following federal defunding. It described an orderly closure, remaining-funds distribution, and archive preservation. The release explicitly distinguishes CPB's ending from continuing local stations, producers, journalists, and educators.",
+    "limitations": "A board announcement establishes the decision and stated process, not independent proof of when all legal dissolution formalities finished. Statements about motives, political attacks, and institutional benefits are CPB's characterizations and are not adopted as independent causal findings. CPB must be distinguished from NPR, PBS, and local stations.",
+    "stats": []
+  },
+  {
+    "id": "E12",
+    "title": "Moody v. NetChoice, LLC, Nos. 22-277 and 22-555",
+    "authors": ["Supreme Court of the United States"],
+    "publisher": "U.S. Supreme Court; opinion reproduced by Cornell Legal Information Institute",
+    "date": "2024-07-01",
+    "url": "https://www.law.cornell.edu/supremecourt/text/22-277",
+    "type": "Primary judicial opinion; syllabus and majority reasoning read",
+    "verified": true,
+    "findings": "Vacated and remanded the judgments because the lower courts had not properly analyzed the facial First Amendment challenges across the state laws' applications. Explains that selection and curation of third-party speech can constitute protected editorial discretion.",
+    "limitations": "Not a blanket immunity for all platform functions and not a definitive judgment on every application of the laws. The chapter states the historical 2024 holding and does not claim to establish every later remand development or the current enforceability of every state-law provision.",
+    "stats": []
+  },
+  {
+    "id": "E13",
+    "title": "Murthy v. Missouri, No. 23-411",
+    "authors": ["Supreme Court of the United States"],
+    "publisher": "U.S. Supreme Court; opinion reproduced by Cornell Legal Information Institute",
+    "date": "2024-06-26",
+    "url": "https://www.law.cornell.edu/supremecourt/text/23-411",
+    "type": "Primary judicial opinion; syllabus and majority standing analysis read",
+    "verified": true,
+    "findings": "Held the plaintiffs had not established Article III standing for the prospective injunction sought against government defendants. The majority addressed traceability, likely future injury, and redressability given platforms' independent choices.",
+    "limitations": "A standing decision, not a general merits holding that all government contacts or pressure are constitutional, or that unlawful coercion never occurs. The chapter does not turn the procedural holding into a conclusion about every alleged instance of moderation pressure.",
+    "stats": []
+  },
+  {
+    "id": "E14",
+    "title": "A digital media literacy intervention increases discernment between mainstream and false news in the United States and India",
+    "authors": ["Andrew M. Guess", "Michael Lerner", "Benjamin Lyons", "Jacob M. Montgomery", "Brendan Nyhan", "Jason Reifler", "Neelanjan Sircar"],
+    "publisher": "Proceedings of the National Academy of Sciences",
+    "date": "2020",
+    "url": "https://doi.org/10.1073/pnas.1920498117",
+    "verification_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1073/pnas.1920498117&format=json&resultType=core",
+    "type": "Peer-reviewed preregistered survey experiments; original abstract read through Europe PMC",
+    "verified": true,
+    "findings": "A digital-literacy tips intervention improved discrimination between mainstream and false headlines in a U.S. sample and a highly educated Indian online sample, with different durability and no effect in a largely rural northern Indian sample. Perceived accuracy fell for mainstream headlines as well, but less than for false headlines.",
+    "limitations": "Headline discernment is not the same as durable civic behavior. Effects differed by population and persistence. The chapter omits percentage improvements to avoid implying identical baselines or universal effects.",
+    "stats": []
+  },
+  {
+    "id": "E15",
+    "title": "The effects of Facebook and Instagram on the 2020 election: A deactivation experiment",
+    "authors": ["Hunt Allcott", "et al."],
+    "publisher": "Proceedings of the National Academy of Sciences",
+    "date": "2024",
+    "url": "https://doi.org/10.1073/pnas.2321584121",
+    "verification_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1073/pnas.2321584121&format=json&resultType=core",
+    "type": "Peer-reviewed randomized deactivation experiments; original abstract read through Europe PMC",
+    "verified": true,
+    "findings": "Randomized subsets of Facebook and Instagram participants to deactivate for six weeks before the 2020 U.S. election. Effects on issue and affective polarization, perceived election legitimacy, candidate favorability, and turnout were precisely estimated and close to zero. Some other participation and information outcomes changed; the abstract separates secondary analyses and findings not meeting preregistered thresholds.",
+    "limitations": "Not a test of every historical or long-term platform effect. Volunteer samples, a six-week intervention, and replacement activities limit extrapolation. Findings differ from the 2018-election deactivation study; the chapter does not claim the reasons for that difference are conclusively known.",
+    "stats": [
+      {"value": "6 weeks", "period": "Before the 2020 U.S. presidential election", "population": "Facebook and Instagram study participants assigned to deactivation", "denominator": "Experimental treatment duration"}
+    ]
+  }
+]

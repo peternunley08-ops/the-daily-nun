@@ -1,0 +1,215 @@
+[
+  {
+    "id": "M01",
+    "title": "News vs. Entertainment: How Increasing Media Choice Widens Gaps in Political Knowledge and Turnout",
+    "authors": ["Markus Prior"],
+    "publisher": "American Journal of Political Science",
+    "date": "2005",
+    "url": "https://doi.org/10.1111/j.1540-5907.2005.00143.x",
+    "type": "Original peer-reviewed research; original abstract verified through Crossref",
+    "verified": true,
+    "findings": "Expanded media choice enables different content preferences: politically interested people can consume more news, while entertainment-preferring people can avoid it. The resulting political-knowledge and participation gaps are distinct from ideological polarization.",
+    "limitations": "Historical survey and modeling evidence, not a randomized experiment showing that every increase in choice causes polarization. The original abstract was accessed through the DOI's Crossref record; the complete published methods were not reanalyzed. Verified through November 11, 2026.",
+    "stats": []
+  },
+  {
+    "id": "M02",
+    "title": "What Drives Media Slant? Evidence from U.S. Daily Newspapers",
+    "authors": ["Matthew Gentzkow", "Jesse M. Shapiro"],
+    "publisher": "Econometrica 78(1), 35–71 (2010); NBER Working Paper 12707",
+    "date": "2010; working paper issued November 2006, revised August 2007",
+    "url": "https://www.nber.org/papers/w12707",
+    "type": "Original economic research; NBER working-paper record and abstract verified",
+    "verified": true,
+    "findings": "A language-based measure of newspaper slant reveals economically significant consumer demand for congenial news. Consumer preferences help explain slant in the studied U.S. newspaper market; owner identity explains less of the measured variation.",
+    "limitations": "The findings concern a historical newspaper market, a linguistic measure, and a particular empirical model. They do not measure all omissions or establish that owners lack influence in other media or periods. The working-paper abstract was checked rather than every method in the published version. Verified through November 11, 2026.",
+    "stats": []
+  },
+  {
+    "id": "M03",
+    "title": "Out-group animosity drives engagement on social media",
+    "authors": ["Steve Rathje", "Jay J. Van Bavel", "Sander van der Linden"],
+    "publisher": "Proceedings of the National Academy of Sciences",
+    "date": "2021",
+    "url": "https://doi.org/10.1073/pnas.2024292118",
+    "type": "Original peer-reviewed observational research; original abstract verified through Europe PMC",
+    "verified": true,
+    "findings": "References to political out-groups strongly predicted sharing and related engagement in the analyzed Facebook and Twitter posts from congressional accounts and news-media organizations. The pattern is consistent with incentives for out-group hostility.",
+    "limitations": "Associations between post language and engagement do not establish that the posts caused hostility in readers, nor that all audiences or platforms respond identically. Original abstract verified in the Europe PMC indexed record; full published analysis not independently reproduced. Verified through November 11, 2026.",
+    "stats": []
+  },
+  {
+    "id": "M04",
+    "title": "Social Media and News Fact Sheet",
+    "authors": ["Christopher St. Aubin", "Joanne Haner"],
+    "publisher": "Pew Research Center",
+    "date": "2026-10-19",
+    "url": "https://www.pewresearch.org/journalism/fact-sheet/social-media-and-news-fact-sheet/",
+    "type": "Transparent survey research and fact sheet",
+    "verified": true,
+    "findings": "The August 2026 survey documents overlapping social-media news use among U.S. adults. The fact sheet explicitly identifies Facebook and Instagram as both owned by Meta.",
+    "limitations": "Self-reported news use is not measured attention, content accuracy, political persuasion, or an exclusive market share. Individuals can use several platforms, so platform percentages cannot be added to obtain a total audience. Current page read through gstack browse before the November 11, 2026 cutoff.",
+    "stats": [
+      {"value": "59% get news from social media at least sometimes", "period": "Survey August 24–30, 2026", "population": "U.S. adults", "denominator": "All U.S. adults; not only social-media users"},
+      {"value": "40% regularly get news on Facebook", "period": "Survey August 24–30, 2026", "population": "U.S. adults", "denominator": "All U.S. adults; overlapping with other platforms"},
+      {"value": "34% regularly get news on YouTube", "period": "Survey August 24–30, 2026", "population": "U.S. adults", "denominator": "All U.S. adults; overlapping with other platforms"},
+      {"value": "23% regularly get news on Instagram", "period": "Survey August 24–30, 2026", "population": "U.S. adults", "denominator": "All U.S. adults; overlapping with other platforms"},
+      {"value": "20% regularly get news on TikTok", "period": "Survey August 24–30, 2026", "population": "U.S. adults", "denominator": "All U.S. adults; overlapping with other platforms"},
+      {"value": "10% regularly get news on X", "period": "Survey August 24–30, 2026", "population": "U.S. adults", "denominator": "All U.S. adults; overlapping with other platforms"}
+    ]
+  },
+  {
+    "id": "M05",
+    "title": "News Influencers Fact Sheet",
+    "authors": ["Luxuan Wang", "Naomi Forman-Katz"],
+    "publisher": "Pew Research Center",
+    "date": "2025-11-04",
+    "url": "https://www.pewresearch.org/journalism/fact-sheet/news-influencers-fact-sheet/",
+    "type": "Transparent survey research and fact sheet",
+    "verified": true,
+    "findings": "News influencers constitute a meaningful self-reported news route, especially among young adults. Pew defines the category through sizable social followings and regular discussion of news, politics, and social issues rather than professional accreditation.",
+    "limitations": "Self-reported use does not establish accuracy, persuasion, or homogeneous standards among creators. Figures describe the August 2025 survey, not a new 2026 estimate. Page read through gstack browse; verified through November 11, 2026.",
+    "stats": [
+      {"value": "21% regularly get news from news influencers", "period": "Survey August 18–24, 2025", "population": "U.S. adults", "denominator": "All U.S. adults; population estimate, not only those asked the conditional social-news question"},
+      {"value": "38% regularly get news from news influencers", "period": "Survey August 18–24, 2025", "population": "U.S. adults ages 18–29", "denominator": "All U.S. adults ages 18–29; not all influencer users"}
+    ]
+  },
+  {
+    "id": "M06",
+    "title": "On YouTube’s recommendation system",
+    "authors": ["Cristos Goodrow"],
+    "publisher": "YouTube Official Blog",
+    "date": "2021-09-15",
+    "url": "https://blog.youtube/inside-youtube/on-youtubes-recommendation-system/",
+    "type": "Corporate statement; official explanation",
+    "verified": true,
+    "findings": "YouTube describes recommendations informed by multiple signals, including viewing, surveys, likes, sharing, and satisfaction, together with assessments intended to reduce problematic material. This is evidence of stated design objectives rather than a single universal click-maximization rule.",
+    "limitations": "Interested company account, not an independent audit. Dated September 2021; the report explicitly does not treat it as a verified description of the exact 2026 system or of effectiveness. Body read through gstack browse; verified through November 11, 2026.",
+    "stats": []
+  },
+  {
+    "id": "M07",
+    "title": "More Speech and Fewer Mistakes",
+    "authors": ["Joel Kaplan"],
+    "publisher": "Meta",
+    "date": "2025-01-07; updated 2025-05-29",
+    "url": "https://about.fb.com/news/2025/01/meta-more-speech-fewer-mistakes/",
+    "type": "Corporate statement; policy announcement",
+    "verified": true,
+    "findings": "Meta announced a U.S. move from third-party fact-checking toward Community Notes, enforcement changes, and a more personalized approach to political content on its services. It presented these as improvements to expression and accuracy.",
+    "limitations": "The company's rationale and anticipated benefits are attributed claims, not independently established effects. An announcement is not by itself proof of complete implementation; M10 supplies later 2026 policy context. Full body read through gstack browse; verified through November 11, 2026.",
+    "stats": []
+  },
+  {
+    "id": "M08",
+    "title": "How TikTok recommends videos #ForYou",
+    "authors": ["TikTok"],
+    "publisher": "TikTok Newsroom",
+    "date": "2020-06-18",
+    "url": "https://newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you",
+    "type": "Corporate statement; official explanation",
+    "verified": true,
+    "findings": "TikTok described a recommendation system informed by user interactions, video information, and device or account settings. It acknowledged the risk of narrowing recommendations and described attempts to introduce variety.",
+    "limitations": "Dated June 2020 corporate explanation, not an independent audit or a verified description of the exact 2026 system. Describing a safeguard does not demonstrate effectiveness. Full body read through gstack browse; verified through November 11, 2026.",
+    "stats": []
+  },
+  {
+    "id": "M09",
+    "title": "The political effects of X’s feed algorithm",
+    "authors": ["Germain Gauthier", "Roland Hodler", "Philine Widmer", "Ekaterina Zhuravskaya"],
+    "publisher": "Nature 652, 416–423",
+    "date": "2026-02-18",
+    "url": "https://www.nature.com/articles/s41586-026-10098-2",
+    "type": "Original peer-reviewed randomized field experiment",
+    "verified": true,
+    "findings": "Among participating active U.S. users in 2023, moving from chronological to algorithmic feeds shifted several opinions in a conservative direction. The reverse switch did not produce comparable changes. Neither switch significantly changed measured affective polarization or party identification.",
+    "limitations": "Voluntary, compensated active-user sample and a limited intervention period. Exposure was studied in 2023, despite 2026 publication; findings do not describe every user, later ownership or algorithms, long-term effects, or votes. Turning an algorithm off need not undo prior exposure. Original abstract, introduction, and design sections read through gstack browse; verified through November 11, 2026.",
+    "stats": [
+      {"value": "Seven-week feed experiment", "period": "July–September 2023", "population": "Participating active U.S. X users", "denominator": "Intervention duration, not an audience percentage or effect size"}
+    ]
+  },
+  {
+    "id": "M10",
+    "title": "How Meta Is Preparing for the 2026 US Midterm Elections",
+    "authors": ["Meta"],
+    "publisher": "Meta",
+    "date": "2026-02-19; updates 2026-06-01 and 2026-10-27",
+    "url": "https://about.fb.com/news/2026/02/meta-prepares-for-2026-us-midterms/",
+    "type": "Corporate statement; dated election-policy announcement and updates",
+    "verified": true,
+    "findings": "Describes political and social-issue ad authorization, payer disclaimers, an Ad Library, and restrictions on new ads during the final campaign week. Qualifying previously delivered ads could continue. The October 27 update describes activation of the restriction; the page also confirms Community Notes in the U.S. approach.",
+    "limitations": "Stated policy and company reports of operation do not independently establish enforcement consistency, neutrality, or political effects. The restriction concerns new ads, not a complete political-ad ban. Full body and dated updates read through gstack browse; no updates after November 11, 2026 used.",
+    "stats": [
+      {"value": "Seven-year Ad Library retention", "period": "Policy described in February 19, 2026 announcement with pre-cutoff updates", "population": "Political and social-issue ads covered by Meta's described policy", "denominator": "Policy retention duration, not an audience share or a measure of accurate ads"}
+    ]
+  },
+  {
+    "id": "M11",
+    "title": "Systematic partisan content skews in TikTok during the 2024 US elections",
+    "authors": ["Hazem Ibrahim", "HyunSeok Daniel Jang", "Nouar Aldahoul", "Aaron R. Kaufman", "Talal Rahwan", "Yasir Zaki"],
+    "publisher": "Nature 654, 1004–1011",
+    "date": "2026-05-06",
+    "url": "https://www.nature.com/articles/s41586-026-10447-1",
+    "type": "Original peer-reviewed controlled-account platform audit",
+    "verified": true,
+    "findings": "Controlled-account audits during the 2024 U.S. election found asymmetric partisan recommendations favoring Republican-aligned material under the tested conditions. The authors do not conclusively isolate an internal platform mechanism.",
+    "limitations": "Audit accounts are not human voters; observed recommendation patterns do not establish effects on attitudes or votes. Internal rules, available content, and other mechanisms cannot be conclusively separated. Study period April 30–November 11, 2024, despite publication in 2026. Original abstract, introduction, and initial methods sections read through gstack browse; verified through November 11, 2026.",
+    "stats": []
+  },
+  {
+    "id": "M12",
+    "title": "The Origins and Consequences of Affective Polarization in the United States",
+    "authors": ["Shanto Iyengar", "Yphtach Lelkes", "Matthew Levendusky", "Neil Malhotra", "Sean J. Westwood"],
+    "publisher": "Annual Review of Political Science 22, 129–146",
+    "date": "2019",
+    "url": "https://doi.org/10.1146/annurev-polisci-051117-073034",
+    "type": "Peer-reviewed research review; original abstract verified through Crossref",
+    "verified": true,
+    "findings": "Reviews affective polarization as partisan dislike and distrust rooted partly in social identity, with effects extending beyond disagreements over policy. Supplies the conceptual distinction between ideological disagreement and hostility toward political groups.",
+    "limitations": "A synthesis of research, not a single causal experiment identifying the entire source of polarization. The original abstract was checked through Crossref; complete review text and all underlying studies were not independently reanalyzed. Verified through November 11, 2026.",
+    "stats": []
+  },
+  {
+    "id": "M13",
+    "title": "Greater Internet use is not associated with faster growth in political polarization among US demographic groups",
+    "authors": ["Levi Boxell", "Matthew Gentzkow", "Jesse M. Shapiro"],
+    "publisher": "Proceedings of the National Academy of Sciences",
+    "date": "2017",
+    "url": "https://doi.org/10.1073/pnas.1706588114",
+    "type": "Original peer-reviewed observational demographic analysis; original abstract verified through Europe PMC",
+    "verified": true,
+    "findings": "Across the analyzed polarization measures, older demographic groups less likely to use the internet or social media experienced larger increases than younger groups. This challenges a simple explanation centered entirely on greater direct digital use.",
+    "limitations": "Group-level comparisons are not randomized individual exposure effects. They do not exclude indirect influence through television, politicians, or other institutions. The chapter states the comparative result and publication year without supplying an unverified exact field period. Original abstract checked in the Europe PMC indexed record; complete methods not reanalyzed. Verified through November 11, 2026.",
+    "stats": []
+  },
+  {
+    "id": "M14",
+    "title": "Exposure to opposing views on social media can increase political polarization",
+    "authors": ["Christopher A. Bail", "Lisa P. Argyle", "Taylor W. Brown", "John P. Bumpus", "Haohan Chen", "M. B. Fallin Hunzaker", "Jaemin Lee", "Marcus Mann", "Friedolin Merhout", "Alexander Volfovsky"],
+    "publisher": "Proceedings of the National Academy of Sciences",
+    "date": "2018",
+    "url": "https://doi.org/10.1073/pnas.1804840115",
+    "type": "Original peer-reviewed randomized field experiment; original abstract verified through Europe PMC",
+    "verified": true,
+    "findings": "Frequent Twitter users were offered incentives to follow a bot presenting opposing political messages. Republican participants became more conservative on the policy measures; Democratic participants' smaller movement in a liberal direction was not statistically significant.",
+    "limitations": "A specific sample, exposure arrangement, message stream, and short-term outcome; it does not show that all cross-party contact is harmful. Publication year is distinguished from an exact field date not verified in the accessed abstract. Original abstract checked in the Europe PMC indexed record; full text could not be reliably retrieved. Verified through November 11, 2026.",
+    "stats": [
+      {"value": "One-month exposure intervention", "period": "Study reported in 2018 article; exact field dates not verified from accessed original abstract", "population": "Participating frequent Democratic and Republican Twitter users", "denominator": "Intervention duration, not a population percentage or effect magnitude"}
+    ]
+  },
+  {
+    "id": "M15",
+    "title": "As Partisan Hostility Grows, Signs of Frustration With the Two-Party System",
+    "authors": ["Pew Research Center"],
+    "publisher": "Pew Research Center",
+    "date": "2022-08-09",
+    "url": "https://www.pewresearch.org/politics/2022/08/09/as-partisan-hostility-grows-signs-of-frustration-with-the-two-party-system/",
+    "type": "Transparent public-opinion survey research",
+    "verified": true,
+    "findings": "Documents increasingly negative partisan judgments as well as a growing group holding unfavorable views of both major parties. Negative trait judgments vary by trait and party rather than forming an identical pattern.",
+    "limitations": "Reported perceptions are not measurements of opponents' actual morality or proof of media causation. This is a 2022 survey, not a current 2026 hostility estimate. Full page read through gstack browse; verified through November 11, 2026.",
+    "stats": [
+      {"value": "27% held unfavorable views of both major parties", "period": "Survey June 27–July 4, 2022", "population": "U.S. adults", "denominator": "All U.S. adults represented by the American Trends Panel survey"}
+    ]
+  }
+]

@@ -2,6 +2,10 @@
 
 A closer look at the world. A publication project by Peter Nunley about government, media, culture, and questions worth following.
 
+**First research report:** [Who Shapes What America Knows? (PDF)](research/media-democracy/output/pdf/who-shapes-what-america-knows.pdf) · [Text, sources, and agent handoff](research/media-democracy/README.md)
+
+Current audience: primarily Peter's high-school community. Cadence: one post weekly. Core questions concern media influence, buying decisions, political support, polarization, attention, and everyday thought. Read [AGENTS.md](AGENTS.md), [DISCOVERIES.md](DISCOVERIES.md), and open Issues before starting work.
+
 [Open the newspaper](https://peternunley08-ops.github.io/the-daily-nun/) · [Latest Instagram Stories](https://peternunley08-ops.github.io/the-daily-nun/stories-current-media/) · [Instagram launch studio](https://peternunley08-ops.github.io/the-daily-nun/instagram-launch/)
 
 ## What's here

@@ -1,0 +1,80 @@
+{
+  "id": "weekly-02-who-is-responsible",
+  "title": "Who is actually responsible?",
+  "format": "Three-slide Instagram carousel",
+  "status": "Prepared draft",
+  "week": 2,
+  "desk": "Government",
+  "scheduledAt": null,
+  "publishedAt": null,
+  "audience": "Peter's high-school community",
+  "caption": "When a local policy changes or public infrastructure fails, outrage often targets the loudest official.\n\nIn local government, authority is legally divided. Mayors propose. City councils vote. School boards contract separately.\n\nThe Daily Nun traced how local jurisdictions work and where public dockets reside.\n\nGuide + source notes:",
+  "articleUrl": "https://peternunley08-ops.github.io/the-daily-nun/desks/government/who-is-actually-responsible.html",
+  "slides": [
+    {
+      "cover": true,
+      "title": "Who is actually\nresponsible?",
+      "body": "Finding the office behind a local decision.",
+      "theme": "paper",
+      "alt": "The Daily Nun cover slide: Who is actually responsible? Subtitle: Finding the office behind a local decision."
+    },
+    {
+      "cover": false,
+      "title": "Authority is divided.",
+      "body": "Mayors propose. Councils vote. School boards contract separately. The official with the microphone rarely signs the check alone.",
+      "theme": "paper",
+      "alt": "Slide 2: Authority is divided. Explains that mayors propose, councils vote, and school boards contract separately."
+    },
+    {
+      "cover": false,
+      "title": "Follow the public docket.",
+      "body": "Contracts and budgets must appear on public agendas before approval. The meeting minutes show who voted and what was spent.",
+      "theme": "blue",
+      "alt": "Slide 3: Follow the public docket. Explains that contracts and budgets must appear on public agendas before approval."
+    }
+  ],
+  "reel": {
+    "title": "Who signs the check?",
+    "duration": 15,
+    "voiceover": "When people get frustrated by a local decision, they usually tag the mayor. But in local government, authority is legally divided. Mayors propose budgets, but city councils vote on them. School boards award their own contracts. And transit runs on separate boards. The real question isn't who has the biggest microphone—it's who has the legal authority to sign the check. The Daily Nun.",
+    "kineticText": [
+      "Angry about a local policy?",
+      "Don't just tag the mayor.",
+      "Authority is legally divided.",
+      "Mayors propose. Councils vote.",
+      "School boards contract separately.",
+      "Before a dollar moves, it must appear on a public meeting agenda.",
+      "The minutes show who voted yes.",
+      "The Daily Nun / A closer look at the world."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Forms of Municipal Government",
+      "author": "National League of Cities",
+      "publisher": "NLC Research & Information",
+      "date": "2024",
+      "url": "https://www.nlc.org/resource/forms-of-municipal-government/",
+      "type": "Civic research & governance guide",
+      "limits": "Describes council-manager and mayor-council structures across U.S. cities. Specific charter powers vary by municipality."
+    },
+    {
+      "title": "Procurement Best Practices and Transparency in Public Contracting",
+      "author": "Government Finance Officers Association",
+      "publisher": "GFOA Best Practices",
+      "date": "2023",
+      "url": "https://www.gfoa.org/materials/procurement-best-practices",
+      "type": "Municipal finance standard",
+      "limits": "Outlines recommended advance public notice requirements and competitive bidding thresholds for local government expenditures."
+    },
+    {
+      "title": "Open Government Guide: Access to Public Meetings and Records by State",
+      "author": "Reporters Committee for Freedom of the Press",
+      "publisher": "RCFP",
+      "date": "2024",
+      "url": "https://www.rcfp.org/open-government-guide/",
+      "type": "Statutory legal guide",
+      "limits": "Compares state-level open meetings acts (e.g. 72-hour notice requirements and public agenda mandates)."
+    }
+  ]
+}

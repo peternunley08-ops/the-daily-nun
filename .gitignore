@@ -1,0 +1,17 @@
+# Local dependencies and private configuration
+node_modules/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.log
+.DS_Store
+Thumbs.db
+.gstack/
+
+# Superseded previews and prototype archives
+previews/
+revised-previews/
+instagram-draft.zip
+instagram-revised.zip

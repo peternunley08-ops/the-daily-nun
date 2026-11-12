@@ -1,0 +1,103 @@
+{
+  "brand": "The Daily Nun",
+  "tagline": "A closer look at the world.",
+  "status": "Prepared launch assets; unpublished",
+  "bio": "Government, media, culture, and questions worth following.\nA closer look at the world.",
+  "carousels": [
+    {
+      "id": "01-who-picked-this",
+      "title": "Who picked this for you?",
+      "day": 1,
+      "pinned": true,
+      "caption": "Who makes a story and who brings it to your screen can be different. Start with the original reporting, then look at the route it took to reach you. YouTube's 2021 company explanation describes its recommendations; it is not an independent audit of every feed today.\n\nSource: Cristos Goodrow, YouTube, September 15, 2021.\nhttps://blog.youtube/inside-youtube/on-youtubes-recommendation-system/",
+      "source": "https://blog.youtube/inside-youtube/on-youtubes-recommendation-system/",
+      "sourceLabel": "YouTube company explanation / 2021",
+      "slides": [
+        {"title": "Who picked\nthis for you?", "body": "", "theme": "paper", "cover": true, "alt": "The Daily Nun asks: Who picked this for you?"},
+        {"title": "Making a story.\nRecommending it.", "body": "A newsroom can report it. A platform can put it in your feed.", "theme": "paper", "alt": "Making a story and recommending it are different decisions. A newsroom can report a story and a platform can recommend it."},
+        {"title": "Trace both.", "body": "Find the original reporting. Then examine how it reached you.", "theme": "blue", "alt": "Trace both: find the original reporting and examine how the story reached you."}
+      ]
+    },
+    {
+      "id": "02-same-script",
+      "title": "Different stations. Same script.",
+      "day": 5,
+      "pinned": true,
+      "caption": "In 2018, a compilation showed local anchors reading Sinclair's shared promotion about media bias. Sinclair said the promos promoted fair, objective reporting and denied a political agenda. The episode made corporate direction visible through familiar local voices. It does not establish what every viewer believed afterward.\n\nSource: David Folkenflik, NPR, April 3, 2018.\nhttps://www.npr.org/2018/04/03/599077733/warm-relations-with-trump-appears-to-benefit-sinclair-broadcasting",
+      "source": "https://www.npr.org/2018/04/03/599077733/warm-relations-with-trump-appears-to-benefit-sinclair-broadcasting",
+      "sourceLabel": "NPR reporting / April 2018",
+      "slides": [
+        {"title": "Different\nstations.\nSame script.", "body": "", "theme": "blue", "cover": true, "alt": "The Daily Nun headline: Different stations. Same script."},
+        {"title": "Sinclair, 2018.", "body": "Local anchors were directed to read the same promotion about media bias.", "theme": "paper", "alt": "In 2018, Sinclair directed local anchors to read a shared promotion about media bias."},
+        {"title": "Local faces.\nCorporate words.", "body": "Sinclair said the promos promoted fair, objective reporting and denied a political agenda.", "theme": "paper", "alt": "Local faces, corporate words. Sinclair said its promotions supported fair, objective reporting and denied a political agenda."}
+      ]
+    },
+    {
+      "id": "03-ninety-percent",
+      "title": "90% of what?",
+      "day": 10,
+      "pinned": true,
+      "caption": "A percentage needs a definition. The 2012 Business Insider article repeated an older media-ownership infographic and already flagged outdated ownership information. That does not settle whether media markets are concentrated. It means a current claim needs a clear market, measure, date, and source.\n\nSource: Ashley Lutz, Business Insider, 2012.\nhttps://www.businessinsider.com/these-6-corporations-control-90-of-the-media-in-america-2012-6",
+      "source": "https://www.businessinsider.com/these-6-corporations-control-90-of-the-media-in-america-2012-6",
+      "sourceLabel": "Business Insider article / 2012",
+      "slides": [
+        {"title": "90%\nof what?", "body": "", "theme": "paper", "cover": true, "number": true, "alt": "The Daily Nun headline: 90 percent of what?"},
+        {"title": "Read the\ncorrection.", "body": "A 2012 article already flagged outdated ownership details in the infographic it repeated.", "theme": "paper", "alt": "A 2012 Business Insider article already warned that ownership information in its shared infographic was outdated."},
+        {"title": "Check it.\nThen quote it.", "body": "Which market? Which measure? Which year? Who is the source?", "theme": "blue", "alt": "Before repeating a percentage, check its market, measure, year, and source."}
+      ]
+    }
+  ],
+  "reels": [
+    {
+      "id": "reel-01-story-route",
+      "title": "One story. Three decisions.",
+      "day": 3,
+      "duration": 15,
+      "caption": "One possible route to your screen.\n\nOn screen: Who brought you this story? A reporter produces it. A publisher runs it. A platform recommends it.\n\nBackground: YouTube's 2021 company explanation.\nhttps://blog.youtube/inside-youtube/on-youtubes-recommendation-system/",
+      "voiceover": "Follow one possible route: a reporter produces a story, a publisher runs it, and a platform recommends it. Different decisions shape what gets made and what reaches you.",
+      "beats": [
+        {"start": 0, "end": 3, "title": "Who brought you\nthis story?", "theme": "paper"},
+        {"start": 3, "end": 7, "title": "A reporter\nproduces it.", "theme": "paper"},
+        {"start": 7, "end": 11, "title": "A publisher\nruns it.", "theme": "paper"},
+        {"start": 11, "end": 15, "title": "A platform\nrecommends it.", "theme": "blue"}
+      ],
+      "alt": "Fifteen-second silent text Reel following one possible path from reporter to publisher to platform."
+    },
+    {
+      "id": "reel-02-narrowcasting",
+      "title": "Made for your corner.",
+      "day": 8,
+      "duration": 15,
+      "caption": "Narrowcasting serves a specific audience.\n\nOn screen: Made for your corner. Narrowcasting: a specific audience. A niche can serve people. Which perspectives are missing?\n\nTerm background:\nhttps://en.wikipedia.org/wiki/Narrowcasting",
+      "voiceover": "Narrowcasting means making content for a specific audience. That can serve overlooked communities. It also makes it worth asking which perspectives your usual sources leave out.",
+      "beats": [
+        {"start": 0, "end": 3, "title": "Made for\nyour corner.", "theme": "blue"},
+        {"start": 3, "end": 7, "title": "Narrowcasting:\na specific audience.", "theme": "paper"},
+        {"start": 7, "end": 11, "title": "A niche can\nserve people.", "theme": "paper"},
+        {"start": 11, "end": 15, "title": "Which perspectives\nare missing?", "theme": "blue"}
+      ],
+      "alt": "Fifteen-second silent text Reel defining narrowcasting as serving a specific audience and asking which perspectives are missing."
+    },
+    {
+      "id": "reel-03-check-the-claim",
+      "title": "Check the claim.",
+      "day": 12,
+      "duration": 15,
+      "caption": "Check what was counted before repeating a percentage.\n\nOn screen: 90% of what? Revenue? Audience? Outlets? Which year? Find the original source.\n\nBackground: Business Insider, 2012.\nhttps://www.businessinsider.com/these-6-corporations-control-90-of-the-media-in-america-2012-6",
+      "voiceover": "Before repeating that a few companies control ninety percent of the media, check the denominator. Is it revenue, audience, or outlets? Then check the year and the original source.",
+      "beats": [
+        {"start": 0, "end": 3, "title": "90%\nof what?", "theme": "paper", "number": true},
+        {"start": 3, "end": 7, "title": "Revenue?\nAudience?\nOutlets?", "theme": "paper"},
+        {"start": 7, "end": 11, "title": "Which year?", "theme": "blue"},
+        {"start": 11, "end": 15, "title": "Find the\noriginal source.", "theme": "paper"}
+      ],
+      "alt": "Fifteen-second silent text Reel asking what a media-ownership percentage measures, which year it describes, and where it originated."
+    }
+  ],
+  "stories": [
+    {"id": "story-01-follow-the-story", "day": 2, "title": "Follow the story.\nPast the headline.", "body": "Reporter. Publisher. Feed.", "theme": "paper", "alt": "Follow the story past the headline: reporter, publisher, feed."},
+    {"id": "story-02-shared-script", "day": 6, "title": "Same script.\nDifferent screens.", "body": "Sinclair's shared promotion, 2018.", "theme": "blue", "sourceLabel": "Source: NPR / April 2018", "alt": "Same script, different screens. A reference to Sinclair's shared 2018 promotion, sourced to NPR."},
+    {"id": "story-03-denominator", "day": 9, "title": "90%?\nCheck the\ndenominator.", "body": "What was counted?", "theme": "paper", "alt": "90 percent? Check the denominator. What was counted?"},
+    {"id": "story-04-culture", "day": 13, "title": "Who decides\nwhat's worth\nwatching?", "body": "A question for the culture desk.", "theme": "blue", "sourceLabel": "From the notebook", "alt": "An upcoming culture-desk question: who decides what is worth watching?"}
+  ]
+}

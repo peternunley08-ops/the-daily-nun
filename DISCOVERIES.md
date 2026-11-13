@@ -68,3 +68,13 @@ Keep entries concise and dated. Record the agent, task Issue, evidence, decision
   - **Week 4 (Democracy Desk)**: *"The disappearing local beat: What happens to a community when local reporting vanishes"* (Assigned to Codex in Issue #11).
 - **Backlog Studio**: Built at `posts/index.html` via PR #15, providing a unified dashboard for Peter to inspect carousel slides, copy captions, and read voiceover scripts for audio narration. Automated content CI established in `.github/workflows/content-check.yml`.
 
+### 2026-11-12: Selected anger question and launch handoff
+
+- Peter selected **"Who benefits when a post makes us angry?"** as the next question to explore. Coordinate this angle with Claude Code's existing Week 3 assignment ([Issue #10](https://github.com/peternunley08-ops/the-daily-nun/issues/10), [PR #14](https://github.com/peternunley08-ops/the-daily-nun/pull/14)); do not create a competing recommendation article. This selection does not change the four-week publishing order automatically.
+- Codex's [Issue #16](https://github.com/peternunley08-ops/the-daily-nun/issues/16) records this handoff only. Week 4 remains separately tracked in [Issue #11](https://github.com/peternunley08-ops/the-daily-nun/issues/11); no Week 4 package has been produced by this handoff.
+- Distinguish written drafts and HTML previews from upload-ready media. Week 2 on main and Week 3 in PR #14 contain slide specifications/previews and voiceover scripts, but no exported carousel PNGs, MP4s, or upload ZIPs. Finish and inspect the required exports before declaring the four-week backlog ready.
+- Week 2 follow-up: check the universal-sounding municipal-authority and public-agenda claims against the specific jurisdiction or qualify them. Its source notes already acknowledge varying charter powers. Also reconcile the voiceover word count, the stated 140 words per minute, and the 15-second label before recording.
+- The Week 1 caption was edited to third-person in PR #15, but its existing upload ZIP was not changed in that PR. Rebuild the package so the downloaded caption matches the preview before uploading.
+- Existing report source M03 (Rathje et al., 2021) may help the anger angle: its observational evidence concerns out-group language and engagement, not proof that exposure causes hostility or that particular posts generated profit. Use measured outcomes and source limits; do not treat the question's premise as a settled finding.
+- Instagram account/handle, launch date, and actual social posting remain unconfirmed in this handoff. The launch board is a preview, not a posting service.
+

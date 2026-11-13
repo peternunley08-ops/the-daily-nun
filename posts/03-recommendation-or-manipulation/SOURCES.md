@@ -55,6 +55,48 @@
 - **Type:** Government staff report (press release read; full report not read)
 - **Analytical Limits:** Based on orders issued in December 2020 to nine companies. Concerns data practices, not the effects of ranking on beliefs or purchases.
 
+### For shopping, phones are common and influencers have become a factor – especially for young adults
+- **Author / Publisher:** Michelle Faverio and Monica Anderson (Pew Research Center)
+- **Date:** November 21, 2022
+- **URL:** [https://www.pewresearch.org/short-reads/2022/11/21/for-shopping-phones-are-common-and-influencers-have-become-a-factor-especially-for-young-adults/](https://www.pewresearch.org/short-reads/2022/11/21/for-shopping-phones-are-common-and-influencers-have-become-a-factor-especially-for-young-adults/)
+- **Type:** Survey research
+- **Analytical Limits:** 6,034 U.S. adults, July 5-17, 2022. Denominator for the purchase figures is adult social media users. Self-reported; does not establish that posts caused purchases. No respondents under 18.
+
+### Psychological targeting as an effective approach to digital mass persuasion
+- **Author / Publisher:** Sandra C. Matz, Michal Kosinski, Gideon Nave, David J. Stillwell (Proceedings of the National Academy of Sciences)
+- **Date:** November 13, 2017
+- **URL:** [https://doi.org/10.1073/pnas.1710966114](https://doi.org/10.1073/pnas.1710966114)
+- **Type:** Peer-reviewed field experiments
+- **Analytical Limits:** Abstract only, read through Europe PMC on 2026-11-13. Three experiments reaching over 3.5 million people. 'Up to' figures are best cases, not averages. Tests tailored ads, not feed ranking.
+
+### America's News Influencers
+- **Author / Publisher:** Pew Research Center (Pew Research Center)
+- **Date:** November 18, 2024
+- **URL:** [https://www.pewresearch.org/journalism/2024/11/18/americas-news-influencers/](https://www.pewresearch.org/journalism/2024/11/18/americas-news-influencers/)
+- **Type:** Survey research
+- **Analytical Limits:** 10,658 U.S. adults, July 15-August 4, 2024. Measures where people say they regularly get news, not whether it changed their views. No respondents under 18.
+
+### The small effects of political advertising are small regardless of context, message, sender, or receiver: Evidence from 59 real-time randomized experiments
+- **Author / Publisher:** Alexander Coppock, Seth J. Hill, Lynn Vavreck (Science Advances)
+- **Date:** September 2, 2020
+- **URL:** [https://doi.org/10.1126/sciadv.abc4046](https://doi.org/10.1126/sciadv.abc4046)
+- **Type:** Peer-reviewed randomized experiments
+- **Analytical Limits:** Abstract only, read through Europe PMC on 2026-11-13. 49 ads, 59 experiments, 34,000 people, 2016 U.S. presidential campaign. Survey experiments on ad exposure, not feed ranking.
+
+### A 2 million-person, campaign-wide field experiment shows how digital advertising affects voter turnout
+- **Author / Publisher:** Minali Aggarwal, Jennifer Allen, Alexander Coppock, et al. (Nature Human Behaviour)
+- **Date:** January 12, 2023
+- **URL:** [https://doi.org/10.1038/s41562-022-01487-4](https://doi.org/10.1038/s41562-022-01487-4)
+- **Type:** Peer-reviewed field experiment
+- **Analytical Limits:** Abstract only, read through Europe PMC on 2026-11-13. 2 million voters in five battleground states, 2020. Measures turnout, not trust. One partisan ad program.
+
+### The effects of Facebook and Instagram on the 2020 election: A deactivation experiment
+- **Author / Publisher:** Hunt Allcott, Matthew Gentzkow, Winter Mason, et al. (Proceedings of the National Academy of Sciences)
+- **Date:** May 13, 2024
+- **URL:** [https://doi.org/10.1073/pnas.2321584121](https://doi.org/10.1073/pnas.2321584121)
+- **Type:** Peer-reviewed randomized experiment
+- **Analytical Limits:** Abstract only, read through Europe PMC on 2026-11-13. 19,857 Facebook and 15,585 Instagram users deactivated for six weeks before the 2020 election. Tests access to the platforms, not the ranking system alone.
+
 ## Reading Article
 
 Full research article available at: https://peternunley08-ops.github.io/the-daily-nun/desks/culture/when-does-a-recommendation-become-manipulation.html

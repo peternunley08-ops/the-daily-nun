@@ -28,6 +28,30 @@ A second study points in a different direction. During the 2020 U.S. election, r
 
 Read together, the two studies support a narrow claim. Ranking by engagement can change what appears in a feed, and it can favor posts that people do not say they want. Whether that changes what people believe is not settled by this evidence.
 
+## Does a feed change what people buy?
+
+The evidence here is about advertising and creators, not about ranking systems directly, and it covers adults.
+
+In a Pew Research Center survey of 6,034 U.S. adults taken July 5 to 17, 2022, three in ten adult social media users said they had bought something after seeing an influencer or content creator post about it. Among users under 30, the share was 41%. Among users who follow influencers, it was 53%. Source: [Pew Research Center](https://www.pewresearch.org/short-reads/2022/11/21/for-shopping-phones-are-common-and-influencers-have-become-a-factor-especially-for-young-adults/), November 21, 2022. Those are self-reports. They show that people connect purchases to posts, not that the post caused a purchase that would not have happened anyway.
+
+One experiment tested cause more directly. Across three field experiments on Facebook that reached more than 3.5 million people, ads written to match a person's predicted personality produced "up to 40% more clicks and up to 50% more purchases" than mismatched or unpersonalized ads. Source: [Matz et al., PNAS](https://doi.org/10.1073/pnas.1710966114), November 13, 2017. "Up to" marks the best case in the study, not the average, and the products were ordinary consumer goods. The Daily Nun read this study's abstract only. The authors themselves raise "potential pitfalls related to manipulation and privacy."
+
+So tailored content can move some buying. How much of everyday spending a feed accounts for is not something these sources measure.
+
+## Does a feed change which candidate people trust?
+
+Feeds are a real source of political information. In a Pew survey of 10,658 U.S. adults taken July 15 to August 4, 2024, 21% said they regularly get news from news influencers on social media. Among adults 18 to 29, it was 37%. Source: [Pew Research Center](https://www.pewresearch.org/journalism/2024/11/18/americas-news-influencers/), November 18, 2024.
+
+Seeing political content is different from being moved by it, and the experiments on that question mostly find small effects. The Daily Nun read abstracts only for the three studies below.
+
+- In 2016, researchers tested 49 presidential campaign ads in 59 experiments on 34,000 people and found "small average effects on candidate favorability and vote," for Democrats, Republicans and independents alike.
+- In 2020, an $8.9 million social media ad program reached 2 million voters in five battleground states for eight months. The researchers found no evidence that it raised or lowered turnout on average, and shifts within groups of under half a percentage point.
+- Also in 2020, researchers paid 19,857 Facebook users and 15,585 Instagram users to deactivate their accounts for six weeks before the election. Effects on candidate favorability, polarization and turnout were "precisely estimated and close to zero."
+
+Sources, in order: [Coppock, Hill and Vavreck, Science Advances](https://doi.org/10.1126/sciadv.abc4046), September 2, 2020; [Aggarwal et al., Nature Human Behaviour](https://doi.org/10.1038/s41562-022-01487-4), January 12, 2023; [Allcott et al., PNAS](https://doi.org/10.1073/pnas.2321584121), May 13, 2024.
+
+These studies cover weeks or months of one U.S. presidential race, where most voters already know the candidates. They do not test years of exposure, local races with unfamiliar names, or people too young to vote. Small average effects can also still matter in a close election.
+
 ## Where the line might be
 
 This section is interpretation, not reporting.
@@ -44,7 +68,7 @@ On that last question, a Federal Trade Commission staff report on nine social me
 
 ## What this article does not show
 
-None of the sources above measures whether a feed changes what a person buys or which candidate a person trusts. Those are fair questions, and they need their own evidence.
+The purchase evidence comes from self-reports and one advertising experiment. The candidate evidence comes from adults in two presidential elections. None of it studies high-school students, and none of it isolates the ranking system from everything else on a platform.
 
 Nothing here shows that a feed controls anyone. People skip, search, unfollow and close the app. The narrower point is that a click is a measurement of behavior, and behavior is not always approval.
 

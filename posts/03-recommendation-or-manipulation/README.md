@@ -18,5 +18,5 @@
 
 ## Verification Limits
 - Sources were read on 2026-11-13 with the cloud session's web fetch, not gstack `/browse`.
-- Company posts are labeled as corporate statements. The Guess et al. study is abstract-only.
-- No verified source here measures how feeds change purchases or trust in a candidate. The article says so.
+- Company posts are labeled as corporate statements. Five journal studies (Guess, Matz, Coppock, Aggarwal, Allcott) are abstract-only, read through Europe PMC.
+- Purchase and candidate evidence covers adults, ads, and platform access. No source isolates feed ranking or studies high-school students. The article says so.

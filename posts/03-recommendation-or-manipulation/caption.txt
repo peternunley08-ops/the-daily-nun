@@ -2,7 +2,7 @@ A feed is a ranking. TikTok, Instagram and YouTube each say their systems predic
 
 The Daily Nun compared those company descriptions with independent research, including a 2023 audit of 806 U.S. Twitter users, and looked at where scholars draw the line between persuasion and manipulation.
 
-The evidence is mixed, and the article says where.
+It also checked what research says about purchases and candidate support. The evidence is mixed, and the article says where.
 
 Article + source notes:
 https://peternunley08-ops.github.io/the-daily-nun/desks/culture/when-does-a-recommendation-become-manipulation.html

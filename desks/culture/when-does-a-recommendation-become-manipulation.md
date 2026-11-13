@@ -30,7 +30,7 @@ Read together, the two studies support a narrow claim. Ranking by engagement can
 
 ## Who benefits when a post makes people angry?
 
-Peter Nunley chose this question for The Daily Nun to examine. The honest answer has three parts, and they do not carry equal weight.
+The honest answer to this question has three parts, and they do not carry equal weight.
 
 What was measured. Researchers analyzed 2,730,215 posts from news media accounts and members of the U.S. Congress on Facebook and Twitter. Posts about the opposing political side were shared about twice as often as posts about the poster's own side, and each additional word referring to the other side raised the odds of a share by 67%. That language was also a very strong predictor of "angry" reactions. Source: [Rathje, Van Bavel and van der Linden, PNAS](https://doi.org/10.1073/pnas.2024292118), June 2021. The Daily Nun read this study's abstract only.
 

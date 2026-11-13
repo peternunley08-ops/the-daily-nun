@@ -62,8 +62,9 @@ Keep entries concise and dated. Record the agent, task Issue, evidence, decision
   2. Academic & journalistic portfolio: building a rigorous, verified body of investigative work for college applications.
   3. Audience growth: expanding a wider digital readership over time.
 - **Four-Week Backlog Plan**:
-  - **Week 1 (Media Desk)**: *"Who picked this for you? Media ownership vs. distribution"* (Completed by Codex in `posts/01-who-picked-this/`).
-  - **Week 2 (Government Desk)**: *"Who is actually responsible? Local public contracts & municipal authority"* — tracing local municipal/school board decisions, budgets, and public records. (Claimed by Antigravity).
-  - **Week 3 (Culture Desk)**: *"When does a recommendation become manipulation? The mechanics of algorithmic engagement"* — investigating how algorithms convert outrage and watch-time into consumer habits and cultural trends. (Recommended for Claude Code).
-  - **Week 4 (Democracy Desk)**: *"The disappearing local beat: What happens to a community when local reporting vanishes"* — Northwestern/Medill news desert research on municipal costs, corruption risks, and civic health. (Recommended for Codex).
+  - **Week 1 (Media Desk)**: *"Who picked this for you? Media ownership vs. distribution"* (Completed by Codex in `posts/01-who-picked-this/`; captions aligned to third-person).
+  - **Week 2 (Government Desk)**: *"Who is actually responsible? Local public contracts & municipal authority"* (Completed by Antigravity in `posts/02-who-is-responsible/` and `desks/government/` via PR #12).
+  - **Week 3 (Culture Desk)**: *"When does a recommendation become manipulation? The mechanics of algorithmic engagement"* (Claimed by Claude Code in Issue #10; active on branch `claude/upbeat-goldberg-u9yj4d`).
+  - **Week 4 (Democracy Desk)**: *"The disappearing local beat: What happens to a community when local reporting vanishes"* (Assigned to Codex in Issue #11).
+- **Backlog Studio**: Built at `posts/index.html` via PR #15, providing a unified dashboard for Peter to inspect carousel slides, copy captions, and read voiceover scripts for audio narration. Automated content CI established in `.github/workflows/content-check.yml`.
 

@@ -1,0 +1,23 @@
+# Voiceover & Video Script: Who chose that video?
+
+**Duration:** ~30 seconds
+**Format:** Vertical Video (1080 × 1920) / Reel & TikTok
+
+## Voiceover Script (For Peter to record)
+"Every feed is a ranking. TikTok, Instagram and YouTube say their systems predict what each person will watch, like or share. In 2023, researchers audited the timelines of 806 Twitter users in the United States. Ranking by engagement showed them more angry, hostile posts than a simple newest-first feed, and they rated its political picks lower. One study is not the whole story. But clicking on something is not the same as wanting more of it. The Daily Nun."
+
+## Kinetic On-Screen Text
+1. Who chose that video?
+2. A feed is a ranking.
+3. Platforms say they predict what gets watched, liked, shared.
+4. 2023: researchers audited 806 U.S. Twitter users.
+5. Engagement ranking showed more angry, hostile posts.
+6. Users rated its political picks lower.
+7. One study. Not the whole story.
+8. A click is not approval.
+9. The Daily Nun / A closer look at the world.
+
+## Delivery Notes
+- Tone: Calm, authoritative, third-person analytical.
+- Pacing: Measured, clear enunciation, ~140 words per minute.
+- Video functions silently with on-screen kinetic typography.

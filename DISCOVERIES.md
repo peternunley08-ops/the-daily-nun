@@ -78,3 +78,23 @@ Keep entries concise and dated. Record the agent, task Issue, evidence, decision
 - Existing report source M03 (Rathje et al., 2021) may help the anger angle: its observational evidence concerns out-group language and engagement, not proof that exposure causes hostility or that particular posts generated profit. Use measured outcomes and source limits; do not treat the question's premise as a settled finding.
 - Instagram account/handle, launch date, and actual social posting remain unconfirmed in this handoff. The launch board is a preview, not a posting service.
 
+
+### 2026-11-13: Week 3 Culture Desk package (Claude Code, [Issue #10](https://github.com/peternunley08-ops/the-daily-nun/issues/10))
+
+- Package: `posts/03-recommendation-or-manipulation/`; article: `desks/culture/when-does-a-recommendation-become-manipulation.md` (+ generated `.html`). Prepared draft; nothing scheduled or published.
+- **Browsing blocker:** gstack `/browse` is not installed in the Claude cloud session. Peter approved the session's built-in web fetch for this task. Sources were read on 2026-11-13 that way.
+- Read and used: TikTok (2020), Instagram (2023), and YouTube (2021) ranking explainers, labeled as corporate statements; Milli et al., PNAS Nexus 2025 (n=806 U.S. Twitter users, Feb 11-27, 2023); FTC staff report press release (Sept 19, 2024; full report not read); Susser, Roessler & Nissenbaum 2020 (definition passages read from the PDF).
+- Reused, abstract-only: Guess et al., Science 2023 (report source E01). `science.org` returned HTTP 403 from the cloud.
+- **Not used because unverifiable here:** Piccardi et al., Science 2025 (publisher 403; PubMed cookie wall). Do not cite it from memory.
+- **Anger angle added (Peter confirmed in chat, 2026-11-13):** the article now has a section "Who benefits when a post makes people angry?" using Rathje et al. 2021 (abstract via Europe PMC; report source M03). It separates measured outcomes (which posts were shared), documented incentives (reach for the poster; attention and ad-based business models for platforms), and interpretation. It does not claim that anger produced profit. Slides and voiceover are unchanged.
+- **Scope gap closed at Peter's request (2026-11-13):** added purchase and candidate-trust sections. Pew 2022 (6,034 adults) and Pew 2024 (10,658 adults) pages were read in full for the cited figures. Matz 2017, Coppock 2020, Aggarwal 2023, and Allcott 2024 are abstract-only through Europe PMC (`https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:<doi>&format=json&resultType=core`), which is reachable from the cloud when publisher pages return 403.
+- Finding to preserve: experiments on candidate persuasion mostly report small average effects. Do not write that feeds "convert" attention into candidate trust. Remaining limit: adults only, ads and platform access rather than ranking itself.
+- `build.mjs` is a copy of Week 2's with desk strings changed and reel duration read from `post.json`. Week 4 could share one parameterized builder; not done here to avoid touching Codex's claimed scope.
+
+### 2026-11-13: Two story questions approved by Peter for after the four-week backlog (Claude Code)
+
+- Approved: **"Who decides who gets the hours?"** (shift scheduling and fairness for part-time and hourly workers) and **"Does a streak help anyone learn?"** (streak-based app design, attention, and student data). Peter declined six other pitches from the same list; do not revive them without asking.
+- Neither is assigned, drafted, or scheduled. They do not change the four-week order. Claim an Issue before starting either.
+- Source checks so far (2026-11-13, cloud web fetch and search, not `/browse`): the Shift Project brief "It's About Time" (Schneider and Harknett, October 16, 2019; 30,000 employees at 120 large retail and food-service firms) opened and read in part. The FTC staff report "Bringing Dark Patterns to Light" (press release September 15, 2022) is confirmed to exist on ftc.gov but was not opened; the direct fetch returned 404.
+- Unverified leads, do not cite yet: secondary sources say California has no statewide predictive-scheduling law and that several cities plus Los Angeles County have local ordinances (the sources disagree on the count); a 2026 California bill on automated management decisions was reported as signed. Confirm both against official state and city sources.
+- Both pieces must stay general. No real workplace, coworker, classmate, or app user may be described.

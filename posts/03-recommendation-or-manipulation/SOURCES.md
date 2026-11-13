@@ -97,6 +97,13 @@
 - **Type:** Peer-reviewed randomized experiment
 - **Analytical Limits:** Abstract only, read through Europe PMC on 2026-11-13. A randomized subset of 19,857 Facebook and 15,585 Instagram users deactivated for six weeks before the 2020 election. Tests access to the platforms, not the ranking system alone.
 
+### Out-group animosity drives engagement on social media
+- **Author / Publisher:** Steve Rathje, Jay J. Van Bavel, Sander van der Linden (Proceedings of the National Academy of Sciences)
+- **Date:** June 2021
+- **URL:** [https://doi.org/10.1073/pnas.2024292118](https://doi.org/10.1073/pnas.2024292118)
+- **Type:** Peer-reviewed observational research
+- **Analytical Limits:** Abstract only, read through Europe PMC on 2026-11-13 (also source M03 in the media-democracy report). 2,730,215 posts from news media and U.S. congressional accounts on Facebook and Twitter. Associations between wording and shares; does not show that posts made readers angrier or generated profit.
+
 ## Reading Article
 
 Full research article available at: https://peternunley08-ops.github.io/the-daily-nun/desks/culture/when-does-a-recommendation-become-manipulation.html

@@ -28,6 +28,18 @@ A second study points in a different direction. During the 2020 U.S. election, r
 
 Read together, the two studies support a narrow claim. Ranking by engagement can change what appears in a feed, and it can favor posts that people do not say they want. Whether that changes what people believe is not settled by this evidence.
 
+## Who benefits when a post makes people angry?
+
+Peter Nunley chose this question for The Daily Nun to examine. The honest answer has three parts, and they do not carry equal weight.
+
+What was measured. Researchers analyzed 2,730,215 posts from news media accounts and members of the U.S. Congress on Facebook and Twitter. Posts about the opposing political side were shared about twice as often as posts about the poster's own side, and each additional word referring to the other side raised the odds of a share by 67%. That language was also a very strong predictor of "angry" reactions. Source: [Rathje, Van Bavel and van der Linden, PNAS](https://doi.org/10.1073/pnas.2024292118), June 2021. The Daily Nun read this study's abstract only.
+
+What that does and does not show. The study counts which posts were shared. It is observational: it does not show that readers became angrier, and it does not track money. The clearest documented beneficiary is the account that posted, which got more reach. The authors found stronger effects for political leaders than for news outlets.
+
+What is documented about platforms. In the 2020 election study described above, people moved off the ranked feed spent less time on Facebook and Instagram, which indicates that ranking holds attention. The Federal Trade Commission staff report cited below describes business models built on collecting user data for targeted advertising. Neither source measures whether anger in particular earns a platform more.
+
+What is interpretation. The PNAS authors conclude that social media "may be creating perverse incentives for content expressing out-group animosity." That is their reading of the pattern, worded with a "may." No source here shows that a specific angry post produced profit for anyone, and the Twitter audit found that users rated the algorithm's political picks lower, so the person scrolling is the one party with evidence of not benefiting.
+
 ## Does a feed change what people buy?
 
 The evidence here is about advertising and creators, not about ranking systems directly, and it covers adults.

@@ -34,7 +34,7 @@ The evidence here is about advertising and creators, not about ranking systems d
 
 In a Pew Research Center survey of 6,034 U.S. adults taken July 5 to 17, 2022, three in ten adult social media users said they had bought something after seeing an influencer or content creator post about it. Among users under 30, the share was 41%. Among users who follow influencers, it was 53%. Source: [Pew Research Center](https://www.pewresearch.org/short-reads/2022/11/21/for-shopping-phones-are-common-and-influencers-have-become-a-factor-especially-for-young-adults/), November 21, 2022. Those are self-reports. They show that people connect purchases to posts, not that the post caused a purchase that would not have happened anyway.
 
-One experiment tested cause more directly. Across three field experiments on Facebook that reached more than 3.5 million people, ads written to match a person's predicted personality produced "up to 40% more clicks and up to 50% more purchases" than mismatched or unpersonalized ads. Source: [Matz et al., PNAS](https://doi.org/10.1073/pnas.1710966114), November 13, 2017. "Up to" marks the best case in the study, not the average, and the products were ordinary consumer goods. The Daily Nun read this study's abstract only. The authors themselves raise "potential pitfalls related to manipulation and privacy."
+One experiment tested cause more directly. Across three field experiments that reached more than 3.5 million people, ads written to match a person's predicted personality produced "up to 40% more clicks and up to 50% more purchases" than mismatched or unpersonalized ads. Source: [Matz et al., PNAS](https://doi.org/10.1073/pnas.1710966114), November 13, 2017. "Up to" marks the best case in the study, not the average. The Daily Nun read this study's abstract only. The authors themselves raise "potential pitfalls related to manipulation and privacy."
 
 So tailored content can move some buying. How much of everyday spending a feed accounts for is not something these sources measure.
 
@@ -46,7 +46,7 @@ Seeing political content is different from being moved by it, and the experiment
 
 - In 2016, researchers tested 49 presidential campaign ads in 59 experiments on 34,000 people and found "small average effects on candidate favorability and vote," for Democrats, Republicans and independents alike.
 - In 2020, an $8.9 million social media ad program reached 2 million voters in five battleground states for eight months. The researchers found no evidence that it raised or lowered turnout on average, and shifts within groups of under half a percentage point.
-- Also in 2020, researchers paid 19,857 Facebook users and 15,585 Instagram users to deactivate their accounts for six weeks before the election. Effects on candidate favorability, polarization and turnout were "precisely estimated and close to zero."
+- Also in 2020, researchers randomly assigned a subset of 19,857 Facebook users and 15,585 Instagram users to deactivate their accounts for six weeks before the election. Effects on candidate favorability, polarization and turnout were "precisely estimated and close to zero."
 
 Sources, in order: [Coppock, Hill and Vavreck, Science Advances](https://doi.org/10.1126/sciadv.abc4046), September 2, 2020; [Aggarwal et al., Nature Human Behaviour](https://doi.org/10.1038/s41562-022-01487-4), January 12, 2023; [Allcott et al., PNAS](https://doi.org/10.1073/pnas.2321584121), May 13, 2024.
 

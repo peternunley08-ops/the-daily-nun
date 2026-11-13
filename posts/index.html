@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>4-Week Pre-Launch Backlog Studio — The Daily Nun</title>
+  <style>
+    :root {
+      --paper: #f6f5f0;
+      --ink: #20201c;
+      --blue: #2448b5;
+      --muted: #68685f;
+      --rule: #c8c8bc;
+      --white: #ffffff;
+      --accent-bg: #ecebe4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 16px/1.6 Arial, sans-serif;
+    }
+    header, main, footer {
+      max-width: 1200px;
+      margin: auto;
+      padding: 24px 24px;
+    }
+    .topbar {
+      border-bottom: 1px solid var(--ink);
+      padding-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+    }
+    .brand {
+      font: 700 44px/1.1 Georgia, serif;
+      letter-spacing: -0.05em;
+      text-decoration: none;
+      color: inherit;
+      display: inline-block;
+      margin: 20px 0 8px;
+    }
+    h1 {
+      font: 700 clamp(32px, 5vw, 50px)/1.1 Georgia, serif;
+      letter-spacing: -0.04em;
+      margin: 0 0 10px;
+    }
+    .tagline {
+      font-size: 16px;
+      color: var(--muted);
+      max-width: 720px;
+      margin-bottom: 24px;
+    }
+    .backlog-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 24px 0 32px;
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 16px;
+    }
+    .week-btn {
+      font: inherit;
+      padding: 10px 18px;
+      border: 1px solid var(--ink);
+      background: transparent;
+      color: var(--ink);
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 2px;
+      transition: all 0.15s ease;
+    }
+    .week-btn[aria-selected="true"] {
+      background: var(--ink);
+      color: var(--paper);
+    }
+    .week-btn .badge {
+      font-size: 11px;
+      margin-left: 6px;
+      padding: 2px 6px;
+      border-radius: 10px;
+      background: var(--rule);
+      color: var(--ink);
+    }
+    .week-btn[aria-selected="true"] .badge {
+      background: var(--blue);
+      color: var(--white);
+    }
+    .week-panel {
+      display: none;
+    }
+    .week-panel.active {
+      display: block;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(320px, 1fr);
+      gap: 36px;
+    }
+    .slides-preview {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .slide-box {
+      aspect-ratio: 4/5;
+      border: 1px solid var(--rule);
+      background: var(--paper);
+      padding: 18px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+    .slide-box.blue {
+      background: var(--blue);
+      color: var(--paper);
+      border-color: var(--blue);
+    }
+    .slide-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .slide-head {
+      font: 700 15px Georgia, serif;
+      border-bottom: 1px solid currentColor;
+      padding-bottom: 6px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .slide-title {
+      font: 700 18px/1.2 Georgia, serif;
+      margin: 12px 0 8px;
+    }
+    .slide-body {
+      font-size: 12px;
+      line-height: 1.45;
+      margin: 0;
+    }
+    .slide-foot {
+      font-size: 10px;
+      border-top: 1px solid currentColor;
+      padding-top: 6px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .copy-card {
+      background: var(--accent-bg);
+      border: 1px solid var(--rule);
+      padding: 24px;
+      border-radius: 4px;
+      margin-bottom: 24px;
+    }
+    h2 {
+      font: 700 22px/1.2 Georgia, serif;
+      margin: 0 0 12px;
+    }
+    h3 {
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--blue);
+      margin: 18px 0 8px;
+    }
+    textarea {
+      width: 100%;
+      min-height: 140px;
+      padding: 12px;
+      border: 1px solid var(--rule);
+      background: var(--white);
+      color: var(--ink);
+      font: 14px/1.6 Arial, sans-serif;
+      resize: vertical;
+    }
+    button.action-btn {
+      font: inherit;
+      padding: 8px 16px;
+      border: 1px solid var(--ink);
+      background: var(--white);
+      color: var(--ink);
+      cursor: pointer;
+      margin-top: 8px;
+      font-size: 13px;
+    }
+    button.action-btn:hover {
+      background: var(--ink);
+      color: var(--paper);
+    }
+    .teleprompter {
+      background: #191916;
+      color: #faf9f5;
+      padding: 20px;
+      border-radius: 4px;
+      margin-top: 12px;
+    }
+    .teleprompter p {
+      font: 500 18px/1.6 Georgia, serif;
+      margin: 0 0 14px;
+      color: #fff;
+    }
+    .teleprompter ol {
+      padding-left: 20px;
+      font-size: 13px;
+      color: #b0af9f;
+      margin: 0;
+    }
+    .sources-list {
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    .sources-list li {
+      margin-bottom: 10px;
+    }
+    a {
+      color: var(--blue);
+      text-underline-offset: 3px;
+    }
+    .pending-notice {
+      padding: 40px;
+      text-align: center;
+      background: var(--accent-bg);
+      border: 1px dashed var(--rule);
+      border-radius: 4px;
+    }
+    footer {
+      border-top: 1px solid var(--rule);
+      margin-top: 48px;
+      padding-top: 20px;
+      font-size: 12px;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+    }
+    @media (max-width: 840px) {
+      .grid { grid-template-columns: 1fr; }
+      .slides-preview { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <span>The Daily Nun &nbsp;·&nbsp; Internal Newsroom Backlog Studio</span>
+      <span>Strict Third-Person Editorial Mode</span>
+    </div>
+    <a class="brand" href="../index.html">The Daily Nun</a>
+    <h1>Pre-Launch 4-Week Backlog Studio</h1>
+    <p class="tagline">
+      Complete four-week editorial backlog prepared prior to public launch. Review carousel sequences, copy third-person captions, and record voiceover audio scripts.
+    </p>
+
+    <nav class="backlog-nav" role="tablist" aria-label="Weekly backlog tabs">
+      
+        <button class="week-btn" role="tab" id="tab-1" aria-selected="true" aria-controls="panel-1" onclick="switchWeek(1)">
+          Week 1: Desk
+          <span class="badge">Ready</span>
+        </button>
+      
+        <button class="week-btn" role="tab" id="tab-2" aria-selected="false" aria-controls="panel-2" onclick="switchWeek(2)">
+          Week 2: Government
+          <span class="badge">Ready</span>
+        </button>
+      
+        <button class="week-btn" role="tab" id="tab-3" aria-selected="false" aria-controls="panel-3" onclick="switchWeek(3)">
+          Week 3: Culture
+          <span class="badge">Ready</span>
+        </button>
+      
+        <button class="week-btn" role="tab" id="tab-4" aria-selected="false" aria-controls="panel-4" onclick="switchWeek(4)">
+          Week 4: Democracy &amp; Local Watchdogs
+          <span class="badge">In Progress</span>
+        </button>
+      
+    </nav>
+  </header>
+
+  <main>
+    
+      <section class="week-panel active" id="panel-1" role="tabpanel" aria-labelledby="tab-1">
+        
+          <div class="grid">
+            <div>
+              <h2>Who picked this for you?</h2>
+              <p style="color:var(--muted);font-size:14px;margin-top:-6px;margin-bottom:20px">
+                Desk: <strong>Editorial</strong> &nbsp;·&nbsp; Format: <strong>Three-slide Instagram carousel</strong> &nbsp;·&nbsp; 
+                <a href="01-who-picked-this/index.html">Open Dedicated Post Studio</a>
+              </p>
+
+              <h3>Instagram Carousel Preview (1080 × 1350)</h3>
+              <div class="slides-preview">
+                
+                  <div class="slide-box">
+                    <img src="../instagram-launch/carousels/01-who-picked-this/slide-01.png" alt="Slide 1" loading="lazy">
+                  </div>
+                
+                  <div class="slide-box">
+                    <img src="../instagram-launch/carousels/01-who-picked-this/slide-02.png" alt="Slide 2" loading="lazy">
+                  </div>
+                
+                  <div class="slide-box">
+                    <img src="../instagram-launch/carousels/01-who-picked-this/slide-03.png" alt="Slide 3" loading="lazy">
+                  </div>
+                
+              </div>
+
+              <h3>Verified Source Ledger</h3>
+              <ul class="sources-list">
+                
+                  <li>
+                    <strong><a href="https://blog.youtube/inside-youtube/on-youtubes-recommendation-system/" target="_blank" rel="noopener noreferrer">On YouTube's recommendation system</a></strong><br>
+                    <span>Cristos Goodrow (YouTube Official Blog) — September 15, 2021</span><br>
+                    <span style="color:var(--muted)">Limits: Explains the company's described recommendation signals in 2021. It is not an independent audit of every app or a claim that a feed determines a person's beliefs. The report contains the wider research and its limitations.</span>
+                  </li>
+                
+              </ul>
+            </div>
+
+            <div>
+              <div class="copy-card">
+                <h2>Instagram Caption</h2>
+                <p style="font-size:12px;color:var(--muted);margin-top:-6px">Third-person institutional voice (strictly avoids personal quotes out of context).</p>
+                <textarea id="caption-1" readonly>Outlets choose what to cover. Platforms recommend what to show. Readers navigate the choices in between.
+
+The Daily Nun examined the evidence behind media ownership, algorithms, and civic influence.
+
+Full report + sources:
+https://peternunley08-ops.github.io/the-daily-nun/research/media-democracy/output/pdf/who-shapes-what-america-knows.pdf</textarea>
+                <button class="action-btn" type="button" onclick="copyCaption(1)">Copy Caption</button>
+                <span id="copy-status-1" style="font-size:12px;color:var(--blue);margin-left:10px"></span>
+              </div>
+
+              
+                <div class="copy-card">
+                  <h2>Audio / Reel Asset</h2>
+                  <p style="font-size:13px;color:var(--muted)">Silent text video available in launch packs. Voiceover optional.</p>
+                </div>
+              
+            </div>
+          </div>
+        
+      </section>
+    
+      <section class="week-panel " id="panel-2" role="tabpanel" aria-labelledby="tab-2">
+        
+          <div class="grid">
+            <div>
+              <h2>Who is actually responsible?</h2>
+              <p style="color:var(--muted);font-size:14px;margin-top:-6px;margin-bottom:20px">
+                Desk: <strong>Government</strong> &nbsp;·&nbsp; Format: <strong>Three-slide Instagram carousel</strong> &nbsp;·&nbsp; 
+                <a href="02-who-is-responsible/index.html">Open Dedicated Post Studio</a>
+              </p>
+
+              <h3>Instagram Carousel Preview (1080 × 1350)</h3>
+              <div class="slides-preview">
+                
+                  <div class="slide-box ">
+                    <div class="slide-head">The Daily Nun <span>1/3</span></div>
+                    <div>
+                      <div class="slide-title">Who is actually<br>responsible?</div>
+                      <p class="slide-body">Finding the office behind a local decision.</p>
+                    </div>
+                    <div class="slide-foot"><span>The Daily Nun</span><span>Government</span></div>
+                  </div>
+                
+                  <div class="slide-box ">
+                    <div class="slide-head">The Daily Nun <span>2/3</span></div>
+                    <div>
+                      <div class="slide-title">Authority is divided.</div>
+                      <p class="slide-body">Mayors propose. Councils vote. School boards contract separately. The official with the microphone rarely signs the check alone.</p>
+                    </div>
+                    <div class="slide-foot"><span>The Daily Nun</span><span>Government</span></div>
+                  </div>
+                
+                  <div class="slide-box blue">
+                    <div class="slide-head">The Daily Nun <span>3/3</span></div>
+                    <div>
+                      <div class="slide-title">Follow the public docket.</div>
+                      <p class="slide-body">Contracts and budgets must appear on public agendas before approval. The meeting minutes show who voted and what was spent.</p>
+                    </div>
+                    <div class="slide-foot"><span>The Daily Nun</span><span>Government</span></div>
+                  </div>
+                
+              </div>
+
+              <h3>Verified Source Ledger</h3>
+              <ul class="sources-list">
+                
+                  <li>
+                    <strong><a href="https://www.nlc.org/resource/forms-of-municipal-government/" target="_blank" rel="noopener noreferrer">Forms of Municipal Government</a></strong><br>
+                    <span>National League of Cities (NLC Research &amp; Information) — 2024</span><br>
+                    <span style="color:var(--muted)">Limits: Describes council-manager and mayor-council structures across U.S. cities. Specific charter powers vary by municipality.</span>
+                  </li>
+                
+                  <li>
+                    <strong><a href="https://www.gfoa.org/materials/procurement-best-practices" target="_blank" rel="noopener noreferrer">Procurement Best Practices and Transparency in Public Contracting</a></strong><br>
+                    <span>Government Finance Officers Association (GFOA Best Practices) — 2023</span><br>
+                    <span style="color:var(--muted)">Limits: Outlines recommended advance public notice requirements and competitive bidding thresholds for local government expenditures.</span>
+                  </li>
+                
+                  <li>
+                    <strong><a href="https://www.rcfp.org/open-government-guide/" target="_blank" rel="noopener noreferrer">Open Government Guide: Access to Public Meetings and Records by State</a></strong><br>
+                    <span>Reporters Committee for Freedom of the Press (RCFP) — 2024</span><br>
+                    <span style="color:var(--muted)">Limits: Compares state-level open meetings acts (e.g. 72-hour notice requirements and public agenda mandates).</span>
+                  </li>
+                
+              </ul>
+            </div>
+
+            <div>
+              <div class="copy-card">
+                <h2>Instagram Caption</h2>
+                <p style="font-size:12px;color:var(--muted);margin-top:-6px">Third-person institutional voice (strictly avoids personal quotes out of context).</p>
+                <textarea id="caption-2" readonly>When a local policy changes or public infrastructure fails, outrage often targets the loudest official.
+
+In local government, authority is legally divided. Mayors propose. City councils vote. School boards contract separately.
+
+The Daily Nun traced how local jurisdictions work and where public dockets reside.
+
+Guide + source notes:
+https://peternunley08-ops.github.io/the-daily-nun/desks/government/who-is-actually-responsible.html</textarea>
+                <button class="action-btn" type="button" onclick="copyCaption(2)">Copy Caption</button>
+                <span id="copy-status-2" style="font-size:12px;color:var(--blue);margin-left:10px"></span>
+              </div>
+
+              
+                <div class="copy-card">
+                  <h2>Voiceover Teleprompter</h2>
+                  <p style="font-size:12px;color:var(--muted);margin-top:-6px">Read aloud while recording over vertical video asset (~15 sec).</p>
+                  <div class="teleprompter">
+                    <p>"When people get frustrated by a local decision, they usually tag the mayor. But in local government, authority is legally divided. Mayors propose budgets, but city councils vote on them. School boards award their own contracts. And transit runs on separate boards. The real question isn't who has the biggest microphone—it's who has the legal authority to sign the check. The Daily Nun."</p>
+                    <p style="font-size:11px;text-transform:uppercase;letter-spacing:0.05em;color:#9b9987;margin-bottom:6px">On-Screen Kinetic Text Sequence:</p>
+                    <ol>
+                      <li>Angry about a local policy?</li><li>Don't just tag the mayor.</li><li>Authority is legally divided.</li><li>Mayors propose. Councils vote.</li><li>School boards contract separately.</li><li>Before a dollar moves, it must appear on a public meeting agenda.</li><li>The minutes show who voted yes.</li><li>The Daily Nun / A closer look at the world.</li>
+                    </ol>
+                  </div>
+                </div>
+              
+            </div>
+          </div>
+        
+      </section>
+    
+      <section class="week-panel " id="panel-3" role="tabpanel" aria-labelledby="tab-3">
+        
+          <div class="grid">
+            <div>
+              <h2>When does a recommendation become manipulation?</h2>
+              <p style="color:var(--muted);font-size:14px;margin-top:-6px;margin-bottom:20px">
+                Desk: <strong>Culture</strong> &nbsp;·&nbsp; Format: <strong>Three-slide Instagram carousel</strong> &nbsp;·&nbsp; 
+                <a href="03-recommendation-or-manipulation/index.html">Open Dedicated Post Studio</a>
+              </p>
+
+              <h3>Instagram Carousel Preview (1080 × 1350)</h3>
+              <div class="slides-preview">
+                
+                  <div class="slide-box ">
+                    <div class="slide-head">The Daily Nun <span>1/3</span></div>
+                    <div>
+                      <div class="slide-title">When does a recommendation<br>become manipulation?</div>
+                      <p class="slide-body">What a feed is built to predict, and what one audit found.</p>
+                    </div>
+                    <div class="slide-foot"><span>The Daily Nun</span><span>Culture</span></div>
+                  </div>
+                
+                  <div class="slide-box ">
+                    <div class="slide-head">The Daily Nun <span>2/3</span></div>
+                    <div>
+                      <div class="slide-title">Feeds rank by prediction.</div>
+                      <p class="slide-body">TikTok, Instagram and YouTube say their systems predict what each user will watch, like or share. Those are company descriptions.</p>
+                    </div>
+                    <div class="slide-foot"><span>The Daily Nun</span><span>Culture</span></div>
+                  </div>
+                
+                  <div class="slide-box blue">
+                    <div class="slide-head">The Daily Nun <span>3/3</span></div>
+                    <div>
+                      <div class="slide-title">Engagement is not approval.</div>
+                      <p class="slide-body">A 2023 audit of 806 U.S. Twitter users found engagement ranking amplified hostile posts. Users rated its political picks lower.</p>
+                    </div>
+                    <div class="slide-foot"><span>The Daily Nun</span><span>Culture</span></div>
+                  </div>
+                
+              </div>
+
+              <h3>Verified Source Ledger</h3>
+              <ul class="sources-list">
+                
+                  <li>
+                    <strong><a href="https://georgetownlawtechreview.org/online-manipulation-hidden-influences-in-a-digital-world/GLTR-01-2020/" target="_blank" rel="noopener noreferrer">Online Manipulation: Hidden Influences in a Digital World</a></strong><br>
+                    <span>Daniel Susser, Beate Roessler, Helen Nissenbaum (Georgetown Law Technology Review, 4 Geo. L. Tech. Rev. 1) — January 2020 (volume dated 2019)</span><br>
+                    <span style="color:var(--muted)">Limits: One scholarly definition among several. The authors note that not everyone agrees hiddenness is required for manipulation. Definition passages read from the published PDF on 2026-11-13.</span>
+                  </li>
+                
+                  <li>
+                    <strong><a href="https://newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you" target="_blank" rel="noopener noreferrer">How TikTok recommends videos #ForYou</a></strong><br>
+                    <span>TikTok (TikTok Newsroom) — June 18, 2020</span><br>
+                    <span style="color:var(--muted)">Limits: The company's own description from 2020. It is not independently audited and may not describe the current system.</span>
+                  </li>
+                
+                  <li>
+                    <strong><a href="https://about.instagram.com/blog/announcements/instagram-ranking-explained" target="_blank" rel="noopener noreferrer">Instagram Ranking Explained</a></strong><br>
+                    <span>Adam Mosseri (Instagram) — May 31, 2023</span><br>
+                    <span style="color:var(--muted)">Limits: The company's own description from 2023. It lists signals and predictions but not their weights, and it is not independently audited.</span>
+                  </li>
+                
+                  <li>
+                    <strong><a href="https://blog.youtube/inside-youtube/on-youtubes-recommendation-system/" target="_blank" rel="noopener noreferrer">On YouTube's recommendation system</a></strong><br>
+                    <span>Cristos Goodrow (YouTube Official Blog) — September 15, 2021</span><br>
+                    <span style="color:var(--muted)">Limits: The company's own description from 2021. It says recommendations drive 'a significant amount' of viewership and gives no figure.</span>
+                  </li>
+                
+                  <li>
+                    <strong><a href="https://doi.org/10.1093/pnasnexus/pgaf062" target="_blank" rel="noopener noreferrer">Engagement, user satisfaction, and the amplification of divisive content on social media</a></strong><br>
+                    <span>Smitha Milli, Micah Carroll, Yike Wang, et al. (PNAS Nexus 4(3), pgaf062) — March 5, 2025</span><br>
+                    <span style="color:var(--muted)">Limits: 806 U.S. Twitter users recruited through a crowd-work platform, February 11-27, 2023. Sample skewed younger and more Democratic. One platform at one point in time; no long-term effects measured; only the first 10 tweets per timeline were surveyed.</span>
+                  </li>
+                
+                  <li>
+                    <strong><a href="https://doi.org/10.1126/science.abp9364" target="_blank" rel="noopener noreferrer">How do social media feed algorithms affect attitudes and behavior in an election campaign?</a></strong><br>
+                    <span>Andrew M. Guess, et al. (Science) — July 27, 2023</span><br>
+                    <span style="color:var(--muted)">Limits: Abstract only, verified through Europe PMC for the repository's media-democracy report (source E01); the publisher page returned HTTP 403 on 2026-11-13. Consenting Facebook and Instagram users over three months in 2020; not an estimate of all accumulated platform effects.</span>
+                  </li>
+                
+                  <li>
+                    <strong><a href="https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-staff-report-finds-large-social-media-video-streaming-companies-have-engaged-vast-surveillance" target="_blank" rel="noopener noreferrer">A Look Behind the Screens: Examining the Data Practices of Social Media and Video Streaming Services (press release)</a></strong><br>
+                    <span>Federal Trade Commission staff (Federal Trade Commission) — September 19, 2024</span><br>
+                    <span style="color:var(--muted)">Limits: Based on orders issued in December 2020 to nine companies. Concerns data practices, not the effects of ranking on beliefs or purchases.</span>
+                  </li>
+                
+                  <li>
+                    <strong><a href="https://www.pewresearch.org/short-reads/2022/11/21/for-shopping-phones-are-common-and-influencers-have-become-a-factor-especially-for-young-adults/" target="_blank" rel="noopener noreferrer">For shopping, phones are common and influencers have become a factor – especially for young adults</a></strong><br>
+                    <span>Michelle Faverio and Monica Anderson (Pew Research Center) — November 21, 2022</span><br>
+                    <span style="color:var(--muted)">Limits: 6,034 U.S. adults, July 5-17, 2022. Denominator for the purchase figures is adult social media users. Self-reported; does not establish that posts caused purchases. No respondents under 18.</span>
+                  </li>
+                
+                  <li>
+                    <strong><a href="https://doi.org/10.1073/pnas.1710966114" target="_blank" rel="noopener noreferrer">Psychological targeting as an effective approach to digital mass persuasion</a></strong><br>
+                    <span>Sandra C. Matz, Michal Kosinski, Gideon Nave, David J. Stillwell (Proceedings of the National Academy of Sciences) — November 13, 2017</span><br>
+                    <span style="color:var(--muted)">Limits: Abstract only, read through Europe PMC on 2026-11-13. Three experiments reaching over 3.5 million people. 'Up to' figures are best cases, not averages. Tests tailored ads, not feed ranking.</span>
+                  </li>
+                
+                  <li>
+                    <strong><a href="https://www.pewresearch.org/journalism/2024/11/18/americas-news-influencers/" target="_blank" rel="noopener noreferrer">America's News Influencers</a></strong><br>
+                    <span>Pew Research Center (Pew Research Center) — November 18, 2024</span><br>
+                    <span style="color:var(--muted)">Limits: 10,658 U.S. adults, July 15-August 4, 2024. Measures where people say they regularly get news, not whether it changed their views. No respondents under 18.</span>
+                  </li>
+                
+                  <li>
+                    <strong><a href="https://doi.org/10.1126/sciadv.abc4046" target="_blank" rel="noopener noreferrer">The small effects of political advertising are small regardless of context, message, sender, or receiver: Evidence from 59 real-time randomized experiments</a></strong><br>
+                    <span>Alexander Coppock, Seth J. Hill, Lynn Vavreck (Science Advances) — September 2, 2020</span><br>
+                    <span style="color:var(--muted)">Limits: Abstract only, read through Europe PMC on 2026-11-13. 49 ads, 59 experiments, 34,000 people, 2016 U.S. presidential campaign. Survey experiments on ad exposure, not feed ranking.</span>
+                  </li>
+                
+                  <li>
+                    <strong><a href="https://doi.org/10.1038/s41562-022-01487-4" target="_blank" rel="noopener noreferrer">A 2 million-person, campaign-wide field experiment shows how digital advertising affects voter turnout</a></strong><br>
+                    <span>Minali Aggarwal, Jennifer Allen, Alexander Coppock, et al. (Nature Human Behaviour) — January 12, 2023</span><br>
+                    <span style="color:var(--muted)">Limits: Abstract only, read through Europe PMC on 2026-11-13. 2 million voters in five battleground states, 2020. Measures turnout, not trust. One partisan ad program.</span>
+                  </li>
+                
+                  <li>
+                    <strong><a href="https://doi.org/10.1073/pnas.2321584121" target="_blank" rel="noopener noreferrer">The effects of Facebook and Instagram on the 2020 election: A deactivation experiment</a></strong><br>
+                    <span>Hunt Allcott, Matthew Gentzkow, Winter Mason, et al. (Proceedings of the National Academy of Sciences) — May 13, 2024</span><br>
+                    <span style="color:var(--muted)">Limits: Abstract only, read through Europe PMC on 2026-11-13. A randomized subset of 19,857 Facebook and 15,585 Instagram users deactivated for six weeks before the 2020 election. Tests access to the platforms, not the ranking system alone.</span>
+                  </li>
+                
+              </ul>
+            </div>
+
+            <div>
+              <div class="copy-card">
+                <h2>Instagram Caption</h2>
+                <p style="font-size:12px;color:var(--muted);margin-top:-6px">Third-person institutional voice (strictly avoids personal quotes out of context).</p>
+                <textarea id="caption-3" readonly>A feed is a ranking. TikTok, Instagram and YouTube each say their systems predict what a user will watch, like or share.
+
+The Daily Nun compared those company descriptions with independent research, including a 2023 audit of 806 U.S. Twitter users, and looked at where scholars draw the line between persuasion and manipulation.
+
+It also checked what research says about purchases and candidate support. The evidence is mixed, and the article says where.
+
+Article + source notes:
+https://peternunley08-ops.github.io/the-daily-nun/desks/culture/when-does-a-recommendation-become-manipulation.html</textarea>
+                <button class="action-btn" type="button" onclick="copyCaption(3)">Copy Caption</button>
+                <span id="copy-status-3" style="font-size:12px;color:var(--blue);margin-left:10px"></span>
+              </div>
+
+              
+                <div class="copy-card">
+                  <h2>Voiceover Teleprompter</h2>
+                  <p style="font-size:12px;color:var(--muted);margin-top:-6px">Read aloud while recording over vertical video asset (~15 sec).</p>
+                  <div class="teleprompter">
+                    <p>"Every feed is a ranking. TikTok, Instagram and YouTube say their systems predict what each person will watch, like or share. In 2023, researchers audited the timelines of 806 Twitter users in the United States. Ranking by engagement showed them more angry, hostile posts than a simple newest-first feed, and they rated its political picks lower. One study is not the whole story. But clicking on something is not the same as wanting more of it. The Daily Nun."</p>
+                    <p style="font-size:11px;text-transform:uppercase;letter-spacing:0.05em;color:#9b9987;margin-bottom:6px">On-Screen Kinetic Text Sequence:</p>
+                    <ol>
+                      <li>Who chose that video?</li><li>A feed is a ranking.</li><li>Platforms say they predict what gets watched, liked, shared.</li><li>2023: researchers audited 806 U.S. Twitter users.</li><li>Engagement ranking showed more angry, hostile posts.</li><li>Users rated its political picks lower.</li><li>One study. Not the whole story.</li><li>A click is not approval.</li><li>The Daily Nun / A closer look at the world.</li>
+                    </ol>
+                  </div>
+                </div>
+              
+            </div>
+          </div>
+        
+      </section>
+    
+      <section class="week-panel " id="panel-4" role="tabpanel" aria-labelledby="tab-4">
+        
+          <div class="pending-notice">
+            <h2>Week 4: The disappearing local beat: What happens when watchdogs close</h2>
+            <p style="color:var(--muted);max-width:540px;margin:12px auto 20px">
+              Assigned to Codex (Issue #11).<br>
+              Assigned agent: <strong>Codex</strong>. Once merged, it will automatically populate this studio.
+            </p>
+          </div>
+        
+      </section>
+    
+  </main>
+
+  <footer>
+    <span>The Daily Nun Backlog Studio &nbsp;·&nbsp; Prepared for Peter Nunley</span>
+    <a href="../index.html">Return to Newspaper Front Page</a>
+  </footer>
+
+  <script>
+    function switchWeek(weekNum) {
+      document.querySelectorAll('.week-btn').forEach(btn => {
+        btn.setAttribute('aria-selected', btn.id === 'tab-' + weekNum);
+      });
+      document.querySelectorAll('.week-panel').forEach(panel => {
+        panel.classList.toggle('active', panel.id === 'panel-' + weekNum);
+      });
+    }
+
+    async function copyCaption(weekNum) {
+      const field = document.getElementById('caption-' + weekNum);
+      const status = document.getElementById('copy-status-' + weekNum);
+      try {
+        await navigator.clipboard.writeText(field.value);
+        status.textContent = 'Caption copied!';
+      } catch (err) {
+        field.focus();
+        field.select();
+        status.textContent = 'Selected. Press Ctrl+C / Cmd+C.';
+      }
+      setTimeout(() => { status.textContent = ''; }, 3000);
+    }
+  </script>
+</body>
+</html>

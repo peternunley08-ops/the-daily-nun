@@ -24,6 +24,7 @@ jobs:
           node posts/01-who-picked-this/build.mjs
           node posts/02-who-is-responsible/build.mjs
           node posts/03-recommendation-or-manipulation/build.mjs
+          node posts/build-backlog.mjs
 
       - name: Verify Strict Brand & Tone Rules
         run: |

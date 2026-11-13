@@ -23,12 +23,13 @@ jobs:
           node instagram-launch/build-launch.mjs
           node posts/01-who-picked-this/build.mjs
           node posts/02-who-is-responsible/build.mjs
+          node posts/03-recommendation-or-manipulation/build.mjs
 
       - name: Verify Strict Brand & Tone Rules
         run: |
           node -e '
             const fs = require("fs");
-            const glob = ["posts/01-who-picked-this/post.json", "posts/02-who-is-responsible/post.json", "instagram-launch/content.json"];
+            const glob = ["posts/01-who-picked-this/post.json", "posts/02-who-is-responsible/post.json", "posts/03-recommendation-or-manipulation/post.json", "instagram-launch/content.json"];
             const bannedNicknames = /p[-\s._\u2010-\u2015]*nun\b/i;
             for (const file of glob) {
               if (fs.existsSync(file)) {

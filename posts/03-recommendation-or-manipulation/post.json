@@ -1,0 +1,117 @@
+{
+  "id": "weekly-03-recommendation-or-manipulation",
+  "title": "When does a recommendation become manipulation?",
+  "format": "Three-slide Instagram carousel",
+  "status": "Prepared draft",
+  "week": 3,
+  "desk": "Culture",
+  "scheduledAt": null,
+  "publishedAt": null,
+  "audience": "Peter's high-school community",
+  "caption": "A feed is a ranking. TikTok, Instagram and YouTube each say their systems predict what a user will watch, like or share.\n\nThe Daily Nun compared those company descriptions with independent research, including a 2023 audit of 806 U.S. Twitter users, and looked at where scholars draw the line between persuasion and manipulation.\n\nThe evidence is mixed, and the article says where.\n\nArticle + source notes:",
+  "articleUrl": "https://peternunley08-ops.github.io/the-daily-nun/desks/culture/when-does-a-recommendation-become-manipulation.html",
+  "slides": [
+    {
+      "cover": true,
+      "title": "When does a recommendation\nbecome manipulation?",
+      "body": "What a feed is built to predict, and what one audit found.",
+      "theme": "paper",
+      "alt": "The Daily Nun cover slide: When does a recommendation become manipulation? Subtitle: What a feed is built to predict, and what one audit found."
+    },
+    {
+      "cover": false,
+      "title": "Feeds rank by prediction.",
+      "body": "TikTok, Instagram and YouTube say their systems predict what each user will watch, like or share. Those are company descriptions.",
+      "theme": "paper",
+      "alt": "Slide 2: Feeds rank by prediction. TikTok, Instagram and YouTube say their systems predict what each user will watch, like or share. Those are company descriptions."
+    },
+    {
+      "cover": false,
+      "title": "Engagement is not approval.",
+      "body": "A 2023 audit of 806 U.S. Twitter users found engagement ranking amplified hostile posts. Users rated its political picks lower.",
+      "theme": "blue",
+      "alt": "Slide 3: Engagement is not approval. A 2023 audit of 806 U.S. Twitter users found engagement ranking amplified hostile posts. Users rated its political picks lower."
+    }
+  ],
+  "reel": {
+    "title": "Who chose that video?",
+    "duration": 30,
+    "voiceover": "Every feed is a ranking. TikTok, Instagram and YouTube say their systems predict what each person will watch, like or share. In 2023, researchers audited the timelines of 806 Twitter users in the United States. Ranking by engagement showed them more angry, hostile posts than a simple newest-first feed, and they rated its political picks lower. One study is not the whole story. But clicking on something is not the same as wanting more of it. The Daily Nun.",
+    "kineticText": [
+      "Who chose that video?",
+      "A feed is a ranking.",
+      "Platforms say they predict what gets watched, liked, shared.",
+      "2023: researchers audited 806 U.S. Twitter users.",
+      "Engagement ranking showed more angry, hostile posts.",
+      "Users rated its political picks lower.",
+      "One study. Not the whole story.",
+      "A click is not approval.",
+      "The Daily Nun / A closer look at the world."
+    ]
+  },
+  "sources": [
+    {
+      "title": "Online Manipulation: Hidden Influences in a Digital World",
+      "author": "Daniel Susser, Beate Roessler, Helen Nissenbaum",
+      "publisher": "Georgetown Law Technology Review, 4 Geo. L. Tech. Rev. 1",
+      "date": "January 2020 (volume dated 2019)",
+      "url": "https://georgetownlawtechreview.org/online-manipulation-hidden-influences-in-a-digital-world/GLTR-01-2020/",
+      "type": "Law review article; interpretation, not an empirical study",
+      "limits": "One scholarly definition among several. The authors note that not everyone agrees hiddenness is required for manipulation. Definition passages read from the published PDF on 2026-11-13."
+    },
+    {
+      "title": "How TikTok recommends videos #ForYou",
+      "author": "TikTok",
+      "publisher": "TikTok Newsroom",
+      "date": "June 18, 2020",
+      "url": "https://newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you",
+      "type": "Corporate statement",
+      "limits": "The company's own description from 2020. It is not independently audited and may not describe the current system."
+    },
+    {
+      "title": "Instagram Ranking Explained",
+      "author": "Adam Mosseri",
+      "publisher": "Instagram",
+      "date": "May 31, 2023",
+      "url": "https://about.instagram.com/blog/announcements/instagram-ranking-explained",
+      "type": "Corporate statement",
+      "limits": "The company's own description from 2023. It lists signals and predictions but not their weights, and it is not independently audited."
+    },
+    {
+      "title": "On YouTube's recommendation system",
+      "author": "Cristos Goodrow",
+      "publisher": "YouTube Official Blog",
+      "date": "September 15, 2021",
+      "url": "https://blog.youtube/inside-youtube/on-youtubes-recommendation-system/",
+      "type": "Corporate statement",
+      "limits": "The company's own description from 2021. It says recommendations drive 'a significant amount' of viewership and gives no figure."
+    },
+    {
+      "title": "Engagement, user satisfaction, and the amplification of divisive content on social media",
+      "author": "Smitha Milli, Micah Carroll, Yike Wang, et al.",
+      "publisher": "PNAS Nexus 4(3), pgaf062",
+      "date": "March 5, 2025",
+      "url": "https://doi.org/10.1093/pnasnexus/pgaf062",
+      "type": "Peer-reviewed preregistered algorithmic audit",
+      "limits": "806 U.S. Twitter users recruited through a crowd-work platform, February 11-27, 2023. Sample skewed younger and more Democratic. One platform at one point in time; no long-term effects measured; only the first 10 tweets per timeline were surveyed."
+    },
+    {
+      "title": "How do social media feed algorithms affect attitudes and behavior in an election campaign?",
+      "author": "Andrew M. Guess, et al.",
+      "publisher": "Science",
+      "date": "July 27, 2023",
+      "url": "https://doi.org/10.1126/science.abp9364",
+      "type": "Peer-reviewed randomized field experiment",
+      "limits": "Abstract only, verified through Europe PMC for the repository's media-democracy report (source E01); the publisher page returned HTTP 403 on 2026-11-13. Consenting Facebook and Instagram users over three months in 2020; not an estimate of all accumulated platform effects."
+    },
+    {
+      "title": "A Look Behind the Screens: Examining the Data Practices of Social Media and Video Streaming Services (press release)",
+      "author": "Federal Trade Commission staff",
+      "publisher": "Federal Trade Commission",
+      "date": "September 19, 2024",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-staff-report-finds-large-social-media-video-streaming-companies-have-engaged-vast-surveillance",
+      "type": "Government staff report (press release read; full report not read)",
+      "limits": "Based on orders issued in December 2020 to nine companies. Concerns data practices, not the effects of ranking on beliefs or purchases."
+    }
+  ]
+}

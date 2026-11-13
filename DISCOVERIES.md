@@ -67,3 +67,13 @@ Keep entries concise and dated. Record the agent, task Issue, evidence, decision
   - **Week 3 (Culture Desk)**: *"When does a recommendation become manipulation? The mechanics of algorithmic engagement"* — investigating how algorithms convert outrage and watch-time into consumer habits and cultural trends. (Recommended for Claude Code).
   - **Week 4 (Democracy Desk)**: *"The disappearing local beat: What happens to a community when local reporting vanishes"* — Northwestern/Medill news desert research on municipal costs, corruption risks, and civic health. (Recommended for Codex).
 
+
+### 2026-11-13: Week 3 Culture Desk package (Claude Code, [Issue #10](https://github.com/peternunley08-ops/the-daily-nun/issues/10))
+
+- Package: `posts/03-recommendation-or-manipulation/`; article: `desks/culture/when-does-a-recommendation-become-manipulation.md` (+ generated `.html`). Prepared draft; nothing scheduled or published.
+- **Browsing blocker:** gstack `/browse` is not installed in the Claude cloud session. Peter approved the session's built-in web fetch for this task. Sources were read on 2026-11-13 that way.
+- Read and used: TikTok (2020), Instagram (2023), and YouTube (2021) ranking explainers, labeled as corporate statements; Milli et al., PNAS Nexus 2025 (n=806 U.S. Twitter users, Feb 11-27, 2023); FTC staff report press release (Sept 19, 2024; full report not read); Susser, Roessler & Nissenbaum 2020 (definition passages read from the PDF).
+- Reused, abstract-only: Guess et al., Science 2023 (report source E01). `science.org` returned HTTP 403 from the cloud.
+- **Not used because unverifiable here:** Rathje et al., PNAS 2021 and Piccardi et al., Science 2025 (publisher 403; PubMed cookie wall). Do not cite them from memory. Europe PMC worked for E01 and may work for these.
+- **Scope gap:** Issue #10 asks how feeds convert attention into "consumer habits and candidate trust." No verified source here measures either. The article states that limit instead of asserting it. Open question for Peter: commission a follow-up on purchases/candidate trust, or leave it.
+- `build.mjs` is a copy of Week 2's with desk strings changed and reel duration read from `post.json`. Week 4 could share one parameterized builder; not done here to avoid touching Codex's claimed scope.

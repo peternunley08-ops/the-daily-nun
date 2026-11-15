@@ -4,7 +4,7 @@ A closer look at the world. A publication project by Peter Nunley about governme
 
 **First research report:** [Who Shapes What America Knows? (PDF)](research/media-democracy/output/pdf/who-shapes-what-america-knows.pdf) · [Text, sources, and agent handoff](research/media-democracy/README.md)
 
-**Weekly posts:** prepared drafts, none posted or scheduled. [See all four launch weeks on the backlog board](posts/index.html).
+**Weekly posts:** prepared drafts, none posted or scheduled. [Open the backlog studio](posts/index.html) for launch weeks 1–4 and follow-on drafts 5–6.
 
 | | Story | Article | Upload pack |
 |---|---|---|---|

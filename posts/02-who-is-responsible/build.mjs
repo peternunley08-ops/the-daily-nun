@@ -20,6 +20,14 @@ for (const slide of post.slides) {
   }
 }
 
+// The voiceover must fit the stated duration at the stated reading pace.
+const WORDS_PER_MINUTE = 140;
+const voiceoverWords = post.reel.voiceover.trim().split(/\s+/).filter(Boolean).length;
+const voiceoverSeconds = Math.round(voiceoverWords / WORDS_PER_MINUTE * 60);
+if (voiceoverSeconds > post.reel.duration + 1) {
+  throw new Error(`Voiceover is ${voiceoverWords} words (about ${voiceoverSeconds}s at ${WORDS_PER_MINUTE} wpm) but the reel is ${post.reel.duration}s`);
+}
+
 // Build caption
 const caption = post.caption + '\n' + post.articleUrl + '\n';
 fs.writeFileSync(path.join(dir, 'caption.txt'), caption);
@@ -53,7 +61,7 @@ fs.writeFileSync(path.join(dir, 'SOURCES.md'), sourceNotes + '\n');
 const voiceoverContent = [
   `# Voiceover & Video Script: ${post.reel.title}`,
   '',
-  '**Duration:** ~15 seconds',
+  `**Duration:** ${post.reel.duration} seconds (voiceover: ${voiceoverWords} words, about ${voiceoverSeconds} seconds at ${WORDS_PER_MINUTE} words per minute)`,
   '**Format:** Vertical Video (1080 × 1920) / Reel & TikTok',
   '',
   '## Voiceover Script (For Peter to record)',
@@ -64,7 +72,7 @@ const voiceoverContent = [
   '',
   '## Delivery Notes',
   '- Tone: Calm, authoritative, third-person analytical.',
-  '- Pacing: Measured, clear enunciation, ~140 words per minute.',
+  `- Pacing: Measured, clear enunciation, about ${WORDS_PER_MINUTE} words per minute.`,
   '- Video functions silently with on-screen kinetic typography.'
 ].join('\n');
 fs.writeFileSync(path.join(dir, 'voiceover-script.txt'), voiceoverContent + '\n');

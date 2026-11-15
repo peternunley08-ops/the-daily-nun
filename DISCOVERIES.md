@@ -98,3 +98,12 @@ Keep entries concise and dated. Record the agent, task Issue, evidence, decision
 - Source checks so far (2026-11-13, cloud web fetch and search, not `/browse`): the Shift Project brief "It's About Time" (Schneider and Harknett, October 16, 2019; 30,000 employees at 120 large retail and food-service firms) opened and read in part. The FTC staff report "Bringing Dark Patterns to Light" (press release September 15, 2022) is confirmed to exist on ftc.gov but was not opened; the direct fetch returned 404.
 - Unverified leads, do not cite yet: secondary sources say California has no statewide predictive-scheduling law and that several cities plus Los Angeles County have local ordinances (the sources disagree on the count); a 2026 California bill on automated management decisions was reported as signed. Confirm both against official state and city sources.
 - Both pieces must stay general. No real workplace, coworker, classmate, or app user may be described.
+
+### 2026-11-15: Story 5 "Who decides who gets the hours?" drafted (Claude Code, [Issue #23](https://github.com/peternunley08-ops/the-daily-nun/issues/23))
+
+- Peter asked to start it after merging PR #14. Package `posts/05-who-gets-the-hours/`; article `desks/government/who-decides-who-gets-the-hours.md`. Folder 04 is left for Codex's Week 4 (Issue #11). Draft only; nothing scheduled or posted.
+- Written in the shorter format from Issue #21 / PR #22. Its builder has its own small strict renderer for now; switch to `assets/render-article.mjs` once PR #22 merges.
+- Verified sources (2026-11-15): Shift Project brief (Oct 16, 2019); DLSE reporting-time-pay FAQ; DLSE child labor fact sheet (April 2026); Los Angeles Fair Work Week page; Sen. McNerney's SB 947 release (Sept 30, 2026); DLA Piper SB 947 summary.
+- Corrections to the 2026-11-13 leads: the 2025 "No Robo Bosses" bill (SB 7) was vetoed on Oct 13, 2025. Its successor, SB 947, was signed Sept 30, 2026 and takes effect July 1, 2027; it covers discipline and firing, not scheduling. Do not describe it as a scheduling law.
+- Blocked from the cloud: gov.ca.gov, leginfo.legislature.ca.gov, cnbc.com (HTTP 403).
+- Still open: whether California has a statewide advance-notice rule (unconfirmed, not claimed); data on student workers (none found).

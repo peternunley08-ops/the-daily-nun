@@ -1,0 +1,107 @@
+{
+  "id": "story-05-who-gets-the-hours",
+  "title": "Who decides who gets the hours?",
+  "format": "Three-slide Instagram carousel",
+  "status": "Prepared draft",
+  "week": 5,
+  "desk": "Government",
+  "scheduledAt": null,
+  "publishedAt": null,
+  "audience": "Peter's high-school community",
+  "caption": "A schedule decides a paycheck. The Daily Nun looked at who sets work schedules and what California law requires when a shift disappears.\n\nA 2019 survey of about 30,000 workers at large retail and food chains found two-thirds got less than two weeks' notice. Rules on notice depend on the city.\n\nArticle + sources:",
+  "articleUrl": "https://peternunley08-ops.github.io/the-daily-nun/desks/government/who-decides-who-gets-the-hours.html",
+  "slides": [
+    {
+      "cover": true,
+      "title": "Who decides who\ngets the hours?",
+      "body": "How work schedules get set, and what California law says when a shift disappears.",
+      "theme": "paper",
+      "alt": "The Daily Nun cover slide: Who decides who gets the hours? Subtitle: How work schedules get set, and what California law says when a shift disappears."
+    },
+    {
+      "cover": false,
+      "title": "Short notice is common.",
+      "body": "A 2019 survey of 30,000 workers at large chains: two-thirds got less than two weeks' notice of their schedules.",
+      "theme": "paper",
+      "alt": "Slide 2: Short notice is common. A 2019 survey of 30,000 workers at large chains found two-thirds got less than two weeks' notice of their schedules."
+    },
+    {
+      "cover": false,
+      "title": "Know the half-shift rule.",
+      "body": "In California, workers sent home with under half their shift done are generally owed half the shift's pay, two to four hours.",
+      "theme": "blue",
+      "alt": "Slide 3: Know the half-shift rule. In California, workers sent home with under half their shift done are generally owed half the shift's pay, two to four hours."
+    }
+  ],
+  "reel": {
+    "title": "Who gets the hours?",
+    "duration": 30,
+    "voiceover": "Who decides who gets the hours? The employer does. A 2019 survey of thirty thousand workers at big chains found two in three got less than two weeks' notice. California sets a few limits. Sent home with under half a shift done? The worker is generally owed half the shift's pay. Under eighteen? Four hours, max, on a school day. The Daily Nun.",
+    "kineticText": [
+      "Who decides who gets the hours?",
+      "The employer does.",
+      "2019: 30,000 workers at big chains surveyed.",
+      "Two in three: under two weeks' notice.",
+      "California sets a few limits.",
+      "Sent home early? Some pay is owed.",
+      "Under 18? Four hours on school days.",
+      "The Daily Nun / A closer look at the world."
+    ]
+  },
+  "sources": [
+    {
+      "title": "It's About Time: How Work Schedule Instability Matters for Workers, Families, and Racial Inequality",
+      "author": "Daniel Schneider and Kristen Harknett",
+      "publisher": "The Shift Project, Harvard Kennedy School",
+      "date": "October 16, 2019",
+      "url": "https://shift.hks.harvard.edu/its-about-time-how-work-schedule-instability-matters-for-workers-families-and-racial-inequality/",
+      "type": "Survey research brief",
+      "limits": "About 30,000 employees at 120 of the largest U.S. retail and food-service firms; very large employers only; the brief does not break out high-school or student workers, and small businesses are not covered. Hardship findings are associations, not proof that schedules caused them. Read in full on 2026-11-15."
+    },
+    {
+      "title": "Reporting time pay: frequently asked questions",
+      "author": "California Labor Commissioner's Office (DLSE)",
+      "publisher": "California Department of Industrial Relations",
+      "date": "Undated web page, read 2026-11-15",
+      "url": "https://www.dir.ca.gov/dlse/faq_reportingtimepay.htm",
+      "type": "Official state guidance",
+      "limits": "Guidance, not the regulation itself (IWC wage orders, section 5). Has exceptions: threats, utility failures, acts of God, paid standby, shifts under two hours, and workers who leave on their own."
+    },
+    {
+      "title": "Complying With Child Labor Laws: Information for Employers",
+      "author": "California Labor Commissioner's Office (DLSE)",
+      "publisher": "California Department of Industrial Relations",
+      "date": "April 2026 (PDF creation date)",
+      "url": "https://www.dir.ca.gov/DLSE/Complying-with-Child-Labor-Laws-English.pdf",
+      "type": "Official state fact sheet",
+      "limits": "Summary for employers. Exceptions exist, such as school-approved work experience programs. The statute (Labor Code section 1391) was not opened; the legislature's site blocked automated access."
+    },
+    {
+      "title": "Fair Work Week Information",
+      "author": "City of Los Angeles, Office of Wage Standards",
+      "publisher": "City of Los Angeles",
+      "date": "Ordinance effective April 1, 2023; page read 2026-11-15",
+      "url": "https://wagesla.lacity.gov/fair-work-week-information",
+      "type": "Official city guidance",
+      "limits": "Applies only to retail employers with 300 or more employees globally, for work inside the City of Los Angeles. Other cities' rules were not checked."
+    },
+    {
+      "title": "Newsom Signs McNerney's No Robo Bosses Act of 2026 Requiring Human Oversight of AI in the Workplace",
+      "author": "Office of Sen. Jerry McNerney",
+      "publisher": "California State Senate",
+      "date": "September 30, 2026",
+      "url": "https://sd05.senate.ca.gov/news/newsom-signs-mcnerneys-no-robo-bosses-act-2026-requiring-human-oversight-ai-workplace",
+      "type": "Legislator's press release",
+      "limits": "The author's own announcement of SB 947. The governor's page and the bill text could not be opened (blocked to automated access)."
+    },
+    {
+      "title": "California enacts SB 947: What employers need to know about the \"No Robo Bosses Act\"",
+      "author": "DLA Piper",
+      "publisher": "DLA Piper",
+      "date": "October 2026",
+      "url": "https://www.dlapiper.com/en/insights/publications/2026/10/california-enacts-sb-947",
+      "type": "Law-firm client summary",
+      "limits": "Secondary legal summary, used only for the law's scope (discipline and firing) and effective date (July 1, 2027)."
+    }
+  ]
+}

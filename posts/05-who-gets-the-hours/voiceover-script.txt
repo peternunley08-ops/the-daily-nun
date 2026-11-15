@@ -1,0 +1,22 @@
+# Voiceover & Video Script: Who gets the hours?
+
+**Duration:** ~30 seconds
+**Format:** Vertical Video (1080 × 1920) / Reel & TikTok
+
+## Voiceover Script (For Peter to record)
+"Who decides who gets the hours? The employer does. A 2019 survey of thirty thousand workers at big chains found two in three got less than two weeks' notice. California sets a few limits. Sent home with under half a shift done? The worker is generally owed half the shift's pay. Under eighteen? Four hours, max, on a school day. The Daily Nun."
+
+## Kinetic On-Screen Text
+1. Who decides who gets the hours?
+2. The employer does.
+3. 2019: 30,000 workers at big chains surveyed.
+4. Two in three: under two weeks' notice.
+5. California sets a few limits.
+6. Sent home early? Some pay is owed.
+7. Under 18? Four hours on school days.
+8. The Daily Nun / A closer look at the world.
+
+## Delivery Notes
+- Tone: Calm, authoritative, third-person analytical.
+- Pacing: Measured, clear enunciation, ~140 words per minute.
+- Video functions silently with on-screen kinetic typography.

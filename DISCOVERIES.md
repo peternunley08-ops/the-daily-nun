@@ -166,3 +166,12 @@ Keep entries concise and dated. Record the agent, task Issue, evidence, decision
 - Outputs `reel.mp4` and `reel-cover.png` per package; `upload-pack.zip` now includes `REEL.mp4`; previews play the video. `posts/drawing.mjs` holds the drawing setup shared by both exporters.
 - Week 2's on-screen text dropped "Local power is divided." Seven cards could not be read in 15 seconds; the next two cards show the same point by example, and the voiceover still says it.
 - Headlines use the Gelasio stand-in for Georgia, as with the slides. No voice track: Peter records `VOICEOVER.txt` over the video or posts it silent.
+
+### 2026-11-15: Peter Project OS pass (Claude Code)
+
+- Peter ran "Peter Project OS" v1.0.0 (his personalised anti-slop skill) on this repo. The layout, voice and builder audit from earlier the same day (PR #29) was not repeated; this pass covered the checks its project map lists for The Daily Nun that had not run: citation links, stale exports, voice in social copy, and private context.
+- Privacy: no identifying details from Peter's private application profile (IDs, date of birth, school, family or friends' names) appear anywhere in the repo.
+- Citations: all 45 cited URLs checked. Every DOI resolves through the DOI registry; publisher pages return 403 to automated requests. ftc.gov returns 404 to this machine for every page, including its homepage, so the FTC links are blocked, not dead. Medill's site still fails from the cloud (TLS chain / 503).
+- Stale exports fixed: `daily-nun-instagram-launch.zip` carried an old `DEPARTMENTS.md` without the one-post-weekly cadence note; Week 1's `upload-pack.zip` had a heading-less `SOURCES.txt`. Both entries refreshed; every ZIP now matches its sources byte for byte.
+- Voice: the only first-person phrase left in any caption, Story, bio or alt text was Story 6's topic label, "The algorithm between us", now "The algorithm in between". Its PNG was patched by repainting only that Arial label line (the Impact headline font is not installed in the cloud, so a full re-render would have changed the headline); the overview sheet's card 6 was updated the same way.
+- Not done (out of scope, already tracked): Issue #20's report follow-up on the Gallup 2026 trust figure and the TikTok joint-venture date.

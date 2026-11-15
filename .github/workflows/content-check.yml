@@ -24,6 +24,7 @@ jobs:
           node posts/01-who-picked-this/build.mjs
           node posts/02-who-is-responsible/build.mjs
           node posts/03-recommendation-or-manipulation/build.mjs
+          node posts/04-the-disappearing-local-beat/build.mjs
           node posts/05-who-gets-the-hours/build.mjs
           node posts/06-does-a-streak-help/build.mjs
           node posts/build-backlog.mjs
@@ -32,7 +33,7 @@ jobs:
         run: |
           node -e '
             const fs = require("fs");
-            const glob = ["posts/01-who-picked-this/post.json", "posts/02-who-is-responsible/post.json", "posts/03-recommendation-or-manipulation/post.json", "posts/05-who-gets-the-hours/post.json", "posts/06-does-a-streak-help/post.json", "instagram-launch/content.json"];
+            const glob = ["posts/01-who-picked-this/post.json", "posts/02-who-is-responsible/post.json", "posts/03-recommendation-or-manipulation/post.json", "posts/04-the-disappearing-local-beat/post.json", "posts/05-who-gets-the-hours/post.json", "posts/06-does-a-streak-help/post.json", "instagram-launch/content.json"];
             const bannedNicknames = /p[-\s._\u2010-\u2015]*nun\b/i;
             for (const file of glob) {
               if (fs.existsSync(file)) {

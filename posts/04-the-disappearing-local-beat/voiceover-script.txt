@@ -1,0 +1,22 @@
+# Voiceover & Video Script: Who is watching the meeting?
+
+**Duration:** ~30 seconds
+**Format:** Vertical Video (1080 × 1920) / Reel & TikTok
+
+## Voiceover Script (For Peter to record)
+"What happens when the local paper closes? A 2026 Northwestern count found 238 U.S. counties with no locally based professional news source. One study estimated that after a local paper closed, the town's borrowing costs went up, about six hundred fifty thousand dollars per bond issue. Another found voters with less coverage were less likely to know their representative's name. The meeting still happens. Who is watching? The Daily Nun."
+
+## Kinetic On-Screen Text
+1. What happens when the local paper closes?
+2. 238 counties: no local news source.
+3. After closures, borrowing costs rose.
+4. About $650,000 per bond issue.
+5. Less coverage, less-known representatives.
+6. The meeting still happens.
+7. Who is watching?
+8. The Daily Nun / A closer look at the world.
+
+## Delivery Notes
+- Tone: Calm, authoritative, third-person analytical.
+- Pacing: Measured, clear enunciation, ~140 words per minute.
+- Video functions silently with on-screen kinetic typography.

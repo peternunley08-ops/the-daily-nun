@@ -1,0 +1,6 @@
+Fewer reporters cover local government. The Daily Nun looked at what researchers have measured when the local paper closes.
+
+A 2026 Northwestern count found 238 U.S. counties with no locally based professional news source. Studies link closures and thinner coverage to higher public borrowing costs and less-informed voters. They show patterns, not what happens in any one town.
+
+Article + sources:
+https://peternunley08-ops.github.io/the-daily-nun/desks/democracy/what-happens-when-the-local-paper-closes.html

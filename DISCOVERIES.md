@@ -115,3 +115,11 @@ Keep entries concise and dated. Record the agent, task Issue, evidence, decision
 - Finding to preserve: no verified source tests whether streaks improve learning. Engagement and learning must not be conflated.
 - The FTC "Bringing Dark Patterns to Light" report (Sept 2022) was not used; it was not opened and is not about streaks. The student-data angle was dropped for lack of a verified source.
 - Europe PMC does not index these two papers; Crossref's API (`api.crossref.org/works/<doi>`) returned the Lally abstract when the publisher would not.
+
+### 2026-11-15: Week 4 "What happens when the local paper closes?" drafted (Claude Code, [Issue #11](https://github.com/peternunley08-ops/the-daily-nun/issues/11))
+
+- Peter asked Claude Code to build Week 4. Codex's 2026-11-13 claim was still awaiting confirmation and no Week 4 branch existed; the reassignment is recorded on Issue #11. Codex's planned paths were kept: `posts/04-the-disappearing-local-beat/`, `desks/democracy/`.
+- Sources reused from `research/media-democracy/sources/`: E08 (Medill 2026), E06 (Gao, Lee and Murphy 2020), H14 (Snyder and Strömberg), H02 (Martin and McCrain 2019). The three study abstracts were re-read on 2026-11-15; Medill returned HTTP 503 and a TLS chain error, so its figures rely on the 2026-11-11 verification.
+- The report chapter had omitted E06's 5-11 basis point and $650,000 figures. They appear in the publisher abstract on RePEc and are used here, attributed to the authors, with the note that full data and methods were not reviewed.
+- With this package, all four backlog weeks have post specs, scripts, and articles. None has exported launch media except Week 1. The backlog is not upload-ready.
+- Peter also shared an "anti-slop-refinement" v4 skill package (a design and writing quality workflow). It was read, not installed or committed. Its writing and research checks were applied to Week 4: claim-to-source map, observed/inferred/unknown separation, rendered-page inspection, and minimum gates.

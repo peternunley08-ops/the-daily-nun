@@ -1,0 +1,89 @@
+{
+  "id": "weekly-04-the-disappearing-local-beat",
+  "title": "What happens when the local paper closes?",
+  "format": "Three-slide Instagram carousel",
+  "status": "Prepared draft",
+  "week": 4,
+  "desk": "Democracy",
+  "scheduledAt": null,
+  "publishedAt": null,
+  "audience": "Peter's high-school community",
+  "caption": "Fewer reporters cover local government. The Daily Nun looked at what researchers have measured when the local paper closes.\n\nA 2026 Northwestern count found 238 U.S. counties with no locally based professional news source. Studies link closures and thinner coverage to higher public borrowing costs and less-informed voters. They show patterns, not what happens in any one town.\n\nArticle + sources:",
+  "articleUrl": "https://peternunley08-ops.github.io/the-daily-nun/desks/democracy/what-happens-when-the-local-paper-closes.html",
+  "slides": [
+    {
+      "cover": true,
+      "title": "What happens when the\nlocal paper closes?",
+      "body": "Fewer reporters cover local government. Researchers have measured some of what changes.",
+      "theme": "paper",
+      "alt": "The Daily Nun cover slide: What happens when the local paper closes? Subtitle: Fewer reporters cover local government. Researchers have measured some of what changes."
+    },
+    {
+      "cover": false,
+      "title": "238 counties, no local outlet.",
+      "body": "A 2026 Northwestern count found 238 U.S. counties with no locally based professional news source, and over 1,400 with one.",
+      "theme": "paper",
+      "alt": "Slide 2: 238 counties, no local outlet. A 2026 Northwestern count found 238 U.S. counties with no locally based professional news source, and over 1,400 with only one."
+    },
+    {
+      "cover": false,
+      "title": "Closures can cost money.",
+      "body": "One study estimated that after a local paper closed, the town's borrowing costs rose about $650,000 per bond issue.",
+      "theme": "blue",
+      "alt": "Slide 3: Closures can cost money. One study estimated that after a local paper closed, the town's borrowing costs rose about 650,000 dollars per bond issue."
+    }
+  ],
+  "reel": {
+    "title": "Who is watching the meeting?",
+    "duration": 30,
+    "voiceover": "What happens when the local paper closes? A 2026 Northwestern count found 238 U.S. counties with no locally based professional news source. One study estimated that after a local paper closed, the town's borrowing costs went up, about six hundred fifty thousand dollars per bond issue. Another found voters with less coverage were less likely to know their representative's name. The meeting still happens. Who is watching? The Daily Nun.",
+    "kineticText": [
+      "What happens when the local paper closes?",
+      "238 counties: no local news source.",
+      "After closures, borrowing costs rose.",
+      "About $650,000 per bond issue.",
+      "Less coverage, less-known representatives.",
+      "The meeting still happens.",
+      "Who is watching?",
+      "The Daily Nun / A closer look at the world."
+    ]
+  },
+  "sources": [
+    {
+      "title": "The State of Local News 2026",
+      "author": "Zach Metzger and John Volk",
+      "publisher": "Medill Local News Initiative, Northwestern University",
+      "date": "October 13, 2026",
+      "url": "https://localnewsinitiative.northwestern.edu/projects/state-of-local-news/2026/report/",
+      "type": "Original research inventory",
+      "limits": "Counts locally based professional outlets, not every information source. The 170 figure combines closures and mergers. Methodology changed this year. Figures from the repository's report verification of 2026-11-11 (source E08); the site returned HTTP 503 and a certificate error on 2026-11-15."
+    },
+    {
+      "title": "Financing dies in darkness? The impact of newspaper closures on public finance",
+      "author": "Pengjie Gao, Chang Lee, Dermot Murphy",
+      "publisher": "Journal of Financial Economics 135(2), 445-467",
+      "date": "2020",
+      "url": "https://ideas.repec.org/a/eee/jfinec/v135y2020i2p445-467.html",
+      "type": "Peer-reviewed research",
+      "limits": "Publisher abstract read on RePEc on 2026-11-15; full data, sample period, and methods not reviewed. The 5-11 basis point and $650,000 figures and the causal claim are the authors' own."
+    },
+    {
+      "title": "Press Coverage and Political Accountability",
+      "author": "James M. Snyder Jr., David Strömberg",
+      "publisher": "NBER Working Paper 13878; Journal of Political Economy (2010)",
+      "date": "March 2008",
+      "url": "https://www.nber.org/papers/w13878",
+      "type": "Peer-reviewed research (working paper version read)",
+      "limits": "Abstract read on 2026-11-15. Concerns U.S. House coverage in earlier decades, not newspaper closures directly."
+    },
+    {
+      "title": "Local News and National Politics",
+      "author": "Gregory J. Martin, Joshua McCrain",
+      "publisher": "American Political Science Review",
+      "date": "February 19, 2019",
+      "url": "https://doi.org/10.1017/S0003055418000965",
+      "type": "Peer-reviewed research",
+      "limits": "Abstract read through Crossref on 2026-11-15. Concerns one conglomerate's acquisitions of local TV stations; results are relative to other programs in the same markets."
+    }
+  ]
+}

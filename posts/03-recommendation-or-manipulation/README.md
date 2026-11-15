@@ -20,3 +20,5 @@
 - Sources were read on 2026-11-13 with the cloud session's web fetch, not gstack `/browse`.
 - Company posts are labeled as corporate statements. Five journal studies (Guess, Matz, Coppock, Aggarwal, Allcott) are abstract-only, read through Europe PMC.
 - Purchase and candidate evidence covers adults, ads, and platform access. No source isolates feed ranking or studies high-school students. The article says so.
+- Upload pack: `slide-01.png`–`slide-03.png` (1080 × 1350), `ALT-TEXT.txt`, and `upload-pack.zip`, made with `node posts/export-slides.mjs` on 2026-11-15. Headlines were rendered with Gelasio standing in for Georgia (not installed in the cloud session); re-export on a Mac for an exact Week 1 match.
+- No MP4 exists yet; the Reel is a script only.

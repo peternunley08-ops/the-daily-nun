@@ -13,21 +13,21 @@
   "slides": [
     {
       "cover": true,
-      "title": "What happens when the\nlocal paper closes?",
+      "title": "What happens\nwhen the local\npaper closes?",
       "body": "Fewer reporters cover local government. Researchers have measured some of what changes.",
       "theme": "paper",
       "alt": "The Daily Nun cover slide: What happens when the local paper closes? Subtitle: Fewer reporters cover local government. Researchers have measured some of what changes."
     },
     {
       "cover": false,
-      "title": "238 counties, no local outlet.",
+      "title": "238 counties,\nno local outlet.",
       "body": "A 2026 Northwestern count found 238 U.S. counties with no locally based professional news source, and over 1,400 with one.",
       "theme": "paper",
       "alt": "Slide 2: 238 counties, no local outlet. A 2026 Northwestern count found 238 U.S. counties with no locally based professional news source, and over 1,400 with only one."
     },
     {
       "cover": false,
-      "title": "Closures can cost money.",
+      "title": "Closures can\ncost money.",
       "body": "One study estimated that after a local paper closed, the town's borrowing costs rose about $650,000 per bond issue.",
       "theme": "blue",
       "alt": "Slide 3: Closures can cost money. One study estimated that after a local paper closed, the town's borrowing costs rose about 650,000 dollars per bond issue."

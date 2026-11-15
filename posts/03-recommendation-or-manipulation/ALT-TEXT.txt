@@ -1,0 +1,5 @@
+Slide 1: When does a recommendation become manipulation? Subtitle: What a feed is built to predict, and what one audit found.
+
+Slide 2: Feeds rank by prediction. TikTok, Instagram and YouTube say their systems predict what each user will watch, like or share. Those are company descriptions.
+
+Slide 3: Engagement is not approval. A 2023 audit of 806 U.S. Twitter users found engagement ranking amplified hostile posts. Users rated its political picks lower.

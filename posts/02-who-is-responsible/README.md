@@ -16,3 +16,7 @@
 ## Related Long-Form Article
 - Markdown: `desks/government/who-is-actually-responsible.md`
 - Web Edition: `desks/government/who-is-actually-responsible.html`
+
+## Upload Pack
+- Upload pack: `slide-01.png`–`slide-03.png` (1080 × 1350), `ALT-TEXT.txt`, and `upload-pack.zip`, made with `node posts/export-slides.mjs` on 2026-11-15. Headlines were rendered with Gelasio standing in for Georgia (not installed in the cloud session); re-export on a Mac for an exact Week 1 match.
+- No MP4 exists yet; the Reel is a script only.

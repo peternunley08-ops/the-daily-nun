@@ -21,4 +21,5 @@
 - The Medill site was unavailable on 2026-11-15 (HTTP 503 and a certificate error); its figures come from the report's 2026-11-11 verification.
 - All three studies were read as abstracts only. The borrowing-cost figures and causal claim are the authors' own.
 - No local (county-level) figures are claimed.
-- No exported PNG, MP4, or upload ZIP yet.
+- Upload pack: `slide-01.png`–`slide-03.png` (1080 × 1350), `ALT-TEXT.txt`, and `upload-pack.zip`, made with `node posts/export-slides.mjs` on 2026-11-15. Headlines were rendered with Gelasio standing in for Georgia (not installed in the cloud session); re-export on a Mac for an exact Week 1 match.
+- No MP4 exists yet; the Reel is a script only.

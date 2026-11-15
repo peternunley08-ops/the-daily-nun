@@ -123,3 +123,11 @@ Keep entries concise and dated. Record the agent, task Issue, evidence, decision
 - The report chapter had omitted E06's 5-11 basis point and $650,000 figures. They appear in the publisher abstract on RePEc and are used here, attributed to the authors, with the note that full data and methods were not reviewed.
 - With this package, all four backlog weeks have post specs, scripts, and articles. None has exported launch media except Week 1. The backlog is not upload-ready.
 - Peter also shared an "anti-slop-refinement" v4 skill package (a design and writing quality workflow). It was read, not installed or committed. Its writing and research checks were applied to Week 4: claim-to-source map, observed/inferred/unknown separation, rendered-page inspection, and minimum gates.
+
+### 2026-11-15: Upload-ready slides for Weeks 2, 3, and 4 (Claude Code)
+
+- Peter asked for the slide images. New tool `posts/export-slides.mjs` renders each package's `post.json` slides at 1080 × 1350 using the `drawArt()` function read from `instagram-launch/build-launch.mjs` (the code that made Week 1's images), so the design stays single-sourced. It writes `slide-0N.png`, `ALT-TEXT.txt`, and `upload-pack.zip` (images, caption, alt text, sources, voiceover, read-me) into the package folder.
+- Not in CI: it needs Playwright with Chromium. Run it after a package's `build.mjs` and whenever slide copy changes.
+- Font: Georgia is not installed in the Claude cloud container. The exporter refuses to run without it unless `--serif-font` supplies a stand-in; these images used Gelasio Bold (SIL Open Font License, from the `@fontsource/gelasio` npm package), which is designed to match Georgia's widths. Each pack's READ-ME says so. Re-exporting on a Mac with Georgia gives an exact Week 1 match.
+- Headline fit: `drawArt()` only breaks headlines at `\n` and stops shrinking at 64px, so long headlines overflowed the right margin. The exporter now fails if a headline is wider than 908px or smaller than 90px (cover) / 80px (inner). Line breaks were added to seven headlines in Weeks 2-4; no words changed.
+- Weeks 5 and 6 were not exported (not requested). Week 1's ZIP still has the stale caption until Codex's PR #19 lands.

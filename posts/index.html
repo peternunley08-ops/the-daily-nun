@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>4-Week Pre-Launch Backlog Studio — The Daily Nun</title>
+  <title>Backlog studio — The Daily Nun</title>
   <style>
     :root {
       --paper: #f6f5f0;
@@ -24,7 +24,7 @@
     header, main, footer {
       max-width: 1200px;
       margin: auto;
-      padding: 24px 24px;
+      padding: 24px;
     }
     .topbar {
       border-bottom: 1px solid var(--ink);
@@ -32,7 +32,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 12px;
       font-size: 13px;
+      flex-wrap: wrap;
     }
     .brand {
       font: 700 44px/1.1 Georgia, serif;
@@ -50,16 +52,30 @@
     .tagline {
       font-size: 16px;
       color: var(--muted);
-      max-width: 720px;
-      margin-bottom: 24px;
+      max-width: 760px;
+      margin: 0 0 8px;
+    }
+    .scope-note {
+      font-size: 14px;
+      color: var(--muted);
+      max-width: 760px;
+      margin: 0 0 24px;
     }
     .backlog-nav {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin: 24px 0 32px;
+      margin: 24px 0 12px;
       border-bottom: 2px solid var(--ink);
       padding-bottom: 16px;
+    }
+    .nav-label {
+      flex: 0 0 100%;
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 4px 0 0;
     }
     .week-btn {
       font: inherit;
@@ -70,7 +86,6 @@
       cursor: pointer;
       font-size: 14px;
       border-radius: 2px;
-      transition: all 0.15s ease;
     }
     .week-btn[aria-selected="true"] {
       background: var(--ink);
@@ -80,7 +95,7 @@
       font-size: 12px;
       margin-left: 6px;
       padding: 2px 6px;
-      border-radius: 10px;
+      border-radius: 2px;
       background: var(--rule);
       color: var(--ink);
     }
@@ -88,12 +103,8 @@
       background: var(--blue);
       color: var(--white);
     }
-    .week-panel {
-      display: none;
-    }
-    .week-panel.active {
-      display: block;
-    }
+    .week-panel { display: none; }
+    .week-panel.active { display: block; }
     .grid {
       display: grid;
       grid-template-columns: minmax(0, 1.25fr) minmax(320px, 1fr);
@@ -109,12 +120,14 @@
       aspect-ratio: 4/5;
       border: 1px solid var(--rule);
       background: var(--paper);
-      padding: 18px 16px;
+      padding: 0;
+      overflow: hidden;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       position: relative;
     }
+    .slide-box:not(:has(img)) { padding: 18px 16px; }
     .slide-box.blue {
       background: var(--blue);
       color: var(--paper);
@@ -153,7 +166,6 @@
       background: var(--accent-bg);
       border: 1px solid var(--rule);
       padding: 24px;
-      border-radius: 4px;
       margin-bottom: 24px;
     }
     h2 {
@@ -166,6 +178,23 @@
       letter-spacing: 0.05em;
       color: var(--blue);
       margin: 18px 0 8px;
+    }
+    .meta-line {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: -6px;
+      margin-bottom: 20px;
+    }
+    .hint {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: -6px;
+    }
+    .limit { color: var(--muted); }
+    .copy-status {
+      font-size: 12px;
+      color: var(--blue);
+      margin-left: 10px;
     }
     textarea {
       width: 100%;
@@ -195,13 +224,19 @@
       background: #191916;
       color: #faf9f5;
       padding: 20px;
-      border-radius: 4px;
       margin-top: 12px;
     }
     .teleprompter p {
       font: 500 18px/1.6 Georgia, serif;
       margin: 0 0 14px;
       color: #fff;
+    }
+    .kinetic-label {
+      font-size: 11px !important;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #9b9987 !important;
+      margin-bottom: 6px !important;
     }
     .teleprompter ol {
       padding-left: 20px;
@@ -212,20 +247,27 @@
     .sources-list {
       font-size: 13px;
       line-height: 1.6;
+      padding-left: 18px;
     }
-    .sources-list li {
-      margin-bottom: 10px;
-    }
+    .sources-list li { margin-bottom: 10px; }
     a {
       color: var(--blue);
       text-underline-offset: 3px;
+    }
+    a:focus-visible, button:focus-visible, textarea:focus-visible {
+      outline: 3px solid var(--blue);
+      outline-offset: 3px;
     }
     .pending-notice {
       padding: 40px;
       text-align: center;
       background: var(--accent-bg);
       border: 1px dashed var(--rule);
-      border-radius: 4px;
+    }
+    .pending-copy {
+      color: var(--muted);
+      max-width: 540px;
+      margin: 12px auto 0;
     }
     footer {
       border-top: 1px solid var(--rule);
@@ -235,187 +277,196 @@
       color: var(--muted);
       display: flex;
       justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
     }
     @media (max-width: 840px) {
       .grid { grid-template-columns: 1fr; }
       .slides-preview { grid-template-columns: 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
     }
   </style>
 </head>
 <body>
   <header>
     <div class="topbar">
-      <span>The Daily Nun &nbsp;·&nbsp; Internal Newsroom Backlog Studio</span>
-      <span>Strict Third-Person Editorial Mode</span>
+      <span>The Daily Nun · Internal backlog studio · Unpublished</span>
+      <span>Third-person editorial voice</span>
     </div>
     <a class="brand" href="../index.html">The Daily Nun</a>
-    <h1>Pre-Launch 4-Week Backlog Studio</h1>
+    <h1>Pre-launch backlog studio</h1>
     <p class="tagline">
-      Complete four-week editorial backlog prepared prior to public launch. Review carousel sequences, copy third-person captions, and record voiceover audio scripts.
+      Review launch-week carousels, copy captions, and read voiceover scripts before any public post.
+    </p>
+    <p class="scope-note">
+      Weeks 1–4 are the launch sequence. Stories 5–6 are approved follow-on drafts after that backlog.
+      Nothing here is scheduled or posted.
     </p>
 
-    <nav class="backlog-nav" role="tablist" aria-label="Weekly backlog tabs">
+    <nav class="backlog-nav" role="tablist" aria-label="Backlog packages">
+      <div class="nav-label">Launch weeks</div>
       
-        <button class="week-btn" role="tab" id="tab-1" aria-selected="true" aria-controls="panel-1" onclick="switchWeek(1)">
-          Week 1: Desk
-          <span class="badge">Ready</span>
+        <button class="week-btn" role="tab" id="tab-1" type="button"
+          aria-selected="true"
+          aria-controls="panel-1"
+          tabindex="0"
+          data-week="1">
+          Week 1: Media
+          <span class="badge">Launch week</span>
         </button>
-      
-        <button class="week-btn" role="tab" id="tab-2" aria-selected="false" aria-controls="panel-2" onclick="switchWeek(2)">
+        <button class="week-btn" role="tab" id="tab-2" type="button"
+          aria-selected="false"
+          aria-controls="panel-2"
+          tabindex="-1"
+          data-week="2">
           Week 2: Government
-          <span class="badge">Ready</span>
+          <span class="badge">Launch week</span>
         </button>
-      
-        <button class="week-btn" role="tab" id="tab-3" aria-selected="false" aria-controls="panel-3" onclick="switchWeek(3)">
+        <button class="week-btn" role="tab" id="tab-3" type="button"
+          aria-selected="false"
+          aria-controls="panel-3"
+          tabindex="-1"
+          data-week="3">
           Week 3: Culture
-          <span class="badge">Ready</span>
+          <span class="badge">Launch week</span>
         </button>
-      
-        <button class="week-btn" role="tab" id="tab-4" aria-selected="false" aria-controls="panel-4" onclick="switchWeek(4)">
+        <button class="week-btn" role="tab" id="tab-4" type="button"
+          aria-selected="false"
+          aria-controls="panel-4"
+          tabindex="-1"
+          data-week="4">
           Week 4: Democracy
-          <span class="badge">Ready</span>
+          <span class="badge">Launch week</span>
         </button>
-      
+      <div class="nav-label">Follow-on drafts</div>
+        <button class="week-btn" role="tab" id="tab-5" type="button"
+          aria-selected="false"
+          aria-controls="panel-5"
+          tabindex="-1"
+          data-week="5">
+          Story 5: Government
+          <span class="badge">Follow-on</span>
+        </button>
+        <button class="week-btn" role="tab" id="tab-6" type="button"
+          aria-selected="false"
+          aria-controls="panel-6"
+          tabindex="-1"
+          data-week="6">
+          Story 6: Culture
+          <span class="badge">Follow-on</span>
+        </button>
     </nav>
   </header>
 
   <main>
     
-      <section class="week-panel active" id="panel-1" role="tabpanel" aria-labelledby="tab-1">
-        
+      <section class="week-panel active" id="panel-1" role="tabpanel" aria-labelledby="tab-1" >
           <div class="grid">
             <div>
               <h2>Who picked this for you?</h2>
-              <p style="color:var(--muted);font-size:14px;margin-top:-6px;margin-bottom:20px">
-                Desk: <strong>Editorial</strong> &nbsp;·&nbsp; Format: <strong>Three-slide Instagram carousel</strong> &nbsp;·&nbsp; 
-                <a href="01-who-picked-this/index.html">Open Dedicated Post Studio</a>
+              <p class="meta-line">
+                Desk: <strong>Media</strong> &nbsp;·&nbsp; Format: <strong>Three-slide Instagram carousel</strong> &nbsp;·&nbsp;
+                <a href="01-who-picked-this/index.html">Open dedicated post studio</a> &nbsp;·&nbsp; <a href="01-who-picked-this/upload-pack.zip" download>Download upload pack</a>
               </p>
 
-              <h3>Instagram Carousel Preview (1080 × 1350)</h3>
+              <h3>Instagram carousel preview (1080 × 1350)</h3>
               <div class="slides-preview">
                 
                   <div class="slide-box">
-                    <img src="../instagram-launch/carousels/01-who-picked-this/slide-01.png" alt="Slide 1" loading="lazy">
+                    <img src="../instagram-launch/carousels/01-who-picked-this/slide-01.png" alt="Slide 1: The Daily Nun asks: Who picked this for you?" loading="lazy" width="1080" height="1350">
                   </div>
-                
                   <div class="slide-box">
-                    <img src="../instagram-launch/carousels/01-who-picked-this/slide-02.png" alt="Slide 2" loading="lazy">
+                    <img src="../instagram-launch/carousels/01-who-picked-this/slide-02.png" alt="Slide 2: Making a story and recommending it are different decisions. A newsroom can report a story and a platform can recommend it." loading="lazy" width="1080" height="1350">
                   </div>
-                
                   <div class="slide-box">
-                    <img src="../instagram-launch/carousels/01-who-picked-this/slide-03.png" alt="Slide 3" loading="lazy">
+                    <img src="../instagram-launch/carousels/01-who-picked-this/slide-03.png" alt="Slide 3: Trace both: find the original reporting and examine how the story reached you." loading="lazy" width="1080" height="1350">
                   </div>
-                
               </div>
 
-              <h3>Verified Source Ledger</h3>
+              <h3>Verified source ledger</h3>
               <ul class="sources-list">
                 
                   <li>
                     <strong><a href="https://blog.youtube/inside-youtube/on-youtubes-recommendation-system/" target="_blank" rel="noopener noreferrer">On YouTube's recommendation system</a></strong><br>
                     <span>Cristos Goodrow (YouTube Official Blog) — September 15, 2021</span><br>
-                    <span style="color:var(--muted)">Limits: Explains the company's described recommendation signals in 2021. It is not an independent audit of every app or a claim that a feed determines a person's beliefs. The report contains the wider research and its limitations.</span>
+                    <span class="limit">Limits: Explains the company's described recommendation signals in 2021. It is not an independent audit of every app or a claim that a feed determines a person's beliefs. The report contains the wider research and its limitations.</span>
                   </li>
-                
               </ul>
             </div>
 
             <div>
               <div class="copy-card">
-                <h2>Instagram Caption</h2>
-                <p style="font-size:12px;color:var(--muted);margin-top:-6px">Third-person institutional voice (strictly avoids personal quotes out of context).</p>
-                <textarea id="caption-1" readonly>Outlets choose what to cover. Platforms recommend what to show. Readers navigate the choices in between.
+                <h2>Instagram caption</h2>
+                <p class="hint">Third-person institutional voice. Prepared draft; not posted.</p>
+                <textarea id="caption-1" readonly aria-label="Caption for week 1">Outlets choose what to cover. Platforms recommend what to show. Readers navigate the choices in between.
 
 The Daily Nun examined the evidence behind media ownership, algorithms, and civic influence.
 
 Full report + sources:
 https://peternunley08-ops.github.io/the-daily-nun/research/media-democracy/output/pdf/who-shapes-what-america-knows.pdf</textarea>
-                <button class="action-btn" type="button" onclick="copyCaption(1)">Copy Caption</button>
-                <span id="copy-status-1" style="font-size:12px;color:var(--blue);margin-left:10px"></span>
+                <button class="action-btn" type="button" data-copy-week="1">Copy caption</button>
+                <span id="copy-status-1" class="copy-status" role="status"></span>
               </div>
 
               
                 <div class="copy-card">
-                  <h2>Audio / Reel Asset</h2>
-                  <p style="font-size:13px;color:var(--muted)">Silent text video available in launch packs. Voiceover optional.</p>
+                  <h2>Audio / Reel asset</h2>
+                  <p class="hint">Silent text video may live in the earlier Instagram launch pack. Voiceover optional.</p>
                 </div>
-              
             </div>
           </div>
-        
       </section>
-    
-      <section class="week-panel " id="panel-2" role="tabpanel" aria-labelledby="tab-2">
-        
+      <section class="week-panel" id="panel-2" role="tabpanel" aria-labelledby="tab-2" hidden>
           <div class="grid">
             <div>
               <h2>Who is actually responsible?</h2>
-              <p style="color:var(--muted);font-size:14px;margin-top:-6px;margin-bottom:20px">
-                Desk: <strong>Government</strong> &nbsp;·&nbsp; Format: <strong>Three-slide Instagram carousel</strong> &nbsp;·&nbsp; 
-                <a href="02-who-is-responsible/index.html">Open Dedicated Post Studio</a>
+              <p class="meta-line">
+                Desk: <strong>Government</strong> &nbsp;·&nbsp; Format: <strong>Three-slide Instagram carousel</strong> &nbsp;·&nbsp;
+                <a href="02-who-is-responsible/index.html">Open dedicated post studio</a> &nbsp;·&nbsp; <a href="02-who-is-responsible/upload-pack.zip" download>Download upload pack</a>
               </p>
 
-              <h3>Instagram Carousel Preview (1080 × 1350)</h3>
+              <h3>Instagram carousel preview (1080 × 1350)</h3>
               <div class="slides-preview">
                 
-                  <div class="slide-box ">
-                    <div class="slide-head">The Daily Nun <span>1/3</span></div>
-                    <div>
-                      <div class="slide-title">Who is actually<br>responsible?</div>
-                      <p class="slide-body">Finding the office behind a local decision.</p>
-                    </div>
-                    <div class="slide-foot"><span>The Daily Nun</span><span>Government</span></div>
+                  <div class="slide-box">
+                    <img src="02-who-is-responsible/slide-01.png" alt="The Daily Nun cover slide: Who is actually responsible? Subtitle: Finding the office behind a local decision." loading="lazy" width="1080" height="1350">
                   </div>
-                
-                  <div class="slide-box ">
-                    <div class="slide-head">The Daily Nun <span>2/3</span></div>
-                    <div>
-                      <div class="slide-title">Authority<br>is divided.</div>
-                      <p class="slide-body">City councils vote on city budgets. School boards often vote on their own. The loudest voice may have no vote.</p>
-                    </div>
-                    <div class="slide-foot"><span>The Daily Nun</span><span>Government</span></div>
+                  <div class="slide-box">
+                    <img src="02-who-is-responsible/slide-02.png" alt="Slide 2: Authority is divided. City councils vote on city budgets, school boards often vote on their own, and the loudest voice may have no vote." loading="lazy" width="1080" height="1350">
                   </div>
-                
-                  <div class="slide-box blue">
-                    <div class="slide-head">The Daily Nun <span>3/3</span></div>
-                    <div>
-                      <div class="slide-title">Follow the<br>public record.</div>
-                      <p class="slide-body">State open-meetings laws put board votes on a public agenda. The minutes record who voted yes and who voted no.</p>
-                    </div>
-                    <div class="slide-foot"><span>The Daily Nun</span><span>Government</span></div>
+                  <div class="slide-box">
+                    <img src="02-who-is-responsible/slide-03.png" alt="Slide 3: Follow the public record. State open-meetings laws put board votes on a public agenda, and the minutes record who voted yes and who voted no." loading="lazy" width="1080" height="1350">
                   </div>
-                
               </div>
 
-              <h3>Verified Source Ledger</h3>
+              <h3>Verified source ledger</h3>
               <ul class="sources-list">
                 
                   <li>
                     <strong><a href="https://www.census.gov/newsroom/press-releases/2023/census-of-governments.html" target="_blank" rel="noopener noreferrer">Census Bureau Releases 2022 Census of Governments: Organization Data</a></strong><br>
                     <span>U.S. Census Bureau (Census Bureau press release) — August 24, 2023</span><br>
-                    <span style="color:var(--muted)">Limits: Counts special districts and independent school districts as governments. It does not describe any one city's charter or who proposes its budget.</span>
+                    <span class="limit">Limits: Counts special districts and independent school districts as governments. It does not describe any one city's charter or who proposes its budget.</span>
                   </li>
-                
                   <li>
                     <strong><a href="https://www.rcfp.org/open-government-guide/california/" target="_blank" rel="noopener noreferrer">Open Government Guide: California</a></strong><br>
                     <span>Reporters Committee for Freedom of the Press (RCFP) — Checked November 15, 2026</span><br>
-                    <span style="color:var(--muted)">Limits: Summarizes California's Brown Act: agenda posted at least 72 hours before a regular meeting, and public comment. A secondary summary, and California only. Notice periods differ in other states.</span>
+                    <span class="limit">Limits: Summarizes California's Brown Act: agenda posted at least 72 hours before a regular meeting, and public comment. A secondary summary, and California only. Notice periods differ in other states.</span>
                   </li>
-                
                   <li>
                     <strong><a href="https://www.flsenate.gov/Laws/Statutes/2025/286.011" target="_blank" rel="noopener noreferrer">Florida Statutes, section 286.011</a></strong><br>
                     <span>State of Florida (Florida Senate, Online Sunshine) — 2025 statutes</span><br>
-                    <span style="color:var(--muted)">Limits: Requires 'reasonable notice' of meetings and recorded minutes. It sets no fixed number of hours.</span>
+                    <span class="limit">Limits: Requires 'reasonable notice' of meetings and recorded minutes. It sets no fixed number of hours.</span>
                   </li>
-                
               </ul>
             </div>
 
             <div>
               <div class="copy-card">
-                <h2>Instagram Caption</h2>
-                <p style="font-size:12px;color:var(--muted);margin-top:-6px">Third-person institutional voice (strictly avoids personal quotes out of context).</p>
-                <textarea id="caption-2" readonly>When something changes in town, the anger usually lands on the most visible official.
+                <h2>Instagram caption</h2>
+                <p class="hint">Third-person institutional voice. Prepared draft; not posted.</p>
+                <textarea id="caption-2" readonly aria-label="Caption for week 2">When something changes in town, the anger usually lands on the most visible official.
 
 Local power is divided. A city council votes on the city budget. A school district is often a separate government with its own votes.
 
@@ -423,165 +474,129 @@ The Daily Nun traced who decides what, and where the public record of each vote 
 
 Guide + source notes:
 https://peternunley08-ops.github.io/the-daily-nun/desks/government/who-is-actually-responsible.html</textarea>
-                <button class="action-btn" type="button" onclick="copyCaption(2)">Copy Caption</button>
-                <span id="copy-status-2" style="font-size:12px;color:var(--blue);margin-left:10px"></span>
+                <button class="action-btn" type="button" data-copy-week="2">Copy caption</button>
+                <span id="copy-status-2" class="copy-status" role="status"></span>
               </div>
 
               
                 <div class="copy-card">
-                  <h2>Voiceover Teleprompter</h2>
-                  <p style="font-size:12px;color:var(--muted);margin-top:-6px">Read aloud while recording over vertical video asset (~15 sec).</p>
+                  <h2>Voiceover teleprompter</h2>
+                  <p class="hint">Read aloud while recording over the silent vertical video (~15 sec).</p>
                   <div class="teleprompter">
                     <p>"Angry about a local decision? Don't tag the mayor. Power is divided. Councils vote on city budgets. School boards often run separately. Find the agenda. Read the minutes. They name who voted. The Daily Nun."</p>
-                    <p style="font-size:11px;text-transform:uppercase;letter-spacing:0.05em;color:#9b9987;margin-bottom:6px">On-Screen Kinetic Text Sequence:</p>
+                    <p class="kinetic-label">On-screen kinetic text sequence</p>
                     <ol>
                       <li>Angry about a local decision?</li><li>Don't just tag the mayor.</li><li>Councils vote on city budgets.</li><li>School boards often vote separately.</li><li>Board votes go on a public agenda.</li><li>The minutes name who voted.</li><li>The Daily Nun / A closer look at the world.</li>
                     </ol>
                   </div>
                 </div>
-              
             </div>
           </div>
-        
       </section>
-    
-      <section class="week-panel " id="panel-3" role="tabpanel" aria-labelledby="tab-3">
-        
+      <section class="week-panel" id="panel-3" role="tabpanel" aria-labelledby="tab-3" hidden>
           <div class="grid">
             <div>
               <h2>When does a recommendation become manipulation?</h2>
-              <p style="color:var(--muted);font-size:14px;margin-top:-6px;margin-bottom:20px">
-                Desk: <strong>Culture</strong> &nbsp;·&nbsp; Format: <strong>Three-slide Instagram carousel</strong> &nbsp;·&nbsp; 
-                <a href="03-recommendation-or-manipulation/index.html">Open Dedicated Post Studio</a>
+              <p class="meta-line">
+                Desk: <strong>Culture</strong> &nbsp;·&nbsp; Format: <strong>Three-slide Instagram carousel</strong> &nbsp;·&nbsp;
+                <a href="03-recommendation-or-manipulation/index.html">Open dedicated post studio</a> &nbsp;·&nbsp; <a href="03-recommendation-or-manipulation/upload-pack.zip" download>Download upload pack</a>
               </p>
 
-              <h3>Instagram Carousel Preview (1080 × 1350)</h3>
+              <h3>Instagram carousel preview (1080 × 1350)</h3>
               <div class="slides-preview">
                 
-                  <div class="slide-box ">
-                    <div class="slide-head">The Daily Nun <span>1/3</span></div>
-                    <div>
-                      <div class="slide-title">When does a<br>recommendation<br>become<br>manipulation?</div>
-                      <p class="slide-body">What a feed is built to predict, and what one audit found.</p>
-                    </div>
-                    <div class="slide-foot"><span>The Daily Nun</span><span>Culture</span></div>
+                  <div class="slide-box">
+                    <img src="03-recommendation-or-manipulation/slide-01.png" alt="The Daily Nun cover slide: When does a recommendation become manipulation? Subtitle: What a feed is built to predict, and what one audit found." loading="lazy" width="1080" height="1350">
                   </div>
-                
-                  <div class="slide-box ">
-                    <div class="slide-head">The Daily Nun <span>2/3</span></div>
-                    <div>
-                      <div class="slide-title">Feeds rank<br>by prediction.</div>
-                      <p class="slide-body">TikTok, Instagram and YouTube say their systems predict what each user will watch, like or share. Those are company descriptions.</p>
-                    </div>
-                    <div class="slide-foot"><span>The Daily Nun</span><span>Culture</span></div>
+                  <div class="slide-box">
+                    <img src="03-recommendation-or-manipulation/slide-02.png" alt="Slide 2: Feeds rank by prediction. TikTok, Instagram and YouTube say their systems predict what each user will watch, like or share. Those are company descriptions." loading="lazy" width="1080" height="1350">
                   </div>
-                
-                  <div class="slide-box blue">
-                    <div class="slide-head">The Daily Nun <span>3/3</span></div>
-                    <div>
-                      <div class="slide-title">Engagement<br>is not approval.</div>
-                      <p class="slide-body">A 2023 audit of 806 U.S. Twitter users found engagement ranking amplified hostile posts. Users rated its political picks lower.</p>
-                    </div>
-                    <div class="slide-foot"><span>The Daily Nun</span><span>Culture</span></div>
+                  <div class="slide-box">
+                    <img src="03-recommendation-or-manipulation/slide-03.png" alt="Slide 3: Engagement is not approval. A 2023 audit of 806 U.S. Twitter users found engagement ranking amplified hostile posts. Users rated its political picks lower." loading="lazy" width="1080" height="1350">
                   </div>
-                
               </div>
 
-              <h3>Verified Source Ledger</h3>
+              <h3>Verified source ledger</h3>
               <ul class="sources-list">
                 
                   <li>
                     <strong><a href="https://georgetownlawtechreview.org/online-manipulation-hidden-influences-in-a-digital-world/GLTR-01-2020/" target="_blank" rel="noopener noreferrer">Online Manipulation: Hidden Influences in a Digital World</a></strong><br>
                     <span>Daniel Susser, Beate Roessler, Helen Nissenbaum (Georgetown Law Technology Review, 4 Geo. L. Tech. Rev. 1) — January 2020 (volume dated 2019)</span><br>
-                    <span style="color:var(--muted)">Limits: One scholarly definition among several. The authors note that not everyone agrees hiddenness is required for manipulation. Definition passages read from the published PDF on 2026-11-13.</span>
+                    <span class="limit">Limits: One scholarly definition among several. The authors note that not everyone agrees hiddenness is required for manipulation. Definition passages read from the published PDF on 2026-11-13.</span>
                   </li>
-                
                   <li>
                     <strong><a href="https://newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you" target="_blank" rel="noopener noreferrer">How TikTok recommends videos #ForYou</a></strong><br>
                     <span>TikTok (TikTok Newsroom) — June 18, 2020</span><br>
-                    <span style="color:var(--muted)">Limits: The company's own description from 2020. It is not independently audited and may not describe the current system.</span>
+                    <span class="limit">Limits: The company's own description from 2020. It is not independently audited and may not describe the current system.</span>
                   </li>
-                
                   <li>
                     <strong><a href="https://about.instagram.com/blog/announcements/instagram-ranking-explained" target="_blank" rel="noopener noreferrer">Instagram Ranking Explained</a></strong><br>
                     <span>Adam Mosseri (Instagram) — May 31, 2023</span><br>
-                    <span style="color:var(--muted)">Limits: The company's own description from 2023. It lists signals and predictions but not their weights, and it is not independently audited.</span>
+                    <span class="limit">Limits: The company's own description from 2023. It lists signals and predictions but not their weights, and it is not independently audited.</span>
                   </li>
-                
                   <li>
                     <strong><a href="https://blog.youtube/inside-youtube/on-youtubes-recommendation-system/" target="_blank" rel="noopener noreferrer">On YouTube's recommendation system</a></strong><br>
                     <span>Cristos Goodrow (YouTube Official Blog) — September 15, 2021</span><br>
-                    <span style="color:var(--muted)">Limits: The company's own description from 2021. It says recommendations drive 'a significant amount' of viewership and gives no figure.</span>
+                    <span class="limit">Limits: The company's own description from 2021. It says recommendations drive 'a significant amount' of viewership and gives no figure.</span>
                   </li>
-                
                   <li>
                     <strong><a href="https://doi.org/10.1093/pnasnexus/pgaf062" target="_blank" rel="noopener noreferrer">Engagement, user satisfaction, and the amplification of divisive content on social media</a></strong><br>
                     <span>Smitha Milli, Micah Carroll, Yike Wang, et al. (PNAS Nexus 4(3), pgaf062) — March 5, 2025</span><br>
-                    <span style="color:var(--muted)">Limits: 806 U.S. Twitter users recruited through a crowd-work platform, February 11-27, 2023. Sample skewed younger and more Democratic. One platform at one point in time; no long-term effects measured; only the first 10 tweets per timeline were surveyed.</span>
+                    <span class="limit">Limits: 806 U.S. Twitter users recruited through a crowd-work platform, February 11-27, 2023. Sample skewed younger and more Democratic. One platform at one point in time; no long-term effects measured; only the first 10 tweets per timeline were surveyed.</span>
                   </li>
-                
                   <li>
                     <strong><a href="https://doi.org/10.1126/science.abp9364" target="_blank" rel="noopener noreferrer">How do social media feed algorithms affect attitudes and behavior in an election campaign?</a></strong><br>
                     <span>Andrew M. Guess, et al. (Science) — July 27, 2023</span><br>
-                    <span style="color:var(--muted)">Limits: Abstract only, verified through Europe PMC for the repository's media-democracy report (source E01); the publisher page returned HTTP 403 on 2026-11-13. Consenting Facebook and Instagram users over three months in 2020; not an estimate of all accumulated platform effects.</span>
+                    <span class="limit">Limits: Abstract only, verified through Europe PMC for the repository's media-democracy report (source E01); the publisher page returned HTTP 403 on 2026-11-13. Consenting Facebook and Instagram users over three months in 2020; not an estimate of all accumulated platform effects.</span>
                   </li>
-                
                   <li>
                     <strong><a href="https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-staff-report-finds-large-social-media-video-streaming-companies-have-engaged-vast-surveillance" target="_blank" rel="noopener noreferrer">A Look Behind the Screens: Examining the Data Practices of Social Media and Video Streaming Services (press release)</a></strong><br>
                     <span>Federal Trade Commission staff (Federal Trade Commission) — September 19, 2024</span><br>
-                    <span style="color:var(--muted)">Limits: Based on orders issued in December 2020 to nine companies. Concerns data practices, not the effects of ranking on beliefs or purchases.</span>
+                    <span class="limit">Limits: Based on orders issued in December 2020 to nine companies. Concerns data practices, not the effects of ranking on beliefs or purchases.</span>
                   </li>
-                
                   <li>
                     <strong><a href="https://www.pewresearch.org/short-reads/2022/11/21/for-shopping-phones-are-common-and-influencers-have-become-a-factor-especially-for-young-adults/" target="_blank" rel="noopener noreferrer">For shopping, phones are common and influencers have become a factor – especially for young adults</a></strong><br>
                     <span>Michelle Faverio and Monica Anderson (Pew Research Center) — November 21, 2022</span><br>
-                    <span style="color:var(--muted)">Limits: 6,034 U.S. adults, July 5-17, 2022. Denominator for the purchase figures is adult social media users. Self-reported; does not establish that posts caused purchases. No respondents under 18.</span>
+                    <span class="limit">Limits: 6,034 U.S. adults, July 5-17, 2022. Denominator for the purchase figures is adult social media users. Self-reported; does not establish that posts caused purchases. No respondents under 18.</span>
                   </li>
-                
                   <li>
                     <strong><a href="https://doi.org/10.1073/pnas.1710966114" target="_blank" rel="noopener noreferrer">Psychological targeting as an effective approach to digital mass persuasion</a></strong><br>
                     <span>Sandra C. Matz, Michal Kosinski, Gideon Nave, David J. Stillwell (Proceedings of the National Academy of Sciences) — November 13, 2017</span><br>
-                    <span style="color:var(--muted)">Limits: Abstract only, read through Europe PMC on 2026-11-13. Three experiments reaching over 3.5 million people. 'Up to' figures are best cases, not averages. Tests tailored ads, not feed ranking.</span>
+                    <span class="limit">Limits: Abstract only, read through Europe PMC on 2026-11-13. Three experiments reaching over 3.5 million people. 'Up to' figures are best cases, not averages. Tests tailored ads, not feed ranking.</span>
                   </li>
-                
                   <li>
                     <strong><a href="https://www.pewresearch.org/journalism/2024/11/18/americas-news-influencers/" target="_blank" rel="noopener noreferrer">America's News Influencers</a></strong><br>
                     <span>Pew Research Center (Pew Research Center) — November 18, 2024</span><br>
-                    <span style="color:var(--muted)">Limits: 10,658 U.S. adults, July 15-August 4, 2024. Measures where people say they regularly get news, not whether it changed their views. No respondents under 18.</span>
+                    <span class="limit">Limits: 10,658 U.S. adults, July 15-August 4, 2024. Measures where people say they regularly get news, not whether it changed their views. No respondents under 18.</span>
                   </li>
-                
                   <li>
                     <strong><a href="https://doi.org/10.1126/sciadv.abc4046" target="_blank" rel="noopener noreferrer">The small effects of political advertising are small regardless of context, message, sender, or receiver: Evidence from 59 real-time randomized experiments</a></strong><br>
                     <span>Alexander Coppock, Seth J. Hill, Lynn Vavreck (Science Advances) — September 2, 2020</span><br>
-                    <span style="color:var(--muted)">Limits: Abstract only, read through Europe PMC on 2026-11-13. 49 ads, 59 experiments, 34,000 people, 2016 U.S. presidential campaign. Survey experiments on ad exposure, not feed ranking.</span>
+                    <span class="limit">Limits: Abstract only, read through Europe PMC on 2026-11-13. 49 ads, 59 experiments, 34,000 people, 2016 U.S. presidential campaign. Survey experiments on ad exposure, not feed ranking.</span>
                   </li>
-                
                   <li>
                     <strong><a href="https://doi.org/10.1038/s41562-022-01487-4" target="_blank" rel="noopener noreferrer">A 2 million-person, campaign-wide field experiment shows how digital advertising affects voter turnout</a></strong><br>
                     <span>Minali Aggarwal, Jennifer Allen, Alexander Coppock, et al. (Nature Human Behaviour) — January 12, 2023</span><br>
-                    <span style="color:var(--muted)">Limits: Abstract only, read through Europe PMC on 2026-11-13. 2 million voters in five battleground states, 2020. Measures turnout, not trust. One partisan ad program.</span>
+                    <span class="limit">Limits: Abstract only, read through Europe PMC on 2026-11-13. 2 million voters in five battleground states, 2020. Measures turnout, not trust. One partisan ad program.</span>
                   </li>
-                
                   <li>
                     <strong><a href="https://doi.org/10.1073/pnas.2321584121" target="_blank" rel="noopener noreferrer">The effects of Facebook and Instagram on the 2020 election: A deactivation experiment</a></strong><br>
                     <span>Hunt Allcott, Matthew Gentzkow, Winter Mason, et al. (Proceedings of the National Academy of Sciences) — May 13, 2024</span><br>
-                    <span style="color:var(--muted)">Limits: Abstract only, read through Europe PMC on 2026-11-13. A randomized subset of 19,857 Facebook and 15,585 Instagram users deactivated for six weeks before the 2020 election. Tests access to the platforms, not the ranking system alone.</span>
+                    <span class="limit">Limits: Abstract only, read through Europe PMC on 2026-11-13. A randomized subset of 19,857 Facebook and 15,585 Instagram users deactivated for six weeks before the 2020 election. Tests access to the platforms, not the ranking system alone.</span>
                   </li>
-                
                   <li>
                     <strong><a href="https://doi.org/10.1073/pnas.2024292118" target="_blank" rel="noopener noreferrer">Out-group animosity drives engagement on social media</a></strong><br>
                     <span>Steve Rathje, Jay J. Van Bavel, Sander van der Linden (Proceedings of the National Academy of Sciences) — June 2021</span><br>
-                    <span style="color:var(--muted)">Limits: Abstract only, read through Europe PMC on 2026-11-13 (also source M03 in the media-democracy report). 2,730,215 posts from news media and U.S. congressional accounts on Facebook and Twitter. Associations between wording and shares; does not show that posts made readers angrier or generated profit.</span>
+                    <span class="limit">Limits: Abstract only, read through Europe PMC on 2026-11-13 (also source M03 in the media-democracy report). 2,730,215 posts from news media and U.S. congressional accounts on Facebook and Twitter. Associations between wording and shares; does not show that posts made readers angrier or generated profit.</span>
                   </li>
-                
               </ul>
             </div>
 
             <div>
               <div class="copy-card">
-                <h2>Instagram Caption</h2>
-                <p style="font-size:12px;color:var(--muted);margin-top:-6px">Third-person institutional voice (strictly avoids personal quotes out of context).</p>
-                <textarea id="caption-3" readonly>A feed is a ranking. TikTok, Instagram and YouTube each say their systems predict what a user will watch, like or share.
+                <h2>Instagram caption</h2>
+                <p class="hint">Third-person institutional voice. Prepared draft; not posted.</p>
+                <textarea id="caption-3" readonly aria-label="Caption for week 3">A feed is a ranking. TikTok, Instagram and YouTube each say their systems predict what a user will watch, like or share.
 
 The Daily Nun compared those company descriptions with independent research, including a 2023 audit of 806 U.S. Twitter users, and looked at where scholars draw the line between persuasion and manipulation.
 
@@ -589,162 +604,327 @@ It also checked what research says about purchases and candidate support. The ev
 
 Article + source notes:
 https://peternunley08-ops.github.io/the-daily-nun/desks/culture/when-does-a-recommendation-become-manipulation.html</textarea>
-                <button class="action-btn" type="button" onclick="copyCaption(3)">Copy Caption</button>
-                <span id="copy-status-3" style="font-size:12px;color:var(--blue);margin-left:10px"></span>
+                <button class="action-btn" type="button" data-copy-week="3">Copy caption</button>
+                <span id="copy-status-3" class="copy-status" role="status"></span>
               </div>
 
               
                 <div class="copy-card">
-                  <h2>Voiceover Teleprompter</h2>
-                  <p style="font-size:12px;color:var(--muted);margin-top:-6px">Read aloud while recording over vertical video asset (~15 sec).</p>
+                  <h2>Voiceover teleprompter</h2>
+                  <p class="hint">Read aloud while recording over the silent vertical video (~30 sec).</p>
                   <div class="teleprompter">
                     <p>"Every feed is a ranking. TikTok, Instagram and YouTube say their systems predict what each person will watch, like or share. In 2023, researchers audited 806 U.S. Twitter users. Ranking by engagement showed them more angry, hostile posts than a newest-first feed, and they rated its political picks lower. One study is not the whole story. But a click is not the same as wanting more. The Daily Nun."</p>
-                    <p style="font-size:11px;text-transform:uppercase;letter-spacing:0.05em;color:#9b9987;margin-bottom:6px">On-Screen Kinetic Text Sequence:</p>
+                    <p class="kinetic-label">On-screen kinetic text sequence</p>
                     <ol>
                       <li>Who chose that video?</li><li>A feed is a ranking.</li><li>Platforms say they predict what gets watched, liked, shared.</li><li>2023: researchers audited 806 U.S. Twitter users.</li><li>Engagement ranking showed more angry, hostile posts.</li><li>Users rated its political picks lower.</li><li>One study. Not the whole story.</li><li>A click is not approval.</li><li>The Daily Nun / A closer look at the world.</li>
                     </ol>
                   </div>
                 </div>
-              
             </div>
           </div>
-        
       </section>
-    
-      <section class="week-panel " id="panel-4" role="tabpanel" aria-labelledby="tab-4">
-        
+      <section class="week-panel" id="panel-4" role="tabpanel" aria-labelledby="tab-4" hidden>
           <div class="grid">
             <div>
               <h2>What happens when the local paper closes?</h2>
-              <p style="color:var(--muted);font-size:14px;margin-top:-6px;margin-bottom:20px">
-                Desk: <strong>Democracy</strong> &nbsp;·&nbsp; Format: <strong>Three-slide Instagram carousel</strong> &nbsp;·&nbsp; 
-                <a href="04-the-disappearing-local-beat/index.html">Open Dedicated Post Studio</a>
+              <p class="meta-line">
+                Desk: <strong>Democracy</strong> &nbsp;·&nbsp; Format: <strong>Three-slide Instagram carousel</strong> &nbsp;·&nbsp;
+                <a href="04-the-disappearing-local-beat/index.html">Open dedicated post studio</a> &nbsp;·&nbsp; <a href="04-the-disappearing-local-beat/upload-pack.zip" download>Download upload pack</a>
               </p>
 
-              <h3>Instagram Carousel Preview (1080 × 1350)</h3>
+              <h3>Instagram carousel preview (1080 × 1350)</h3>
               <div class="slides-preview">
                 
-                  <div class="slide-box ">
-                    <div class="slide-head">The Daily Nun <span>1/3</span></div>
-                    <div>
-                      <div class="slide-title">What happens<br>when the local<br>paper closes?</div>
-                      <p class="slide-body">Fewer reporters cover local government. Researchers have measured some of what changes.</p>
-                    </div>
-                    <div class="slide-foot"><span>The Daily Nun</span><span>Democracy</span></div>
+                  <div class="slide-box">
+                    <img src="04-the-disappearing-local-beat/slide-01.png" alt="The Daily Nun cover slide: What happens when the local paper closes? Subtitle: Fewer reporters cover local government. Researchers have measured some of what changes." loading="lazy" width="1080" height="1350">
                   </div>
-                
-                  <div class="slide-box ">
-                    <div class="slide-head">The Daily Nun <span>2/3</span></div>
-                    <div>
-                      <div class="slide-title">238 counties,<br>no local outlet.</div>
-                      <p class="slide-body">A 2026 Northwestern count found 238 U.S. counties with no locally based professional news source, and over 1,400 with one.</p>
-                    </div>
-                    <div class="slide-foot"><span>The Daily Nun</span><span>Democracy</span></div>
+                  <div class="slide-box">
+                    <img src="04-the-disappearing-local-beat/slide-02.png" alt="Slide 2: 238 counties, no local outlet. A 2026 Northwestern count found 238 U.S. counties with no locally based professional news source, and over 1,400 with only one." loading="lazy" width="1080" height="1350">
                   </div>
-                
-                  <div class="slide-box blue">
-                    <div class="slide-head">The Daily Nun <span>3/3</span></div>
-                    <div>
-                      <div class="slide-title">Closures can<br>cost money.</div>
-                      <p class="slide-body">One study estimated that after a local paper closed, the town's borrowing costs rose about $650,000 per bond issue.</p>
-                    </div>
-                    <div class="slide-foot"><span>The Daily Nun</span><span>Democracy</span></div>
+                  <div class="slide-box">
+                    <img src="04-the-disappearing-local-beat/slide-03.png" alt="Slide 3: Closures can cost money. One study estimated that after a local paper closed, the town's borrowing costs rose about 650,000 dollars per bond issue." loading="lazy" width="1080" height="1350">
                   </div>
-                
               </div>
 
-              <h3>Verified Source Ledger</h3>
+              <h3>Verified source ledger</h3>
               <ul class="sources-list">
                 
                   <li>
                     <strong><a href="https://localnewsinitiative.northwestern.edu/projects/state-of-local-news/2026/report/" target="_blank" rel="noopener noreferrer">The State of Local News 2026</a></strong><br>
                     <span>Zach Metzger and John Volk (Medill Local News Initiative, Northwestern University) — October 13, 2026</span><br>
-                    <span style="color:var(--muted)">Limits: Counts locally based professional outlets, not every information source. The 170 figure combines closures and mergers. Methodology changed this year. Figures from the repository's report verification of 2026-11-11 (source E08); the site returned HTTP 503 and a certificate error on 2026-11-15.</span>
+                    <span class="limit">Limits: Counts locally based professional outlets, not every information source. The 170 figure combines closures and mergers. Methodology changed this year. Figures from the repository's report verification of 2026-11-11 (source E08); the site returned HTTP 503 and a certificate error on 2026-11-15.</span>
                   </li>
-                
                   <li>
                     <strong><a href="https://ideas.repec.org/a/eee/jfinec/v135y2020i2p445-467.html" target="_blank" rel="noopener noreferrer">Financing dies in darkness? The impact of newspaper closures on public finance</a></strong><br>
                     <span>Pengjie Gao, Chang Lee, Dermot Murphy (Journal of Financial Economics 135(2), 445-467) — 2020</span><br>
-                    <span style="color:var(--muted)">Limits: Publisher abstract read on RePEc on 2026-11-15; full data, sample period, and methods not reviewed. The 5-11 basis point and $650,000 figures and the causal claim are the authors' own.</span>
+                    <span class="limit">Limits: Publisher abstract read on RePEc on 2026-11-15; full data, sample period, and methods not reviewed. The 5-11 basis point and $650,000 figures and the causal claim are the authors' own.</span>
                   </li>
-                
                   <li>
                     <strong><a href="https://www.nber.org/papers/w13878" target="_blank" rel="noopener noreferrer">Press Coverage and Political Accountability</a></strong><br>
                     <span>James M. Snyder Jr., David Strömberg (NBER Working Paper 13878; Journal of Political Economy (2010)) — March 2008</span><br>
-                    <span style="color:var(--muted)">Limits: Abstract read on 2026-11-15. Concerns U.S. House coverage in earlier decades, not newspaper closures directly.</span>
+                    <span class="limit">Limits: Abstract read on 2026-11-15. Concerns U.S. House coverage in earlier decades, not newspaper closures directly.</span>
                   </li>
-                
                   <li>
                     <strong><a href="https://doi.org/10.1017/S0003055418000965" target="_blank" rel="noopener noreferrer">Local News and National Politics</a></strong><br>
                     <span>Gregory J. Martin, Joshua McCrain (American Political Science Review) — February 19, 2019</span><br>
-                    <span style="color:var(--muted)">Limits: Abstract read through Crossref on 2026-11-15. Concerns one conglomerate's acquisitions of local TV stations; results are relative to other programs in the same markets.</span>
+                    <span class="limit">Limits: Abstract read through Crossref on 2026-11-15. Concerns one conglomerate's acquisitions of local TV stations; results are relative to other programs in the same markets.</span>
                   </li>
-                
               </ul>
             </div>
 
             <div>
               <div class="copy-card">
-                <h2>Instagram Caption</h2>
-                <p style="font-size:12px;color:var(--muted);margin-top:-6px">Third-person institutional voice (strictly avoids personal quotes out of context).</p>
-                <textarea id="caption-4" readonly>Fewer reporters cover local government. The Daily Nun looked at what researchers have measured when the local paper closes.
+                <h2>Instagram caption</h2>
+                <p class="hint">Third-person institutional voice. Prepared draft; not posted.</p>
+                <textarea id="caption-4" readonly aria-label="Caption for week 4">Fewer reporters cover local government. The Daily Nun looked at what researchers have measured when the local paper closes.
 
 A 2026 Northwestern count found 238 U.S. counties with no locally based professional news source. Studies link closures and thinner coverage to higher public borrowing costs and less-informed voters. They show patterns, not what happens in any one town.
 
 Article + sources:
 https://peternunley08-ops.github.io/the-daily-nun/desks/democracy/what-happens-when-the-local-paper-closes.html</textarea>
-                <button class="action-btn" type="button" onclick="copyCaption(4)">Copy Caption</button>
-                <span id="copy-status-4" style="font-size:12px;color:var(--blue);margin-left:10px"></span>
+                <button class="action-btn" type="button" data-copy-week="4">Copy caption</button>
+                <span id="copy-status-4" class="copy-status" role="status"></span>
               </div>
 
               
                 <div class="copy-card">
-                  <h2>Voiceover Teleprompter</h2>
-                  <p style="font-size:12px;color:var(--muted);margin-top:-6px">Read aloud while recording over vertical video asset (~15 sec).</p>
+                  <h2>Voiceover teleprompter</h2>
+                  <p class="hint">Read aloud while recording over the silent vertical video (~30 sec).</p>
                   <div class="teleprompter">
                     <p>"What happens when the local paper closes? A 2026 Northwestern count found 238 U.S. counties with no locally based professional news source. One study estimated that after a local paper closed, the town's borrowing costs went up, about six hundred fifty thousand dollars per bond issue. Another found voters with less coverage were less likely to know their representative's name. The meeting still happens. Who is watching? The Daily Nun."</p>
-                    <p style="font-size:11px;text-transform:uppercase;letter-spacing:0.05em;color:#9b9987;margin-bottom:6px">On-Screen Kinetic Text Sequence:</p>
+                    <p class="kinetic-label">On-screen kinetic text sequence</p>
                     <ol>
                       <li>What happens when the local paper closes?</li><li>238 counties: no local news source.</li><li>After closures, borrowing costs rose.</li><li>About $650,000 per bond issue.</li><li>Less coverage, less-known representatives.</li><li>The meeting still happens.</li><li>Who is watching?</li><li>The Daily Nun / A closer look at the world.</li>
                     </ol>
                   </div>
                 </div>
-              
             </div>
           </div>
-        
       </section>
-    
+      <section class="week-panel" id="panel-5" role="tabpanel" aria-labelledby="tab-5" hidden>
+          <div class="grid">
+            <div>
+              <h2>Who decides who gets the hours?</h2>
+              <p class="meta-line">
+                Desk: <strong>Government</strong> &nbsp;·&nbsp; Format: <strong>Three-slide Instagram carousel</strong> &nbsp;·&nbsp;
+                <a href="05-who-gets-the-hours/index.html">Open dedicated post studio</a> &nbsp;·&nbsp; <a href="05-who-gets-the-hours/upload-pack.zip" download>Download upload pack</a>
+              </p>
+
+              <h3>Instagram carousel preview (1080 × 1350)</h3>
+              <div class="slides-preview">
+                
+                  <div class="slide-box">
+                    <img src="05-who-gets-the-hours/slide-01.png" alt="The Daily Nun cover slide: Who decides who gets the hours? Subtitle: How work schedules get set, and what California law says when a shift disappears." loading="lazy" width="1080" height="1350">
+                  </div>
+                  <div class="slide-box">
+                    <img src="05-who-gets-the-hours/slide-02.png" alt="Slide 2: Short notice is common. A 2019 survey of 30,000 workers at large chains found two-thirds got less than two weeks' notice of their schedules." loading="lazy" width="1080" height="1350">
+                  </div>
+                  <div class="slide-box">
+                    <img src="05-who-gets-the-hours/slide-03.png" alt="Slide 3: Know the half-shift rule. In California, workers sent home with under half their shift done are generally owed half the shift's pay, two to four hours." loading="lazy" width="1080" height="1350">
+                  </div>
+              </div>
+
+              <h3>Verified source ledger</h3>
+              <ul class="sources-list">
+                
+                  <li>
+                    <strong><a href="https://shift.hks.harvard.edu/its-about-time-how-work-schedule-instability-matters-for-workers-families-and-racial-inequality/" target="_blank" rel="noopener noreferrer">It's About Time: How Work Schedule Instability Matters for Workers, Families, and Racial Inequality</a></strong><br>
+                    <span>Daniel Schneider and Kristen Harknett (The Shift Project, Harvard Kennedy School) — October 16, 2019</span><br>
+                    <span class="limit">Limits: About 30,000 employees at 120 of the largest U.S. retail and food-service firms; very large employers only; the brief does not break out high-school or student workers, and small businesses are not covered. Hardship findings are associations, not proof that schedules caused them. Read in full on 2026-11-15.</span>
+                  </li>
+                  <li>
+                    <strong><a href="https://www.dir.ca.gov/dlse/faq_reportingtimepay.htm" target="_blank" rel="noopener noreferrer">Reporting time pay: frequently asked questions</a></strong><br>
+                    <span>California Labor Commissioner's Office (DLSE) (California Department of Industrial Relations) — Undated web page, read 2026-11-15</span><br>
+                    <span class="limit">Limits: Guidance, not the regulation itself (IWC wage orders, section 5). Has exceptions: threats, utility failures, acts of God, paid standby, shifts under two hours, and workers who leave on their own.</span>
+                  </li>
+                  <li>
+                    <strong><a href="https://www.dir.ca.gov/DLSE/Complying-with-Child-Labor-Laws-English.pdf" target="_blank" rel="noopener noreferrer">Complying With Child Labor Laws: Information for Employers</a></strong><br>
+                    <span>California Labor Commissioner's Office (DLSE) (California Department of Industrial Relations) — April 2026 (PDF creation date)</span><br>
+                    <span class="limit">Limits: Summary for employers. Exceptions exist, such as school-approved work experience programs. The statute (Labor Code section 1391) was not opened; the legislature's site blocked automated access.</span>
+                  </li>
+                  <li>
+                    <strong><a href="https://wagesla.lacity.gov/fair-work-week-information" target="_blank" rel="noopener noreferrer">Fair Work Week Information</a></strong><br>
+                    <span>City of Los Angeles, Office of Wage Standards (City of Los Angeles) — Ordinance effective April 1, 2023; page read 2026-11-15</span><br>
+                    <span class="limit">Limits: Applies only to retail employers with 300 or more employees globally, for work inside the City of Los Angeles. Other cities' rules were not checked.</span>
+                  </li>
+                  <li>
+                    <strong><a href="https://sd05.senate.ca.gov/news/newsom-signs-mcnerneys-no-robo-bosses-act-2026-requiring-human-oversight-ai-workplace" target="_blank" rel="noopener noreferrer">Newsom Signs McNerney's No Robo Bosses Act of 2026 Requiring Human Oversight of AI in the Workplace</a></strong><br>
+                    <span>Office of Sen. Jerry McNerney (California State Senate) — September 30, 2026</span><br>
+                    <span class="limit">Limits: The author's own announcement of SB 947. The governor's page and the bill text could not be opened (blocked to automated access).</span>
+                  </li>
+                  <li>
+                    <strong><a href="https://www.dlapiper.com/en/insights/publications/2026/10/california-enacts-sb-947" target="_blank" rel="noopener noreferrer">California enacts SB 947: What employers need to know about the &quot;No Robo Bosses Act&quot;</a></strong><br>
+                    <span>DLA Piper (DLA Piper) — October 2026</span><br>
+                    <span class="limit">Limits: Secondary legal summary, used only for the law's scope (discipline and firing) and effective date (July 1, 2027).</span>
+                  </li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="copy-card">
+                <h2>Instagram caption</h2>
+                <p class="hint">Third-person institutional voice. Prepared draft; not posted.</p>
+                <textarea id="caption-5" readonly aria-label="Caption for week 5">A schedule decides a paycheck. The Daily Nun looked at who sets work schedules and what California law requires when a shift disappears.
+
+A 2019 survey of about 30,000 workers at large retail and food chains found two-thirds got less than two weeks' notice. Rules on notice depend on the city.
+
+Article + sources:
+https://peternunley08-ops.github.io/the-daily-nun/desks/government/who-decides-who-gets-the-hours.html</textarea>
+                <button class="action-btn" type="button" data-copy-week="5">Copy caption</button>
+                <span id="copy-status-5" class="copy-status" role="status"></span>
+              </div>
+
+              
+                <div class="copy-card">
+                  <h2>Voiceover teleprompter</h2>
+                  <p class="hint">Read aloud while recording over the silent vertical video (~30 sec).</p>
+                  <div class="teleprompter">
+                    <p>"Who decides who gets the hours? The employer does. A 2019 survey of thirty thousand workers at big chains found two in three got less than two weeks' notice. California sets a few limits. Sent home with under half a shift done? The worker is generally owed half the shift's pay. Under eighteen? Four hours, max, on a school day. The Daily Nun."</p>
+                    <p class="kinetic-label">On-screen kinetic text sequence</p>
+                    <ol>
+                      <li>Who decides who gets the hours?</li><li>The employer does.</li><li>2019: 30,000 workers at big chains surveyed.</li><li>Two in three: under two weeks' notice.</li><li>California sets a few limits.</li><li>Sent home early? Some pay is owed.</li><li>Under 18? Four hours on school days.</li><li>The Daily Nun / A closer look at the world.</li>
+                    </ol>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </section>
+      <section class="week-panel" id="panel-6" role="tabpanel" aria-labelledby="tab-6" hidden>
+          <div class="grid">
+            <div>
+              <h2>Does a streak help anyone learn?</h2>
+              <p class="meta-line">
+                Desk: <strong>Culture</strong> &nbsp;·&nbsp; Format: <strong>Three-slide Instagram carousel</strong> &nbsp;·&nbsp;
+                <a href="06-does-a-streak-help/index.html">Open dedicated post studio</a> &nbsp;·&nbsp; <a href="06-does-a-streak-help/upload-pack.zip" download>Download upload pack</a>
+              </p>
+
+              <h3>Instagram carousel preview (1080 × 1350)</h3>
+              <div class="slides-preview">
+                
+                  <div class="slide-box">
+                    <img src="06-does-a-streak-help/slide-01.png" alt="The Daily Nun cover slide: Does a streak help anyone learn? Subtitle: What one streak app says it is doing, and what research on habits found." loading="lazy" width="1080" height="1350">
+                  </div>
+                  <div class="slide-box">
+                    <img src="06-does-a-streak-help/slide-02.png" alt="Slide 2: The app names its tactic. Duolingo says that once a streak's novelty fades, it taps loss aversion, a bias against losing something." loading="lazy" width="1080" height="1350">
+                  </div>
+                  <div class="slide-box">
+                    <img src="06-does-a-streak-help/slide-03.png" alt="Slide 3: Coming back isn't learning. One study found a missed day barely dents a habit. The Daily Nun found no study showing streaks improve learning." loading="lazy" width="1080" height="1350">
+                  </div>
+              </div>
+
+              <h3>Verified source ledger</h3>
+              <ul class="sources-list">
+                
+                  <li>
+                    <strong><a href="https://blog.duolingo.com/how-duolingo-streak-builds-habit/" target="_blank" rel="noopener noreferrer">The Duolingo Streak Uses Habit Research to Keep You Motivated</a></strong><br>
+                    <span>Osman Mansur (Duolingo Blog) — January 31, 2022</span><br>
+                    <span class="limit">Limits: The company describing its own design and reporting its own A/B test results (+1.7% seven-day retention from milestone animations; +0.38% relative daily active learners from two streak freezes). Not independently verified. Read in full on 2026-11-15.</span>
+                  </li>
+                  <li>
+                    <strong><a href="https://blog.duolingo.com/improving-the-streak/" target="_blank" rel="noopener noreferrer">Improving the streak: Forming habits one lesson at a time</a></strong><br>
+                    <span>Anton Yu (Duolingo Blog) — November 19, 2020</span><br>
+                    <span class="limit">Limits: Company-reported result (over 40% more learners on a 7+ day streak after decoupling streaks from daily goals). Measures streak counts, not learning. Not independently verified.</span>
+                  </li>
+                  <li>
+                    <strong><a href="https://doi.org/10.1002/ejsp.674" target="_blank" rel="noopener noreferrer">How are habits formed: Modelling habit formation in the real world</a></strong><br>
+                    <span>Phillippa Lally, Cornelia H. M. van Jaarsveld, Henry W. W. Potts, Jane Wardle (European Journal of Social Psychology 40(6), 998-1009) — Published online July 16, 2009 (print October 2010)</span><br>
+                    <span class="limit">Limits: Abstract only, read through Crossref on 2026-11-15. 96 volunteers, 82 analyzed, 39 with good model fit; small sample. Studied eating, drinking, or exercise habits, not app streaks or learning.</span>
+                  </li>
+                  <li>
+                    <strong><a href="https://www.colorado.edu/business/faculty-research/2023/04/19/or-track-how-broken-streaks-affect-consumer-decisions" target="_blank" rel="noopener noreferrer">On or Off Track: How (Broken) Streaks Affect Consumer Decisions</a></strong><br>
+                    <span>Jackie Silverman, Alixandra Barasch (Journal of Consumer Research 49(6), 1095-1117) — April 2023</span><br>
+                    <span class="limit">Limits: Abstract only, read on the University of Colorado's publication page on 2026-11-15. Measures subsequent engagement, not learning outcomes. Effect sizes and samples not read.</span>
+                  </li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="copy-card">
+                <h2>Instagram caption</h2>
+                <p class="hint">Third-person institutional voice. Prepared draft; not posted.</p>
+                <textarea id="caption-6" readonly aria-label="Caption for week 6">A streak counts days. The Daily Nun looked at what it is built to do.
+
+Duolingo says its streak taps &quot;loss aversion&quot; once the novelty fades. Research finds a missed day barely affects a habit, while seeing a streak reset can lead people to do less. The Daily Nun found no study showing that streaks improve learning.
+
+Article + sources:
+https://peternunley08-ops.github.io/the-daily-nun/desks/culture/does-a-streak-help-anyone-learn.html</textarea>
+                <button class="action-btn" type="button" data-copy-week="6">Copy caption</button>
+                <span id="copy-status-6" class="copy-status" role="status"></span>
+              </div>
+
+              
+                <div class="copy-card">
+                  <h2>Voiceover teleprompter</h2>
+                  <p class="hint">Read aloud while recording over the silent vertical video (~30 sec).</p>
+                  <div class="teleprompter">
+                    <p>"Does a streak help anyone learn? Duolingo says that once a streak stops feeling new, it taps loss aversion: a bias against losing something. Research says a missed day barely affects a habit. But seeing a streak reset can lead people to do less. What no study found here shows is that streaks help anyone learn more. Counting days is not the same as learning. The Daily Nun."</p>
+                    <p class="kinetic-label">On-screen kinetic text sequence</p>
+                    <ol>
+                      <li>Does a streak help anyone learn?</li><li>Duolingo: the streak taps &quot;loss aversion.&quot;</li><li>A missed day barely affects a habit.</li><li>Seeing a reset can lead to less.</li><li>No study found here shows more learning.</li><li>Counting days is not learning.</li><li>The Daily Nun / A closer look at the world.</li>
+                    </ol>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </section>
   </main>
 
   <footer>
-    <span>The Daily Nun Backlog Studio &nbsp;·&nbsp; Prepared for Peter Nunley</span>
-    <a href="../index.html">Return to Newspaper Front Page</a>
+    <span>The Daily Nun backlog studio · Prepared drafts only</span>
+    <a href="../index.html">Return to newspaper front page</a>
   </footer>
 
   <script>
-    function switchWeek(weekNum) {
-      document.querySelectorAll('.week-btn').forEach(btn => {
-        btn.setAttribute('aria-selected', btn.id === 'tab-' + weekNum);
+    function switchWeek(weekNum, focusTab) {
+      const tabs = Array.from(document.querySelectorAll('.week-btn'));
+      const panels = Array.from(document.querySelectorAll('.week-panel'));
+      tabs.forEach((btn) => {
+        const selected = btn.dataset.week === String(weekNum);
+        btn.setAttribute('aria-selected', selected ? 'true' : 'false');
+        btn.tabIndex = selected ? 0 : -1;
+        if (selected && focusTab) btn.focus();
       });
-      document.querySelectorAll('.week-panel').forEach(panel => {
-        panel.classList.toggle('active', panel.id === 'panel-' + weekNum);
+      panels.forEach((panel) => {
+        const active = panel.id === 'panel-' + weekNum;
+        panel.classList.toggle('active', active);
+        if (active) panel.removeAttribute('hidden');
+        else panel.setAttribute('hidden', '');
       });
     }
 
-    async function copyCaption(weekNum) {
-      const field = document.getElementById('caption-' + weekNum);
-      const status = document.getElementById('copy-status-' + weekNum);
-      try {
-        await navigator.clipboard.writeText(field.value);
-        status.textContent = 'Caption copied!';
-      } catch (err) {
-        field.focus();
-        field.select();
-        status.textContent = 'Selected. Press Ctrl+C / Cmd+C.';
-      }
-      setTimeout(() => { status.textContent = ''; }, 3000);
-    }
+    document.querySelectorAll('.week-btn').forEach((btn) => {
+      btn.addEventListener('click', () => switchWeek(btn.dataset.week, false));
+      btn.addEventListener('keydown', (event) => {
+        const tabs = Array.from(document.querySelectorAll('.week-btn'));
+        const index = tabs.indexOf(btn);
+        if (index < 0) return;
+        let next = null;
+        if (event.key === 'ArrowRight' || event.key === 'ArrowDown') next = tabs[(index + 1) % tabs.length];
+        if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') next = tabs[(index - 1 + tabs.length) % tabs.length];
+        if (event.key === 'Home') next = tabs[0];
+        if (event.key === 'End') next = tabs[tabs.length - 1];
+        if (!next) return;
+        event.preventDefault();
+        switchWeek(next.dataset.week, true);
+      });
+    });
+
+    document.querySelectorAll('[data-copy-week]').forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        const weekNum = btn.getAttribute('data-copy-week');
+        const field = document.getElementById('caption-' + weekNum);
+        const status = document.getElementById('copy-status-' + weekNum);
+        try {
+          await navigator.clipboard.writeText(field.value);
+          status.textContent = 'Caption copied.';
+        } catch (err) {
+          field.focus();
+          field.select();
+          status.textContent = 'Selected. Press Ctrl+C / Cmd+C.';
+        }
+        setTimeout(() => { status.textContent = ''; }, 3000);
+      });
+    });
   </script>
 </body>
 </html>

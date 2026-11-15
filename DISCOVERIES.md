@@ -1,5 +1,12 @@
 # Shared discoveries and decisions
 
+## 2026-11-15: Project OS selective pass (Codex, Issue #35)
+
+- Agent: Codex (Cursor cloud). Claimed [Issue #35](https://github.com/peternunley08-ops/the-daily-nun/issues/35). Lean Project OS distill lives in private Context only; the personal package was not committed.
+- Prior anti-slop and OS work (Issues/PRs #21/#29/#32/#33/#34) was not repeated. This pass targeted remaining backlog-studio friction: weeks 5–6 were invisible; Week 1 tab said "Desk"; weeks 2–4 showed CSS mock slides despite exported PNGs; `build-backlog.mjs` still held stale week 3/4 placeholders.
+- Fixes: rebuild `posts/build-backlog.mjs` to prefer local `slide-0N.png`, include follow-on stories 5–6, improve tab keyboard/focus basics, set Week 1 `desk: Media`, clarify front-page workbar/footer and README studio scope. No research rewrite, no social posting.
+- Verification: `node posts/build-backlog.mjs`, relative link check on `index.html` and `posts/index.html`, script syntax check. Full citation re-crawl and phone visual QA not re-run (see scorecard in Context).
+
 ## 2026-11-15: Bounded agent coordination
 
 - Agent: Codex. [Issue #33](https://github.com/peternunley08-ops/the-daily-nun/issues/33). Peter confirmed a lightweight coordination workflow and wants the coordinator to choose routine next steps and model assignments automatically within authorized scope. New token-expensive tasks still require approximate steps and confirmation.

@@ -183,3 +183,10 @@ Keep entries concise and dated. Record the agent, task Issue, evidence, decision
 - Stale exports fixed: `daily-nun-instagram-launch.zip` carried an old `DEPARTMENTS.md` without the one-post-weekly cadence note; Week 1's `upload-pack.zip` had a heading-less `SOURCES.txt`. Both entries refreshed; every ZIP now matches its sources byte for byte.
 - Voice: the only first-person phrase left in any caption, Story, bio or alt text was Story 6's topic label, "The algorithm between us", now "The algorithm in between". Its PNG was patched by repainting only that Arial label line (the Impact headline font is not installed in the cloud, so a full re-render would have changed the headline); the overview sheet's card 6 was updated the same way.
 - Not done (out of scope, already tracked): Issue #20's report follow-up on the Gallup 2026 trust figure and the TikTok joint-venture date.
+
+### 2026-11-15: Original Peter Project OS package integrated
+
+- Agent: Codex; [Issue #33](https://github.com/peternunley08-ops/the-daily-nun/issues/33), PR #34. Peter supplied v1.0.0, resolving the earlier missing-package blocker. Read its entrypoint, quick start, agent adaptation, and only this project's map entry.
+- Preserved the complete 48-file package in ignored project-local `.claude/skills/peter-project-os/`; no personal map contents committed. No global settings, background jobs, package scripts, or additional agents were activated.
+- AGENTS.md now routes invocations to the real skill; the shared workflow adds its selective reference loading, acceptance/coverage discipline, and limits. This narrow integration does not rerun prior content audits.
+- Verification: archive paths and symlink checks; all extracted files byte-equal to the supplied archive; ignore/tracked-file checks and documentation diff checks. Native host command discovery remains untested. Other checkouts require their own authorized copy of the private package.

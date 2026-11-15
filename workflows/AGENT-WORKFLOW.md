@@ -1,6 +1,14 @@
 # Agent workflow
 
-This is The Daily Nun's repository coordination layer. Peter authorizes the coordinator to choose routine next steps and an efficient division of work within the agreed task. Use of the original Peter Project OS v1.0.0 is recorded in [PR #32](https://github.com/peternunley08-ops/the-daily-nun/pull/32), but its instructions are not available here; this document does not reproduce or install that skill. Follow AGENTS.md for editorial, privacy, source, and publishing rules.
+This is The Daily Nun's repository coordination layer. Peter authorizes the coordinator to choose routine next steps and an efficient division of work within the agreed task. Use of the original Peter Project OS v1.0.0 is recorded in [PR #32](https://github.com/peternunley08-ops/the-daily-nun/pull/32), and Peter has now supplied the original package. The full skill is installed locally at `.claude/skills/peter-project-os/` and ignored by Git because it contains personal project metadata. This document complements the skill; it does not reproduce it. Follow AGENTS.md for editorial, privacy, source, and publishing rules.
+
+## Apply Peter Project OS
+
+Read the local `SKILL.md`, `references/agent-adaptation.md`, and only The Daily Nun entry in `references/peter-project-map.md`. Load other references only for the current task. Other checkouts need their own authorized copy; no global configuration or background service is installed. File placement is verified; host command discovery is not tested. Any agent with filesystem access can read the entrypoint directly.
+
+Preserve the skill's sequence: diagnose, structure, refine selectively, simplify, verify. For small tasks keep the brief inline. For substantial work define acceptance criteria before edits and record inspected, sampled, blocked, and not-applicable coverage in the existing task record. Separate observations, inferences, and unknowns. Run existing builders and verify affected exports only when source changes require them. Do not repeat the completed PR #32 audit without new evidence.
+
+The model routes below remain optional: the skill requires no fixed agent count or multi-model review. It grants no publishing permission. Keep its complete package and personal project map out of public commits and delegated briefs; share only relevant project instructions. Missing capabilities must be reported, not simulated.
 
 ## Choose the next task
 

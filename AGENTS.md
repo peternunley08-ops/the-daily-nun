@@ -22,7 +22,7 @@ Claude Code can review long-form writing and strategy; Codex can handle structur
 
 Peter wants the coordinating agent to choose the next useful task and model split within the authorized scope. Proceed with routine checks and small, reversible fixes without asking again. Before a new token-expensive task, give its approximate steps and wait for confirmation; confirmation covers that scope, including necessary implementation and verification. New editorial topics still require Peter's selection.
 
-Use [the agent workflow](workflows/AGENT-WORKFLOW.md) for bounded delegation, task briefs, and handoffs. Prefer doing small tasks directly; when delegation is authorized, select agents by task and current availability. These instructions document coordination, not an installed background automation or a replacement for the original Peter Project OS skill.
+Use [the agent workflow](workflows/AGENT-WORKFLOW.md) for bounded delegation, task briefs, and handoffs. Prefer doing small tasks directly; when delegation is authorized, select agents by task and current availability. These instructions document coordination, not background automation. When Peter Project OS is invoked, read the project-local `.claude/skills/peter-project-os/SKILL.md` and only its relevant references. The personal package is intentionally ignored by Git; if absent in another checkout, request the package instead of reconstructing it. Current user and project instructions govern its application.
 
 ## Established product preferences
 

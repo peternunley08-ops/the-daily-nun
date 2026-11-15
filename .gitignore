@@ -15,3 +15,6 @@ previews/
 revised-previews/
 instagram-draft.zip
 instagram-revised.zip
+
+# Personal skill package: includes private project metadata
+/.claude/skills/peter-project-os/

@@ -30,6 +30,7 @@
     button:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
     .reel-box{background:var(--white);border:1px solid var(--rule);padding:22px;border-radius:4px;margin-top:20px}
     .reel-box pre{white-space:pre-wrap;font:14px/1.6 monospace;margin:0}
+    video.reel{display:block;width:100%;max-width:300px;height:auto;border:1px solid var(--rule);background:var(--paper)}
     footer{border-top:1px solid var(--rule);margin-top:40px;padding-top:20px;font-size:14px;color:var(--muted)}
     @media(max-width:768px){.slides{grid-template-columns:1fr}}
   </style>
@@ -69,18 +70,19 @@ https://peternunley08-ops.github.io/the-daily-nun/desks/government/who-is-actual
     </section>
     <section class="copy-section">
       <h2>Short video voiceover</h2>
+      <video class="reel" src="reel.mp4" poster="reel-cover.png" controls muted playsinline preload="metadata" width="1080" height="1920" aria-label="Silent text Reel: Angry about a local decision? Don't just tag the mayor. Councils vote on city budgets. School boards often vote separately. Board votes go on a public agenda. The minutes name who voted. The Daily Nun / A closer look at the world."></video>
+      <p><a href="reel.mp4" download>Download the Reel (silent MP4, 15 seconds)</a></p>
       <div class="reel-box">
         <p><strong>Voiceover text:</strong></p>
         <blockquote style="font-style:italic;margin:0 0 16px 0;font-size:16px;line-height:1.6">"Angry about a local decision? Don't tag the mayor. Power is divided. Councils vote on city budgets. School boards often run separately. Find the agenda. Read the minutes. They name who voted. The Daily Nun."</blockquote>
         <p><strong>On-screen text:</strong></p>
         <pre>1. Angry about a local decision?
 2. Don't just tag the mayor.
-3. Local power is divided.
-4. Councils vote on city budgets.
-5. School boards often vote separately.
-6. Board votes go on a public agenda.
-7. The minutes name who voted.
-8. The Daily Nun / A closer look at the world.</pre>
+3. Councils vote on city budgets.
+4. School boards often vote separately.
+5. Board votes go on a public agenda.
+6. The minutes name who voted.
+7. The Daily Nun / A closer look at the world.</pre>
       </div>
     </section>
   </main>

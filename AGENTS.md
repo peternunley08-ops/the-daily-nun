@@ -20,6 +20,10 @@ Be economical: avoid rereading large files, repeated research, unnecessary deleg
 
 Claude Code can review long-form writing and strategy; Codex can handle structured implementation, assets, and verification; Antigravity can handle scoped exploration and multi-file iteration. These are suggested responsibilities, not competing claims or automatic delegation. Check Issues first.
 
+Peter wants the coordinating agent to choose the next useful task and model split within the authorized scope. Proceed with routine checks and small, reversible fixes without asking again. Before a new token-expensive task, give its approximate steps and wait for confirmation; confirmation covers that scope, including necessary implementation and verification. New editorial topics still require Peter's selection.
+
+Use [the agent workflow](workflows/AGENT-WORKFLOW.md) for bounded delegation, task briefs, and handoffs. Prefer doing small tasks directly; when delegation is authorized, select agents by task and current availability. These instructions document coordination, not an installed background automation or a replacement for the original Peter Project OS skill.
+
 ## Established product preferences
 
 - Brand: **The Daily Nun**. A plain Peter Nunley byline is acceptable.

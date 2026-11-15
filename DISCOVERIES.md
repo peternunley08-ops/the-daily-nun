@@ -1,5 +1,13 @@
 # Shared discoveries and decisions
 
+## 2026-11-15: Bounded agent coordination
+
+- Agent: Codex. [Issue #33](https://github.com/peternunley08-ops/the-daily-nun/issues/33). Peter confirmed a lightweight coordination workflow and wants the coordinator to choose routine next steps and model assignments automatically within authorized scope. New token-expensive tasks still require approximate steps and confirmation.
+- Added `workflows/AGENT-WORKFLOW.md` and linked it from AGENTS.md: scoped ownership, task routing, compact briefs, limited delegation, verification, and honest usage reporting. This is repository guidance, not a background scheduler or installed Peter Project OS skill.
+- The original Peter Project OS v1.0.0 instructions could not be located in the repository or local skill directories. PR #32 records its earlier use; its completed audit is not repeated. Issue #20 remains outside this change.
+- Review: Claude Sonnet 5.5 (low effort) completed one read-only pass. Clarified authorization reuse and mandatory brief constraints; removed transient task status from the durable workflow. The reviewer could not verify provenance from its limited inputs; Codex had directly read PR #32 and searched local skill directories, and the workflow now links the PR. Token usage was not measured.
+- Verification: documentation diff and local Markdown link targets checked. No content, media, or public site changes. Next candidate: scoped Issue #20 follow-up after checking its live state and confirming any substantial research plan.
+
 Keep entries concise and dated. Record the agent, task Issue, evidence, decisions, open questions, and handoff state. Read existing entries before repeating research or changing direction.
 
 ## 2026-11-12: coordination bootstrap

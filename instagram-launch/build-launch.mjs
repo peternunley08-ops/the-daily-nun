@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { renderArticle } from '../assets/render-article.mjs';
 
 const dir = path.dirname(fileURLToPath(import.meta.url));
 const content = JSON.parse(fs.readFileSync(path.join(dir, 'content.json'), 'utf8'));
@@ -27,10 +28,14 @@ fs.writeFileSync(path.join(dir, 'brand', 'bio.txt'), content.bio + '\n');
 
 const article = fs.readFileSync(path.join(dir, 'article.md'), 'utf8');
 const escapeHtml = text => text.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
-const articleSections = article.trim().split(/\r?\n\s*\r?\n/);
-const articleTitle = articleSections.shift().replace(/^#\s+/, '');
-const articleBody = articleSections.map(p => '<p>' + escapeHtml(p).replace(/\[([^\]]+)\]\((https:\/\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>') + '</p>').join('\n');
-fs.writeFileSync(path.join(dir, 'article.html'), `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(articleTitle)} — The Daily Nun</title><style>*{box-sizing:border-box}body{background:#f6f5f0;color:#20201c;margin:0;font:18px/1.85 Georgia,serif}header,article,footer{max-width:760px;margin:auto;padding:30px 24px}header{border-bottom:3px double #20201c}header a{font:700 45px/1.1 Georgia,serif;letter-spacing:-.05em;color:inherit;text-decoration:none}h1{font-size:clamp(38px,8vw,62px);line-height:1.08;letter-spacing:-.05em;margin:14px 0 25px}.meta,footer{font:13px/1.7 Arial,sans-serif;color:#68685f}a{color:#2448b5;text-underline-offset:4px}a:focus-visible{outline:3px solid #2448b5;outline-offset:4px}p{margin:0 0 24px}footer{border-top:1px solid #c8c8bc}</style></head><body><header><a href="index.html">The Daily Nun</a></header><article><p class="meta">Media &amp; democracy / Draft for review</p><h1>${escapeHtml(articleTitle)}</h1><p class="meta">By Peter Nunley</p>${articleBody}</article><footer><a href="index.html">Return to the Instagram launch pack</a><br>Prepared article. Not yet published.</footer></body></html>`);
+const renderedArticle = renderArticle({
+  markdown: article,
+  kicker: 'Media desk',
+  cssHref: '../assets/article.css',
+  homeHref: '../index.html',
+  footerHtml: '<a href="index.html">See the Instagram launch pack for this story</a><br>The Daily Nun / A closer look at the world. Draft for review.'
+});
+fs.writeFileSync(path.join(dir, 'article.html'), renderedArticle.html);
 
 const captionText = ['# The Daily Nun — launch copy', '', 'Prepared assets; nothing has been posted.', ''];
 for (const post of content.carousels) captionText.push(`## Carousel: ${post.title}`, '', ...post.slides.map((s, i) => `${i + 1}. ${s.title.replaceAll('\n', ' ')}${s.body ? ' — ' + s.body : ''}`), '', post.caption, '');

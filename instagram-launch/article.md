@@ -1,33 +1,41 @@
 # Who picked this for you?
 
-When a story reaches your feed, several decisions have already happened. Someone chose to investigate it. Someone chose to publish it. Someone, or some system, helped place it in front of you.
+*Before a story reaches your screen, three choices have already been made. You only see the last one.*
 
-Understanding that route starts with three questions: who owns the outlet, how was the story reported, and how did it reach an audience?
+A story shows up in your feed while the coffee is still hot. It feels like it simply arrived.
 
-Ownership concerns the institution. An owner can influence budgets, appointments, and priorities. Reporting concerns the work behind a claim: documents, interviews, observations, and verification. Distribution concerns visibility: which stories appear, where they appear, and how prominently they are presented.
+It did not. Someone chose to report it. Someone chose to publish it. Then a person, or a system, chose to show it to you.
 
-These decisions can involve different organizations.
+> Three choices come before yours: who owns it, who reported it, and who put it in front of you.
 
-In 2018, Sinclair directed local television anchors across its stations to deliver a shared promotion criticizing media bias. A compilation made the repeated wording visible. Sinclair denied a political agenda and described the promotions as support for fair, objective reporting. [NPR's contemporary account](https://www.npr.org/2018/04/03/599077733/warm-relations-with-trump-appears-to-benefit-sinclair-broadcasting) documented both the corporate direction and the company's response.
+## The owner
 
-The episode offers a concrete ownership question: how much independence does a local newsroom possess when its parent company requires particular material? Answering that requires examining actual authority and decisions. A collection of different station logos cannot settle it.
+In 2018, Sinclair told anchors at its local stations to read the same script warning about biased news. A video stitched the broadcasts together, and the matching words were hard to miss.
 
-Large ownership statistics deserve equally specific questions. A widely circulated claim says a handful of companies control 90% of American media. A [2012 Business Insider article](https://www.businessinsider.com/these-6-corporations-control-90-of-the-media-in-america-2012-6) repeated a six-company infographic from the previous year and already warned that it omitted important transactions.
+Sinclair denied a political agenda and said the messages promoted "fair and objective reporting," as [NPR reported at the time](https://www.npr.org/2018/04/03/599077733/warm-relations-with-trump-appears-to-benefit-sinclair-broadcasting). Different logos, one script.
 
-That history does not settle how concentrated media ownership is today. A usable percentage needs a defined market, measure, and date. Revenue, audience time, number of outlets, and ownership of entertainment libraries describe different things. Before repeating a number, establish what was counted.
+## The number
 
-Distribution introduces another form of power. In its [2021 explanation of recommendations](https://blog.youtube/inside-youtube/on-youtubes-recommendation-system/), YouTube described recommendations as a significant route to viewing and identified signals including viewing behavior, surveys, likes, and sharing. That is the company's account of its system; assessing its results requires independent evidence.
+You may have seen the claim that six companies control 90% of American media. A [2012 Business Insider article](https://www.businessinsider.com/these-6-corporations-control-90-of-the-media-in-america-2012-6) repeated it from an infographic made the year before, and warned even then that it had missed important deals.
 
-Consider a hypothetical example. A local reporter examines a public contract and publishes an investigation. A creator summarizes it in a short video. A platform recommends that video to you. Another account shares an excerpt.
+Ninety percent of what, and counted when? Until a number answers that, it is a feeling.
 
-You may encounter the excerpt before seeing the investigation, and the investigation before seeing the documents. At every stage, someone has selected details, supplied context, or decided what deserves attention.
+## The feed
 
-The original reporter, the creator, and the platform need different kinds of scrutiny. Did the reporting establish its claims? Did the summary preserve the important qualifications? Can you identify the original source? What explains the recommendation?
+[YouTube's own 2021 explanation](https://blog.youtube/inside-youtube/on-youtubes-recommendation-system/) says its recommendations weigh what people watch, like and share, along with survey answers. That is the company describing itself. It is not an independent audit.
 
-A useful summary can make difficult reporting accessible. A careless summary can obscure what the evidence supports. Understanding the route helps you distinguish those possibilities.
+## Try it once today
 
-It also reveals what an ownership chart leaves unanswered. A company can influence distribution without employing the journalist. A publisher can retain editorial control while depending on another service to reach readers. Several outlets can share material while conducting different amounts of original reporting.
+Pick one story in front of you. Find where it started. Check what supports it. Then ask how it got to you.
 
-The question “Who picked this for you?” therefore leads beyond a list of powerful companies. It asks which decisions shaped your experience and which evidence allows those decisions to be examined.
+## The short version
 
-Start with the story in front of you. Find its origin. Inspect its support. Follow its route.
+- A story is reported, published and distributed, and those can be three different organizations.
+- An owner can direct what its stations air. Sinclair did in 2018.
+- A big statistic needs a date and a definition before it deserves a repeat.
+
+## Sources
+
+- David Folkenflik, NPR, [Warm Relations With Trump Appear To Benefit Sinclair Broadcasting](https://www.npr.org/2018/04/03/599077733/warm-relations-with-trump-appears-to-benefit-sinclair-broadcasting), April 3, 2018.
+- Ashley Lutz, Business Insider, [These 6 Corporations Control 90% Of The Media In America](https://www.businessinsider.com/these-6-corporations-control-90-of-the-media-in-america-2012-6), June 14, 2012. Reproduces a 2011 infographic.
+- Cristos Goodrow, YouTube, [On YouTube's Recommendation System](https://blog.youtube/inside-youtube/on-youtubes-recommendation-system/), September 15, 2021. A company statement.

@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
+import { renderArticle } from '../../assets/render-article.mjs';
 
 const dir = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(dir, '../..');
@@ -17,6 +18,14 @@ for (const slide of post.slides) {
   if (slide.cover && slide.title.trim().split(/\s+/).filter(Boolean).length > 7) {
     throw new Error(`Cover title exceeds 7 words: "${slide.title}"`);
   }
+}
+
+// The voiceover must fit the stated duration at the stated reading pace.
+const WORDS_PER_MINUTE = 140;
+const voiceoverWords = post.reel.voiceover.trim().split(/\s+/).filter(Boolean).length;
+const voiceoverSeconds = Math.round(voiceoverWords / WORDS_PER_MINUTE * 60);
+if (voiceoverSeconds > post.reel.duration + 1) {
+  throw new Error(`Voiceover is ${voiceoverWords} words (about ${voiceoverSeconds}s at ${WORDS_PER_MINUTE} wpm) but the reel is ${post.reel.duration}s`);
 }
 
 // Build caption
@@ -52,7 +61,7 @@ fs.writeFileSync(path.join(dir, 'SOURCES.md'), sourceNotes + '\n');
 const voiceoverContent = [
   `# Voiceover & Video Script: ${post.reel.title}`,
   '',
-  '**Duration:** ~15 seconds',
+  `**Duration:** ${post.reel.duration} seconds (voiceover: ${voiceoverWords} words, about ${voiceoverSeconds} seconds at ${WORDS_PER_MINUTE} words per minute)`,
   '**Format:** Vertical Video (1080 × 1920) / Reel & TikTok',
   '',
   '## Voiceover Script (For Peter to record)',
@@ -63,70 +72,22 @@ const voiceoverContent = [
   '',
   '## Delivery Notes',
   '- Tone: Calm, authoritative, third-person analytical.',
-  '- Pacing: Measured, clear enunciation, ~140 words per minute.',
+  `- Pacing: Measured, clear enunciation, about ${WORDS_PER_MINUTE} words per minute.`,
   '- Video functions silently with on-screen kinetic typography.'
 ].join('\n');
 fs.writeFileSync(path.join(dir, 'voiceover-script.txt'), voiceoverContent + '\n');
 
-// Build HTML article
+// Build the article page with the shared renderer (assets/render-article.mjs).
 const articleMdPath = path.join(root, 'desks/government/who-is-actually-responsible.md');
 if (fs.existsSync(articleMdPath)) {
-  const articleMd = fs.readFileSync(articleMdPath, 'utf8');
-  const escapeHtml = text => text.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
-  const sections = articleMd.trim().split(/\r?\n\s*\r?\n/);
-  const title = sections.shift().replace(/^#\s+/, '');
-  const bodyHtml = sections.map(p => {
-    if (p.startsWith('## ')) return `<h2>${escapeHtml(p.replace(/^##\s+/, ''))}</h2>`;
-    if (p.startsWith('### ')) return `<h3>${escapeHtml(p.replace(/^###\s+/, ''))}</h3>`;
-    if (p.startsWith('- ')) {
-      const items = p.split(/\r?\n/).map(li => `<li>${escapeHtml(li.replace(/^[-\d.]+\s+/, ''))}</li>`).join('');
-      return `<ul>${items}</ul>`;
-    }
-    if (/^\d+\.\s/.test(p)) {
-      const items = p.split(/\r?\n/).map(li => `<li>${escapeHtml(li.replace(/^\d+\.\s+/, ''))}</li>`).join('');
-      return `<ol>${items}</ol>`;
-    }
-    if (p.startsWith('---')) return '<hr>';
-    return '<p>' + escapeHtml(p).replace(/\[([^\]]+)\]\((https:\/\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>') + '</p>';
-  }).join('\n');
-
-  const articleHtml = `<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>${escapeHtml(title)} — The Daily Nun</title>
-  <style>
-    :root{--paper:#f6f5f0;--ink:#20201c;--blue:#2448b5;--muted:#68685f;--rule:#c8c8bc}
-    *{box-sizing:border-box}body{background:var(--paper);color:var(--ink);margin:0;font:18px/1.85 Georgia,serif}
-    header,article,footer{max-width:760px;margin:auto;padding:30px 24px}
-    header{border-bottom:3px double var(--ink)}
-    header a{font:700 45px/1.1 Georgia,serif;letter-spacing:-.05em;color:inherit;text-decoration:none}
-    h1{font-size:clamp(36px,7vw,58px);line-height:1.08;letter-spacing:-.045em;margin:18px 0 20px}
-    h2{font-size:26px;line-height:1.2;margin:34px 0 16px;border-top:1px solid var(--rule);padding-top:20px}
-    h3{font-size:20px;line-height:1.3;margin:24px 0 10px}
-    .meta,footer{font:13px/1.7 Arial,sans-serif;color:var(--muted)}
-    a{color:var(--blue);text-underline-offset:4px}
-    ul,ol{padding-left:24px;margin-bottom:24px}li{margin-bottom:8px}
-    p{margin:0 0 20px}
-    footer{border-top:1px solid var(--rule);margin-top:40px;padding-top:20px}
-  </style>
-</head>
-<body>
-  <header><a href="../../index.html">The Daily Nun</a></header>
-  <article>
-    <p class="meta">Government &amp; Civic Accountability / Week 2 Feature</p>
-    <h1>${escapeHtml(title)}</h1>
-    <p class="meta">By Peter Nunley &nbsp;·&nbsp; Draft for review</p>
-    ${bodyHtml}
-  </article>
-  <footer>
-    <a href="../../posts/02-who-is-responsible/index.html">View Instagram Carousel &amp; Script Preview</a><br>
-    The Daily Nun / A closer look at the world.
-  </footer>
-</body>
-</html>`;
-  fs.writeFileSync(path.join(root, 'desks/government/who-is-actually-responsible.html'), articleHtml);
+  const rendered = renderArticle({
+    markdown: fs.readFileSync(articleMdPath, 'utf8'),
+    kicker: 'Government desk',
+    cssHref: '../../assets/article.css',
+    homeHref: '../../index.html',
+    footerHtml: '<a href="../../posts/02-who-is-responsible/index.html">See the Instagram carousel and script for this story</a><br>The Daily Nun / A closer look at the world. Draft for review.'
+  });
+  fs.writeFileSync(path.join(root, 'desks/government/who-is-actually-responsible.html'), rendered.html);
 }
 
 // Build index.html preview

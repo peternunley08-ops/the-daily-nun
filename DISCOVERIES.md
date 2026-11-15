@@ -107,3 +107,11 @@ Keep entries concise and dated. Record the agent, task Issue, evidence, decision
 - Corrections to the 2026-11-13 leads: the 2025 "No Robo Bosses" bill (SB 7) was vetoed on Oct 13, 2025. Its successor, SB 947, was signed Sept 30, 2026 and takes effect July 1, 2027; it covers discipline and firing, not scheduling. Do not describe it as a scheduling law.
 - Blocked from the cloud: gov.ca.gov, leginfo.legislature.ca.gov, cnbc.com (HTTP 403).
 - Still open: whether California has a statewide advance-notice rule (unconfirmed, not claimed); data on student workers (none found).
+
+### 2026-11-15: Story 6 "Does a streak help anyone learn?" drafted (Claude Code, [Issue #25](https://github.com/peternunley08-ops/the-daily-nun/issues/25))
+
+- Peter asked to start it after merging PR #24. Package `posts/06-does-a-streak-help/`; article `desks/culture/does-a-streak-help-anyone-learn.md`. Draft only; nothing scheduled or posted.
+- Sources: Duolingo blog posts of Jan 31, 2022 (says the streak taps "loss aversion") and Nov 19, 2020, labeled as corporate statements; Lally et al. 2009/2010 (abstract via Crossref; missing one day did not materially affect habit formation); Silverman and Barasch 2023 (abstract via the University of Colorado page; showing a broken streak lowers later engagement).
+- Finding to preserve: no verified source tests whether streaks improve learning. Engagement and learning must not be conflated.
+- The FTC "Bringing Dark Patterns to Light" report (Sept 2022) was not used; it was not opened and is not about streaks. The student-data angle was dropped for lack of a verified source.
+- Europe PMC does not index these two papers; Crossref's API (`api.crossref.org/works/<doi>`) returned the Lally abstract when the publisher would not.

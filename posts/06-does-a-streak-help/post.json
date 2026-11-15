@@ -1,0 +1,88 @@
+{
+  "id": "story-06-does-a-streak-help",
+  "title": "Does a streak help anyone learn?",
+  "format": "Three-slide Instagram carousel",
+  "status": "Prepared draft",
+  "week": 6,
+  "desk": "Culture",
+  "scheduledAt": null,
+  "publishedAt": null,
+  "audience": "Peter's high-school community",
+  "caption": "A streak counts days. The Daily Nun looked at what it is built to do.\n\nDuolingo says its streak taps \"loss aversion\" once the novelty fades. Research finds a missed day barely affects a habit, while seeing a streak reset can lead people to do less. The Daily Nun found no study showing that streaks improve learning.\n\nArticle + sources:",
+  "articleUrl": "https://peternunley08-ops.github.io/the-daily-nun/desks/culture/does-a-streak-help-anyone-learn.html",
+  "slides": [
+    {
+      "cover": true,
+      "title": "Does a streak help\nanyone learn?",
+      "body": "What one streak app says it is doing, and what research on habits found.",
+      "theme": "paper",
+      "alt": "The Daily Nun cover slide: Does a streak help anyone learn? Subtitle: What one streak app says it is doing, and what research on habits found."
+    },
+    {
+      "cover": false,
+      "title": "The app names its tactic.",
+      "body": "Duolingo says that once a streak's novelty fades, it taps \"loss aversion,\" a bias against losing something.",
+      "theme": "paper",
+      "alt": "Slide 2: The app names its tactic. Duolingo says that once a streak's novelty fades, it taps loss aversion, a bias against losing something."
+    },
+    {
+      "cover": false,
+      "title": "Coming back isn't learning.",
+      "body": "One study found a missed day barely dents a habit. The Daily Nun found no study showing streaks improve learning.",
+      "theme": "blue",
+      "alt": "Slide 3: Coming back isn't learning. One study found a missed day barely dents a habit. The Daily Nun found no study showing streaks improve learning."
+    }
+  ],
+  "reel": {
+    "title": "Does a streak help?",
+    "duration": 30,
+    "voiceover": "Does a streak help anyone learn? Duolingo says that once a streak stops feeling new, it taps loss aversion: a bias against losing something. Research says a missed day barely affects a habit. But seeing a streak reset can lead people to do less. What no study found here shows is that streaks help anyone learn more. Counting days is not the same as learning. The Daily Nun.",
+    "kineticText": [
+      "Does a streak help anyone learn?",
+      "Duolingo: the streak taps \"loss aversion.\"",
+      "A missed day barely affects a habit.",
+      "Seeing a reset can lead to less.",
+      "No study found here shows more learning.",
+      "Counting days is not learning.",
+      "The Daily Nun / A closer look at the world."
+    ]
+  },
+  "sources": [
+    {
+      "title": "The Duolingo Streak Uses Habit Research to Keep You Motivated",
+      "author": "Osman Mansur",
+      "publisher": "Duolingo Blog",
+      "date": "January 31, 2022",
+      "url": "https://blog.duolingo.com/how-duolingo-streak-builds-habit/",
+      "type": "Corporate statement",
+      "limits": "The company describing its own design and reporting its own A/B test results (+1.7% seven-day retention from milestone animations; +0.38% relative daily active learners from two streak freezes). Not independently verified. Read in full on 2026-11-15."
+    },
+    {
+      "title": "Improving the streak: Forming habits one lesson at a time",
+      "author": "Anton Yu",
+      "publisher": "Duolingo Blog",
+      "date": "November 19, 2020",
+      "url": "https://blog.duolingo.com/improving-the-streak/",
+      "type": "Corporate statement",
+      "limits": "Company-reported result (over 40% more learners on a 7+ day streak after decoupling streaks from daily goals). Measures streak counts, not learning. Not independently verified."
+    },
+    {
+      "title": "How are habits formed: Modelling habit formation in the real world",
+      "author": "Phillippa Lally, Cornelia H. M. van Jaarsveld, Henry W. W. Potts, Jane Wardle",
+      "publisher": "European Journal of Social Psychology 40(6), 998-1009",
+      "date": "Published online July 16, 2009 (print October 2010)",
+      "url": "https://doi.org/10.1002/ejsp.674",
+      "type": "Peer-reviewed study",
+      "limits": "Abstract only, read through Crossref on 2026-11-15. 96 volunteers, 82 analyzed, 39 with good model fit; small sample. Studied eating, drinking, or exercise habits, not app streaks or learning."
+    },
+    {
+      "title": "On or Off Track: How (Broken) Streaks Affect Consumer Decisions",
+      "author": "Jackie Silverman, Alixandra Barasch",
+      "publisher": "Journal of Consumer Research 49(6), 1095-1117",
+      "date": "April 2023",
+      "url": "https://www.colorado.edu/business/faculty-research/2023/04/19/or-track-how-broken-streaks-affect-consumer-decisions",
+      "type": "Peer-reviewed research (seven studies)",
+      "limits": "Abstract only, read on the University of Colorado's publication page on 2026-11-15. Measures subsequent engagement, not learning outcomes. Effect sizes and samples not read."
+    }
+  ]
+}

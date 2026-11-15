@@ -1,0 +1,6 @@
+A streak counts days. The Daily Nun looked at what it is built to do.
+
+Duolingo says its streak taps "loss aversion" once the novelty fades. Research finds a missed day barely affects a habit, while seeing a streak reset can lead people to do less. The Daily Nun found no study showing that streaks improve learning.
+
+Article + sources:
+https://peternunley08-ops.github.io/the-daily-nun/desks/culture/does-a-streak-help-anyone-learn.html

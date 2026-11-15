@@ -1,0 +1,21 @@
+# Voiceover & Video Script: Does a streak help?
+
+**Duration:** ~30 seconds
+**Format:** Vertical Video (1080 × 1920) / Reel & TikTok
+
+## Voiceover Script (For Peter to record)
+"Does a streak help anyone learn? Duolingo says that once a streak stops feeling new, it taps loss aversion: a bias against losing something. Research says a missed day barely affects a habit. But seeing a streak reset can lead people to do less. What no study found here shows is that streaks help anyone learn more. Counting days is not the same as learning. The Daily Nun."
+
+## Kinetic On-Screen Text
+1. Does a streak help anyone learn?
+2. Duolingo: the streak taps "loss aversion."
+3. A missed day barely affects a habit.
+4. Seeing a reset can lead to less.
+5. No study found here shows more learning.
+6. Counting days is not learning.
+7. The Daily Nun / A closer look at the world.
+
+## Delivery Notes
+- Tone: Calm, authoritative, third-person analytical.
+- Pacing: Measured, clear enunciation, ~140 words per minute.
+- Video functions silently with on-screen kinetic typography.

@@ -78,3 +78,13 @@ Keep entries concise and dated. Record the agent, task Issue, evidence, decision
 - Existing report source M03 (Rathje et al., 2021) may help the anger angle: its observational evidence concerns out-group language and engagement, not proof that exposure causes hostility or that particular posts generated profit. Use measured outcomes and source limits; do not treat the question's premise as a settled finding.
 - Instagram account/handle, launch date, and actual social posting remain unconfirmed in this handoff. The launch board is a preview, not a posting service.
 
+
+## 2026-11-15: Claude Code redesign pass (Issue #21)
+
+- Agent: Claude Code. Task: [Issue #21](https://github.com/peternunley08-ops/the-daily-nun/issues/21). The user asked for a redesign pass and for articles that are shorter, main facts only, and pleasant to read.
+- Articles now render through one shared module, `assets/render-article.mjs`, styled by `assets/article.css`. Edit the `.md` and run the builder; do not hand-edit the `.html`. The renderer accepts a small Markdown subset (title, italic deck, `##`, `>` pull quote, lists, bold, https links, "The short version", "Sources") and throws on anything else.
+- Cause fixed: the Week 2 builder printed `**bold**` and the whole source list as literal text on the public government page.
+- Government article: universal claims were qualified. The 72-hour agenda rule is California's (Brown Act, via the RCFP guide); Florida's statute says "reasonable notice". The NLC and GFOA references were dropped because their content could not be opened or confirmed from this session. The Week 2 carousel and voiceover in `posts/02-who-is-responsible/post.json` still state the 72-hour rule generally and were not changed here.
+- Front page: first-person copy moved to the third-person editorial voice, the duplicate long article and an unreachable carousel mock-up were removed.
+- Method limit: sources were loaded with an HTTP client, not gstack `/browse`. leginfo.legislature.ca.gov blocked automated access, so the California statute was read through the RCFP guide, not the code itself.
+- Not done: `posts/index.html`, `posts/03` (PR #14), exported images, `the-daily-nun-revised.html` (no longer matches `index.html`).

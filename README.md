@@ -50,9 +50,10 @@ Weekly post packages live in `posts/NN-slug/`. Edit `post.json` (slides, caption
 ```sh
 node posts/05-who-gets-the-hours/build.mjs
 node posts/export-slides.mjs 05-who-gets-the-hours
+node posts/export-reels.mjs 05-who-gets-the-hours
 ```
 
-The first command validates word limits, voiceover length and branding, and writes the caption, source notes, voiceover script, article page and preview. All weekly packages share `posts/build-post.mjs`, and all articles share `assets/render-article.mjs` and `assets/article.css`. The second command renders the 1080 × 1350 slide images and `upload-pack.zip`; it needs Playwright with Chromium and the Georgia font, and refuses to save a headline that overflows.
+The first command validates word limits, voiceover length and branding, and writes the caption, source notes, voiceover script, article page and preview. All weekly packages share `posts/build-post.mjs`, and all articles share `assets/render-article.mjs` and `assets/article.css`. The second renders the 1080 × 1350 slide images and `upload-pack.zip`. The third renders the silent 1080 × 1920 text Reel (`reel.mp4`, `reel-cover.png`) from the on-screen lines, timed to the script's stated length, and adds it to the upload pack. Both need Playwright with Chromium and the Georgia font; the Reel exporter also needs ffmpeg. They refuse to save a headline that overflows or a Reel card too brief to read.
 
 ## Sources and publishing
 

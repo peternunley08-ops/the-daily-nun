@@ -106,6 +106,7 @@ export function buildPost(moduleUrl, { label, desk, deskLong, article, note = ''
   const pngs = post.slides.map((_, i) => `slide-${String(i + 1).padStart(2, '0')}.png`);
   const exported = pngs.every(f => fs.existsSync(path.join(dir, f)));
   const hasPack = fs.existsSync(path.join(dir, 'upload-pack.zip'));
+  const hasReel = fs.existsSync(path.join(dir, 'reel.mp4'));
   const slidesHtml = post.slides.map((s, i) => exported
     ? `<figure class="slide-img"><img src="${pngs[i]}" width="1080" height="1350" alt="${escape(s.alt || s.title.replaceAll('\n', ' '))}" loading="lazy"><figcaption><a href="${pngs[i]}" download>Download slide ${i + 1}</a></figcaption></figure>`
     : `<article class="slide-card ${s.theme === 'blue' ? 'blue' : ''}"><div class="slide-header">The Daily Nun <span>${i + 1} / ${post.slides.length}</span></div><div><div class="slide-title">${escape(s.title).replaceAll('\n', '<br>')}</div><p class="slide-body">${escape(s.body)}</p></div><div class="slide-footer"><span>A closer look at the world.</span><span>${escape(desk)}</span></div></article>`
@@ -143,6 +144,7 @@ export function buildPost(moduleUrl, { label, desk, deskLong, article, note = ''
     button:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
     .reel-box{background:var(--white);border:1px solid var(--rule);padding:22px;border-radius:4px;margin-top:20px}
     .reel-box pre{white-space:pre-wrap;font:14px/1.6 monospace;margin:0}
+    video.reel{display:block;width:100%;max-width:300px;height:auto;border:1px solid var(--rule);background:var(--paper)}
     footer{border-top:1px solid var(--rule);margin-top:40px;padding-top:20px;font-size:14px;color:var(--muted)}
     @media(max-width:768px){.slides{grid-template-columns:1fr}}
   </style>
@@ -172,6 +174,8 @@ export function buildPost(moduleUrl, { label, desk, deskLong, article, note = ''
     </section>
     <section class="copy-section">
       <h2>Short video voiceover</h2>
+      ${hasReel ? `<video class="reel" src="reel.mp4" poster="reel-cover.png" controls muted playsinline preload="metadata" width="1080" height="1920" aria-label="Silent text Reel: ${escape(post.reel.kineticText.join(' '))}"></video>
+      <p><a href="reel.mp4" download>Download the Reel (silent MP4, ${post.reel.duration} seconds)</a></p>` : ''}
       <div class="reel-box">
         <p><strong>Voiceover text:</strong></p>
         <blockquote style="font-style:italic;margin:0 0 16px 0;font-size:16px;line-height:1.6">"${escape(post.reel.voiceover)}"</blockquote>
@@ -191,5 +195,5 @@ export function buildPost(moduleUrl, { label, desk, deskLong, article, note = ''
 </body>
 </html>
 `);
-  return { folder, articleWords: rendered.words, exported, hasPack };
+  return { folder, articleWords: rendered.words, exported, hasPack, hasReel };
 }

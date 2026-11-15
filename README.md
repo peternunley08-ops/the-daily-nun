@@ -4,7 +4,16 @@ A closer look at the world. A publication project by Peter Nunley about governme
 
 **First research report:** [Who Shapes What America Knows? (PDF)](research/media-democracy/output/pdf/who-shapes-what-america-knows.pdf) · [Text, sources, and agent handoff](research/media-democracy/README.md)
 
-**First weekly post:** [Preview the carousel and caption](posts/01-who-picked-this/index.html) · [Download its upload pack](posts/01-who-picked-this/upload-pack.zip). Prepared draft; no publishing date is assigned.
+**Weekly posts:** prepared drafts, none posted or scheduled. [See all four launch weeks on the backlog board](posts/index.html).
+
+| | Story | Article | Upload pack |
+|---|---|---|---|
+| Week 1 | Who picked this for you? | [Read](instagram-launch/article.html) | [Preview](posts/01-who-picked-this/index.html) · [ZIP](posts/01-who-picked-this/upload-pack.zip) |
+| Week 2 | Who is actually responsible? | [Read](desks/government/who-is-actually-responsible.html) | [Preview](posts/02-who-is-responsible/index.html) · [ZIP](posts/02-who-is-responsible/upload-pack.zip) |
+| Week 3 | When does a recommendation become manipulation? | [Read](desks/culture/when-does-a-recommendation-become-manipulation.html) | [Preview](posts/03-recommendation-or-manipulation/index.html) · [ZIP](posts/03-recommendation-or-manipulation/upload-pack.zip) |
+| Week 4 | What happens when the local paper closes? | [Read](desks/democracy/what-happens-when-the-local-paper-closes.html) | [Preview](posts/04-the-disappearing-local-beat/index.html) · [ZIP](posts/04-the-disappearing-local-beat/upload-pack.zip) |
+| Story 5 | Who decides who gets the hours? | [Read](desks/government/who-decides-who-gets-the-hours.html) | [Preview](posts/05-who-gets-the-hours/index.html) · [ZIP](posts/05-who-gets-the-hours/upload-pack.zip) |
+| Story 6 | Does a streak help anyone learn? | [Read](desks/culture/does-a-streak-help-anyone-learn.html) | [Preview](posts/06-does-a-streak-help/index.html) · [ZIP](posts/06-does-a-streak-help/upload-pack.zip) |
 
 Current audience: primarily Peter's high-school community. Cadence: one post weekly. Core questions concern media influence, buying decisions, political support, polarization, attention, and everyday thought. Read [AGENTS.md](AGENTS.md), [DISCOVERIES.md](DISCOVERIES.md), and open Issues before starting work.
 
@@ -35,6 +44,15 @@ node instagram-launch/build-launch.mjs
 ```
 
 The builders generate the previews and copy files. PNG and MP4 exports use the browser rendering functions embedded in each preview; rebuilding the HTML alone does not regenerate exported media or ZIP files.
+
+Weekly post packages live in `posts/NN-slug/`. Edit `post.json` (slides, caption, voiceover, sources) and the article Markdown in `desks/`, then rebuild:
+
+```sh
+node posts/05-who-gets-the-hours/build.mjs
+node posts/export-slides.mjs 05-who-gets-the-hours
+```
+
+The first command validates word limits, voiceover length and branding, and writes the caption, source notes, voiceover script, article page and preview. All weekly packages share `posts/build-post.mjs`, and all articles share `assets/render-article.mjs` and `assets/article.css`. The second command renders the 1080 × 1350 slide images and `upload-pack.zip`; it needs Playwright with Chromium and the Georgia font, and refuses to save a headline that overflows.
 
 ## Sources and publishing
 

@@ -1,10 +1,10 @@
 # Voiceover & Video Script: Who chose that video?
 
-**Duration:** ~30 seconds
+**Duration:** 30 seconds (voiceover: 69 words, about 30 seconds at 140 words per minute)
 **Format:** Vertical Video (1080 × 1920) / Reel & TikTok
 
 ## Voiceover Script (For Peter to record)
-"Every feed is a ranking. TikTok, Instagram and YouTube say their systems predict what each person will watch, like or share. In 2023, researchers audited the timelines of 806 Twitter users in the United States. Ranking by engagement showed them more angry, hostile posts than a simple newest-first feed, and they rated its political picks lower. One study is not the whole story. But clicking on something is not the same as wanting more of it. The Daily Nun."
+"Every feed is a ranking. TikTok, Instagram and YouTube say their systems predict what each person will watch, like or share. In 2023, researchers audited 806 U.S. Twitter users. Ranking by engagement showed them more angry, hostile posts than a newest-first feed, and they rated its political picks lower. One study is not the whole story. But a click is not the same as wanting more. The Daily Nun."
 
 ## Kinetic On-Screen Text
 1. Who chose that video?
@@ -19,5 +19,5 @@
 
 ## Delivery Notes
 - Tone: Calm, authoritative, third-person analytical.
-- Pacing: Measured, clear enunciation, ~140 words per minute.
-- Video functions silently with on-screen kinetic typography.
+- Pacing: Measured, clear enunciation, about 140 words per minute.
+- Video works silently with on-screen kinetic typography.

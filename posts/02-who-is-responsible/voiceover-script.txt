@@ -19,4 +19,4 @@
 ## Delivery Notes
 - Tone: Calm, authoritative, third-person analytical.
 - Pacing: Measured, clear enunciation, about 140 words per minute.
-- Video functions silently with on-screen kinetic typography.
+- Video works silently with on-screen kinetic typography.

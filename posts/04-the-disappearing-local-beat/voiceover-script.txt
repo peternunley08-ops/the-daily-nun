@@ -1,6 +1,6 @@
 # Voiceover & Video Script: Who is watching the meeting?
 
-**Duration:** ~30 seconds
+**Duration:** 30 seconds (voiceover: 70 words, about 30 seconds at 140 words per minute)
 **Format:** Vertical Video (1080 × 1920) / Reel & TikTok
 
 ## Voiceover Script (For Peter to record)
@@ -18,5 +18,5 @@
 
 ## Delivery Notes
 - Tone: Calm, authoritative, third-person analytical.
-- Pacing: Measured, clear enunciation, ~140 words per minute.
-- Video functions silently with on-screen kinetic typography.
+- Pacing: Measured, clear enunciation, about 140 words per minute.
+- Video works silently with on-screen kinetic typography.

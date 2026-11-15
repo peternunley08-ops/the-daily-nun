@@ -131,3 +131,23 @@ Keep entries concise and dated. Record the agent, task Issue, evidence, decision
 - Font: Georgia is not installed in the Claude cloud container. The exporter refuses to run without it unless `--serif-font` supplies a stand-in; these images used Gelasio Bold (SIL Open Font License, from the `@fontsource/gelasio` npm package), which is designed to match Georgia's widths. Each pack's READ-ME says so. Re-exporting on a Mac with Georgia gives an exact Week 1 match.
 - Headline fit: `drawArt()` only breaks headlines at `\n` and stops shrinking at 64px, so long headlines overflowed the right margin. The exporter now fails if a headline is wider than 908px or smaller than 90px (cover) / 80px (inner). Line breaks were added to seven headlines in Weeks 2-4; no words changed.
 - Weeks 5 and 6 were not exported (not requested). Week 1's ZIP still has the stale caption until Codex's PR #19 lands.
+
+## 2026-11-15: Claude Code redesign pass (Issue #21)
+
+- Agent: Claude Code. Task: [Issue #21](https://github.com/peternunley08-ops/the-daily-nun/issues/21). The user asked for a redesign pass and for articles that are shorter, main facts only, and pleasant to read.
+- Articles now render through one shared module, `assets/render-article.mjs`, styled by `assets/article.css`. Edit the `.md` and run the builder; do not hand-edit the `.html`. The renderer accepts a small Markdown subset (title, italic deck, `##`, `>` pull quote, lists, bold, https links, "The short version", "Sources") and throws on anything else.
+- Cause fixed: the Week 2 builder printed `**bold**` and the whole source list as literal text on the public government page.
+- Government article: universal claims were qualified. The 72-hour agenda rule is California's (Brown Act, via the RCFP guide); Florida's statute says "reasonable notice". The NLC and GFOA references were dropped because their content could not be opened or confirmed from this session. The Week 2 carousel and voiceover in `posts/02-who-is-responsible/post.json` still state the 72-hour rule generally and were not changed here.
+- Front page: first-person copy moved to the third-person editorial voice, the duplicate long article and an unreachable carousel mock-up were removed.
+- Method limit: sources were loaded with an HTTP client, not gstack `/browse`. leginfo.legislature.ca.gov blocked automated access, so the California statute was read through the RCFP guide, not the code itself.
+- Not done: `posts/index.html`, `posts/03` (PR #14), exported images, `the-daily-nun-revised.html` (no longer matches `index.html`).
+- Week 2 follow-up done in the same PR: the carousel, caption, voiceover and source notes in `posts/02-who-is-responsible/` no longer state the 72-hour rule or "mayors propose" as universal. The voiceover is cut to fit 15 seconds, and the builder now fails when a voiceover is too long for its stated duration at 140 words per minute.
+
+### 2026-11-15: Anti-slop redesign pass (Claude Code; Issue #21, continues PR #22)
+
+- Peter ran the "anti-slop-refinement" v4.2 skill on the repository and asked Claude Code to take over PR #22. Its two commits are merged unchanged; conflicts resolved by keeping PR #22's qualified Week 2 wording.
+- Audit found (all now fixed): first-person copy on the front page (including a "You & me" illustration label); the front page linking only 2 of 7 articles and showing "future edition" placeholders; a public duplicate front page (`the-daily-nun-revised.html`, removed); literal `**` on the Week 2 article; README describing only Week 1; Week 3 at 1,700+ words against the short format; previews that did not show exported slides; five copy-pasted package builders; 10-11px text on the front page and board; Week 3's voiceover running 34 seconds against a 30-second label.
+- Structure now: `posts/build-post.mjs` is the one package builder (each `posts/0N/build.mjs` is three lines); `assets/render-article.mjs` and `assets/article.css` render all seven articles; previews show real slide images and link `upload-pack.zip` when exported.
+- Week 3 article cut to about 410 words. It keeps every source and limit; the purchase, candidate, and anger sections Peter asked for are condensed, not removed. Four wording fixes came from the claim check (anger comparison stated; turnout separated from candidate support; FTC attribution; manipulation test labelled as one definition).
+- All six weekly packages now have exported slides and upload packs. Headlines rendered with Gelasio as a Georgia stand-in (see the 2026-11-15 export entry). Week 1's ZIP caption is still PR #19's job.
+- Skipped on purpose: v4.2's 22 decorative visual treatments (they don't suit the plain newspaper identity) and its GitHub discovery script (the target was already open).

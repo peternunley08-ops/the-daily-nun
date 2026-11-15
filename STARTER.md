@@ -71,4 +71,4 @@ The earlier chat report is background material. Before public release, edit each
 
 **Current launch pack:** open `instagram-launch/index.html`. It contains three minimal three-slide carousels, three silent 15-second MP4 text Reels, four Story cards, captions, sources, accessibility descriptions, a profile image and bio, the opening newspaper article, and a two-week posting sequence. Download `daily-nun-instagram-launch.zip` for the complete packet.
 
-`index.html` and `the-daily-nun-revised.html` remain the newspaper prototype and now link to the opening article and launch pack. Older `instagram-draft.zip` and `instagram-revised.zip` are superseded prototype exports; use the current launch packet for the minimal content direction. All are unpublished drafts for review.
+`index.html` is the newspaper front page; it links every published article. (An older duplicate, `the-daily-nun-revised.html`, was removed on 2026-11-15.) Weekly post packages are listed in `README.md`. Older `instagram-draft.zip` and `instagram-revised.zip` are superseded prototype exports; use the current launch packet for the minimal content direction. All are unpublished drafts for review.

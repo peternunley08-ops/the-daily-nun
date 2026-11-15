@@ -129,7 +129,7 @@ const html = `<!doctype html>
       color: var(--paper);
     }
     .week-btn .badge {
-      font-size: 11px;
+      font-size: 12px;
       margin-left: 6px;
       padding: 2px 6px;
       border-radius: 10px;

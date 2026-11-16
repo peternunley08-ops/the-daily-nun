@@ -70,6 +70,7 @@ function captionText(post) {
 function enrich(post) {
   const launchWeek = Number(post.week) >= 1 && Number(post.week) <= 4;
   const hasUploadPack = fs.existsSync(path.join(dir, post.slug, 'upload-pack.zip'));
+  const hasReelVideo = fs.existsSync(path.join(dir, post.slug, 'reel.mp4'));
   return {
     ...post,
     ready: true,
@@ -78,6 +79,7 @@ function enrich(post) {
     slideImages: resolveSlideImages(post),
     captionFull: captionText(post),
     hasUploadPack,
+    hasReelVideo,
     badge: launchWeek ? 'Launch week' : 'Follow-on',
   };
 }
@@ -162,6 +164,9 @@ function renderPanel(p, isActive) {
   const packLink = p.hasUploadPack
     ? ` &nbsp;·&nbsp; <a href="${escape(p.slug)}/upload-pack.zip" download>Download upload pack</a>`
     : '';
+  const readLink = p.articleUrl || p.reportUrl
+    ? ` &nbsp;·&nbsp; <a href="${escape(p.articleUrl || p.reportUrl)}" target="_blank" rel="noopener noreferrer">${p.reportUrl ? 'Read full research report' : 'Read website article'}</a>`
+    : '';
 
   return `
       <section class="week-panel${isActive ? ' active' : ''}" id="panel-${p.week}" role="tabpanel" aria-labelledby="tab-${p.week}" ${isActive ? '' : 'hidden'}>
@@ -170,7 +175,7 @@ function renderPanel(p, isActive) {
               <h2>${escape(p.title)}</h2>
               <p class="meta-line">
                 Desk: <strong>${escape(p.desk)}</strong> &nbsp;·&nbsp; Format: <strong>${escape(p.format)}</strong> &nbsp;·&nbsp;
-                <a href="${escape(p.slug)}/index.html">Open dedicated post studio</a>${packLink}
+                <a href="${escape(p.slug)}/index.html">Dedicated package studio</a>${readLink}${packLink}
               </p>
 
               <h3>Instagram carousel preview (1080 × 1350)</h3>
@@ -206,20 +211,32 @@ function renderPanel(p, isActive) {
                 p.reel
                   ? `
                 <div class="copy-card">
-                  <h2>Voiceover teleprompter</h2>
-                  <p class="hint">Read aloud while recording over the silent vertical video (${duration}).</p>
-                  <div class="teleprompter">
-                    <p>"${escape(p.reel.voiceover)}"</p>
-                    <p class="kinetic-label">On-screen kinetic text sequence</p>
-                    <ol>
-                      ${(p.reel.kineticText || []).map((t) => `<li>${escape(t)}</li>`).join('')}
-                    </ol>
+                  <h2>Short video &amp; voiceover teleprompter</h2>
+                  <p class="hint">Silent vertical Reel (${duration}) alongside synchronized voiceover script.</p>
+                  <div class="reel-teleprompter-grid">
+                    ${
+                      p.hasReelVideo
+                        ? `
+                    <div class="reel-player-box">
+                      <video class="reel-video" src="${escape(p.slug)}/reel.mp4" poster="${escape(p.slug)}/reel-cover.png" controls muted playsinline preload="metadata" width="1080" height="1920" aria-label="Silent text Reel for ${escape(p.title)}"></video>
+                      <p class="reel-dl"><a href="${escape(p.slug)}/reel.mp4" download>Download Reel MP4 (${duration})</a></p>
+                    </div>`
+                        : ''
+                    }
+                    <div class="teleprompter">
+                      <p class="vo-label">Voiceover text to record</p>
+                      <p class="vo-text">"${escape(p.reel.voiceover)}"</p>
+                      <p class="kinetic-label">On-screen kinetic text sequence</p>
+                      <ol>
+                        ${(p.reel.kineticText || []).map((t) => `<li>${escape(t)}</li>`).join('')}
+                      </ol>
+                    </div>
                   </div>
                 </div>`
                   : `
                 <div class="copy-card">
                   <h2>Audio / Reel asset</h2>
-                  <p class="hint">Silent text video may live in the earlier Instagram launch pack. Voiceover optional.</p>
+                  <p class="hint">Three silent text launch Reels live in <a href="../instagram-launch/index.html">Instagram launch studio</a> (<code>instagram-launch/reels/</code>). Voiceover optional.</p>
                 </div>`
               }
             </div>
@@ -449,11 +466,51 @@ const html = `<!doctype html>
       background: var(--ink);
       color: var(--paper);
     }
+    .reel-teleprompter-grid {
+      display: grid;
+      grid-template-columns: minmax(180px, 220px) minmax(0, 1fr);
+      gap: 16px;
+      align-items: start;
+      margin-top: 12px;
+    }
+    .reel-player-box {
+      background: #191916;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      padding: 10px;
+      text-align: center;
+    }
+    .reel-video {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 2px;
+      background: #000;
+    }
+    .reel-dl {
+      margin: 8px 0 0;
+      font-size: 11px;
+    }
+    .reel-dl a {
+      color: #9cb3f7;
+    }
+    .vo-label {
+      font-size: 11px !important;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #9b9987 !important;
+      margin: 0 0 4px !important;
+    }
+    .vo-text {
+      font: italic 500 17px/1.55 Georgia, serif !important;
+      color: #fff !important;
+      margin: 0 0 16px !important;
+    }
     .teleprompter {
       background: #191916;
       color: #faf9f5;
       padding: 20px;
-      margin-top: 12px;
+      border-radius: 4px;
     }
     .teleprompter p {
       font: 500 18px/1.6 Georgia, serif;
@@ -512,6 +569,15 @@ const html = `<!doctype html>
     @media (max-width: 840px) {
       .grid { grid-template-columns: 1fr; }
       .slides-preview { grid-template-columns: 1fr; }
+      .reel-teleprompter-grid { grid-template-columns: 1fr; }
+      .reel-player-box { max-width: 260px; margin: 0 auto 16px; }
+    }
+    @media (max-width: 600px) {
+      header, main, footer { padding: 16px; }
+      .brand { font-size: 32px; margin-top: 14px; }
+      h1 { font-size: 28px; }
+      .copy-card { padding: 16px; }
+      .teleprompter { padding: 16px; }
     }
     @media (prefers-reduced-motion: reduce) {
       * { transition: none !important; }

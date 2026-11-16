@@ -119,18 +119,17 @@
   },
   {
     "id": "E09",
-    "title": "U.S. Media Trust: Edges Up From Record Low",
-    "authors": ["Lydia Saad"],
+    "title": "Trust in Media at New Low of 28% in U.S.",
+    "authors": ["Megan Brenan"],
     "publisher": "Gallup",
-    "date": "2026-09-29",
-    "url": "https://news.gallup.com/poll/714938/trust-news-media-edges-slightly-higher.aspx",
-    "type": "Original survey analysis; article and trend tables read",
+    "date": "2025-10-02",
+    "url": "https://news.gallup.com/poll/695762/trust-media-new-low.aspx",
+    "type": "Original survey analysis; article and question description read",
     "verified": true,
-    "findings": "Reports 33% of U.S. adults expressed a great deal or fair amount of confidence in newspapers, television, and radio to report news fully, accurately, and fairly in its September 1–17, 2026 Governance poll (up from the 28% record low in September 2025; Republicans 22%, independents 31%, Democrats 50%).",
-    "limitations": "Measures reported confidence with specific wording across 1,000 national adults (±4 points margin of error), not measured journalistic accuracy. Survey closed September 17, 2026, before the September 18 White House press credential dispute. 2025 record low (28%) is preserved for trend context.",
+    "findings": "Reports 28% of U.S. adults expressed a great deal or fair amount of confidence in newspapers, television, and radio to report news fully, accurately, and fairly in its September 2025 survey.",
+    "limitations": "Measures reported confidence with specific wording, not the measured accuracy of publications. This is the September 2025 reading. Gallup's September 2026 article, cited separately, describes it as the prior low.",
     "stats": [
-      {"value": "33%", "period": "Survey conducted September 1–17, 2026", "population": "U.S. adults surveyed by Gallup (n=1,000)", "denominator": "Respondents expressing a great deal or fair amount of confidence in mass media reporting fully, accurately, and fairly"},
-      {"value": "28%", "period": "Survey conducted September 2–16, 2025", "population": "U.S. adults surveyed by Gallup", "denominator": "Record-low reading from prior year's survey"}
+      {"value": "28%", "period": "Survey conducted September 2–16, 2025", "population": "U.S. adults surveyed by Gallup", "denominator": "Respondents expressing a great deal or fair amount of trust/confidence in the specified mass-media reporting question"}
     ]
   },
   {
@@ -214,6 +213,22 @@
     "limitations": "Not a test of every historical or long-term platform effect. Volunteer samples, a six-week intervention, and replacement activities limit extrapolation. Findings differ from the 2018-election deactivation study; the chapter does not claim the reasons for that difference are conclusively known.",
     "stats": [
       {"value": "6 weeks", "period": "Before the 2020 U.S. presidential election", "population": "Facebook and Instagram study participants assigned to deactivation", "denominator": "Experimental treatment duration"}
+    ]
+  },
+  {
+    "id": "E16",
+    "title": "U.S. Media Trust: Edges Up From Record Low",
+    "authors": ["Lydia Saad"],
+    "publisher": "Gallup",
+    "date": "2026-09-29",
+    "url": "https://news.gallup.com/poll/714938/trust-news-media-edges-slightly-higher.aspx",
+    "type": "Original survey analysis; article and survey-methods note read",
+    "verified": true,
+    "findings": "Reports 33% of U.S. adults expressed a great deal or fair amount of confidence in newspapers, television, and radio to report the news fully, accurately, and fairly, up from 28% the year before. The same article says 33% answered not very much and 33% none at all. Party readings: Republicans 22%, up from 8%; independents 31%; Democrats 50%.",
+    "limitations": "Measures reported confidence with specific wording, not the accuracy of publications. The article says the Sept. 1-17, 2026 field period ended before a White House access dispute that began Sept. 18, so the result does not reflect that dispute. The page read on November 15, 2026 did not state a separate 6% great-deal and 27% fair-amount split, so that split is not used.",
+    "stats": [
+      {"value": "33%", "period": "Survey conducted September 1-17, 2026; article published September 29, 2026", "population": "1,000 U.S. adults in Gallup's Governance poll", "denominator": "Respondents expressing a great deal or fair amount of confidence in the specified mass-media question; national adult margin of sampling error ±4 percentage points at the 95% confidence level"},
+      {"value": "22% / 31% / 50%", "period": "Same September 1-17, 2026 survey", "population": "Republicans, independents, and Democrats as reported by Gallup", "denominator": "Share in each group expressing confidence on the same question, not shares of all U.S. adults combined"}
     ]
   }
 ]

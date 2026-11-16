@@ -7,8 +7,8 @@ The Daily Nun's first substantial research report, prepared for Peter Nunley. Th
 **[Read the PDF](output/pdf/who-shapes-what-america-knows.pdf)** · [Read the linked text edition](report.md)
 
 - 30 pages of chapters (PDF pages 4-33); 40 pages including the cover, contents, guide, glossary, and bibliography.
-- Ten chapters, with 16,361 words under the builder's chapter-counting rule.
-- 54 distinct sources, represented by 57 stable citation IDs before duplicates are grouped.
+- Ten chapters, with 16,477 words under the builder's chapter-counting rule.
+- 55 distinct sources, represented by 58 stable citation IDs before duplicates are grouped.
 - Dated ownership table; nearby clickable citations; contents and PDF bookmarks.
 
 Intended event cutoff: November 11, 2026. Compilation: November 12. Undated corporate pages are current-access corroboration; the Disney row uses an older, dated annual report. Some studies were verified through original abstracts and metadata rather than full methods. Limits are visible in the report and source ledgers. This is not a systematic review, a complete beneficial-ownership audit, or an exhaustive account of later litigation.
@@ -38,7 +38,7 @@ python tools/build_report.py
 python tools/review_pdf.py
 ```
 
-The builder regenerates the reading edition, citation map, counts, and PDF. The renderer writes ignored review images into `.build/`. Inspect those images before marking visual review complete in `validation.json`. Windows uses embedded Georgia and Arial; other systems fall back to Times and Helvetica, so pagination may change. Rebuilding resets visual-review status to pending.
+The builder regenerates the reading edition, citation map, counts, and PDF. The renderer writes ignored review images into `.build/`. Inspect those images before marking visual review complete in `validation.json`. The builder embeds Georgia and Arial from `REPORT_FONT_DIR`, `C:/Windows/Fonts`, or `/usr/share/fonts/truetype/msttcorefonts` when those files are present. Otherwise it falls back to Times and Helvetica, so pagination may change. Rebuilding resets visual-review status to pending.
 
 ## Handoff to Claude Code and Antigravity
 

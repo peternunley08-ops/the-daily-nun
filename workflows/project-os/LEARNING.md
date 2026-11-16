@@ -30,6 +30,6 @@ A lesson needs evidence. An impression, a guessed metric, or an unread file is n
 
 If the same failure shows up in two active lessons, change the check or the instruction and retire the duplicates. Another copy of the same lesson is not learning.
 
-Run `python3 workflows/project-os/check.py` after editing lessons. Exit 0 means the lessons are valid and, when the private package is present, its packaged files still match v1.0.0. Exit 2 means the package is not in this checkout. The checker does not install, publish, or score the project.
+Run `python3 workflows/project-os/check.py` after editing lessons. Exit 0 means the lessons are valid and, when the private package is present, its packaged files still match v1.0.0. Exit 2 means the package is not in this checkout. The checker does not install, publish, or score the project. The content check runs `python3 -m unittest workflows/project-os/test_check.py` on every pull request. That test skips the private-package comparison when the archive is not in the checkout.
 
 Copy this folder into another project, replace the lessons with that project's verified findings, and keep the same rule: the private package is requested, not reconstructed.

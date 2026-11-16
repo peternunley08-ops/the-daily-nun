@@ -6,6 +6,7 @@
 - The checkout did not contain `.claude/skills/peter-project-os/` even though the workflow said it was installed. The supplied archive was copied there. All 47 packaged files match `MANIFEST.json`. `python3 -m unittest discover -s tests -v` in that folder: 24 tests OK.
 - v1.0.0 verifies a pass and then forgets it. The public addition is `workflows/project-os/`: a lesson needs evidence, an active claim cannot be repeated, and a closed check stays closed until its evidence changes. The first run of the checker failed because the helper tests had written `__pycache__`; bytecode is now ignored, and a packaged-file hash mismatch still fails. The private package remains gitignored and byte-identical to the archive.
 - Verification: `python3 -m unittest workflows/project-os/test_check.py` and `python3 workflows/project-os/check.py`. No content rebuild and no social posting.
+- Follow-up: the content check now runs those lesson tests on pull requests. [Issue #20](https://github.com/peternunley08-ops/the-daily-nun/issues/20) stays with Codex. gstack `/browse` is still unavailable here, so the Gallup and TikTok corrections were not edited.
 
 ## 2026-11-15: Project OS selective pass (Codex, Issue #35)
 

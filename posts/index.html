@@ -220,11 +220,51 @@
       background: var(--ink);
       color: var(--paper);
     }
+    .reel-teleprompter-grid {
+      display: grid;
+      grid-template-columns: minmax(180px, 220px) minmax(0, 1fr);
+      gap: 16px;
+      align-items: start;
+      margin-top: 12px;
+    }
+    .reel-player-box {
+      background: #191916;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      padding: 10px;
+      text-align: center;
+    }
+    .reel-video {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 2px;
+      background: #000;
+    }
+    .reel-dl {
+      margin: 8px 0 0;
+      font-size: 11px;
+    }
+    .reel-dl a {
+      color: #9cb3f7;
+    }
+    .vo-label {
+      font-size: 11px !important;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #9b9987 !important;
+      margin: 0 0 4px !important;
+    }
+    .vo-text {
+      font: italic 500 17px/1.55 Georgia, serif !important;
+      color: #fff !important;
+      margin: 0 0 16px !important;
+    }
     .teleprompter {
       background: #191916;
       color: #faf9f5;
       padding: 20px;
-      margin-top: 12px;
+      border-radius: 4px;
     }
     .teleprompter p {
       font: 500 18px/1.6 Georgia, serif;
@@ -283,6 +323,15 @@
     @media (max-width: 840px) {
       .grid { grid-template-columns: 1fr; }
       .slides-preview { grid-template-columns: 1fr; }
+      .reel-teleprompter-grid { grid-template-columns: 1fr; }
+      .reel-player-box { max-width: 260px; margin: 0 auto 16px; }
+    }
+    @media (max-width: 600px) {
+      header, main, footer { padding: 16px; }
+      .brand { font-size: 32px; margin-top: 14px; }
+      h1 { font-size: 28px; }
+      .copy-card { padding: 16px; }
+      .teleprompter { padding: 16px; }
     }
     @media (prefers-reduced-motion: reduce) {
       * { transition: none !important; }
@@ -368,7 +417,7 @@
               <h2>Who picked this for you?</h2>
               <p class="meta-line">
                 Desk: <strong>Media</strong> &nbsp;·&nbsp; Format: <strong>Three-slide Instagram carousel</strong> &nbsp;·&nbsp;
-                <a href="01-who-picked-this/index.html">Open dedicated post studio</a> &nbsp;·&nbsp; <a href="01-who-picked-this/upload-pack.zip" download>Download upload pack</a>
+                <a href="01-who-picked-this/index.html">Dedicated package studio</a> &nbsp;·&nbsp; <a href="https://peternunley08-ops.github.io/the-daily-nun/research/media-democracy/output/pdf/who-shapes-what-america-knows.pdf" target="_blank" rel="noopener noreferrer">Read full research report</a> &nbsp;·&nbsp; <a href="01-who-picked-this/upload-pack.zip" download>Download upload pack</a>
               </p>
 
               <h3>Instagram carousel preview (1080 × 1350)</h3>
@@ -413,7 +462,7 @@ https://peternunley08-ops.github.io/the-daily-nun/research/media-democracy/outpu
               
                 <div class="copy-card">
                   <h2>Audio / Reel asset</h2>
-                  <p class="hint">Silent text video may live in the earlier Instagram launch pack. Voiceover optional.</p>
+                  <p class="hint">Three silent text launch Reels live in <a href="../instagram-launch/index.html">Instagram launch studio</a> (<code>instagram-launch/reels/</code>). Voiceover optional.</p>
                 </div>
             </div>
           </div>
@@ -424,7 +473,7 @@ https://peternunley08-ops.github.io/the-daily-nun/research/media-democracy/outpu
               <h2>Who is actually responsible?</h2>
               <p class="meta-line">
                 Desk: <strong>Government</strong> &nbsp;·&nbsp; Format: <strong>Three-slide Instagram carousel</strong> &nbsp;·&nbsp;
-                <a href="02-who-is-responsible/index.html">Open dedicated post studio</a> &nbsp;·&nbsp; <a href="02-who-is-responsible/upload-pack.zip" download>Download upload pack</a>
+                <a href="02-who-is-responsible/index.html">Dedicated package studio</a> &nbsp;·&nbsp; <a href="https://peternunley08-ops.github.io/the-daily-nun/desks/government/who-is-actually-responsible.html" target="_blank" rel="noopener noreferrer">Read website article</a> &nbsp;·&nbsp; <a href="02-who-is-responsible/upload-pack.zip" download>Download upload pack</a>
               </p>
 
               <h3>Instagram carousel preview (1080 × 1350)</h3>
@@ -480,14 +529,22 @@ https://peternunley08-ops.github.io/the-daily-nun/desks/government/who-is-actual
 
               
                 <div class="copy-card">
-                  <h2>Voiceover teleprompter</h2>
-                  <p class="hint">Read aloud while recording over the silent vertical video (~15 sec).</p>
-                  <div class="teleprompter">
-                    <p>"Angry about a local decision? Don't tag the mayor. Power is divided. Councils vote on city budgets. School boards often run separately. Find the agenda. Read the minutes. They name who voted. The Daily Nun."</p>
-                    <p class="kinetic-label">On-screen kinetic text sequence</p>
-                    <ol>
-                      <li>Angry about a local decision?</li><li>Don't just tag the mayor.</li><li>Councils vote on city budgets.</li><li>School boards often vote separately.</li><li>Board votes go on a public agenda.</li><li>The minutes name who voted.</li><li>The Daily Nun / A closer look at the world.</li>
-                    </ol>
+                  <h2>Short video &amp; voiceover teleprompter</h2>
+                  <p class="hint">Silent vertical Reel (~15 sec) alongside synchronized voiceover script.</p>
+                  <div class="reel-teleprompter-grid">
+                    
+                    <div class="reel-player-box">
+                      <video class="reel-video" src="02-who-is-responsible/reel.mp4" poster="02-who-is-responsible/reel-cover.png" controls muted playsinline preload="metadata" width="1080" height="1920" aria-label="Silent text Reel for Who is actually responsible?"></video>
+                      <p class="reel-dl"><a href="02-who-is-responsible/reel.mp4" download>Download Reel MP4 (~15 sec)</a></p>
+                    </div>
+                    <div class="teleprompter">
+                      <p class="vo-label">Voiceover text to record</p>
+                      <p class="vo-text">"Angry about a local decision? Don't tag the mayor. Power is divided. Councils vote on city budgets. School boards often run separately. Find the agenda. Read the minutes. They name who voted. The Daily Nun."</p>
+                      <p class="kinetic-label">On-screen kinetic text sequence</p>
+                      <ol>
+                        <li>Angry about a local decision?</li><li>Don't just tag the mayor.</li><li>Councils vote on city budgets.</li><li>School boards often vote separately.</li><li>Board votes go on a public agenda.</li><li>The minutes name who voted.</li><li>The Daily Nun / A closer look at the world.</li>
+                      </ol>
+                    </div>
                   </div>
                 </div>
             </div>
@@ -499,7 +556,7 @@ https://peternunley08-ops.github.io/the-daily-nun/desks/government/who-is-actual
               <h2>When does a recommendation become manipulation?</h2>
               <p class="meta-line">
                 Desk: <strong>Culture</strong> &nbsp;·&nbsp; Format: <strong>Three-slide Instagram carousel</strong> &nbsp;·&nbsp;
-                <a href="03-recommendation-or-manipulation/index.html">Open dedicated post studio</a> &nbsp;·&nbsp; <a href="03-recommendation-or-manipulation/upload-pack.zip" download>Download upload pack</a>
+                <a href="03-recommendation-or-manipulation/index.html">Dedicated package studio</a> &nbsp;·&nbsp; <a href="https://peternunley08-ops.github.io/the-daily-nun/desks/culture/when-does-a-recommendation-become-manipulation.html" target="_blank" rel="noopener noreferrer">Read website article</a> &nbsp;·&nbsp; <a href="03-recommendation-or-manipulation/upload-pack.zip" download>Download upload pack</a>
               </p>
 
               <h3>Instagram carousel preview (1080 × 1350)</h3>
@@ -610,14 +667,22 @@ https://peternunley08-ops.github.io/the-daily-nun/desks/culture/when-does-a-reco
 
               
                 <div class="copy-card">
-                  <h2>Voiceover teleprompter</h2>
-                  <p class="hint">Read aloud while recording over the silent vertical video (~30 sec).</p>
-                  <div class="teleprompter">
-                    <p>"Every feed is a ranking. TikTok, Instagram and YouTube say their systems predict what each person will watch, like or share. In 2023, researchers audited 806 U.S. Twitter users. Ranking by engagement showed them more angry, hostile posts than a newest-first feed, and they rated its political picks lower. One study is not the whole story. But a click is not the same as wanting more. The Daily Nun."</p>
-                    <p class="kinetic-label">On-screen kinetic text sequence</p>
-                    <ol>
-                      <li>Who chose that video?</li><li>A feed is a ranking.</li><li>Platforms say they predict what gets watched, liked, shared.</li><li>2023: researchers audited 806 U.S. Twitter users.</li><li>Engagement ranking showed more angry, hostile posts.</li><li>Users rated its political picks lower.</li><li>One study. Not the whole story.</li><li>A click is not approval.</li><li>The Daily Nun / A closer look at the world.</li>
-                    </ol>
+                  <h2>Short video &amp; voiceover teleprompter</h2>
+                  <p class="hint">Silent vertical Reel (~30 sec) alongside synchronized voiceover script.</p>
+                  <div class="reel-teleprompter-grid">
+                    
+                    <div class="reel-player-box">
+                      <video class="reel-video" src="03-recommendation-or-manipulation/reel.mp4" poster="03-recommendation-or-manipulation/reel-cover.png" controls muted playsinline preload="metadata" width="1080" height="1920" aria-label="Silent text Reel for When does a recommendation become manipulation?"></video>
+                      <p class="reel-dl"><a href="03-recommendation-or-manipulation/reel.mp4" download>Download Reel MP4 (~30 sec)</a></p>
+                    </div>
+                    <div class="teleprompter">
+                      <p class="vo-label">Voiceover text to record</p>
+                      <p class="vo-text">"Every feed is a ranking. TikTok, Instagram and YouTube say their systems predict what each person will watch, like or share. In 2023, researchers audited 806 U.S. Twitter users. Ranking by engagement showed them more angry, hostile posts than a newest-first feed, and they rated its political picks lower. One study is not the whole story. But a click is not the same as wanting more. The Daily Nun."</p>
+                      <p class="kinetic-label">On-screen kinetic text sequence</p>
+                      <ol>
+                        <li>Who chose that video?</li><li>A feed is a ranking.</li><li>Platforms say they predict what gets watched, liked, shared.</li><li>2023: researchers audited 806 U.S. Twitter users.</li><li>Engagement ranking showed more angry, hostile posts.</li><li>Users rated its political picks lower.</li><li>One study. Not the whole story.</li><li>A click is not approval.</li><li>The Daily Nun / A closer look at the world.</li>
+                      </ol>
+                    </div>
                   </div>
                 </div>
             </div>
@@ -629,7 +694,7 @@ https://peternunley08-ops.github.io/the-daily-nun/desks/culture/when-does-a-reco
               <h2>What happens when the local paper closes?</h2>
               <p class="meta-line">
                 Desk: <strong>Democracy</strong> &nbsp;·&nbsp; Format: <strong>Three-slide Instagram carousel</strong> &nbsp;·&nbsp;
-                <a href="04-the-disappearing-local-beat/index.html">Open dedicated post studio</a> &nbsp;·&nbsp; <a href="04-the-disappearing-local-beat/upload-pack.zip" download>Download upload pack</a>
+                <a href="04-the-disappearing-local-beat/index.html">Dedicated package studio</a> &nbsp;·&nbsp; <a href="https://peternunley08-ops.github.io/the-daily-nun/desks/democracy/what-happens-when-the-local-paper-closes.html" target="_blank" rel="noopener noreferrer">Read website article</a> &nbsp;·&nbsp; <a href="04-the-disappearing-local-beat/upload-pack.zip" download>Download upload pack</a>
               </p>
 
               <h3>Instagram carousel preview (1080 × 1350)</h3>
@@ -688,14 +753,22 @@ https://peternunley08-ops.github.io/the-daily-nun/desks/democracy/what-happens-w
 
               
                 <div class="copy-card">
-                  <h2>Voiceover teleprompter</h2>
-                  <p class="hint">Read aloud while recording over the silent vertical video (~30 sec).</p>
-                  <div class="teleprompter">
-                    <p>"What happens when the local paper closes? A 2026 Northwestern count found 238 U.S. counties with no locally based professional news source. One study estimated that after a local paper closed, the town's borrowing costs went up, about six hundred fifty thousand dollars per bond issue. Another found voters with less coverage were less likely to know their representative's name. The meeting still happens. Who is watching? The Daily Nun."</p>
-                    <p class="kinetic-label">On-screen kinetic text sequence</p>
-                    <ol>
-                      <li>What happens when the local paper closes?</li><li>238 counties: no local news source.</li><li>After closures, borrowing costs rose.</li><li>About $650,000 per bond issue.</li><li>Less coverage, less-known representatives.</li><li>The meeting still happens.</li><li>Who is watching?</li><li>The Daily Nun / A closer look at the world.</li>
-                    </ol>
+                  <h2>Short video &amp; voiceover teleprompter</h2>
+                  <p class="hint">Silent vertical Reel (~30 sec) alongside synchronized voiceover script.</p>
+                  <div class="reel-teleprompter-grid">
+                    
+                    <div class="reel-player-box">
+                      <video class="reel-video" src="04-the-disappearing-local-beat/reel.mp4" poster="04-the-disappearing-local-beat/reel-cover.png" controls muted playsinline preload="metadata" width="1080" height="1920" aria-label="Silent text Reel for What happens when the local paper closes?"></video>
+                      <p class="reel-dl"><a href="04-the-disappearing-local-beat/reel.mp4" download>Download Reel MP4 (~30 sec)</a></p>
+                    </div>
+                    <div class="teleprompter">
+                      <p class="vo-label">Voiceover text to record</p>
+                      <p class="vo-text">"What happens when the local paper closes? A 2026 Northwestern count found 238 U.S. counties with no locally based professional news source. One study estimated that after a local paper closed, the town's borrowing costs went up, about six hundred fifty thousand dollars per bond issue. Another found voters with less coverage were less likely to know their representative's name. The meeting still happens. Who is watching? The Daily Nun."</p>
+                      <p class="kinetic-label">On-screen kinetic text sequence</p>
+                      <ol>
+                        <li>What happens when the local paper closes?</li><li>238 counties: no local news source.</li><li>After closures, borrowing costs rose.</li><li>About $650,000 per bond issue.</li><li>Less coverage, less-known representatives.</li><li>The meeting still happens.</li><li>Who is watching?</li><li>The Daily Nun / A closer look at the world.</li>
+                      </ol>
+                    </div>
                   </div>
                 </div>
             </div>
@@ -707,7 +780,7 @@ https://peternunley08-ops.github.io/the-daily-nun/desks/democracy/what-happens-w
               <h2>Who decides who gets the hours?</h2>
               <p class="meta-line">
                 Desk: <strong>Government</strong> &nbsp;·&nbsp; Format: <strong>Three-slide Instagram carousel</strong> &nbsp;·&nbsp;
-                <a href="05-who-gets-the-hours/index.html">Open dedicated post studio</a> &nbsp;·&nbsp; <a href="05-who-gets-the-hours/upload-pack.zip" download>Download upload pack</a>
+                <a href="05-who-gets-the-hours/index.html">Dedicated package studio</a> &nbsp;·&nbsp; <a href="https://peternunley08-ops.github.io/the-daily-nun/desks/government/who-decides-who-gets-the-hours.html" target="_blank" rel="noopener noreferrer">Read website article</a> &nbsp;·&nbsp; <a href="05-who-gets-the-hours/upload-pack.zip" download>Download upload pack</a>
               </p>
 
               <h3>Instagram carousel preview (1080 × 1350)</h3>
@@ -776,14 +849,22 @@ https://peternunley08-ops.github.io/the-daily-nun/desks/government/who-decides-w
 
               
                 <div class="copy-card">
-                  <h2>Voiceover teleprompter</h2>
-                  <p class="hint">Read aloud while recording over the silent vertical video (~30 sec).</p>
-                  <div class="teleprompter">
-                    <p>"Who decides who gets the hours? The employer does. A 2019 survey of thirty thousand workers at big chains found two in three got less than two weeks' notice. California sets a few limits. Sent home with under half a shift done? The worker is generally owed half the shift's pay. Under eighteen? Four hours, max, on a school day. The Daily Nun."</p>
-                    <p class="kinetic-label">On-screen kinetic text sequence</p>
-                    <ol>
-                      <li>Who decides who gets the hours?</li><li>The employer does.</li><li>2019: 30,000 workers at big chains surveyed.</li><li>Two in three: under two weeks' notice.</li><li>California sets a few limits.</li><li>Sent home early? Some pay is owed.</li><li>Under 18? Four hours on school days.</li><li>The Daily Nun / A closer look at the world.</li>
-                    </ol>
+                  <h2>Short video &amp; voiceover teleprompter</h2>
+                  <p class="hint">Silent vertical Reel (~30 sec) alongside synchronized voiceover script.</p>
+                  <div class="reel-teleprompter-grid">
+                    
+                    <div class="reel-player-box">
+                      <video class="reel-video" src="05-who-gets-the-hours/reel.mp4" poster="05-who-gets-the-hours/reel-cover.png" controls muted playsinline preload="metadata" width="1080" height="1920" aria-label="Silent text Reel for Who decides who gets the hours?"></video>
+                      <p class="reel-dl"><a href="05-who-gets-the-hours/reel.mp4" download>Download Reel MP4 (~30 sec)</a></p>
+                    </div>
+                    <div class="teleprompter">
+                      <p class="vo-label">Voiceover text to record</p>
+                      <p class="vo-text">"Who decides who gets the hours? The employer does. A 2019 survey of thirty thousand workers at big chains found two in three got less than two weeks' notice. California sets a few limits. Sent home with under half a shift done? The worker is generally owed half the shift's pay. Under eighteen? Four hours, max, on a school day. The Daily Nun."</p>
+                      <p class="kinetic-label">On-screen kinetic text sequence</p>
+                      <ol>
+                        <li>Who decides who gets the hours?</li><li>The employer does.</li><li>2019: 30,000 workers at big chains surveyed.</li><li>Two in three: under two weeks' notice.</li><li>California sets a few limits.</li><li>Sent home early? Some pay is owed.</li><li>Under 18? Four hours on school days.</li><li>The Daily Nun / A closer look at the world.</li>
+                      </ol>
+                    </div>
                   </div>
                 </div>
             </div>
@@ -795,7 +876,7 @@ https://peternunley08-ops.github.io/the-daily-nun/desks/government/who-decides-w
               <h2>Does a streak help anyone learn?</h2>
               <p class="meta-line">
                 Desk: <strong>Culture</strong> &nbsp;·&nbsp; Format: <strong>Three-slide Instagram carousel</strong> &nbsp;·&nbsp;
-                <a href="06-does-a-streak-help/index.html">Open dedicated post studio</a> &nbsp;·&nbsp; <a href="06-does-a-streak-help/upload-pack.zip" download>Download upload pack</a>
+                <a href="06-does-a-streak-help/index.html">Dedicated package studio</a> &nbsp;·&nbsp; <a href="https://peternunley08-ops.github.io/the-daily-nun/desks/culture/does-a-streak-help-anyone-learn.html" target="_blank" rel="noopener noreferrer">Read website article</a> &nbsp;·&nbsp; <a href="06-does-a-streak-help/upload-pack.zip" download>Download upload pack</a>
               </p>
 
               <h3>Instagram carousel preview (1080 × 1350)</h3>
@@ -854,14 +935,22 @@ https://peternunley08-ops.github.io/the-daily-nun/desks/culture/does-a-streak-he
 
               
                 <div class="copy-card">
-                  <h2>Voiceover teleprompter</h2>
-                  <p class="hint">Read aloud while recording over the silent vertical video (~30 sec).</p>
-                  <div class="teleprompter">
-                    <p>"Does a streak help anyone learn? Duolingo says that once a streak stops feeling new, it taps loss aversion: a bias against losing something. Research says a missed day barely affects a habit. But seeing a streak reset can lead people to do less. What no study found here shows is that streaks help anyone learn more. Counting days is not the same as learning. The Daily Nun."</p>
-                    <p class="kinetic-label">On-screen kinetic text sequence</p>
-                    <ol>
-                      <li>Does a streak help anyone learn?</li><li>Duolingo: the streak taps &quot;loss aversion.&quot;</li><li>A missed day barely affects a habit.</li><li>Seeing a reset can lead to less.</li><li>No study found here shows more learning.</li><li>Counting days is not learning.</li><li>The Daily Nun / A closer look at the world.</li>
-                    </ol>
+                  <h2>Short video &amp; voiceover teleprompter</h2>
+                  <p class="hint">Silent vertical Reel (~30 sec) alongside synchronized voiceover script.</p>
+                  <div class="reel-teleprompter-grid">
+                    
+                    <div class="reel-player-box">
+                      <video class="reel-video" src="06-does-a-streak-help/reel.mp4" poster="06-does-a-streak-help/reel-cover.png" controls muted playsinline preload="metadata" width="1080" height="1920" aria-label="Silent text Reel for Does a streak help anyone learn?"></video>
+                      <p class="reel-dl"><a href="06-does-a-streak-help/reel.mp4" download>Download Reel MP4 (~30 sec)</a></p>
+                    </div>
+                    <div class="teleprompter">
+                      <p class="vo-label">Voiceover text to record</p>
+                      <p class="vo-text">"Does a streak help anyone learn? Duolingo says that once a streak stops feeling new, it taps loss aversion: a bias against losing something. Research says a missed day barely affects a habit. But seeing a streak reset can lead people to do less. What no study found here shows is that streaks help anyone learn more. Counting days is not the same as learning. The Daily Nun."</p>
+                      <p class="kinetic-label">On-screen kinetic text sequence</p>
+                      <ol>
+                        <li>Does a streak help anyone learn?</li><li>Duolingo: the streak taps &quot;loss aversion.&quot;</li><li>A missed day barely affects a habit.</li><li>Seeing a reset can lead to less.</li><li>No study found here shows more learning.</li><li>Counting days is not learning.</li><li>The Daily Nun / A closer look at the world.</li>
+                      </ol>
+                    </div>
                   </div>
                 </div>
             </div>

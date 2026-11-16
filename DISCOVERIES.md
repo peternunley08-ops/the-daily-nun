@@ -6,6 +6,15 @@
 - At a 320px width, `desks/culture/when-does-a-recommendation-become-manipulation.html` scrolled sideways because the shared headline size stayed at 40px and the word "recommendation" did not fit. The front page, backlog studio, and the other four desk articles did not overflow at 320px or 390px.
 - Fix: `assets/article.css` lowers the headline size below 520px and allows a long word to break. Recheck at 320, 390, and 768px found no horizontal overflow on the front page, backlog studio, launch article, or five desk articles.
 
+## 2026-11-15: Backlog Studio inline video player & responsive audit (Antigravity)
+
+- Agent: Antigravity. Objective: complete backlog-studio usability and mobile experience.
+- Background: while individual post studios (`posts/02/index.html`, etc.) played `reel.mp4`, the unified Backlog Studio (`posts/index.html`) lacked the vertical Reel player, requiring Peter to click out or extract archives to preview videos alongside voiceovers.
+- Changes:
+  - `posts/build-backlog.mjs`: added `hasReelVideo` detection in `enrich()`; rendered `.reel-teleprompter-grid` containing the vertical video player with poster, duration, and direct MP4 download link directly beside the teleprompter script and kinetic text sequence; connected live website article / report links directly in the package header.
+  - Added responsive layout breakpoints (`@media (max-width: 840px)` and `@media (max-width: 600px)`) ensuring clean grid collapsing, comfortable touch targets, and proper typography scaling on mobile devices.
+- Verification: compiled with `node posts/build-backlog.mjs`; audited all 16 HTML pages for 0 broken relative links/assets; full content CI check and Project OS tests passed.
+
 ## 2026-11-15: Gallup 2026 trust figure and TikTok formation date (Issue #20)
 
 - Agent: Cursor cloud. Peter authorized checking the two Issue #20 pages with this machine's web tools after gstack `/browse` was unavailable. Codex had already claimed the issue; this pass only applies the two corrections those pages support.

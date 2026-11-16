@@ -807,7 +807,7 @@ https://www.nytco.com/about-us/
 
 Type: Corporate publisher description. Company statements about journalism quality are not adopted as independent evaluations; this page does not establish a complete shareholder-control map. Stable IDs: O08.
 
-[23] TikTok USDS Joint Venture. January 23, 2026. TikTok USDS Joint Venture LLC Established in Compliance with U.S. Regulatory Requirements. TikTok USDS Joint Venture newsroom.
+[23] TikTok USDS Joint Venture. January 22, 2026. TikTok USDS Joint Venture LLC Established in Compliance with U.S. Regulatory Requirements. TikTok USDS Joint Venture newsroom.
 
 https://usdsjv.tiktok.com/TikTok-USDS-Joint-Venture-LLC-Established
 
@@ -998,9 +998,3 @@ Type: Peer-reviewed preregistered survey experiments; original abstract read thr
 https://doi.org/10.1073/pnas.2321584121
 
 Type: Peer-reviewed randomized deactivation experiments; original abstract read through Europe PMC. Not a test of every historical or long-term platform effect. Volunteer samples, a six-week intervention, and replacement activities limit extrapolation. Findings differ from the 2018-election deactivation study; the chapter does not claim the reasons for that difference are conclusively known. Stable IDs: E15.
-
-[55] Lydia Saad. 2026-09-29. U.S. Media Trust: Edges Up From Record Low. Gallup.
-
-https://news.gallup.com/poll/714938/trust-news-media-edges-slightly-higher.aspx
-
-Type: Original survey analysis; article and methods statement read. Telephone survey of 1,000 U.S. adults, September 1-17, 2026; margin of sampling error ±4 percentage points. Completed before the White House access dispute that began September 18, so it does not reflect it. Measures stated confidence, not reporting accuracy. Read through an HTTP client on 2026-11-16, not gstack /browse. Stable IDs: E16.

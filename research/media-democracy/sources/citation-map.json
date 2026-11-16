@@ -431,7 +431,7 @@
     "title": "TikTok USDS Joint Venture LLC Established in Compliance with U.S. Regulatory Requirements",
     "authors": "TikTok USDS Joint Venture",
     "publisher": "TikTok USDS Joint Venture newsroom",
-    "date": "January 23, 2026",
+    "date": "January 22, 2026",
     "url": "https://usdsjv.tiktok.com/TikTok-USDS-Joint-Venture-LLC-Established",
     "type": "Corporate formation announcement",
     "verified": true,
@@ -1229,31 +1229,5 @@
       "E15"
     ],
     "number": 54
-  },
-  {
-    "id": "E16",
-    "title": "U.S. Media Trust: Edges Up From Record Low",
-    "authors": [
-      "Lydia Saad"
-    ],
-    "publisher": "Gallup",
-    "date": "2026-09-29",
-    "url": "https://news.gallup.com/poll/714938/trust-news-media-edges-slightly-higher.aspx",
-    "type": "Original survey analysis; article and methods statement read",
-    "verified": true,
-    "findings": "Reports 33% of U.S. adults with a great deal or fair amount of confidence in newspapers, television and radio to report the news fully, accurately and fairly, up from 28% in 2025. Republicans 22% (up from a record-low 8%), independents 31%, Democrats 50%. Gallup says nearly all of the improvement reflects Republicans.",
-    "limitations": "Telephone survey of 1,000 U.S. adults, September 1–17, 2026; margin of sampling error ±4 percentage points. Completed before the White House access dispute that began September 18, so it does not reflect it. Measures stated confidence, not reporting accuracy. Read through an HTTP client on 2026-11-16, not gstack /browse.",
-    "stats": [
-      {
-        "value": "33%",
-        "period": "Survey conducted September 1–17, 2026",
-        "population": "U.S. adults surveyed by Gallup (n = 1,000)",
-        "denominator": "Respondents expressing a great deal or fair amount of trust/confidence in the specified mass-media reporting question"
-      }
-    ],
-    "aliases": [
-      "E16"
-    ],
-    "number": 55
   }
 ]

@@ -2,6 +2,7 @@
 from __future__ import annotations
 import html
 import json
+import os
 import re
 from collections import OrderedDict
 from pathlib import Path
@@ -74,7 +75,9 @@ for i, source in enumerate(unique, 1):
 assert 40 <= len(unique) <= 60, len(unique)
 
 # Standard PDF fonts are available everywhere; embed Georgia/Arial when available.
-font_root = Path('C:/Windows/Fonts')
+# REPORT_FONT_DIR may point to a folder holding the same filenames (for example metric-compatible
+# stand-ins on a machine without Windows fonts); otherwise the Windows font folder is used.
+font_root = Path(os.environ.get('REPORT_FONT_DIR', 'C:/Windows/Fonts'))
 font_files = {'Body': 'georgia.ttf', 'Body-Bold': 'georgiab.ttf', 'Body-Italic': 'georgiai.ttf',
               'Body-BoldItalic': 'georgiaz.ttf', 'Sans': 'arial.ttf', 'Sans-Bold': 'arialbd.ttf',
               'Sans-Italic': 'ariali.ttf', 'Sans-BoldItalic': 'arialbi.ttf'}

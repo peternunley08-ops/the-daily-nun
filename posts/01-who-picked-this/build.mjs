@@ -106,11 +106,13 @@ fs.writeFileSync(path.join(stage, 'SOURCES.txt'), sourceNotes);
 fs.writeFileSync(path.join(stage, 'READ-ME.txt'), uploadNotes);
 fs.writeFileSync(path.join(dir, 'SOURCES.md'), sourceNotes);
 
-// Repack upload-pack.zip
+// Repack upload-pack.zip if missing or explicitly requested
 const zipPath = path.join(dir, 'upload-pack.zip');
-fs.rmSync(zipPath, { force: true });
-const stageFiles = fs.readdirSync(stage).sort().map((f) => path.join(stage, f));
-execFileSync('zip', ['-q', '-X', '-j', zipPath, ...stageFiles]);
+if (!fs.existsSync(zipPath) || process.argv.includes('--pack')) {
+  fs.rmSync(zipPath, { force: true });
+  const stageFiles = fs.readdirSync(stage).sort().map((f) => path.join(stage, f));
+  execFileSync('zip', ['-q', '-X', '-j', zipPath, ...stageFiles]);
+}
 
 const escape = (s) => String(s).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
 const altParts = alt.trim().split(/\r?\n\s*\r?\n/);

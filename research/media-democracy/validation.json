@@ -3,19 +3,19 @@
   "chapter_pages": 30,
   "chapter_first_page": 4,
   "chapter_last_page": 33,
-  "chapter_words": 16455,
+  "chapter_words": 16477,
   "distinct_sources": 55,
   "stable_source_ids": 58,
   "pdf_link_annotations": 187,
-  "pdf_bytes": 317224,
+  "pdf_bytes": 317293,
   "title": "Who Shapes What America Knows? Media, Polarization, and U.S. Democracy",
   "output": "output/pdf/who-shapes-what-america-knows.pdf",
   "source_cutoff": "2026-11-11",
   "compiled": "2026-11-12",
   "external_agent_review": "Not yet performed",
-  "visual_review": "Automated review on 2026-11-15: 40 pages, 0 blank, 0 out-of-page characters, https links only. Pages 14, 29, 37, and 40 were read at full size after the Gallup and TikTok corrections. A full contact-sheet reread of every other page was not repeated.",
+  "visual_review": "Automated review on 2026-11-15: 40 pages, 0 blank, 0 out-of-page characters, https links only. Rebuilt after merging the parallel report edit. Pages were not reread one by one this pass.",
   "external_source_links": 161,
   "out_of_page_characters": 0,
   "blank_pages": 0,
-  "pdf_sha256": "43cb373f1041c458dd7f99d323121909215f8859585e6d5ce8cc0b2edbcad96c"
+  "pdf_sha256": "3ff68ca5b17fa18536f359a4b0910b8f255723c5e8ca6b25ffdf141344047df5"
 }

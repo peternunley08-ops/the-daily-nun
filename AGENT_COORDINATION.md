@@ -18,8 +18,8 @@ Correct the published research report for Issue #20: keep Gallup's 2025 28% read
 
 | ID | Task | Owner | Status | Files / scope | Dependencies |
 |----|------|-------|--------|---------------|--------------|
-| 20 | Gallup 2026 figure and TikTok date | Cursor | ready for review | `research/media-democracy/`, `DISCOVERIES.md` | Pages already fetched. Pull request #39. |
-| 20-merge | Keep both discovery entries after main moved | Cursor | ready for review | `DISCOVERIES.md` | Pull request #37 merged. |
+| 20 | Gallup 2026 figure and TikTok date | Cursor | ready for review | `research/media-democracy/`, `DISCOVERIES.md` | Pull request #39. Pull request #40 already merged a parallel edit. |
+| 20-merge | Keep both Gallup URLs and the January 23 TikTok date | Cursor | ready for review | `DISCOVERIES.md`, report sources | HTML re-fetch on November 15, 2026 (Pacific) shows January 23 and `publishDate` `2026-01-23`. |
 | 35 | Site and backlog studio | Codex | owned elsewhere | `posts/build-backlog.mjs`, `posts/index.html`, `index.html`, selected post metadata, `README.md` | Do not edit from this branch. |
 | os | Project OS learning loop | Cursor, earlier pass | merged | `workflows/project-os/`, `AGENTS.md`, content check | Pull request #37. |
 
@@ -38,5 +38,4 @@ Correct the published research report for Issue #20: keep Gallup's 2025 28% read
 
 ## Validation
 
-- `python3 tools/build_report.py` and `python3 tools/review_pdf.py`: 40 pages, 16,455 chapter words, 55 sources, 58 ids, 0 blank pages, 0 out-of-page characters. Pages 14, 29, 37, and 40 were read.
-- `python3 -m unittest workflows/project-os/test_check.py`: 11 tests OK after merging main.
+- After merging pull request #40: `python3 tools/build_report.py` and `python3 tools/review_pdf.py`. 40 pages, 16,477 chapter words, 55 sources, 58 ids, 0 blank pages, 0 out-of-page characters. `python3 -m unittest workflows/project-os/test_check.py`: 11 tests OK, 5 active lessons.

@@ -7,7 +7,7 @@ The Daily Nun's first substantial research report, prepared for Peter Nunley. Th
 **[Read the PDF](output/pdf/who-shapes-what-america-knows.pdf)** · [Read the linked text edition](report.md)
 
 - 30 pages of chapters (PDF pages 4-33); 40 pages including the cover, contents, guide, glossary, and bibliography.
-- Ten chapters, with 16,455 words under the builder's chapter-counting rule.
+- Ten chapters, with 16,477 words under the builder's chapter-counting rule.
 - 55 distinct sources, represented by 58 stable citation IDs before duplicates are grouped.
 - Dated ownership table; nearby clickable citations; contents and PDF bookmarks.
 

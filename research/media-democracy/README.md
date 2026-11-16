@@ -38,7 +38,7 @@ python tools/build_report.py
 python tools/review_pdf.py
 ```
 
-The builder regenerates the reading edition, citation map, counts, and PDF. The renderer writes ignored review images into `.build/`. Inspect those images before marking visual review complete in `validation.json`. The builder embeds Georgia and Arial from `C:/Windows/Fonts` or `/usr/share/fonts/truetype/msttcorefonts` when those files are present. Otherwise it falls back to Times and Helvetica, so pagination may change. Rebuilding resets visual-review status to pending.
+The builder regenerates the reading edition, citation map, counts, and PDF. The renderer writes ignored review images into `.build/`. Inspect those images before marking visual review complete in `validation.json`. The builder embeds Georgia and Arial from `REPORT_FONT_DIR`, `C:/Windows/Fonts`, or `/usr/share/fonts/truetype/msttcorefonts` when those files are present. Otherwise it falls back to Times and Helvetica, so pagination may change. Rebuilding resets visual-review status to pending.
 
 ## Handoff to Claude Code and Antigravity
 

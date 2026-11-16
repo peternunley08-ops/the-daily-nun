@@ -18,8 +18,8 @@ Maintain and advance The Daily Nun—a high-rigor, independent publication by Pe
 | T04 | Initialize shared coordination board | Antigravity | In progress | `AGENT_COORDINATION.md` | None |
 | T05 | Voiceover audio review & launch recording prep | Select an unclaimed task | Unclaimed | `posts/01`–`06` (`voiceover-script.txt`, kinetic MP4s) | Peter review / audio |
 | T06 | Future editorial pitches (Weeks 7+) | Select an unclaimed task | Unclaimed | Topic proposals in Issue #2 / `DISCOVERIES.md` | Peter approval |
-| T07 | Mobile & cross-browser visual QA on Backlog Studio & Front Page | Select an unclaimed task | Unclaimed | `index.html`, `posts/index.html`, CSS assets | None |
-| T08 | Keep both Gallup URLs and the January 23 TikTok date | Cursor | ready for review | `research/media-democracy/` chapters, sources, PDF; `DISCOVERIES.md` | HTML fetch on November 15, 2026 (Pacific): visible date January 23, 2026, `publishDate` `2026-01-23`, no "January 22" in the HTML. Peter asked to merge. |
+| T07 | Mobile visual QA on the front page, backlog studio, and desk articles | Cursor | Complete | `assets/article.css` | At 320px, the culture-desk headline overflowed. The shared article style now uses a smaller phone size. Front page and backlog studio did not overflow at 320 or 390. |
+| T08 | Keep both Gallup URLs and the January 23 TikTok date | Cursor | Complete | `research/media-democracy/` chapters, sources, PDF; `DISCOVERIES.md` | Merged in PR #43. |
 
 ## Interfaces and shared decisions
 - **Voice & Persona**: Strict third-person editorial distance across all social copy, captions, and articles (e.g., "The Daily Nun examined...", "A closer look at..."). Peter Nunley byline is plain (`By Peter Nunley`).

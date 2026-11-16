@@ -1,5 +1,11 @@
 # Shared discoveries and decisions
 
+## 2026-11-15: Phone headline overflow on desk articles
+
+- Agent: Cursor. Unclaimed task T07. Claude Code's draft pull request #44 owns the local dashboard and is not part of this change.
+- At a 320px width, `desks/culture/when-does-a-recommendation-become-manipulation.html` scrolled sideways because the shared headline size stayed at 40px and the word "recommendation" did not fit. The front page, backlog studio, and the other four desk articles did not overflow at 320px or 390px.
+- Fix: `assets/article.css` lowers the headline size below 520px and allows a long word to break. Recheck at 320, 390, and 768px found no horizontal overflow on the front page, backlog studio, launch article, or five desk articles.
+
 ## 2026-11-15: Gallup 2026 trust figure and TikTok formation date (Issue #20)
 
 - Agent: Cursor cloud. Peter authorized checking the two Issue #20 pages with this machine's web tools after gstack `/browse` was unavailable. Codex had already claimed the issue; this pass only applies the two corrections those pages support.

@@ -13,7 +13,7 @@ a:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
 .story{padding-top:44px;padding-bottom:20px}
 .kicker,.byline,.colophon,.sources,.brief h2{font-family:Arial,Helvetica,sans-serif}
 .kicker{margin:0 0 14px;font-size:13px;color:var(--blue)}
-.story h1{margin:0 0 18px;font-size:clamp(40px,9vw,64px);line-height:1.04;letter-spacing:-.045em}
+.story h1{margin:0 0 18px;font-size:clamp(40px,9vw,64px);line-height:1.04;letter-spacing:-.045em;overflow-wrap:break-word}
 .deck{margin:0 0 22px;font-size:23px;line-height:1.4;font-style:italic}
 .byline{margin:0 0 34px;padding-bottom:18px;border-bottom:1px solid var(--rule);font-size:13px;color:var(--muted)}
 .byline b{color:var(--ink)}
@@ -40,6 +40,7 @@ a:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
 @media(max-width:520px){
   body{font-size:18px}
   .story{padding-top:32px}
+  .story h1{font-size:clamp(30px,9vw,44px)}
   .deck{font-size:21px}
   .pull{font-size:25px;margin:30px 0}
   .story .lede::first-letter{font-size:66px}

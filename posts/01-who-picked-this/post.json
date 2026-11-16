@@ -10,12 +10,48 @@
   "audience": "Peter's high-school community",
   "caption": "Outlets choose what to cover. Platforms recommend what to show. Readers navigate the choices in between.\n\nThe Daily Nun examined the evidence behind media ownership, algorithms, and civic influence.\n\nFull report + sources:",
   "reportUrl": "https://peternunley08-ops.github.io/the-daily-nun/research/media-democracy/output/pdf/who-shapes-what-america-knows.pdf",
-  "media": [
-    "instagram-launch/carousels/01-who-picked-this/slide-01.png",
-    "instagram-launch/carousels/01-who-picked-this/slide-02.png",
-    "instagram-launch/carousels/01-who-picked-this/slide-03.png"
+  "slides": [
+    {
+      "cover": true,
+      "title": "Who picked\nthis for you?",
+      "body": "Outlets choose what to cover. Platforms recommend what to show.",
+      "theme": "paper",
+      "alt": "The Daily Nun cover slide: Who picked this for you? Subtitle: Outlets choose what to cover. Platforms recommend what to show."
+    },
+    {
+      "cover": false,
+      "title": "Making a story.\nRecommending it.",
+      "body": "A newsroom can report it. A platform can put it in your feed.",
+      "theme": "paper",
+      "alt": "Slide 2: Making a story and recommending it are different decisions. A newsroom can report a story and a platform can recommend it."
+    },
+    {
+      "cover": false,
+      "title": "Trace both.",
+      "body": "Find the original reporting. Then examine how it reached you.",
+      "theme": "blue",
+      "alt": "Slide 3: Trace both: find the original reporting and examine how the story reached you."
+    }
   ],
-  "altTextFile": "instagram-launch/carousels/01-who-picked-this/alt-text.txt",
+  "reel": {
+    "title": "One story. Three decisions.",
+    "duration": 15,
+    "voiceover": "Who brought you this story? Follow one possible route: a reporter produces it, a publisher runs it, and a platform recommends it. Different decisions shape what gets made and what reaches your feed. The Daily Nun.",
+    "kineticText": [
+      "Who brought you this story?",
+      "A reporter produces it.",
+      "A publisher runs it.",
+      "A platform recommends it.",
+      "One story. Three decisions.",
+      "The Daily Nun / A closer look at the world."
+    ]
+  },
+  "media": [
+    "posts/01-who-picked-this/slide-01.png",
+    "posts/01-who-picked-this/slide-02.png",
+    "posts/01-who-picked-this/slide-03.png"
+  ],
+  "altTextFile": "posts/01-who-picked-this/ALT-TEXT.txt",
   "sources": [
     {
       "title": "On YouTube's recommendation system",

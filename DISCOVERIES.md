@@ -1,5 +1,17 @@
 # Shared discoveries and decisions
 
+## 2026-11-15: Week 1 Reel parity & launch voiceover recording prep (Antigravity, Issue #47)
+
+- Agent: Antigravity. Claimed [Issue #47](https://github.com/peternunley08-ops/the-daily-nun/issues/47).
+- Background: While weeks 02–06 possessed exported `reel.mp4`, `reel-cover.png`, `voiceover-script.txt`, and 9-file upload packs, Week 1 (`posts/01-who-picked-this/`) only contained carousel slides, missing its paired vertical Reel and voiceover teleprompter.
+- Fixes:
+  - Connected `reel.mp4` ("One story. Three decisions.", 15s) and `reel-cover.png` from `instagram-launch/reels/reel-01-story-route.*` into `posts/01-who-picked-this/`.
+  - Added synchronized 35-word voiceover script (15 seconds at 140 wpm) in strict third-person editorial voice, with full kinetic typography sequences and delivery guidelines.
+  - Upgraded `posts/01-who-picked-this/build.mjs` to stage `REEL.mp4` and `VOICEOVER.txt`, automatically repacking `upload-pack.zip` to a 9-file bundle and rendering the inline `<video class="reel">` player and teleprompter on the package preview page.
+  - Recompiled Backlog Studio (`posts/build-backlog.mjs`): Week 1 now displays the vertical Reel player and synchronized teleprompter beside its carousel slides.
+  - Verified local dashboard metrics (`tools/dashboard/collect.mjs`): packages: 6, exported: 6, reels: 6, scheduled: 0, published: 0 (100% complete parity across all 6 backlog packages).
+- Verification: `node tools/dashboard/run-checks.mjs` passed 11/11 checks; 16 static HTML pages audited with 0 broken links; unzipped `upload-pack.zip` confirmed 9 files.
+
 ## 2026-11-15: Phone headline overflow on desk articles
 
 - Agent: Cursor. Unclaimed task T07. Claude Code's draft pull request #44 owns the local dashboard and is not part of this change.

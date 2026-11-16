@@ -74,7 +74,13 @@ for i, source in enumerate(unique, 1):
 assert 40 <= len(unique) <= 60, len(unique)
 
 # Standard PDF fonts are available everywhere; embed Georgia/Arial when available.
-font_root = Path('C:/Windows/Fonts')
+import os
+font_candidates = [
+    Path(os.environ.get('REPORT_FONT_DIR', '')),
+    Path('/usr/share/fonts/truetype/msttcorefonts'),
+    Path('C:/Windows/Fonts'),
+]
+font_root = next((p for p in font_candidates if p.is_dir()), Path('C:/Windows/Fonts'))
 font_files = {'Body': 'georgia.ttf', 'Body-Bold': 'georgiab.ttf', 'Body-Italic': 'georgiai.ttf',
               'Body-BoldItalic': 'georgiaz.ttf', 'Sans': 'arial.ttf', 'Sans-Bold': 'arialbd.ttf',
               'Sans-Italic': 'ariali.ttf', 'Sans-BoldItalic': 'arialbi.ttf'}

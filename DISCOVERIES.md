@@ -1,5 +1,22 @@
 # Shared discoveries and decisions
 
+## 2026-11-15: Report follow-up: Gallup 2026 trust reading & TikTok JV dates (Antigravity, Issue #20)
+
+- Agent: Antigravity. Claimed [Issue #20](https://github.com/peternunley08-ops/the-daily-nun/issues/20).
+- Source verification:
+  - Gallup trust in mass media: verified via browse against https://news.gallup.com/poll/714938/trust-news-media-edges-slightly-higher.aspx (Lydia Saad, Sept 29, 2026). Governance poll conducted Sept 1–17, 2026 (n=1,000 U.S. adults, ±4 percentage points). Overall trust edged up to 33% (from the 28% record low in Sept 2025), driven by a Republican rebound from 8% to 22%, with Democrats at 50% and independents at 31%. Poll completed prior to the Sept 18 White House access dispute. Preserved the 2025 record low (28%) for trend context.
+  - TikTok USDS Joint Venture: verified via browse against https://usdsjv.tiktok.com/TikTok-USDS-Joint-Venture-LLC-Established. The company press release itself is dated January 22, 2026 ("January 22, 2026 • Company, News"), while the newsroom index lists January 23, 2026. Documented both dates in Chapter 4, `ownership.json`, and `citation-map.json`.
+- Changes made:
+  - `research/media-democracy/chapters/08-10.md` (updated Gallup trust paragraph with 2025 record low, 2026 reading, partisan breakdown, and timing nuance).
+  - `research/media-democracy/chapters/04.md` (table entry specifies January 22 release date alongside January 23 newsroom listing).
+  - `research/media-democracy/sources/evidence.json` (E09 updated with 2026 Gallup reading, n=1,000 sample, and dual stats).
+  - `research/media-democracy/sources/ownership.json` (O09 limitations note explicitly records both dates).
+  - Built report PDF (`output/pdf/who-shapes-what-america-knows.pdf`), updated `report.md`, `sources/citation-map.json`, and `validation.json`.
+- Verification:
+  - `build_report.py` compiled cleanly: 40 pages, 30 chapter pages, 16,435 words, 54 distinct sources, 57 stable IDs, 185 link annotations.
+  - `review_pdf.py` passed: 0 blank pages, 0 out-of-page characters, all contact sheets and samples rendered.
+  - Full content pipeline (`stories-current-media`, `instagram-launch`, `posts/01`–`06`, `build-backlog`) and `test_check.py` passed.
+
 ## 2026-11-15: Project OS learning loop
 
 - Agent: Cursor cloud. Peter supplied `peter-project-os-v1.0.0` and asked for it to be implemented, improved, and able to learn. Issue creation is not available from this agent's GitHub tools. [Issue #35](https://github.com/peternunley08-ops/the-daily-nun/issues/35) stays with its existing owner; this pass does not edit the site or backlog files named there.

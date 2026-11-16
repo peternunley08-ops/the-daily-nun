@@ -119,17 +119,18 @@
   },
   {
     "id": "E09",
-    "title": "Trust in Media at New Low of 28% in U.S.",
-    "authors": ["Megan Brenan"],
+    "title": "U.S. Media Trust: Edges Up From Record Low",
+    "authors": ["Lydia Saad"],
     "publisher": "Gallup",
-    "date": "2025-10-02",
-    "url": "https://news.gallup.com/poll/695762/trust-media-new-low.aspx",
-    "type": "Original survey analysis; article and question description read",
+    "date": "2026-09-29",
+    "url": "https://news.gallup.com/poll/714938/trust-news-media-edges-slightly-higher.aspx",
+    "type": "Original survey analysis; article and trend tables read",
     "verified": true,
-    "findings": "Reports 28% of U.S. adults expressed a great deal or fair amount of confidence in newspapers, television, and radio to report news fully, accurately, and fairly in its September 2025 survey.",
-    "limitations": "Measures reported confidence with specific wording, not the measured accuracy of publications. It is a 2025 reading and is labeled as such, not presented as a verified 2026 estimate or as evidence identifying the causes of distrust.",
+    "findings": "Reports 33% of U.S. adults expressed a great deal or fair amount of confidence in newspapers, television, and radio to report news fully, accurately, and fairly in its September 1–17, 2026 Governance poll (up from the 28% record low in September 2025; Republicans 22%, independents 31%, Democrats 50%).",
+    "limitations": "Measures reported confidence with specific wording across 1,000 national adults (±4 points margin of error), not measured journalistic accuracy. Survey closed September 17, 2026, before the September 18 White House press credential dispute. 2025 record low (28%) is preserved for trend context.",
     "stats": [
-      {"value": "28%", "period": "Survey conducted September 2–16, 2025", "population": "U.S. adults surveyed by Gallup", "denominator": "Respondents expressing a great deal or fair amount of trust/confidence in the specified mass-media reporting question"}
+      {"value": "33%", "period": "Survey conducted September 1–17, 2026", "population": "U.S. adults surveyed by Gallup (n=1,000)", "denominator": "Respondents expressing a great deal or fair amount of confidence in mass media reporting fully, accurately, and fairly"},
+      {"value": "28%", "period": "Survey conducted September 2–16, 2025", "population": "U.S. adults surveyed by Gallup", "denominator": "Record-low reading from prior year's survey"}
     ]
   },
   {

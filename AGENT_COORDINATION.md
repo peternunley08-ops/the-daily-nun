@@ -21,6 +21,7 @@ Maintain and advance The Daily Nun—a high-rigor, independent publication by Pe
 | T07 | Backlog Studio video player, article links & mobile responsive QA | Antigravity | Complete | `posts/build-backlog.mjs`, `posts/index.html` | Merged in PR #45 |
 | T08 | Keep both Gallup URLs and the January 23 TikTok date | Cursor | Complete | `research/media-democracy/` | Merged in PR #43 |
 | T09 | Mobile visual QA & headline wrapping on desk articles | Cursor | Complete | `assets/article.css` | Merged in PR #46 |
+| T10 | Local read-only project dashboard | Claude Code | Complete | `tools/dashboard/` | Merged in PR #44 |
 
 ## Interfaces and shared decisions
 - **Voice & Persona**: Strict third-person editorial distance across all social copy, captions, and articles (e.g., "The Daily Nun examined...", "A closer look at..."). Peter Nunley byline is plain (`By Peter Nunley`).

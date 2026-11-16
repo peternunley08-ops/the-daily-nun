@@ -233,3 +233,16 @@ Keep entries concise and dated. Record the agent, task Issue, evidence, decision
 - Preserved the complete 48-file package in ignored project-local `.claude/skills/peter-project-os/`; no personal map contents committed. No global settings, background jobs, package scripts, or additional agents were activated.
 - AGENTS.md now routes invocations to the real skill; the shared workflow adds its selective reference loading, acceptance/coverage discipline, and limits. This narrow integration does not rerun prior content audits.
 - Verification: archive paths and symlink checks; all extracted files byte-equal to the supplied archive; ignore/tracked-file checks and documentation diff checks. Native host command discovery remains untested. Other checkouts require their own authorized copy of the private package.
+
+### 2026-11-16: Local read-only project dashboard (Claude Code)
+
+- Added `tools/dashboard/`, started with `node tools/dashboard/server.mjs`; it serves http://127.0.0.1:4780/ on localhost only. Board row T08 in `AGENT_COORDINATION.md`.
+- Sources:
+  - local files and git through a recursive file watcher;
+  - GitHub Issues, PRs, and Actions runs, polled every 60 seconds with ETag caching;
+  - the `AGENT_COORDINATION.md` board, labelled as self-reported.
+- Branch, PR, and commit activity is labelled as inferred. The dashboard has no agent telemetry, so it never shows presence.
+- Audience metrics show as not connected because `instagram-launch/metrics.csv` has no rows and no analytics exist. Revenue is not applicable.
+- Viewing runs no checks. `node tools/dashboard/run-checks.mjs` replays the CI commands and records the results in a git-ignored file.
+- Node's `fetch` ignores `HTTPS_PROXY` unless `NODE_USE_ENV_PROXY=1` is set. Cloud sessions need that variable to reach GitHub.
+- PR #38 was closed in favour of PR #40. This branch now matches `main` for the report and this log.

@@ -20,3 +20,6 @@ instagram-revised.zip
 /.claude/skills/peter-project-os/
 __pycache__/
 *.pyc
+
+# Local dashboard results (machine-specific)
+tools/dashboard/.state/

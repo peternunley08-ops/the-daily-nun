@@ -19,6 +19,7 @@ Maintain and advance The Daily Nun—a high-rigor, independent publication by Pe
 | T05 | Voiceover audio review & launch recording prep | Select an unclaimed task | Unclaimed | `posts/01`–`06` (`voiceover-script.txt`, kinetic MP4s) | Peter review / audio |
 | T06 | Future editorial pitches (Weeks 7+) | Select an unclaimed task | Unclaimed | Topic proposals in Issue #2 / `DISCOVERIES.md` | Peter approval |
 | T07 | Mobile & cross-browser visual QA on Backlog Studio & Front Page | Select an unclaimed task | Unclaimed | `index.html`, `posts/index.html`, CSS assets | None |
+| T08 | Local read-only project dashboard | Claude Code | Ready for review | `tools/dashboard/` | Reads this board; no other files |
 
 ## Interfaces and shared decisions
 - **Voice & Persona**: Strict third-person editorial distance across all social copy, captions, and articles (e.g., "The Daily Nun examined...", "A closer look at..."). Peter Nunley byline is plain (`By Peter Nunley`).

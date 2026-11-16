@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Nun Desk</title>
+<link rel="stylesheet" href="/app.css">
+<script src="/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#agents">Skip to agents</a>
+<header class="top">
+  <div class="brand">
+    <h1>The Daily Nun <span>project desk</span></h1>
+    <p class="sub">Read-only local view. Nothing here posts, builds, or changes GitHub.</p>
+  </div>
+  <div class="conn" role="status" aria-live="polite">
+    <span id="conn-dot" class="dot dot-wait" aria-hidden="true"></span>
+    <span id="conn-text">Connecting…</span>
+    <span id="conn-sync" class="muted"></span>
+  </div>
+</header>
+<div id="banner" class="banner" hidden></div>
+
+<nav class="tabs" aria-label="Sections">
+  <a href="#business">Publication</a><a href="#agents">Agents</a><a href="#progress">Progress</a><a href="#feed">Activity</a><a href="#health">Health</a>
+</nav>
+
+<main id="main">
+  <section id="business" aria-labelledby="h-business">
+    <div class="sec-head"><h2 id="h-business">Publication overview</h2><span class="tag">Business data, separate from development</span></div>
+    <div id="business-body" class="loading">Loading publication data…</div>
+  </section>
+
+  <section id="agents" aria-labelledby="h-agents">
+    <div class="sec-head"><h2 id="h-agents">Agent activity</h2><span class="tag">No live telemetry: presence is never shown as online</span></div>
+    <div id="conflicts"></div>
+    <div id="agents-body" class="grid agents loading">Loading agents…</div>
+  </section>
+
+  <section id="progress" aria-labelledby="h-progress">
+    <div class="sec-head"><h2 id="h-progress">Project progress</h2><span id="progress-basis" class="tag"></span></div>
+    <div id="progress-body" class="loading">Loading tasks…</div>
+  </section>
+
+  <div class="two">
+    <section id="feed" aria-labelledby="h-feed">
+      <div class="sec-head"><h2 id="h-feed">Live activity</h2>
+        <label class="filter">Show <select id="feed-filter">
+          <option value="all">everything</option><option value="file">file edits</option><option value="git">commits and refs</option>
+          <option value="pr">pull requests</option><option value="check">checks</option><option value="claim">claims and notes</option>
+        </select></label>
+      </div>
+      <ol id="feed-body" class="feed loading" aria-live="polite" aria-relevant="additions">Loading activity…</ol>
+    </section>
+
+    <section id="health" aria-labelledby="h-health">
+      <div class="sec-head"><h2 id="h-health">Project health</h2><span class="tag">Recorded results only; viewing runs nothing</span></div>
+      <div id="health-body" class="loading">Loading health…</div>
+    </section>
+  </div>
+</main>
+<footer class="foot muted" id="foot"></footer>
+</body>
+</html>

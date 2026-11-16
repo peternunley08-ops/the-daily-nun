@@ -18,7 +18,8 @@ Maintain and advance The Daily Nun—a high-rigor, independent publication by Pe
 | T04 | Initialize shared coordination board | Antigravity | Complete | `AGENT_COORDINATION.md` | Merged in PR #42 |
 | T05 | Voiceover audio review & launch recording prep | Select an unclaimed task | Unclaimed | `posts/01`–`06` (`voiceover-script.txt`, kinetic MP4s) | Peter review / audio |
 | T06 | Future editorial pitches (Weeks 7+) | Select an unclaimed task | Unclaimed | Topic proposals in Issue #2 / `DISCOVERIES.md` | Peter approval |
-| T07 | Backlog Studio video player, article links & mobile responsive QA | Antigravity | Complete | `posts/build-backlog.mjs`, `posts/index.html` | None |
+| T07 | Backlog Studio video player, article links & mobile responsive QA | Antigravity | In progress | `posts/build-backlog.mjs`, `posts/index.html` | None |
+| T08 | Keep both Gallup URLs and the January 23 TikTok date | Cursor | Complete | `research/media-democracy/` | Merged in PR #43 |
 
 ## Interfaces and shared decisions
 - **Voice & Persona**: Strict third-person editorial distance across all social copy, captions, and articles (e.g., "The Daily Nun examined...", "A closer look at..."). Peter Nunley byline is plain (`By Peter Nunley`).
@@ -36,9 +37,11 @@ Maintain and advance The Daily Nun—a high-rigor, independent publication by Pe
   - `assets/render-article.mjs`: Unified strict Markdown article renderer for all desk articles.
   - `research/media-democracy/tools/build_report.py`: Report PDF compiler supporting `REPORT_FONT_DIR` and Linux/Windows fonts.
   - `research/media-democracy/tools/review_pdf.py`: PDF validator checking character bounds, blank pages, and link annotations.
+- **Report sources**: E09 stays the 2025 Gallup URL. E16 is the September 29, 2026 Gallup article. The 6% / 27% split is not used. TikTok O09 uses the January 23, 2026 date printed on the fetched page.
 
 ## Handoffs and blockers
 - **Handoff from T03**: The media and democracy report PDF is rebuilt to 40 pages with verified 2026 Gallup media trust data and clarified TikTok USDS JV dates. Dual PRs #38 and #39 have been cleanly closed.
+- **Cursor, T08**: A later HTML fetch of https://usdsjv.tiktok.com/TikTok-USDS-Joint-Venture-LLC-Established did not contain January 22. The merged report uses January 23, 2026 and keeps the 2025 Gallup URL as E09.
 - **Active state**: All 6 packages have exported slide PNGs, kinetic reel MP4s, alt text, and `upload-pack.zip`.
 - **Blockers**: None. CI is green on GitHub Actions.
 
@@ -50,3 +53,4 @@ Maintain and advance The Daily Nun—a high-rigor, independent publication by Pe
 - `python3 -m unittest workflows/project-os/test_check.py`: Pass (11 tests).
 - `uv run --with-requirements research/media-democracy/requirements.txt python3 research/media-democracy/tools/build_report.py`: Pass (40 pages).
 - `uv run --with-requirements research/media-democracy/requirements.txt python3 research/media-democracy/tools/review_pdf.py`: Pass (0 blank pages, 0 out-of-page chars, 159 external links).
+- Cursor recheck after the date merge: `python3 tools/build_report.py` and `python3 tools/review_pdf.py` from `research/media-democracy`: 40 pages, 16,477 chapter words, 55 sources, 58 ids, 0 blank pages, 0 out-of-page characters.

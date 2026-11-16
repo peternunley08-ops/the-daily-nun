@@ -2,6 +2,7 @@
 from __future__ import annotations
 import html
 import json
+import os
 import re
 from collections import OrderedDict
 from pathlib import Path
@@ -74,17 +75,13 @@ for i, source in enumerate(unique, 1):
 assert 40 <= len(unique) <= 60, len(unique)
 
 # Standard PDF fonts are available everywhere; embed Georgia/Arial when available.
-import os
-font_candidates = [
-    Path(os.environ.get('REPORT_FONT_DIR', '')),
-    Path('/usr/share/fonts/truetype/msttcorefonts'),
-    Path('C:/Windows/Fonts'),
-]
-font_root = next((p for p in font_candidates if p.is_dir()), Path('C:/Windows/Fonts'))
 font_files = {'Body': 'georgia.ttf', 'Body-Bold': 'georgiab.ttf', 'Body-Italic': 'georgiai.ttf',
               'Body-BoldItalic': 'georgiaz.ttf', 'Sans': 'arial.ttf', 'Sans-Bold': 'arialbd.ttf',
               'Sans-Italic': 'ariali.ttf', 'Sans-BoldItalic': 'arialbi.ttf'}
-if all((font_root / f).exists() for f in font_files.values()):
+font_candidates = [Path(os.environ['REPORT_FONT_DIR'])] if os.environ.get('REPORT_FONT_DIR') else []
+font_candidates.extend((Path('C:/Windows/Fonts'), Path('/usr/share/fonts/truetype/msttcorefonts')))
+font_root = next((root for root in font_candidates if all((root / name).exists() for name in font_files.values())), None)
+if font_root:
     for name, file in font_files.items(): pdfmetrics.registerFont(TTFont(name, str(font_root / file)))
     pdfmetrics.registerFontFamily('Body', normal='Body', bold='Body-Bold', italic='Body-Italic', boldItalic='Body-BoldItalic')
     pdfmetrics.registerFontFamily('Sans', normal='Sans', bold='Sans-Bold', italic='Sans-Italic', boldItalic='Sans-BoldItalic')

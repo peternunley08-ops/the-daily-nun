@@ -431,16 +431,16 @@
     "title": "TikTok USDS Joint Venture LLC Established in Compliance with U.S. Regulatory Requirements",
     "authors": "TikTok USDS Joint Venture",
     "publisher": "TikTok USDS Joint Venture newsroom",
-    "date": "January 22, 2026",
+    "date": "January 23, 2026",
     "url": "https://usdsjv.tiktok.com/TikTok-USDS-Joint-Venture-LLC-Established",
     "type": "Corporate formation announcement",
     "verified": true,
     "findings": "Describes independent U.S. joint venture, U.S. moderation/algorithm/data authority, continued global interoperability/commercial functions; managing investors Silver Lake, Oracle and MGX each15%; ByteDance retains19.9%.",
-    "limitations": "Statement of corporate structure and allocated authority, not independent proof of security effectiveness or political neutrality. Newsroom index saysJanuary23 but article itselfJanuary22; report uses article date.",
+    "limitations": "Statement of corporate structure and allocated authority, not independent proof of security effectiveness or political neutrality. Earlier verification recorded January 22 on the article and January 23 on the newsroom index. Rechecked with gstack /browse on November 15, 2026: the article now displays January 23, 2026. This is the publication date, not independent verification of the legal closing date. This follow-up rechecked the displayed date only; the prior corporate-structure verification remains unchanged.",
     "stats": [
       {
         "value": "19.9%",
-        "period": "Joint-venture formation announced January22,2026",
+        "period": "Formation statement dated January 23, 2026",
         "population": "TikTok USDS Joint Venture LLC equity",
         "denominator": "100% of joint-venture equity; not all global TikTok assets or all media"
       }
@@ -1223,5 +1223,31 @@
       "E15"
     ],
     "number": 54
+  },
+  {
+    "id": "E16",
+    "title": "U.S. Media Trust: Edges Up From Record Low",
+    "authors": [
+      "Lydia Saad"
+    ],
+    "publisher": "Gallup",
+    "date": "2026-09-29",
+    "url": "https://news.gallup.com/poll/714938/trust-news-media-edges-slightly-higher.aspx",
+    "type": "Original survey analysis; article and survey methods read with gstack /browse on November 15, 2026",
+    "verified": true,
+    "findings": "Reports 33% of U.S. adults expressed a great deal or fair amount of confidence in newspapers, television and radio to report news fully, accurately and fairly, up from 28% in 2025. Telephone interviews September 1–17, 2026; random sample of 1,000 adults aged 18 and older in all 50 states and D.C.; margin of sampling error ±4 percentage points at 95% confidence, including weighting design effects.",
+    "limitations": "Measures reported confidence, not reporting accuracy or causes of changes in trust. Fieldwork ended before the September 18 White House access dispute described in the article and cannot capture any effect of it. Question wording and practical survey difficulties can introduce error or bias beyond sampling error.",
+    "stats": [
+      {
+        "value": "33%",
+        "period": "Survey conducted September 1–17, 2026",
+        "population": "U.S. adults aged 18 and older; sample of 1,000",
+        "denominator": "All adults surveyed; percentage expressing a great deal or fair amount of confidence in the specified mass-media reporting question"
+      }
+    ],
+    "aliases": [
+      "E16"
+    ],
+    "number": 55
   }
 ]

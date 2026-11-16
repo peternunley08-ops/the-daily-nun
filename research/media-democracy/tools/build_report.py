@@ -151,7 +151,7 @@ class Cover(Flowable):
         c.setFont(BODY,19);c.drawString(0,279,'Media, Polarization, and U.S. Democracy')
         c.setFont(SANS,11);c.drawString(0,182,'Prepared for Peter Nunley');c.drawString(0,162,'An AI-assisted research synthesis for curious readers')
         c.setStrokeColor(BLUE);c.line(0,123,CONTENT_WIDTH,123);c.setFillColor(GRAY);c.setFont(SANS,9)
-        for y,line in [(99,'Intended event cutoff: November 11, 2026'),(83,'Compiled and checked: November 12, 2026'),(57,'Ten chapters | Dated ownership map | Glossary | Clickable bibliography')]:c.drawString(0,y,line)
+        for y,line in [(99,'Intended event cutoff: November 11, 2026'),(83,'Compiled: November 12, 2026 | Source update: November 15, 2026'),(57,'Ten chapters | Dated ownership map | Glossary | Clickable bibliography')]:c.drawString(0,y,line)
         c.restoreState()
 
 flow=[]
@@ -228,7 +228,7 @@ doc.multiBuild(flow)
 def linked_md(text):
     return re.sub(r'\[([HMOE]\d{2})\]',lambda m:'['+str(number[m.group(1)])+']('+by_id[m.group(1)]['url']+')',clean(text))
 
-markdown='# Who Shapes What America Knows?\n\n## Media, Polarization, and U.S. Democracy\n\nThe Daily Nun - First research report\n\nPrepared for Peter Nunley. AI-assisted research synthesis. Intended event cutoff November 11, 2026; compiled November 12, 2026.\n\n'+linked_md(front)+'\n\n'+linked_md(chapters)+'\n\n'+glossary+'\n\n'+'\n'.join(bib_md)
+markdown='# Who Shapes What America Knows?\n\n## Media, Polarization, and U.S. Democracy\n\nThe Daily Nun - First research report\n\nPrepared for Peter Nunley. AI-assisted research synthesis. Intended event cutoff November 11, 2026; compiled November 12, 2026; source update November 15, 2026.\n\n'+linked_md(front)+'\n\n'+linked_md(chapters)+'\n\n'+glossary+'\n\n'+'\n'.join(bib_md)
 (ROOT/'report.md').write_text(markdown,encoding='utf-8')
 (ROOT/'sources'/'citation-map.json').write_text(json.dumps(unique,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 reader=PdfReader(OUT)
@@ -241,6 +241,6 @@ assert '\ufffd' not in all_text
 assert links>150, links
 destinations={d.title:reader.get_destination_page_number(d)+1 for d in reader.outline if hasattr(d,'title')}
 first_chapter_page=destinations['1. When the news sounds the same'];last_chapter_page=destinations['Glossary']-1
-metrics={'pages':len(reader.pages),'chapter_pages':last_chapter_page-first_chapter_page+1,'chapter_first_page':first_chapter_page,'chapter_last_page':last_chapter_page,'chapter_words':word_count(chapters),'distinct_sources':len(unique),'stable_source_ids':len(records),'pdf_link_annotations':links,'pdf_bytes':OUT.stat().st_size,'title':str(reader.metadata.title),'output':str(OUT.relative_to(ROOT)),'source_cutoff':'2026-11-11','compiled':'2026-11-12','external_agent_review':'Not yet performed','visual_review':'Pending rendered-page inspection'}
+metrics={'pages':len(reader.pages),'chapter_pages':last_chapter_page-first_chapter_page+1,'chapter_first_page':first_chapter_page,'chapter_last_page':last_chapter_page,'chapter_words':word_count(chapters),'distinct_sources':len(unique),'stable_source_ids':len(records),'pdf_link_annotations':links,'pdf_bytes':OUT.stat().st_size,'title':str(reader.metadata.title),'output':str(OUT.relative_to(ROOT)),'source_cutoff':'2026-11-11','compiled':'2026-11-12','source_update':'2026-11-15','external_agent_review':'Not yet performed','visual_review':'Pending rendered-page inspection'}
 (ROOT/'validation.json').write_text(json.dumps(metrics,indent=2)+'\n',encoding='utf-8')
 print(json.dumps(metrics,indent=2))

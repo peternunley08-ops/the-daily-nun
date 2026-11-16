@@ -7,11 +7,11 @@ The Daily Nun's first substantial research report, prepared for Peter Nunley. Th
 **[Read the PDF](output/pdf/who-shapes-what-america-knows.pdf)** · [Read the linked text edition](report.md)
 
 - 30 pages of chapters (PDF pages 4-33); 40 pages including the cover, contents, guide, glossary, and bibliography.
-- Ten chapters, with 16,361 words under the builder's chapter-counting rule.
-- 54 distinct sources, represented by 57 stable citation IDs before duplicates are grouped.
+- Ten chapters, with 16,424 words under the builder's chapter-counting rule.
+- 55 distinct sources, represented by 58 stable citation IDs before duplicates are grouped.
 - Dated ownership table; nearby clickable citations; contents and PDF bookmarks.
 
-Intended event cutoff: November 11, 2026. Compilation: November 12. Undated corporate pages are current-access corroboration; the Disney row uses an older, dated annual report. Some studies were verified through original abstracts and metadata rather than full methods. Limits are visible in the report and source ledgers. This is not a systematic review, a complete beneficial-ownership audit, or an exhaustive account of later litigation.
+Intended event cutoff: November 11, 2026. Initial compilation: November 12; Gallup and TikTok source follow-up: November 15. Undated corporate pages are current-access corroboration; the Disney row uses an older, dated annual report. Some studies were verified through original abstracts and metadata rather than full methods. Limits are visible in the report and source ledgers. This is not a systematic review, a complete beneficial-ownership audit, or an exhaustive account of later litigation.
 
 ## Editable files
 
@@ -25,7 +25,7 @@ Intended event cutoff: November 11, 2026. Compilation: November 12. Undated corp
 | `sources/evidence.json` | Media-effects studies, local journalism, and policy. |
 | `sources/citation-map.json` | Generated bibliography numbers and aliases. |
 | `report.md` | Generated text edition with citations and bibliography. |
-| `output/pdf/` | First-edition PDF. |
+| `output/pdf/` | Revised report PDF. |
 | `validation.json`, `tools/` | Validation results and offline build tools. |
 
 ## Rebuild after editing

@@ -4,7 +4,7 @@
 
 The Daily Nun - First research report
 
-Prepared for Peter Nunley. AI-assisted research synthesis. Intended event cutoff November 11, 2026; compiled November 12, 2026.
+Prepared for Peter Nunley. AI-assisted research synthesis. Intended event cutoff November 11, 2026; compiled November 12, 2026; source update November 15, 2026.
 
 # A guide to this report
 
@@ -24,9 +24,9 @@ The central question is who influences what Americans hear, see, and believe. Th
 
 The numbered citations are clickable and lead to the underlying source. The bibliography supplies authors, dates, publication details, source types, and access limitations. A survey percentage measures a specified population and question; it is not automatically a measure of accuracy, control, or persuasion. A company statement establishes what the company announced or says its policy is. It does not independently establish that the policy works.
 
-This is an AI-assisted research synthesis prepared for Peter Nunley and The Daily Nun, not original interviews, a new survey, a systematic review, or a meta-analysis. The ten chapters contain roughly 16,400 words before this guide, glossary, and bibliography. The research uses 54 distinct sources; some original studies were accessible only through abstracts and metadata, and those limits are recorded. Legal decisions are discussed as dated holdings, not an exhaustive audit of later litigation.
+This is an AI-assisted research synthesis prepared for Peter Nunley and The Daily Nun, not original interviews, a new survey, a systematic review, or a meta-analysis. The ten chapters contain roughly 16,400 words before this guide, glossary, and bibliography. The research uses 55 distinct sources; some original studies were accessible only through abstracts and metadata, and those limits are recorded. Legal decisions are discussed as dated holdings, not an exhaustive audit of later litigation.
 
-The intended event cutoff is November 11, 2026; compilation and source checks occurred on November 12. Dated studies retain their original measurement periods. Undated corporate pages are current-access corroboration, not archived proof of their exact contents on the cutoff date. The ownership chapter flags older records and secondary-source cross-checks. Conclusions distinguish established findings, plausible mechanisms, and questions that remain open.
+The intended event cutoff is November 11, 2026; compiled November 12, with a Gallup/TikTok source update November 15. Dated studies retain their measurement periods. Undated corporate pages are current-access corroboration, not archived proof of their cutoff-date contents. The ownership chapter flags older records and secondary-source checks. Conclusions distinguish established findings, plausible mechanisms, and open questions.
 
 
 # 1. When the news sounds the same
@@ -234,7 +234,7 @@ The following table is an illustrative map, not a ranking or a calculation of an
 | iHeartMedia | Broadcast radio, radio networks, podcasts and digital audio | Current company station directory and portfolio. Its promotional audience-reach claims are not adopted as shares of all media. [21](https://www.iheartmedia.com/) |
 | Alphabet / Google | YouTube and Google distribution and advertising services | Alphabet restructuring documented in 2015; basic current corporate relationship cross-checked in a secondary reference. This is not ownership of every creator's video. [26](https://googleblog.blogspot.com/2015/08/google-alphabet.html) [27](https://en.wikipedia.org/wiki/Alphabet_Inc.) |
 | Meta Platforms | Facebook and Instagram | Pew's October 19, 2026 fact sheet identifies both as Meta-owned. User posts and external news articles are not all Meta-owned reporting. [30](https://www.pewresearch.org/journalism/fact-sheet/social-media-and-news-fact-sheet/) |
-| TikTok USDS Joint Venture | U.S. TikTok operation and specified data, algorithm and moderation responsibilities | January 22, 2026 formation statement; global interoperability and certain commercial functions remain separately described. ByteDance retains a minority equity interest in this U.S. venture. [23](https://usdsjv.tiktok.com/TikTok-USDS-Joint-Venture-LLC-Established) |
+| TikTok USDS Joint Venture | U.S. TikTok operation and specified data, algorithm and moderation responsibilities | Formation statement dated January 23, 2026; global interoperability and certain commercial functions remain separately described. ByteDance retains a minority equity interest in this U.S. venture. [23](https://usdsjv.tiktok.com/TikTok-USDS-Joint-Venture-LLC-Established) |
 | X within the xAI / SpaceX corporate grouping | Social distribution, creator commentary and information circulation | SpaceX's February 2, 2026 statement says it acquired xAI and describes integration with its real-time information platform. This is a company statement, not a full beneficial-ownership audit. [24](https://www.spacex.com/updates#xai-joins-spacex) |
 
 Several observations follow directly from these records. Paramount's acquisition of Warner Bros. Discovery was announced as completed on October 6, 2026, and the combined company was named Skydance. A current discussion should therefore not assume that CBS News and CNN necessarily sit under separate corporate parents because an older chart puts them there. The company's forecasts of better competition, financial savings or creative opportunity remain its own claims; the closing itself does not establish those hoped-for benefits. [16](https://www.skydance.com/news/press/paramount-completes-acquisition-of-warner-bros-discovery-creating-a-new-global-entertainment-leader-skydance)
@@ -537,7 +537,7 @@ The absence of an investigation is difficult to measure. A false article can be 
 
 Medill's 2026 update also changed how it classified ethnic and foreign-language outlets, incorporating them into their respective media categories. That methodological change matters for year-to-year comparisons. Its inventory identified digital startups and philanthropic support alongside continuing losses. The report therefore describes a changing ecosystem rather than a simple disappearance of every alternative. New organizations can perform important work without fully replacing the places, beats, and institutional capacity lost elsewhere. [48](https://localnewsinitiative.northwestern.edu/projects/state-of-local-news/2026/report/)
 
-Trust creates another accountability problem. Gallup's survey conducted September 2-16, 2025 found that 28% of U.S. adults expressed a great deal or fair amount of confidence in newspapers, television, and radio to report news fully, accurately, and fairly. This is an attitude measured with particular question wording in 2025. It is not a 2026 estimate or an independent audit finding that a corresponding percentage of reporting is accurate. [49](https://news.gallup.com/poll/695762/trust-media-new-low.aspx)
+Trust creates another accountability problem. Gallup's survey conducted September 2-16, 2025 found that 28% of U.S. adults expressed a great deal or fair amount of confidence in newspapers, television, and radio to report news fully, accurately, and fairly. That was the record low in Gallup's trend. [49](https://news.gallup.com/poll/695762/trust-media-new-low.aspx) Its September 1-17, 2026 survey found 33% expressing that level of confidence. The 2026 survey covered 1,000 U.S. adults and reported a margin of sampling error of ±4 percentage points at the 95% confidence level. It ended before the September 18 White House access dispute described by Gallup, so it cannot measure any effect of that dispute. These figures measure reported confidence with particular question wording, not an independent audit of reporting accuracy or proof of what caused trust to change. [55](https://news.gallup.com/poll/714938/trust-news-media-edges-slightly-higher.aspx)
 
 The distinction prevents circular reasoning. Distrust can reflect real errors, editorial priorities, perceived disrespect, political persuasion, or different interpretations of which institutions a broad question includes. A survey identifies the distribution of a reported attitude; explaining its causes requires other evidence. Nor should higher confidence always be the objective. An accurate investigation may appropriately reduce trust in an institution whose misconduct had been hidden.
 
@@ -807,11 +807,11 @@ https://www.nytco.com/about-us/
 
 Type: Corporate publisher description. Company statements about journalism quality are not adopted as independent evaluations; this page does not establish a complete shareholder-control map. Stable IDs: O08.
 
-[23] TikTok USDS Joint Venture. January 22, 2026. TikTok USDS Joint Venture LLC Established in Compliance with U.S. Regulatory Requirements. TikTok USDS Joint Venture newsroom.
+[23] TikTok USDS Joint Venture. January 23, 2026. TikTok USDS Joint Venture LLC Established in Compliance with U.S. Regulatory Requirements. TikTok USDS Joint Venture newsroom.
 
 https://usdsjv.tiktok.com/TikTok-USDS-Joint-Venture-LLC-Established
 
-Type: Corporate formation announcement. Statement of corporate structure and allocated authority, not independent proof of security effectiveness or political neutrality. Newsroom index saysJanuary23 but article itselfJanuary22; report uses article date. Stable IDs: O09.
+Type: Corporate formation announcement. Statement of corporate structure and allocated authority, not independent proof of security effectiveness or political neutrality. Earlier verification recorded January 22 on the article and January 23 on the newsroom index. Rechecked with gstack /browse on November 15, 2026: the article now displays January 23, 2026. This is the publication date, not independent verification of the legal closing date. This follow-up rechecked the displayed date only; the prior corporate-structure verification remains unchanged. Stable IDs: O09.
 
 [24] Elon Musk / SpaceX. February 2, 2026. xAI Joins SpaceX to Accelerate Humanity's Future. SpaceX updates.
 
@@ -998,3 +998,9 @@ Type: Peer-reviewed preregistered survey experiments; original abstract read thr
 https://doi.org/10.1073/pnas.2321584121
 
 Type: Peer-reviewed randomized deactivation experiments; original abstract read through Europe PMC. Not a test of every historical or long-term platform effect. Volunteer samples, a six-week intervention, and replacement activities limit extrapolation. Findings differ from the 2018-election deactivation study; the chapter does not claim the reasons for that difference are conclusively known. Stable IDs: E15.
+
+[55] Lydia Saad. 2026-09-29. U.S. Media Trust: Edges Up From Record Low. Gallup.
+
+https://news.gallup.com/poll/714938/trust-news-media-edges-slightly-higher.aspx
+
+Type: Original survey analysis; article and survey methods read with gstack /browse on November 15, 2026. Measures reported confidence, not reporting accuracy or causes of changes in trust. Fieldwork ended before the September 18 White House access dispute described in the article and cannot capture any effect of it. Question wording and practical survey difficulties can introduce error or bias beyond sampling error. Stable IDs: E16.

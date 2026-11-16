@@ -214,5 +214,27 @@
     "stats": [
       {"value": "6 weeks", "period": "Before the 2020 U.S. presidential election", "population": "Facebook and Instagram study participants assigned to deactivation", "denominator": "Experimental treatment duration"}
     ]
+  },
+  {
+    "id": "E16",
+    "title": "U.S. Media Trust: Edges Up From Record Low",
+    "authors": [
+      "Lydia Saad"
+    ],
+    "publisher": "Gallup",
+    "date": "2026-09-29",
+    "url": "https://news.gallup.com/poll/714938/trust-news-media-edges-slightly-higher.aspx",
+    "type": "Original survey analysis; article and survey methods read with gstack /browse on November 15, 2026",
+    "verified": true,
+    "findings": "Reports 33% of U.S. adults expressed a great deal or fair amount of confidence in newspapers, television and radio to report news fully, accurately and fairly, up from 28% in 2025. Telephone interviews September 1–17, 2026; random sample of 1,000 adults aged 18 and older in all 50 states and D.C.; margin of sampling error ±4 percentage points at 95% confidence, including weighting design effects.",
+    "limitations": "Measures reported confidence, not reporting accuracy or causes of changes in trust. Fieldwork ended before the September 18 White House access dispute described in the article and cannot capture any effect of it. Question wording and practical survey difficulties can introduce error or bias beyond sampling error.",
+    "stats": [
+      {
+        "value": "33%",
+        "period": "Survey conducted September 1–17, 2026",
+        "population": "U.S. adults aged 18 and older; sample of 1,000",
+        "denominator": "All adults surveyed; percentage expressing a great deal or fair amount of confidence in the specified mass-media reporting question"
+      }
+    ]
   }
 ]

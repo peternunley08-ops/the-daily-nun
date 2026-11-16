@@ -16,7 +16,7 @@ Maintain and advance The Daily Nun—a high-rigor, independent publication by Pe
 | T02 | Backlog Studio clarity & slide image resolution | Codex | Complete | `posts/build-backlog.mjs`, `posts/index.html` | Merged in PR #36 |
 | T03 | Report follow-up: Gallup 2026 reading & TikTok JV dates | Antigravity | Complete | `research/media-democracy/` (Ch. 4, 8–10, sources, PDF, review) | Merged in PR #40, #41 |
 | T04 | Initialize shared coordination board | Antigravity | Complete | `AGENT_COORDINATION.md` | Merged in PR #42 |
-| T05 | Voiceover audio review & launch recording prep | Select an unclaimed task | Unclaimed | `posts/01`–`06` (`voiceover-script.txt`, kinetic MP4s) | Peter review / audio |
+| T05 | Week 1 Reel parity & launch voiceover recording prep | Antigravity | Ready for review | `posts/01-who-picked-this/`, `posts/build-backlog.mjs` | Issue #47 |
 | T06 | Future editorial pitches (Weeks 7+) | Select an unclaimed task | Unclaimed | Topic proposals in Issue #2 / `DISCOVERIES.md` | Peter approval |
 | T07 | Backlog Studio video player, article links & mobile responsive QA | Antigravity | Complete | `posts/build-backlog.mjs`, `posts/index.html` | Merged in PR #45 |
 | T08 | Keep both Gallup URLs and the January 23 TikTok date | Cursor | Complete | `research/media-democracy/` | Merged in PR #43 |
@@ -42,9 +42,10 @@ Maintain and advance The Daily Nun—a high-rigor, independent publication by Pe
 - **Report sources**: E09 stays the 2025 Gallup URL. E16 is the September 29, 2026 Gallup article. The 6% / 27% split is not used. TikTok O09 uses the January 23, 2026 date printed on the fetched page.
 
 ## Handoffs and blockers
+- **Antigravity, T05**: Connected `reel.mp4`, `reel-cover.png`, and `voiceover-script.txt` to Week 1 (`posts/01-who-picked-this/`), rebuilt `upload-pack.zip` to 9 files, and updated Backlog Studio and package preview. All 6 packages now have identical slide, reel, caption, and teleprompter parity (dashboard metric: 6 packages, 6 exported, 6 reels).
 - **Handoff from T03**: The media and democracy report PDF is rebuilt to 40 pages with verified 2026 Gallup media trust data and clarified TikTok USDS JV dates. Dual PRs #38 and #39 have been cleanly closed.
 - **Cursor, T08**: A later HTML fetch of https://usdsjv.tiktok.com/TikTok-USDS-Joint-Venture-LLC-Established did not contain January 22. The merged report uses January 23, 2026 and keeps the 2025 Gallup URL as E09.
-- **Active state**: All 6 packages have exported slide PNGs, kinetic reel MP4s, alt text, and `upload-pack.zip`.
+- **Active state**: All 6 packages have exported slide PNGs, kinetic reel MP4s, alt text, teleprompter scripts, and `upload-pack.zip`.
 - **Blockers**: None. CI is green on GitHub Actions.
 
 ## Validation
@@ -52,7 +53,9 @@ Maintain and advance The Daily Nun—a high-rigor, independent publication by Pe
 - `node instagram-launch/build-launch.mjs`: Pass.
 - `node posts/01-who-picked-this/build.mjs` through `06`: Pass.
 - `node posts/build-backlog.mjs`: Pass (6 packages compiled).
+- `node tools/dashboard/run-checks.mjs`: Pass (11/11 checks).
 - `python3 -m unittest workflows/project-os/test_check.py`: Pass (11 tests).
+- `node -e '...'` (static link audit): Pass (16 static HTML pages, 0 broken relative links).
+- `node -e '...'` (content totals check): 6 packages, 6 exported, 6 reels, 0 scheduled, 0 published.
 - `uv run --with-requirements research/media-democracy/requirements.txt python3 research/media-democracy/tools/build_report.py`: Pass (40 pages).
-- `uv run --with-requirements research/media-democracy/requirements.txt python3 research/media-democracy/tools/review_pdf.py`: Pass (0 blank pages, 0 out-of-page chars, 159 external links).
-- Cursor recheck after the date merge: `python3 tools/build_report.py` and `python3 tools/review_pdf.py` from `research/media-democracy`: 40 pages, 16,477 chapter words, 55 sources, 58 ids, 0 blank pages, 0 out-of-page characters.
+- `uv run --with-requirements research/media-democracy/requirements.txt python3 research/media-democracy/tools/review_pdf.py`: Pass (0 blank pages, 0 out-of-page chars, 161 external links).

@@ -7,6 +7,14 @@
 - TikTok USDS page https://usdsjv.tiktok.com/TikTok-USDS-Joint-Venture-LLC-Established returned the printed date January 23, 2026. The fetched HTML did not contain January 22. The report now uses January 23 and says an earlier ledger had distinguished the dates. ByteDance 19.9% of joint-venture equity was still on the page. The ownership table was not otherwise re-audited.
 - Verification was urllib and a page fetch on November 15, 2026 (Pacific), not gstack `/browse`. Rebuild: 40 pages, 16,455 chapter words, 55 sources, 58 IDs. Automated page check found no blank pages and no out-of-page text. Pages 14, 29, 37, and 40 were read after the rebuild.
 
+## 2026-11-15: Project OS learning loop
+
+- Agent: Cursor cloud. Peter supplied `peter-project-os-v1.0.0` and asked for it to be implemented, improved, and able to learn. Issue creation is not available from this agent's GitHub tools. [Issue #35](https://github.com/peternunley08-ops/the-daily-nun/issues/35) stays with its existing owner; this pass does not edit the site or backlog files named there.
+- The checkout did not contain `.claude/skills/peter-project-os/` even though the workflow said it was installed. The supplied archive was copied there. All 47 packaged files match `MANIFEST.json`. `python3 -m unittest discover -s tests -v` in that folder: 24 tests OK.
+- v1.0.0 verifies a pass and then forgets it. The public addition is `workflows/project-os/`: a lesson needs evidence, an active claim cannot be repeated, and a closed check stays closed until its evidence changes. The first run of the checker failed because the helper tests had written `__pycache__`; bytecode is now ignored, and a packaged-file hash mismatch still fails. The private package remains gitignored and byte-identical to the archive.
+- Verification: `python3 -m unittest workflows/project-os/test_check.py` and `python3 workflows/project-os/check.py`. No content rebuild and no social posting.
+- Follow-up: the content check now runs those lesson tests on pull requests. At the time of that pass, [Issue #20](https://github.com/peternunley08-ops/the-daily-nun/issues/20) stayed with Codex because gstack `/browse` was unavailable. The entry above records the later page check and the two corrections.
+
 ## 2026-11-15: Project OS selective pass (Codex, Issue #35)
 
 - Agent: Codex (Cursor cloud). Claimed [Issue #35](https://github.com/peternunley08-ops/the-daily-nun/issues/35). Lean Project OS distill lives in private Context only; the personal package was not committed.

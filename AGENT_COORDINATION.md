@@ -16,7 +16,7 @@ Maintain and advance The Daily Nun—a high-rigor, independent publication by Pe
 | T02 | Backlog Studio clarity & slide image resolution | Codex | Complete | `posts/build-backlog.mjs`, `posts/index.html` | Merged in PR #36 |
 | T03 | Report follow-up: Gallup 2026 reading & TikTok JV dates | Antigravity | Complete | `research/media-democracy/` (Ch. 4, 8–10, sources, PDF, review) | Merged in PR #40, #41 |
 | T04 | Initialize shared coordination board | Antigravity | Complete | `AGENT_COORDINATION.md` | Merged in PR #42 |
-| T05 | Week 1 Reel parity & launch voiceover recording prep | Antigravity | Ready for review | `posts/01-who-picked-this/`, `posts/build-backlog.mjs` | Issue #47 |
+| T05 | Week 1 Reel parity & launch voiceover recording prep | Antigravity | Complete | `posts/01-who-picked-this/`, `posts/build-backlog.mjs` | Merged in PR #48 |
 | T06 | Future editorial pitches (Weeks 7+) | Select an unclaimed task | Unclaimed | Topic proposals in Issue #2 / `DISCOVERIES.md` | Peter approval |
 | T07 | Backlog Studio video player, article links & mobile responsive QA | Antigravity | Complete | `posts/build-backlog.mjs`, `posts/index.html` | Merged in PR #45 |
 | T08 | Keep both Gallup URLs and the January 23 TikTok date | Cursor | Complete | `research/media-democracy/` | Merged in PR #43 |

@@ -234,7 +234,7 @@ The following table is an illustrative map, not a ranking or a calculation of an
 | iHeartMedia | Broadcast radio, radio networks, podcasts and digital audio | Current company station directory and portfolio. Its promotional audience-reach claims are not adopted as shares of all media. [21](https://www.iheartmedia.com/) |
 | Alphabet / Google | YouTube and Google distribution and advertising services | Alphabet restructuring documented in 2015; basic current corporate relationship cross-checked in a secondary reference. This is not ownership of every creator's video. [26](https://googleblog.blogspot.com/2015/08/google-alphabet.html) [27](https://en.wikipedia.org/wiki/Alphabet_Inc.) |
 | Meta Platforms | Facebook and Instagram | Pew's October 19, 2026 fact sheet identifies both as Meta-owned. User posts and external news articles are not all Meta-owned reporting. [30](https://www.pewresearch.org/journalism/fact-sheet/social-media-and-news-fact-sheet/) |
-| TikTok USDS Joint Venture | U.S. TikTok operation and specified data, algorithm and moderation responsibilities | January 22, 2026 formation statement; global interoperability and certain commercial functions remain separately described. ByteDance retains a minority equity interest in this U.S. venture. [23](https://usdsjv.tiktok.com/TikTok-USDS-Joint-Venture-LLC-Established) |
+| TikTok USDS Joint Venture | U.S. TikTok operation and specified data, algorithm and moderation responsibilities | January 22, 2026 formation statement (release dated January 22, 2026; some newsroom listings cite January 23); global interoperability and certain commercial functions remain separately described. ByteDance retains a minority equity interest in this U.S. venture. [23](https://usdsjv.tiktok.com/TikTok-USDS-Joint-Venture-LLC-Established) |
 | X within the xAI / SpaceX corporate grouping | Social distribution, creator commentary and information circulation | SpaceX's February 2, 2026 statement says it acquired xAI and describes integration with its real-time information platform. This is a company statement, not a full beneficial-ownership audit. [24](https://www.spacex.com/updates#xai-joins-spacex) |
 
 Several observations follow directly from these records. Paramount's acquisition of Warner Bros. Discovery was announced as completed on October 6, 2026, and the combined company was named Skydance. A current discussion should therefore not assume that CBS News and CNN necessarily sit under separate corporate parents because an older chart puts them there. The company's forecasts of better competition, financial savings or creative opportunity remain its own claims; the closing itself does not establish those hoped-for benefits. [16](https://www.skydance.com/news/press/paramount-completes-acquisition-of-warner-bros-discovery-creating-a-new-global-entertainment-leader-skydance)
@@ -537,7 +537,7 @@ The absence of an investigation is difficult to measure. A false article can be 
 
 Medill's 2026 update also changed how it classified ethnic and foreign-language outlets, incorporating them into their respective media categories. That methodological change matters for year-to-year comparisons. Its inventory identified digital startups and philanthropic support alongside continuing losses. The report therefore describes a changing ecosystem rather than a simple disappearance of every alternative. New organizations can perform important work without fully replacing the places, beats, and institutional capacity lost elsewhere. [48](https://localnewsinitiative.northwestern.edu/projects/state-of-local-news/2026/report/)
 
-Trust creates another accountability problem. Gallup's survey conducted September 2-16, 2025 found that 28% of U.S. adults expressed a great deal or fair amount of confidence in newspapers, television, and radio to report news fully, accurately, and fairly. This is an attitude measured with particular question wording in 2025. It is not a 2026 estimate or an independent audit finding that a corresponding percentage of reporting is accurate. [49](https://news.gallup.com/poll/695762/trust-media-new-low.aspx)
+Trust creates another accountability problem. Gallup's survey conducted September 2-16, 2025 recorded an all-time low of 28% of U.S. adults expressing a great deal or fair amount of confidence in newspapers, television, and radio to report news fully, accurately, and fairly. In its September 1-17, 2026 survey, that figure edged up to 33% (with 33% reporting "not very much" and 33% "none at all"), driven largely by a rebound among Republicans from 8% to 22%, while Democrats stood at 50% and independents at 31%. Gallup noted this reading was completed just before the dispute over White House press credentials began on September 18, 2026. These are attitudes measured with specific survey wording across 2025 and 2026, not independent audits finding that a corresponding fraction of reporting is accurate or inaccurate. [49](https://news.gallup.com/poll/714938/trust-news-media-edges-slightly-higher.aspx)
 
 The distinction prevents circular reasoning. Distrust can reflect real errors, editorial priorities, perceived disrespect, political persuasion, or different interpretations of which institutions a broad question includes. A survey identifies the distribution of a reported attitude; explaining its causes requires other evidence. Nor should higher confidence always be the objective. An accurate investigation may appropriately reduce trust in an institution whose misconduct had been hidden.
 
@@ -811,7 +811,7 @@ Type: Corporate publisher description. Company statements about journalism quali
 
 https://usdsjv.tiktok.com/TikTok-USDS-Joint-Venture-LLC-Established
 
-Type: Corporate formation announcement. Statement of corporate structure and allocated authority, not independent proof of security effectiveness or political neutrality. Newsroom index saysJanuary23 but article itselfJanuary22; report uses article date. Stable IDs: O09.
+Type: Corporate formation announcement. Statement of corporate structure and allocated authority, not independent proof of security effectiveness or political neutrality. Newsroom index lists January 23 but article release is dated January 22; report documents both dates. Stable IDs: O09.
 
 [24] Elon Musk / SpaceX. February 2, 2026. xAI Joins SpaceX to Accelerate Humanity's Future. SpaceX updates.
 
@@ -963,11 +963,11 @@ https://localnewsinitiative.northwestern.edu/projects/state-of-local-news/2026/r
 
 Type: Original research inventory; executive summary and landscape/methodological discussion read. Counts concern locally based professional sources, not absence of every information source or external broadcast signal. Closures and mergers are combined in the 170 figure. Methodology changed, so simple year-to-year comparisons require attention to classification. Inventory is not itself a causal study of attitudes or governance quality. Stable IDs: E08.
 
-[49] Megan Brenan. 2025-10-02. Trust in Media at New Low of 28% in U.S. Gallup.
+[49] Lydia Saad. 2026-09-29. U.S. Media Trust: Edges Up From Record Low. Gallup.
 
-https://news.gallup.com/poll/695762/trust-media-new-low.aspx
+https://news.gallup.com/poll/714938/trust-news-media-edges-slightly-higher.aspx
 
-Type: Original survey analysis; article and question description read. Measures reported confidence with specific wording, not the measured accuracy of publications. It is a 2025 reading and is labeled as such, not presented as a verified 2026 estimate or as evidence identifying the causes of distrust. Stable IDs: E09.
+Type: Original survey analysis; article and trend tables read. Measures reported confidence with specific wording across 1,000 national adults (±4 points margin of error), not measured journalistic accuracy. Survey closed September 17, 2026, before the September 18 White House press credential dispute. 2025 record low (28%) is preserved for trend context. Stable IDs: E09.
 
 [50] United States Congress. 2025-07-24. Rescissions Act of 2025, Public Law 119-28, section 2(b)(20). U.S. Government Publishing Office.
 

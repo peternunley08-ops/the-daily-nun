@@ -1,41 +1,56 @@
-# Agent coordination
-
-Shared task board for agents working in this repository. `DISCOVERIES.md` remains the record of research decisions. This file records who is editing what.
+# Agent Coordination Board
 
 ## Project goal
-
-Correct the published research report for Issue #20: keep Gallup's 2025 28% reading as the prior low, add the 2026 33% reading, and date the TikTok USDS page January 23, 2026. The latest coordination prompt did not add a new product goal.
+Maintain and advance The Daily Nun—a high-rigor, independent publication by Peter Nunley focusing on government, media, culture, and democracy for a high-school and civic audience. Prepare and verify a 4-week pre-launch content backlog, maintain the researched media-democracy report, and maintain the newspaper prototype and studio dashboards under strict third-person editorial voice and anti-slop standards.
 
 ## Team and environment
-
-- Cursor: this checkout, branch `cursor/gallup-tiktok-dates-93f3`, pull request #39. Separate checkout from other agents. Integration lead: not assigned.
-- Codex claimed Issue #20 in comments, then stopped because gstack `/browse` was unavailable. Peter authorized this machine's web tools for those two pages.
-- Codex also owns Issue #35. Do not edit the site or backlog files named there.
-- Pull request #37, the Project OS learning loop, merged to `main` on November 15, 2026 (Pacific).
-- This file is on the report branch until that pull request merges. Agents on other branches will not see it until then.
+- **Agents**: Antigravity (Gemini), Codex, Claude Code, Cursor.
+- **Integration Lead**: Antigravity.
+- **Working Directories**: Cloud virtual machines / remote environments with independent git checkouts pushing to GitHub repository `peternunley08-ops/the-daily-nun`.
+- **Coordination Method**: This file (`AGENT_COORDINATION.md`), `AGENTS.md`, `DISCOVERIES.md`, GitHub Issues, and focused pull requests prefixed by agent name (`antigravity/`, `codex/`, `claude/`, `cursor/`).
 
 ## Task board
-
 | ID | Task | Owner | Status | Files / scope | Dependencies |
-|----|------|-------|--------|---------------|--------------|
-| 20 | Gallup 2026 figure and TikTok date | Cursor | ready for review | `research/media-democracy/`, `DISCOVERIES.md` | Pull request #39. Pull request #40 already merged a parallel edit. |
-| 20-merge | Keep both Gallup URLs and the January 23 TikTok date | Cursor | ready for review | `DISCOVERIES.md`, report sources | HTML re-fetch on November 15, 2026 (Pacific) shows January 23 and `publishDate` `2026-01-23`. |
-| 35 | Site and backlog studio | Codex | owned elsewhere | `posts/build-backlog.mjs`, `posts/index.html`, `index.html`, selected post metadata, `README.md` | Do not edit from this branch. |
-| os | Project OS learning loop | Cursor, earlier pass | merged | `workflows/project-os/`, `AGENTS.md`, content check | Pull request #37. |
+|---|---|---|---|---|---|
+| T01 | Project OS Learning Loop & Manifest Check | Cursor | Complete | `workflows/project-os/`, `AGENTS.md` | Merged in PR #37 |
+| T02 | Backlog Studio clarity & slide image resolution | Codex | Complete | `posts/build-backlog.mjs`, `posts/index.html` | Merged in PR #36 |
+| T03 | Report follow-up: Gallup 2026 reading & TikTok JV dates | Antigravity | Complete | `research/media-democracy/` (Ch. 4, 8–10, sources, PDF, review) | Merged in PR #40, #41 |
+| T04 | Initialize shared coordination board | Antigravity | In progress | `AGENT_COORDINATION.md` | None |
+| T05 | Voiceover audio review & launch recording prep | Select an unclaimed task | Unclaimed | `posts/01`–`06` (`voiceover-script.txt`, kinetic MP4s) | Peter review / audio |
+| T06 | Future editorial pitches (Weeks 7+) | Select an unclaimed task | Unclaimed | Topic proposals in Issue #2 / `DISCOVERIES.md` | Peter approval |
+| T07 | Mobile & cross-browser visual QA on Backlog Studio & Front Page | Select an unclaimed task | Unclaimed | `index.html`, `posts/index.html`, CSS assets | None |
+| T08 | Keep both Gallup URLs and the January 23 TikTok date | Cursor | ready for review | `research/media-democracy/` chapters, sources, PDF; `DISCOVERIES.md` | HTML fetch on November 15, 2026 (Pacific): visible date January 23, 2026, `publishDate` `2026-01-23`, no "January 22" in the HTML. Peter asked to merge. |
 
 ## Interfaces and shared decisions
-
-- E09 stays the 2025 Gallup 28% record. E16 is the September 29, 2026 Gallup article. E10 stays the Rescissions Act.
-- The 6% / 27% split is not used. The fetched Gallup page did not state it.
-- TikTok O09 uses the January 23, 2026 date printed on the fetched page. ByteDance's 19.9% is joint-venture equity.
-- Every source id in the report JSON must be cited in the chapters. Rebuild with `python3 tools/build_report.py` from `research/media-democracy/`.
+- **Voice & Persona**: Strict third-person editorial distance across all social copy, captions, and articles (e.g., "The Daily Nun examined...", "A closer look at..."). Peter Nunley byline is plain (`By Peter Nunley`).
+- **Brand Rules**: No nickname branding (`p-nun`, etc.). Single-idea social posts.
+- **Backlog Structure**:
+  - `posts/01-who-picked-this/` (Week 1, Media Desk)
+  - `posts/02-who-is-responsible/` (Week 2, Government Desk)
+  - `posts/03-recommendation-or-manipulation/` (Week 3, Culture Desk)
+  - `posts/04-the-disappearing-local-beat/` (Week 4, Democracy Desk)
+  - `posts/05-who-gets-the-hours/` (Follow-on 5, Government Desk)
+  - `posts/06-does-a-streak-help/` (Follow-on 6, Culture Desk)
+- **Shared Builders**:
+  - `posts/build-post.mjs`: Unified package builder called by each package's `build.mjs`.
+  - `posts/build-backlog.mjs`: Compiles the unified Backlog Studio dashboard at `posts/index.html`.
+  - `assets/render-article.mjs`: Unified strict Markdown article renderer for all desk articles.
+  - `research/media-democracy/tools/build_report.py`: Report PDF compiler supporting `REPORT_FONT_DIR` and Linux/Windows fonts.
+  - `research/media-democracy/tools/review_pdf.py`: PDF validator checking character bounds, blank pages, and link annotations.
+- **Report sources**: E09 stays the 2025 Gallup URL. E16 is the September 29, 2026 Gallup article. The 6% / 27% split is not used. TikTok O09 uses the January 23, 2026 date printed on the fetched page.
 
 ## Handoffs and blockers
-
-- Codex review on pull request #39 did not finish: the review comment said the Codex review quota was reached. That is not a code finding.
-- gstack `/browse` was not used. Verification was an HTTP fetch on November 15, 2026 (Pacific).
-- No agent-to-agent channel exists beyond this file, `DISCOVERIES.md`, and GitHub.
+- **Handoff from T03**: The media and democracy report PDF is rebuilt to 40 pages with verified 2026 Gallup media trust data and clarified TikTok USDS JV dates. Dual PRs #38 and #39 have been cleanly closed.
+- **Cursor, T08**: A later HTML fetch of https://usdsjv.tiktok.com/TikTok-USDS-Joint-Venture-LLC-Established did not contain January 22. The merged report uses January 23, 2026 and keeps the 2025 Gallup URL as E09.
+- **Active state**: All 6 packages have exported slide PNGs, kinetic reel MP4s, alt text, and `upload-pack.zip`.
+- **Blockers**: None. CI is green on GitHub Actions.
 
 ## Validation
-
-- After merging pull request #40: `python3 tools/build_report.py` and `python3 tools/review_pdf.py`. 40 pages, 16,477 chapter words, 55 sources, 58 ids, 0 blank pages, 0 out-of-page characters. `python3 -m unittest workflows/project-os/test_check.py`: 11 tests OK, 5 active lessons.
+- `node stories-current-media/build.mjs`: Pass.
+- `node instagram-launch/build-launch.mjs`: Pass.
+- `node posts/01-who-picked-this/build.mjs` through `06`: Pass.
+- `node posts/build-backlog.mjs`: Pass (6 packages compiled).
+- `python3 -m unittest workflows/project-os/test_check.py`: Pass (11 tests).
+- `uv run --with-requirements research/media-democracy/requirements.txt python3 research/media-democracy/tools/build_report.py`: Pass (40 pages).
+- `uv run --with-requirements research/media-democracy/requirements.txt python3 research/media-democracy/tools/review_pdf.py`: Pass (0 blank pages, 0 out-of-page chars, 159 external links).
+- Cursor recheck after the date merge: `python3 tools/build_report.py` and `python3 tools/review_pdf.py` from `research/media-democracy`: 40 pages, 16,477 chapter words, 55 sources, 58 ids, 0 blank pages, 0 out-of-page characters.

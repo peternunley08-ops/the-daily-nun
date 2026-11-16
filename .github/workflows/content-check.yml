@@ -29,6 +29,9 @@ jobs:
           node posts/06-does-a-streak-help/build.mjs
           node posts/build-backlog.mjs
 
+      - name: Check Project OS lessons
+        run: python3 -m unittest workflows/project-os/test_check.py -v
+
       - name: Verify Strict Brand & Tone Rules
         run: |
           node -e '

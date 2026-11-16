@@ -74,11 +74,11 @@ for i, source in enumerate(unique, 1):
 assert 40 <= len(unique) <= 60, len(unique)
 
 # Standard PDF fonts are available everywhere; embed Georgia/Arial when available.
-font_root = Path('C:/Windows/Fonts')
 font_files = {'Body': 'georgia.ttf', 'Body-Bold': 'georgiab.ttf', 'Body-Italic': 'georgiai.ttf',
               'Body-BoldItalic': 'georgiaz.ttf', 'Sans': 'arial.ttf', 'Sans-Bold': 'arialbd.ttf',
               'Sans-Italic': 'ariali.ttf', 'Sans-BoldItalic': 'arialbi.ttf'}
-if all((font_root / f).exists() for f in font_files.values()):
+font_root = next((root for root in (Path('C:/Windows/Fonts'), Path('/usr/share/fonts/truetype/msttcorefonts')) if all((root / name).exists() for name in font_files.values())), None)
+if font_root:
     for name, file in font_files.items(): pdfmetrics.registerFont(TTFont(name, str(font_root / file)))
     pdfmetrics.registerFontFamily('Body', normal='Body', bold='Body-Bold', italic='Body-Italic', boldItalic='Body-BoldItalic')
     pdfmetrics.registerFontFamily('Sans', normal='Sans', bold='Sans-Bold', italic='Sans-Italic', boldItalic='Sans-BoldItalic')

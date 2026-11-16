@@ -1,5 +1,12 @@
 # Shared discoveries and decisions
 
+## 2026-11-15: Gallup 2026 trust figure and TikTok formation date (Issue #20)
+
+- Agent: Cursor cloud. Peter authorized checking the two Issue #20 pages with this machine's web tools after gstack `/browse` was unavailable. Codex had already claimed the issue; this pass only applies the two corrections those pages support.
+- Gallup, Lydia Saad, September 29, 2026, https://news.gallup.com/poll/714938/trust-news-media-edges-slightly-higher.aspx : 33% of U.S. adults, great deal or fair amount, up from 28%. Survey September 1–17, 2026, 1,000 adults, national margin ±4 points at 95% confidence. Republicans 22%, independents 31%, Democrats 50%. The field period ended before the September 18 White House access dispute. The page did not give a separate 6% / 27% split, so that split is not in the report. The 2025 28% reading stays the prior low [E09]; the 2026 reading is new [E16].
+- TikTok USDS page https://usdsjv.tiktok.com/TikTok-USDS-Joint-Venture-LLC-Established returned the printed date January 23, 2026. The fetched HTML did not contain January 22. The report now uses January 23 and says an earlier ledger had distinguished the dates. ByteDance 19.9% of joint-venture equity was still on the page. The ownership table was not otherwise re-audited.
+- Verification was urllib and a page fetch on November 15, 2026 (Pacific), not gstack `/browse`. Rebuild: 40 pages, 16,455 chapter words, 55 sources, 58 IDs. Automated page check found no blank pages and no out-of-page text. Pages 14, 29, 37, and 40 were read after the rebuild.
+
 ## 2026-11-15: Project OS selective pass (Codex, Issue #35)
 
 - Agent: Codex (Cursor cloud). Claimed [Issue #35](https://github.com/peternunley08-ops/the-daily-nun/issues/35). Lean Project OS distill lives in private Context only; the personal package was not committed.

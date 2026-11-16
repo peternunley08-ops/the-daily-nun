@@ -18,3 +18,5 @@ instagram-revised.zip
 
 # Personal skill package: includes private project metadata
 /.claude/skills/peter-project-os/
+__pycache__/
+*.pyc

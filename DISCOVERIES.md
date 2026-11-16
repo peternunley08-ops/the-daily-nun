@@ -1,5 +1,12 @@
 # Shared discoveries and decisions
 
+## 2026-11-15: Project OS learning loop
+
+- Agent: Cursor cloud. Peter supplied `peter-project-os-v1.0.0` and asked for it to be implemented, improved, and able to learn. Issue creation is not available from this agent's GitHub tools. [Issue #35](https://github.com/peternunley08-ops/the-daily-nun/issues/35) stays with its existing owner; this pass does not edit the site or backlog files named there.
+- The checkout did not contain `.claude/skills/peter-project-os/` even though the workflow said it was installed. The supplied archive was copied there. All 47 packaged files match `MANIFEST.json`. `python3 -m unittest discover -s tests -v` in that folder: 24 tests OK.
+- v1.0.0 verifies a pass and then forgets it. The public addition is `workflows/project-os/`: a lesson needs evidence, an active claim cannot be repeated, and a closed check stays closed until its evidence changes. The first run of the checker failed because the helper tests had written `__pycache__`; bytecode is now ignored, and a packaged-file hash mismatch still fails. The private package remains gitignored and byte-identical to the archive.
+- Verification: `python3 -m unittest workflows/project-os/test_check.py` and `python3 workflows/project-os/check.py`. No content rebuild and no social posting.
+
 ## 2026-11-15: Project OS selective pass (Codex, Issue #35)
 
 - Agent: Codex (Cursor cloud). Claimed [Issue #35](https://github.com/peternunley08-ops/the-daily-nun/issues/35). Lean Project OS distill lives in private Context only; the personal package was not committed.
